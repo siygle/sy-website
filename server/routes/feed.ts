@@ -1,6 +1,6 @@
 import fs from 'node:fs'
 import path from 'node:path'
-import { defineEventHandler, setHeader } from 'h3'
+import { defineEventHandler, setHeader, createError } from 'h3'
 
 export default defineEventHandler((event) => {
   const feedPath = path.join(process.cwd(), 'public', 'feed')

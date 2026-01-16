@@ -1,5 +1,6 @@
 import {
   HeadContent,
+  Link,
   Outlet,
   Scripts,
   createRootRoute,
@@ -24,6 +25,7 @@ export const Route = createRootRoute({
     ],
   }),
   component: RootComponent,
+  notFoundComponent: NotFoundComponent,
 })
 
 function RootComponent() {
@@ -34,6 +36,26 @@ function RootComponent() {
         <Outlet />
       </main>
     </RootDocument>
+  )
+}
+
+function NotFoundComponent() {
+  return (
+    <div className="flex flex-col items-center justify-center py-20 px-4">
+      <h1 className="text-6xl font-bold text-gray-300 dark:text-gray-700">404</h1>
+      <h2 className="mt-4 text-xl font-semibold text-gray-700 dark:text-gray-300">
+        Page Not Found
+      </h2>
+      <p className="mt-2 text-gray-500 dark:text-gray-400 text-center max-w-md">
+        The page you're looking for doesn't exist or has been moved.
+      </p>
+      <Link
+        to="/"
+        className="mt-6 px-4 py-2 bg-gray-800 dark:bg-gray-200 text-white dark:text-gray-800 rounded-lg hover:bg-gray-700 dark:hover:bg-gray-300 transition-colors"
+      >
+        Go Home
+      </Link>
+    </div>
   )
 }
 
@@ -58,6 +80,98 @@ function RootDocument({ children }: { children: ReactNode }) {
       <body className="min-h-screen flex flex-col">
         {children}
         <Scripts />
+        <script
+          dangerouslySetInnerHTML={{
+            __html: `
+              // Social embed hydration - runs AFTER React hydration
+              (function() {
+                function hydrateBluesky() {
+                  var embeds = document.querySelectorAll('.bluesky-embed[data-bluesky-url]');
+                  if (embeds.length === 0) return;
+
+                  var needsScript = false;
+                  embeds.forEach(function(el) {
+                    if (el.dataset.hydrated) return;
+                    el.dataset.hydrated = 'true';
+                    needsScript = true;
+                    var url = el.dataset.blueskyUrl;
+                    fetch('/api/oembed?url=' + encodeURIComponent(url))
+                      .then(function(r) {
+                        if (!r.ok) throw new Error('HTTP ' + r.status);
+                        return r.json();
+                      })
+                      .then(function(data) {
+                        if (data.html) {
+                          // Insert the oEmbed HTML (blockquote) directly
+                          el.innerHTML = data.html;
+                          // Trigger Bluesky embed.js to process the new blockquote
+                          if (window.bluesky && window.bluesky.scan) {
+                            window.bluesky.scan();
+                          }
+                        }
+                      })
+                      .catch(function(err) { console.error('Bluesky embed error:', err); });
+                  });
+
+                  // Load Bluesky's embed.js script to handle blockquote -> iframe transformation
+                  if (needsScript && !document.querySelector('script[src*="embed.bsky.app"]')) {
+                    var script = document.createElement('script');
+                    script.src = 'https://embed.bsky.app/static/embed.js';
+                    script.async = true;
+                    document.head.appendChild(script);
+                  }
+                }
+
+                function hydrateTwitter() {
+                  document.querySelectorAll('.twitter-embed[data-twitter-url]').forEach(function(el) {
+                    if (el.dataset.hydrated) return;
+                    el.dataset.hydrated = 'true';
+                    var url = el.dataset.twitterUrl;
+                    fetch('/api/oembed?url=' + encodeURIComponent(url))
+                      .then(function(r) {
+                        if (!r.ok) throw new Error('HTTP ' + r.status);
+                        return r.json();
+                      })
+                      .then(function(data) {
+                        if (data.html) {
+                          el.innerHTML = data.html;
+                          // Load Twitter widgets.js to render the embed
+                          if (!window.twttr) {
+                            var script = document.createElement('script');
+                            script.src = 'https://platform.twitter.com/widgets.js';
+                            script.async = true;
+                            document.head.appendChild(script);
+                          } else if (window.twttr.widgets) {
+                            window.twttr.widgets.load(el);
+                          }
+                        }
+                      })
+                      .catch(function(err) { console.error('Twitter embed error:', err); });
+                  });
+                }
+
+                function hydrateAll() {
+                  hydrateBluesky();
+                  hydrateTwitter();
+                }
+
+                // Wait for React to finish hydrating before loading embeds
+                // Use a longer delay to ensure React hydration is complete
+                setTimeout(hydrateAll, 500);
+
+                // Also run after SPA navigation
+                var lastUrl = location.href;
+                var observer = new MutationObserver(function() {
+                  if (location.href !== lastUrl) {
+                    lastUrl = location.href;
+                    setTimeout(hydrateAll, 500);
+                  }
+                });
+                observer.observe(document.body, { childList: true, subtree: true });
+              })();
+            `,
+          }}
+        />
       </body>
     </html>
   )

@@ -1,23 +1,19 @@
-import { Marked } from 'marked'
-import { markedHighlight } from 'marked-highlight'
-import hljs from 'highlight.js'
+import { unified } from 'unified'
+import remarkParse from 'remark-parse'
+import remarkGfm from 'remark-gfm'
+import remarkRehype from 'remark-rehype'
+import rehypeHighlight from 'rehype-highlight'
+import rehypeStringify from 'rehype-stringify'
+import { remarkSocialEmbed } from './remark-social-embed'
 
-// Configure marked with syntax highlighting
-const marked = new Marked(
-  markedHighlight({
-    emptyLangClass: 'hljs',
-    langPrefix: 'hljs language-',
-    highlight(code, lang) {
-      const language = hljs.getLanguage(lang) ? lang : 'plaintext'
-      return hljs.highlight(code, { language }).value
-    },
-  })
-)
-
-marked.setOptions({
-  gfm: true,
-  breaks: false,
-})
+// Configure unified pipeline with remark/rehype
+const processor = unified()
+  .use(remarkParse)
+  .use(remarkGfm)
+  .use(remarkSocialEmbed)
+  .use(remarkRehype, { allowDangerousHtml: true })
+  .use(rehypeHighlight, { prefix: 'hljs language-' })
+  .use(rehypeStringify, { allowDangerousHtml: true })
 
 export interface Frontmatter {
   title: string
@@ -95,5 +91,5 @@ export function parseMarkdown(raw: string): ParsedMarkdown {
  * Render markdown to HTML
  */
 export function renderMarkdown(content: string): string {
-  return marked.parse(content) as string
+  return processor.processSync(content).toString()
 }

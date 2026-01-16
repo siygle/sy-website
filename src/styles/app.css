@@ -31,6 +31,28 @@
   .prose :where(code):not(:where([class~="not-prose"], [class~="not-prose"] *))::after {
     content: "";
   }
+
+  /* Social embed containers */
+  .social-embed {
+    @apply my-6 rounded-lg overflow-hidden;
+  }
+
+  .twitter-embed {
+    @apply flex justify-center;
+  }
+
+  .twitter-embed .twitter-tweet {
+    margin: 0 auto !important;
+  }
+
+  .youtube-embed iframe {
+    @apply w-full aspect-video;
+  }
+
+  .bluesky-embed iframe {
+    @apply w-full;
+    min-height: 400px;
+  }
 }
 
 /* highlight.js theme overrides for dark mode */

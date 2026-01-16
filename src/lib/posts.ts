@@ -9,6 +9,18 @@ export interface Post extends PostMeta {
   html: string
 }
 
+export interface PaginatedPosts {
+  posts: PostMeta[]
+  currentPage: number
+  totalPages: number
+  totalPosts: number
+  hasNextPage: boolean
+  hasPrevPage: boolean
+}
+
+// Posts per page - can be overridden by VITE_POSTS_PER_PAGE env variable
+export const POSTS_PER_PAGE = parseInt(import.meta.env.VITE_POSTS_PER_PAGE || '10', 10)
+
 // Import all blog posts at build time using Vite's import.meta.glob (supports .md and .mdx)
 const postModules = import.meta.glob('/content/blog/*.{md,mdx}', {
   query: '?raw',
@@ -56,4 +68,34 @@ export function getPostBySlug(slug: string): Post | null {
  */
 export function getAllPostSlugs(): string[] {
   return allPosts.map(post => post.slug)
+}
+
+/**
+ * Get paginated posts
+ */
+export function getPaginatedPosts(page: number = 1): PaginatedPosts {
+  const allPostsMeta = getAllPosts()
+  const totalPosts = allPostsMeta.length
+  const totalPages = Math.ceil(totalPosts / POSTS_PER_PAGE)
+  const currentPage = Math.max(1, Math.min(page, totalPages))
+
+  const start = (currentPage - 1) * POSTS_PER_PAGE
+  const end = start + POSTS_PER_PAGE
+  const posts = allPostsMeta.slice(start, end)
+
+  return {
+    posts,
+    currentPage,
+    totalPages,
+    totalPosts,
+    hasNextPage: currentPage < totalPages,
+    hasPrevPage: currentPage > 1,
+  }
+}
+
+/**
+ * Get total number of pages
+ */
+export function getTotalPages(): number {
+  return Math.ceil(allPosts.length / POSTS_PER_PAGE)
 }

@@ -1,18 +1,28 @@
-import { createFileRoute, Link } from '@tanstack/react-router'
+import { createFileRoute, Link, redirect } from '@tanstack/react-router'
 import { getPaginatedPosts, type PostMeta, type PaginatedPosts } from '~/lib/posts'
 
-export const Route = createFileRoute('/blog/')({
-  head: () => ({
+export const Route = createFileRoute('/blog/page/$page')({
+  head: ({ params }) => ({
     meta: [
-      { title: 'Blog - Sy Lee' },
+      { title: `Blog - Page ${params.page} - Sy Lee` },
       { name: 'description', content: 'Blog posts about web development and technology' },
     ],
   }),
-  loader: (): PaginatedPosts => getPaginatedPosts(1),
-  component: BlogPage,
+  loader: ({ params }): PaginatedPosts => {
+    const page = parseInt(params.page, 10)
+    if (isNaN(page) || page < 1) {
+      throw redirect({ to: '/blog/page/$page', params: { page: '1' } })
+    }
+    const result = getPaginatedPosts(page)
+    if (page > result.totalPages && result.totalPages > 0) {
+      throw redirect({ to: '/blog/page/$page', params: { page: String(result.totalPages) } })
+    }
+    return result
+  },
+  component: BlogPaginatedPage,
 })
 
-function BlogPage() {
+function BlogPaginatedPage() {
   const { posts, currentPage, totalPages, hasNextPage, hasPrevPage } = Route.useLoaderData()
 
   return (
@@ -31,14 +41,12 @@ function BlogPage() {
             ))}
           </div>
 
-          {totalPages > 1 && (
-            <Pagination
-              currentPage={currentPage}
-              totalPages={totalPages}
-              hasNextPage={hasNextPage}
-              hasPrevPage={hasPrevPage}
-            />
-          )}
+          <Pagination
+            currentPage={currentPage}
+            totalPages={totalPages}
+            hasNextPage={hasNextPage}
+            hasPrevPage={hasPrevPage}
+          />
         </>
       )}
     </div>

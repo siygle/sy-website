@@ -1,0 +1,103 @@
+---
+title: Build Your Own npm repository
+date: '2013-11-06'
+tags: ['npm', '2013']
+draft: false
+summary: 'How to create a private npm repository'
+layout: PostSimple
+---
+
+今天早上起來就看到 npm 官推一連串的訊息，看來是爆炸了...
+
+<blockquote class="twitter-tweet">
+  <p>
+    having some sporadic internal routing latency problems affecting website and registry
+    availability. <a href="https://twitter.com/izs">@izs</a> and{' '}
+    <a href="https://twitter.com/_jhs">@_jhs</a> are on the case.
+  </p>
+  &mdash; npm (@npmjs){' '}
+  <a href="https://twitter.com/npmjs/statuses/397407792685776896">November 4, 2013</a>
+</blockquote>
+<script async src="//platform.twitter.com/widgets.js" charset="utf-8"></script>
+
+<blockquote class="twitter-tweet">
+  <p>
+    yes. this twitter, or <a href="http://t.co/UnJIduAja1">http://t.co/UnJIduAja1</a>&#10;&#10;“
+    <a href="https://twitter.com/joezo">@joezo</a>: Does{' '}
+    <a href="https://twitter.com/npmjs">@npmjs</a> have a status page? I’d love to get an update
+    when it’s back online.”
+  </p>
+  &mdash; npm (@npmjs){' '}
+  <a href="https://twitter.com/npmjs/statuses/397448767261011968">November 4, 2013</a>
+</blockquote>
+
+<blockquote class="twitter-tweet">
+  <p>
+    econnrefused&#39;s should be over now, might have to wait as much as 300s for dns to propagate.
+  </p>
+  &mdash; npm (@npmjs){' '}
+  <a href="https://twitter.com/npmjs/statuses/397554551131090944">November 5, 2013</a>
+</blockquote>
+
+千萬不要被開場誤導，npm 已經算是非常穩定的服務了，再加上它所承載那麼巨大的流量以及 node.js 眾開發者關注的眼光（炸），不過只要是線上服務就一定會有這種情形發生，所以如果你的開發環境真的重度依賴 npm 的話，你最好想一個備用的方案。
+
+<blockquote class="twitter-tweet">
+  <p>
+    reminder: for deployments, don&#39;t depend on machines you don&#39;t own.&#10;&#10;check in
+    deps for your deployed apps, or run local mirror, or local git.
+  </p>
+  &mdash; npm (@npmjs){' '}
+  <a href="https://twitter.com/npmjs/statuses/397443253445746688">November 4, 2013</a>
+</blockquote>
+
+當然私有的 npm 也不單是備份的用途而已，有些內部用的套件，你也可以部屬到自家的程式庫上面，這樣不但可以兼顧安全，又可以直接用 npm 這種大家都習慣的開發流程。
+
+#### What should I do?
+
+如果你打算這麼做，有下列幾個方式：
+
+[**How to create a private npm.js repository**](http://clock.co.uk/tech-blogs/how-to-create-a-private-npmjs-repository) - 手動自己建一個  
+上面列的這篇文章就一步步教你怎麼自己建一個 npm repository，因為 npm 是用 [couchDB](http://couchdb.apache.org/) 作為後端資料庫，所以基本上就是得把 couchdb 架起來。
+
+老實說，我覺得 couchdb 不是個討人喜歡的東西，安裝就會遇到不少問題...0rz
+
+[**Deploy a Private npm Registry Without CouchDB or Redis**](http://strongloop.com/strongblog/deploy-a-private-npm-registry-without-couchdb-or-redis/) - 輕量級的解決方案  
+如果你不想搞一個這麼大的資料庫，只希望有個簡單的方式來放自家開發時會用到的套件，可以參考一下上面這篇文章中提到的 [reggie](https://github.com/mbrevoort/node-reggie) ，算是個輕量級的 npm 替代方案，它本身就是 nodejs module，所以只要把它裝起來就可以跑了，相當適合小開發團隊使用，記得下指令前加上  
+`npm --registry=REGGEIE_URL`  
+或者在 package.json 裡面指定  
+`"publishConfig": { "registry": "http://reggie-url/" }`  
+這樣部屬的時候就會放到 reggie 上面，其他詳細的功能請參照官網。
+
+有沒有綜合上面兩項優點的方案呢？一種輕鬆安裝 npm 的完整方案。
+這世界上就是有許多強者會把事情弄的很簡單（笑），請愛用之前提到的 [**docker**](/docker-power-your-development-and-deployment/) ;p
+
+[docker-npmjs](https://github.com/terinjokes/docker-npmjs)，應該還有不少類似的專案
+
+使用方式就是  
+`docker build -t npmjs github.com/terinjokes/docker-npmjs`  
+建完之後再跑起來就好  
+`docker run -d -h HOSTNAME npmjs`  
+簡單到令人不敢置信 XDD。  
+其實就是把第一種方案的整套安裝 npm 步驟都包在 Dockfile 裡面，然後 docker 就會建一個獨立的 container 包含整個 npm 的運行環境。
+
+請自行挑選適合自己的方式服用 ;p
+
+#### update
+
+經過今天的事件之後，似乎有些大廠也打算幫忙建立 npm mirror，可以期待一下 ;p
+
+<blockquote class="twitter-tweet">
+  <p>
+    <a href="https://twitter.com/zeke">@zeke</a> <a href="https://twitter.com/natevw">@natevw</a>{' '}
+    <a href="https://twitter.com/heroku">@heroku</a> Looking forward to it. The world needs more
+    industrial-grade <a href="https://twitter.com/npmjs">@npmjs</a> mirrors!
+  </p>
+  &mdash; Charlie Robbins (@indexzero){' '}
+  <a href="https://twitter.com/indexzero/statuses/397548332974743552">November 5, 2013</a>
+</blockquote>
+
+#### update 2013/12/8
+
+大概是不少大廠被先前那波炸到，紛紛開始注意這個問題  
+Yammer 也丟出一個用 nginx proxy & cache 的方式 ;p  
+[A private NPM cache](http://eng.yammer.com/a-private-npm-cache/)

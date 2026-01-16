@@ -1,0 +1,41 @@
+@import "tailwindcss";
+@import "highlight.js/styles/github.css" layer(base);
+@import "highlight.js/styles/github-dark.css" layer(base) (prefers-color-scheme: dark);
+@plugin "@tailwindcss/typography";
+
+/* Custom styles */
+@layer base {
+  html {
+    @apply antialiased scroll-smooth;
+  }
+
+  body {
+    @apply bg-white text-gray-700 dark:bg-zinc-950 dark:text-gray-300 min-h-screen;
+  }
+}
+
+@layer components {
+  .prose {
+    @apply prose-gray dark:prose-invert max-w-none;
+  }
+
+  .prose pre {
+    @apply bg-zinc-100 dark:bg-zinc-900 rounded-lg overflow-x-auto;
+  }
+
+  .prose code {
+    @apply text-sm;
+  }
+
+  .prose :where(code):not(:where([class~="not-prose"], [class~="not-prose"] *))::before,
+  .prose :where(code):not(:where([class~="not-prose"], [class~="not-prose"] *))::after {
+    content: "";
+  }
+}
+
+/* highlight.js theme overrides for dark mode */
+@layer utilities {
+  .hljs {
+    @apply bg-transparent;
+  }
+}

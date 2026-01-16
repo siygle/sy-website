@@ -1,0 +1,105 @@
+---
+title: 'io.js 1.0.0'
+date: '2015-01-13'
+tags: ['io.js', '2015']
+draft: false
+summary: '終於到最後一步了!! 1.0.0 release checklist · Issue #302 · iojs/io.js'
+layout: PostSimple
+---
+
+終於到最後一步了!!
+
+<blockquote class="twitter-tweet">
+  <p lang="en" dir="ltr">
+    1.0.0 release checklist · Issue #302 · iojs/io.js{' '}
+    <a href="http://t.co/Dg8fFK9b82">http://t.co/Dg8fFK9b82</a>{' '}
+    <a href="https://twitter.com/hashtag/iojs?src=hash&amp;ref_src=twsrc%5Etfw">#iojs</a> 1.0.0
+    checklist!
+  </p>
+  &mdash; sylee@g0v.social (@siygle){' '}
+  <a href="https://twitter.com/siygle/status/554651477286088705?ref_src=twsrc%5Etfw">
+    January 12, 2015
+  </a>
+</blockquote> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+
+終於快到了 1/13 這個 **io.js 1.0.0** 預定問世的日子，相當期待第一個問世的版本到底會是怎樣（其實就是原本的 v0.12 阿 XD）
+
+就我個人而言，是蠻希望 [io.js](https://iojs.org/) 會慢慢取代 [node.js](http://nodejs.org/) 成為主流啦，目前 node.js 的發展狀況跟未來走向根本就是一片濛霧，然後加上不斷跳票的新版本，基本上我是已經放棄期待了...0rz
+
+_果然被我說中，io.js 1.0.0 真的比 node.js v0.12 還早出現 XD_
+
+另外一項讓人期待的事。因為 io.js 會採用 v8 3.31.x 的版本，所以會有許多 es6 的功能變成預設（對，連 `--harmony` 都不用了），詳細的部分可以直接參考[這篇](https://github.com/seegno/io.js/wiki/The-state-of-ES6-on-io.js)。
+
+趁這個機會從 joyent 轉出成為真正的開源專案，我想對於未來發展也會比較好的，1/13 的 [TC](https://github.com/iojs/io.js/issues/300) 結束之後應該就會釋出了，開始倒數 24 hr 吧 ;p
+
+---
+
+繼[前篇](http://blog.sylee.dev/io-js-1-0-0/)的預告之後，[io.js](http://iojs.org) 終於正式釋出了!!
+
+<blockquote class="twitter-tweet" lang="en">
+  <p>
+    Time to pick up 1.0.1 : <a href="https://t.co/j03u4csyKb">https://t.co/j03u4csyKb</a> ;)
+  </p>
+  &mdash; IO JS (@official_iojs){' '}
+  <a href="https://twitter.com/official_iojs/status/555277520183230464">January 14, 2015</a>
+</blockquote>
+*立馬就升了兩個 patch 版號 XD*
+<blockquote class="twitter-tweet" data-cards="hidden" lang="en">
+  <p>
+    The changelog for io.js reads like a dream: &#10;
+    <a href="https://t.co/jcEpsg4C6I">https://t.co/jcEpsg4C6I</a>&#10;Thanks{' '}
+    <a href="https://twitter.com/rvagg">@rvagg</a> <a href="https://twitter.com/mikeal">@mikeal</a>{' '}
+    <a href="https://twitter.com/indutny">@indutny</a>{' '}
+    <a href="https://twitter.com/domenic">@domenic</a>{' '}
+    <a href="https://twitter.com/piscisaureus">@piscisaureus</a>{' '}
+    <a href="https://twitter.com/bnoordhuis">@bnoordhuis</a> !
+  </p>
+  &mdash; Christian Gloddy (@gloddy){' '}
+  <a href="https://twitter.com/gloddy/status/555392325325975553">January 14, 2015</a>
+</blockquote>
+
+還不知道 iojs 是啥以及跟 nodejs 那錯綜複雜的關係，可以再[複習一下](http://blog.risingstack.com/iojs-overview/)。
+
+基本上我比較激進一點，所以已經開始去 nodejs 的行動了 #炸 #各方面
+
+但是個人專案是沒什麼關係，如果是線上系統的話還是不要這麼衝動，不過前文也提過，其實 iojs 就是原本計劃中的 nodejs v0.12，所以如果是純 js 應該不用擔心，不過如果模組有牽涉到 [addon](https://iojs.org/api/addons.html) 的話，可能就要小心一點。
+
+也有人開了個 [issue](https://github.com/iojs/io.js/issues/456) 來追蹤，有用到的開發者可以留意一下
+
+還是順便推一下 [nan](https://github.com/rvagg/nan)，可以幫開發者處理 v8 API 變更所帶來的麻煩。
+
+另外像一些工具類的，只要是目前還是活躍狀態的應該都會陸續加入對 iojs 的支援...
+
+<blockquote class="twitter-tweet" data-conversation="none" data-cards="hidden" lang="en">
+  <p>
+    <a href="http://t.co/apjiDcYF5w">http://t.co/apjiDcYF5w</a> /{' '}
+    <a href="https://twitter.com/official_iojs">@official_iojs</a> update: I&#39;ve got all the
+    functionality done - just one more commit I need to make tests pass on. 🔜!
+  </p>
+  &mdash; Jordan Harband (@ljharb){' '}
+  <a href="https://twitter.com/ljharb/status/555871480362196994">January 15, 2015</a>
+</blockquote>
+
+<blockquote class="twitter-tweet" lang="en">
+  <p>
+    Node-webkit now called nw.js and updated to use io.js{' '}
+    <a href="http://t.co/qGtzNAxUAx">http://t.co/qGtzNAxUAx</a>
+  </p>
+  &mdash; nodejsforums.com (@Nodejsforums){' '}
+  <a href="https://twitter.com/Nodejsforums/status/555709045299249152">January 15, 2015</a>
+</blockquote>
+
+<blockquote class="twitter-tweet" lang="en">
+  <p>
+    <a href="https://twitter.com/hashtag/iojs?src=hash">#iojs</a> on heroku?{' '}
+    <a href="http://t.co/tFvgx6Vuib">pic.twitter.com/tFvgx6Vuib</a>
+  </p>
+  &mdash; Hunter Loftis (@HunterLoftis){' '}
+  <a href="https://twitter.com/HunterLoftis/status/555234067520565249">January 14, 2015</a>
+</blockquote>
+
+列這麼多，只是想鋪梗帶出這個結論...
+
+### 放心用 iojs 吧!!
+
+_因為很重要所以 h3 #誤_

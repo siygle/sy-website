@@ -1,0 +1,32 @@
+---
+title: "New result of npm '--save'"
+date: '2014-02-21'
+tags: ['npm', '2014']
+draft: false
+summary: "節錄自 'npm install --save' No Longer Uses Tildes"
+layout: PostSimple
+---
+
+節錄自 ['npm install --save' No Longer Uses Tildes](http://fredkschott.com/post/2014/02/npm-no-longer-defaults-to-tildes/)
+
+自從 **[1.4.3](https://github.com/npm/npm/releases/tag/v1.4.3)** 版本之後的 npm，有個需要注意的地方是，  
+原本 `--save` 的行為會從 `~` 變成 `^`
+
+當然不是因為看符號不爽然後心血來潮就改了別的 XDD
+
+兩者所代表的意思是不同的
+
+```
+~1.2.3 := >=1.2.3-0 <1.3.0-0 "Reasonably close to 1.2.3"
+^1.2.3 := >=1.2.3-0 <2.0.0-0 "Compatible with 1.2.3"
+```
+
+這樣舉例應該就一目了然了，當然都些都是 `semver` 規範裡面有提到的，看起來好像把原本升 patch 變成 minor 有點恐怖，不過其實感覺像是要大家更加遵循 [semver 原有的定義](http://semver.org/lang/zh-TW/)。
+
+```
+主版號(Major)：當你做了不相容的 API 修改，
+次版號(Minor)：當你做了向下相容的功能性新增，
+修訂號(Patch)：當你做了向下相容的問題修正
+```
+
+照理說，patch 和 minor 都應該是向下相容的，所以不應該升級之後造成任何程式的錯誤，既然現在預設的行為改變也只好認命，大家多寫點測試吧 ;p

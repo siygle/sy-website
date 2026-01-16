@@ -1,0 +1,48 @@
+---
+title: '兜弄 icecast2 的血淚'
+date: '2019-02-01'
+tags: ['broadcast', 'icecast', 'OSS', '2019']
+draft: false
+summary: '就是一串浪費生命的血淚史，給那些可能踏上一樣路途的可憐人XD'
+layout: PostSimple
+---
+
+### tl;dr
+
+只能說是一連串的悲劇!
+
+原本只是一個額外的 sidebar project，需要弄一個簡單的網路電台出來。因為之前完全沒有類似的經驗，所以稍微挖了一下，好像主要是 [SHOUTcast](https://www.shoutcast.com/) 跟 [icecast]（https://icecast.org) 兩個技術可以來處理。
+
+因為 SHOUTcast 是商業軟體，所以就拿了 icecast 來試試，結果就是一連串的慘烈...0rz
+
+但其實一點都不難，經過各種失敗之後發現最簡單的方式就是直接把 docker 跑起來，瞬間完成
+
+```
+// yes, you only need to run this command
+docker run -p 8000:8000 -v /local/path/to/icecast.xml:/etc/icecast2/icecast.xml moul/icecast
+```
+
+[前幾個](https://hub.docker.com/search?q=icecast&type=image)下載數高的應該都可以，但我後來是選了[moul/dicker-icecast](https://github.com/moul/docker-icecast)，只能說因為對這塊不熟悉，太多誤解導致浪費了不少時間...
+
+### 絕對不要用 PaaS 或類似服務（dokku）
+
+嗯，因為自從用了 dokku 之後，很喜歡把小東西都丟上去，但是就因為這個害了我兩天三的時間。把 icecast 跑起來倒不是難事，一開始選擇 docker 就是因為想說可以直上 dokku，一開始也的確如此，但是跑起來之後一直遇到各種奇怪的問題，後來發現慎選工具也是很重要，因為一開始挑了 [LadioCast](http://blog.kawauso.com/ladiocast) 這個 MacOS 的串流軟體，連 icecast 看起來也沒問題，但是一直沒法正常收聽到，直接用瀏覽器開都看到噴 404 error。
+
+後來換了 [Audio Hijack](https://rogueamoeba.com/audiohijack/) 才看到它其實一直連不上 icecast server（Re-trying)，所以沒有明確的錯誤訊息就是這麼讓人無力（自我檢討），不過在這邊要推薦一下 **Audio Hijack** 這款軟體，真的要處理音訊就買它就對啦，真的超方便！
+
+釐清是連線問題之後，才想說那會不會是 server 端的設定問題，開始各樣改 [icecast.xml](https://icecast.org/docs/icecast-2.4.1/config-file.html)，結果又是另一段浪費時間的旅程...，甚至還換了不同版本的 docker images 來測試都無效，甚至還試了放到 [zeit](https://zeit.co) 跟 [heroku](https://heroku.com) 上面來測試也是不行。（因為找到這篇 [Build an Icecast streaming server on Heroku using Docker
+](https://medium.com/@shikendon/build-an-icecast-streaming-server-on-heroku-using-docker-ac3492b554f0)）
+
+去看 log 注意到這個訊息 - **"Disconnecting source due to socket timeout"**，最後終於找到這則 issue - [Heroku doesn't support long-running http requests.](https://github.com/anakaiti/heroku-icecast/issues/1)，才想說是不是原因出在 dokku 前面擋一層 nginx 會不會是同樣的問題，然後就是前文的那一行 docker 指令了...
+
+### **format/format_get_type Unsupported or legacy stream type: "audio/mpeg"**
+
+順帶一提，這個警示也是誤導了我好一陣子，因為 icecast 走開源路線，所以後來的版本決定不支援 mp3。（但注意！這就是被誤導的第一步，它是 [ices](https://icecast.org/ices/)（這是 source client，就是跟上面提到的 LadioCast/Audio Hijack 一樣的東西）不支援，但是 server - icecast 還是支援的，只是它會噴這個訊息跟你說它不是很喜歡這個格式 XD
+
+[救命文 - unsupported or Lagacy stream type](https://icecast.imux.net/viewtopic.php?p=27853&sid=5190797c4be9fdd76be477ef919be662)
+
+> that will be a 2.4.0 xiph release message, because aac/mp3 are non-free codecs then support is not really possible but it can be passed through.
+
+### 結論
+
+_真的不要亂搞，看著人家 README 怎麼作就照做就是 XDD_ #誤

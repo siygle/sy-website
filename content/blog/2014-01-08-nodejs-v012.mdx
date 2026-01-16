@@ -1,0 +1,35 @@
+---
+title: '1.0之前最後一個穩定版 - Node.JS 0.12'
+date: '2014-01-08'
+tags: ['Node.js', '2014']
+draft: false
+summary: '終於可以看到關於下一個穩定版的東西了 ;p'
+layout: PostSimple
+---
+
+終於可以看到關於下一個穩定版的東西了 ;p
+
+其實之前一直有在 0.11 的釋出文中或多或少寫到一些，不過現在透過 core member 做了一次詳細的介紹，可以讓眾多的開發者先了解一下，到底下一個穩定版本中會有哪些新東西。
+
+Bert 在這邊介紹了五項比較重要的功能，依次是 streams3、vm、cluster、execSync 和 profiling。
+
+streams 不是新東西了，不過介面上一直不是很好用，原本 streams2 就是要改善這個問題，不過似乎成效不彰，所以 0.12 又再次做了一次翻修。
+
+老實說我沒怎麼用過 vm，所以算是這次更新才注意到這麼東西（不過[文件](http://nodejs.org/api/vm.html)直接說有很多問題，所以現在應該也不多人用吧 XDD）看起來應該是打算大修。
+
+cluster 的問題則是在 load balance 上面，目前並不是真的平均的灑到每個 worker（這是 linux 本身的機制，系統效率的問題），所以加入了 round-robin 的選項。
+
+execSync，貌似個很違和的東西 XD
+JS 不是就是以異步聞名，結果還要故意來支援同步的寫法。不過 Bert 有提到因為有不少開發者已經不單是把 nodejs 拿來做網路應用的開發，譬如 CLI 的工具之類的，所以有這樣的需求出現。
+
+至於最後的 profiling api，看起來應該是提供 v8 底層的 api，讓開發者可以更方便取得用來調校的資料。這個用另一位核心開發者的推作為結論 ;p
+
+<blockquote class="twitter-tweet" lang="en">
+  <p>
+    First AsyncListeners, and now wrapping up Event Observers. Don&#39;t want to hear from anyone
+    that Node isn&#39;t transparent or is hard to debug.
+  </p>
+  &mdash; Trevor Norris (@trevnorris){' '}
+  <a href="https://twitter.com/trevnorris/statuses/418959367312916480">January 3, 2014</a>
+</blockquote>
+<script async src="//platform.twitter.com/widgets.js" charset="utf-8"></script>

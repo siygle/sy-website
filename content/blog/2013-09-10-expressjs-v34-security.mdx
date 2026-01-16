@@ -1,0 +1,53 @@
+---
+title: Security Issue in express.js
+date: '2013-09-10'
+tags: ['Node.js', 'Security', '2013']
+draft: false
+summary: 'Do Not Use bodyParser with Express.js，有在使用 expressjs 要注意一下'
+layout: PostSimple
+---
+
+### [Do Not Use bodyParser with Express.js](http://andrewkelley.me/post/do-not-use-bodyparser-with-express-js.html)
+
+有在使用[express](http://expressjs.com/)要注意一下
+
+這個安全性的問題是幾天前有使用者發現回報的，詳細的內容可以看一下上面那篇文章。主要是 express 中所提供的[bodyParser](http://expressjs.com/api.html#bodyParser)的方法，會處理使用者傳入的資料（json, url or file）然後主要就是上傳檔案這部份產生的問題(express.multipart)，因為它會在`/tmp`下面產生一個暫存檔，但是卻沒有回收，所以有心人可以用這種方式灌爆你的伺服器。
+
+### What should I do?
+
+最好的方式是**趕快把 express 升到最新版** ;p
+TJ 已經在[3.4.0](https://github.com/visionmedia/express#340--2013-09-07-)的版本中修正這個問題了 ~
+
+主要是把原本的[formidable](https://github.com/felixge/node-formidable)抽換成[multiparty](https://github.com/superjoe30/node-multiparty)
+
+<blockquote class="twitter-tweet">
+  <p>
+    “Express 3.4.0 and Connect 2.9.0 have made some small changes to bodyParser()”&#10;&#10;
+    <a href="http://t.co/lj7Z9xMbxs">http://t.co/lj7Z9xMbxs</a>
+  </p>
+  &mdash; Joe McCann (@joemccann){' '}
+  <a href="https://twitter.com/joemccann/statuses/376681284976017408">September 8, 2013</a>
+</blockquote>
+<script async src="//platform.twitter.com/widgets.js" charset="utf-8"></script>
+
+如果你沒辦法升級的話，有用到`express.bodyParser()` or `express.multipart()`請記得手動處理一下生成的暫存檔（不過如果程式太大的話不建議這麼做，因為你得處理每個 POST 的 Request，極髒...0rz
+
+其實 bodyParser 就是跑`json()`、`urlencoded()`和`multipart()`，所以如果你壓根就不需要處理檔案的問題，就不要用 bodyParser 多此一舉
+
+### 後話
+
+其實處理的過程中有發生一點意外的事件，大概是有使用者用了比較激烈的語氣回覆，所以變成大家火氣都上來了，看起來 TJ 也被影響到，所以發了一則推
+
+<blockquote class="twitter-tweet">
+  <p>
+    thousands of hours of free code, and what do you get, rage when you make a mistake. a career in
+    photography sounds a lot more appealing
+  </p>
+  &mdash; TJ Holowaychuk (@tjholowaychuk){' '}
+  <a href="https://twitter.com/tjholowaychuk/statuses/376432117548216320">September 7, 2013</a>
+</blockquote>
+<script async src="//platform.twitter.com/widgets.js" charset="utf-8"></script>
+
+有時候問題發生大家總是會比較浮躁，不過對於開源專案大家也要多一分體諒，畢竟不是每位開發者都閒閒沒事，尤其像 TJ 這樣
+大產量的貢獻者，光是處理使用者回報的問題都不知道要花多少時間了。在 Issue 上多列一些詳細的資訊、甚至送 PR、上討論區開個主題提醒一下，應該都是不錯的作法。多些體諒、在自己能力範圍內也多貢獻一點自己的力量，這不就是開源社群運作的模式
+嗎 ;p

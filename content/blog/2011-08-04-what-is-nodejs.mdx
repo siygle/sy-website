@@ -1,0 +1,28 @@
+---
+title: 'What is Node.js?'
+date: '2011-08-04'
+tags: ['Node.js', 'tech']
+draft: false
+summary: '如果在一年前說起[Node.JS](http://nodejs.org/)可能知道的人並不多，不過隨著近期爆發性的成長，所有與Web Develop 相關的人都應該好好研究一下這個東西'
+layout: PostSimple
+---
+
+如果在一年前說起Node.JS可能知道的人並不多，不過隨著近期爆發性的成長，所有與Web Develop>相關的人都應該好好研究一下這個東西（至少也應該要拿來把玩一下 :p）
+
+![nodejs](https://nodejs.org/static/images/logo.svg)
+
+老實說，剛接觸到這個專案的時候，其實我第一個直覺是覺得應該又是哪個JS狂人所想出來的專案，硬是要用javascript來寫server-side program，不過後來才知道自己實在想的太淺了...0rz
+
+雖然打著JS的語法來撰寫後端看起來像是一種噱頭，不過請不要把Node.js誤認成我們一般熟知，運行在瀏覽器上的js，雖然語法相同，但是要處理的問題卻是完全不一樣。Node.js的目標是希望提供開發者一個高效開發網路應用程式，當然大家都知道，JS並不是一種設計來處理這類問題的語言，不過一來JS的使用上比較簡單（至少比起直接寫C來說 XD），另外JS event-based的特性剛好可以用來更有效率地處理高流量的網路服務。透過V8 Javascript Engine與底層的C library結合。
+
+**Node.js is not javascript, it's C**  
+不免俗的再次強調一下，不要把Node.js當成是javascript，它其實是C。
+
+透過這樣的結合，讓Node.JS對於處理RealTime || High-load的情況，無論是資源使用以及效率上都來個比以往的[傳統方式好上許多](http://zgadzaj.com/benchmarking-nodejs-basic-performance-tests-against-apache-php)。不過也因為如此，程式的邏輯與以往我們比較熟悉的序列式處理可能會有所差別，而且因為非同步的IO，資料的處理上也會有所不同。
+
+雖然Node.js誕生的時間相當短，不過發展的速度卻很驚人，而且開發上又是採用js，應該許多開發者都可以輕鬆上手。 直接搜尋一下也都可以找到一大堆的強者介紹文 :p
+
+#### Reference
+
+* [What is Node.js?](http://radar.oreilly.com/2011/07/what-is-node.html)
+* [Learning Server-Side JavaScript with Node.js](http://net.tutsplus.com/tutorials/javascript-ajax/learning-serverside-javascript-with-Node-js/)

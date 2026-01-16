@@ -59,6 +59,8 @@ export default defineConfig({
       pages: [{ path: "/" }, { path: "/blog" }, ...blogPages, ...paginationPages],
     }),
     viteReact(),
-    nitro(),
+    nitro({
+      serverDir: "server",
+    }),
   ],
 });

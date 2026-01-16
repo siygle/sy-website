@@ -3,8 +3,8 @@
   "version": "1.0.0",
   "type": "module",
   "scripts": {
-    "dev": "vite dev",
-    "build": "vite build && node scripts/generate-feed.js",
+    "dev": "node scripts/generate-feed.js && vite dev",
+    "build": "node scripts/generate-feed.js && vite build",
     "preview": "vite preview"
   },
   "dependencies": {

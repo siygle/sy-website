@@ -103,11 +103,7 @@ ${items}
 const posts = getAllPosts()
 const rss = generateRssFeed(posts, SITE_URL)
 
-// Write to output directory
-const outputDir = path.join(process.cwd(), '.output/public')
-if (!fs.existsSync(outputDir)) {
-  fs.mkdirSync(outputDir, { recursive: true })
-}
-
-fs.writeFileSync(path.join(outputDir, 'feed'), rss)
-console.log('Generated RSS feed at .output/public/feed')
+// Write to public directory (will be copied to .output/public during build)
+const publicDir = path.join(process.cwd(), 'public')
+fs.writeFileSync(path.join(publicDir, 'feed'), rss)
+console.log('Generated RSS feed at public/feed')

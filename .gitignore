@@ -142,3 +142,6 @@ vite.config.ts.timestamp-*
 
 # Generated RSS feed
 public/feed
+
+# Astro
+.astro/

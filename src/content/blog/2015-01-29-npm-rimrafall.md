@@ -1,0 +1,26 @@
+---
+title: 'npm 的安全性 - rimrafall'
+date: '2015-01-29'
+tags: ['npm', 'Security', 'Node.js', '2015']
+draft: false
+summary: '應該算是幾天前發生的小插曲，應該是從這邊出來的 - Npm install could be dangerous'
+---
+
+應該算是幾天前發生的小插曲，應該是從這邊出來的 - [Npm install could be dangerous](https://news.ycombinator.com/item?id=8947493)
+
+應該是有人為了強調 npm 有潛在的危險，所以特別做一個叫 [**rimrafall**](https://github.com/joaojeronimo/rimrafall) 的套件，然後它會在你安裝之後把你的資料砍光...0rz
+
+其實也沒什麼，就是利用 [npm script](https://docs.npmjs.com/misc/scripts) 加上可能取得的 sudo 達到的。雖然可能出發點是善意的，不過似乎有引來一點小小的戰火 XDD（有興趣可以去追一下下推的後續），其實下面留言也都有提到這幾乎是所有 package manager 都存在的問題。
+
+<blockquote class="twitter-tweet" lang="en">
+  <p>
+    `rimrafall` has been taken off the <a href="https://twitter.com/npmjs">@npmjs</a> registry.
+    Thanks to all who let us know about it.
+  </p>
+  &mdash; Forrest L Norvell (@othiym23){' '}
+  <a href="https://twitter.com/othiym23/status/559759478774439936">January 26, 2015</a>
+</blockquote>
+
+不過對於有海量套件的 npm 來說，開發者自己真的是要稍微注意，畢竟你不知道會不會真的有黑心人出沒，尤其一些少數或較敏感用途的套件。
+
+之前也提過，其實有個組織有在協助檢查 npm 上面的套件 - [nodesecurity](https://nodesecurity.io/)，它們也特別針對安全性有推出不少工具，有興趣的都可以直接去[看一下](https://github.com/nodesecurity)。像這個 [nsp](https://github.com/nodesecurity/nsp) 就是其中之一，一個簡單的 CLI 可以幫你檢查使用的套件中是不是有安全性問題的。

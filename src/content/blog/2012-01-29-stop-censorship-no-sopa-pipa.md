@@ -1,0 +1,35 @@
+---
+title: 'STOP CENSORSHIP!! AGAINST SOPA/PIPA'
+date: '2012-01-29'
+tags: ['CENSORSHIP', '2012', 'chat']
+draft: false
+summary: 'STOP CENSORSHIP!! AGAINST SOPA/PIPA'
+---
+
+從[MU 拉響第一聲響炮](http://www.pcmag.com/article2/0,2817,2399105,00.asp)之後，所有網路空間提供商莫不顫慄，不過說不定這只是剛開始而已 ...
+
+對於這一切完全沒有概念的可以參考一下這段影片
+
+<iframe
+  title="vimeo-player"
+  src="https://player.vimeo.com/video/31100268?h=910721db4b"
+  width="640"
+  height="360"
+  frameborder="0"
+  allowfullscreen
+></iframe>
+
+**SOPA/PIPA**
+
+或許你會覺得奇怪，不是身在美國的我們為什麼要在意這個可能跟我們八竿子打不著的美國法案。不過如果你知道 Megaupload 的情況的話也許你會多想一下，一間註冊在香港的公司，一位身為德國人住在紐西蘭的創辦人，卻因為違反美國（聲稱）侵犯著作權－網站被阻絕、成員被扣押（好威的世界政府阿...
+無誤）
+
+或許你壓根沒在用這類型的服務，不過[SOPA](http://en.wikipedia.org/wiki/Stop_Online_Piracy_Act:)/[PIPA](http://en.wikipedia.org/wiki/PROTECT_IP_Act)會影響的範疇可能遠大於你所認知的...知名的 Wikipedia 在前一陣子將網站關閉以抗議 SOPA/PIPA，或許你也因此受到影響（我可能無法想像失
+去 wikipedia 的生活 XD），不過這就是 SOPA/PIPA 的威力－任何網站都可能因為被控違反 SOPA/PIPA 而隨時可能被阻絕(誰認定何為違法? Who knows ~)
+
+為了避免侵權，網路服務提供者就得開始偵測用戶的使用行為，所以之後你在網路上的一舉一動都將被監控（而且這個行為是被法律所允許的），這還只是其中一部分而已...[詳細可以參考 wikipedia](http://zh.wikipedia.org/wiki/Wikipedia:%E9%97%9C%E6%96%BC%E7%B6%AD%E5%9F%BA%E5%AA%92%E9%AB%94%E6%8A%97%E8%AD%B0SOPA%E7%9A%84%E8%A1%8C%E5%8B%95/FAQ)
+
+雖然本站沒什麼影響力，不過掛掛黑旗＆發個抗議文還是可以的，網路上的自由需要靠每一位使用者來爭取  
+戰吧！各位...（我是指「站起來吧，為自己的權益挺身而出」...XD）
+
+## **STOP CENSORSHIP**

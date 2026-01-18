@@ -1,0 +1,93 @@
+---
+title: GoogleIO 2013 - Advanced HTML5
+date: '2013-05-24'
+tags: ['GoogleIO', 'HTML', '2013']
+draft: false
+summary: '每年的 Google IO 已經成了個人最期待的一件事，雖然大概沒什麼機會到現場去拿禮物（這是重點嗎XD），不過聽聽G社一年來的火力展現順便聽一下有趣的議程就實在值回票價了'
+---
+
+每年的[Google IO](https://developers.google.com/events/io/)已經成了個人最期待的一件事，雖然大概沒什麼機會到現場去拿禮物（這是重點嗎 XD），不過聽聽 G 社一年來的火力展現順便聽一下有趣的議程就實在值回票價了。不過因為太多議程加上個人執行力不足，所以要把有興趣的聽完大概需要好幾個月的時間，所以就慢慢來順便作個筆記，把一些有趣的部份記錄下來 ;p
+
+**Android** & **Chrome**向來就是 IO 上的大宗，不過因為我比較少接觸 Android 的部份（絕對不是討厭 Java 的原因（炸）），所以就把 chrome 當做是開場吧，不過其實 chrome 內容眾多，所以打算稍微歸納一下，會把相關的主題放在一起，就看到哪邊寫到哪邊吧。這篇的主軸先放在新網頁技術的部分。
+
+html5 應該已經不算是一個新的話題了，大家也知道其實他不是單指 html，而是新一代的 html、JS、CSS 規範，所以雖然是老梗，
+不過新的規範仍然持續被提出、實作中。這也是我很喜歡看看這方面話題的關係，一直可以看到有趣的東西冒出來 ;p
+
+_題外話，真的也是因為 Mozilla & Google 兩者在這方面持續投入資源，也在自己的平台上帶頭實作，才讓 html5 可以有這麼顯著的進展（要感謝一下衣食父母（誰阿 XD），喔對了，Adobe 也是大力推廣者之一（對，你沒有看錯 XD）_
+
+### **[A More Awesome Web](https://developers.google.com/events/io/sessions/324706714)** [[Slide]](http://www.moreawesomeweb.com)
+
+<iframe
+  width="560"
+  height="315"
+  src="https://www.youtube.com/embed/N_wTBKMuJis"
+  title="YouTube video player"
+  frameborder="0"
+  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+  allowfullscreen
+></iframe>
+
+這個議程真的要大推一下，內容主要是快速導覽過目前發展中的新規範
+![html5](https://i.imgur.com/zQV6rHL.png)
+諸如 CSS3, Web Components, WebRTC, Web Audio, JS i18n 等等。不一一列出了，直接去看一下吧。不過額外一提，看到太炫的功能也不要太興奮，因為裡面多數功能支援度普遍不高，所以當做先看看有趣的東西吧，除非你不打算考慮 chrome 之外的其他平台了 XD
+
+對於新規範實作的狀態，有興趣也可以到[Chromestatus](http://www.chromestatus.com/features)看看。
+
+### **[Web Components](https://developers.google.com/events/io/sessions/318907648)** [[Slide]](http://www.webcomponentsshift.com/)
+
+<iframe
+  width="560"
+  height="315"
+  src="https://www.youtube.com/embed/fqULJBBEVQE"
+  title="YouTube video player"
+  frameborder="0"
+  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+  allowfullscreen
+></iframe>
+
+延續前個議程也有提到的[Web Components](https://dvcs.w3.org/hg/webcomponents)，作更深入的介紹，主要可以分為下列四個項目：
+![WebComponents](https://i.imgur.com/ec4g1DH.png)
+
+詳細的內容請撥時間聽一下議程或直接去看[w3c](http://www.w3.org/TR/components-intro/)，稍微提一下各自的功能。
+
+- [Shadow DOM](https://dvcs.w3.org/hg/webcomponents/raw-file/tip/spec/shadow/index.html) - 可以把網頁元件作封裝，讓彼此之間不會互相影響。
+- [Templates](https://dvcs.w3.org/hg/webcomponents/raw-file/tip/spec/templates/index.html) - 模組化（也可以看一下[html5rocks 的介紹](http://www.html5rocks.com/en/tutorials/webcomponents/template/)）
+- [Custom Elements](https://dvcs.w3.org/hg/webcomponents/raw-file/tip/spec/custom/index.html) - 定制元素，可以自行定義 html 標籤。
+- [HTML Imports](https://dvcs.w3.org/hg/webcomponents/raw-file/tip/spec/imports/index.html) - 這應該很明顯了吧，
+  就是可以匯入外部 html 來使用。
+
+綜合運用，可以看一下這場議程的作者自己做的[範例](http://html5-demos.appspot.com/static/webcomponents/demos/components/my-components/gangnam.html)（相當惡搞 XD）
+
+### **[Web Components in Action](https://developers.google.com/events/io/sessions/324149970)**
+
+<iframe
+  width="560"
+  height="315"
+  src="https://www.youtube.com/embed/0g0oOOT86NY"
+  title="YouTube video player"
+  frameborder="0"
+  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+  allowfullscreen
+></iframe>
+
+同場加映，接續前面提到的 Web Components，假如看了之後心動想實作看看，到底該怎麼下手會比較好呢？這場議程就介紹了 Google 所進行的另一個專案 - **[Ploymer](http://www.polymer-project.org/)**。
+
+> Polymer is a new type of library for the web, built on top of Web Components, and designed to leverage the evol
+> ving web platform on modern browsers.
+
+簡單的說，Ploymer 就是基於 Web Component 上實作出來的，個人不負責任猜測之後可能會往開發框架走，跟 AngularJS 整合以及提供類似 Bootstrap 的元件庫，不過現在剛出來而已，過一陣子之後再看看吧！總之，目前先把它看成是（部分）Web Components polyfill 就好。
+
+其實除了 Google 之外，Mozilla 也有類似的專案出來 - [x-tags](http://www.x-tags.org/) & [說明](http://mozilla.com.cn/post/51451/)，所以應該至少可以期待 firefox & chrome 應該都會持續增加對 Web Components 的支援（不過除了這兩間之外，還有其他的嗎 XD）
+
+簡單地下個結論（超懶!!!）
+
+<blockquote class="twitter-tweet">
+  <p>
+    Google Believes Web Components Are The Future Of Web Development{' '}
+    <a href="http://t.co/MqLaHrBwtG">http://t.co/MqLaHrBwtG</a> by{' '}
+    <a href="https://twitter.com/fredericl">@fredericl</a>
+  </p>
+  &mdash; TechCrunch (@TechCrunch){' '}
+  <a href="https://twitter.com/TechCrunch/statuses/336256722991726592">May 19, 2013</a>
+</blockquote>
+<script async src="//platform.twitter.com/widgets.js" charset="utf-8"></script>

@@ -1,0 +1,29 @@
+---
+title: 'Messagepack - Better Than JSON?'
+date: '2011-05-28'
+tags: ['messagepack', 'tech']
+draft: false
+summary: 'Extremely efficient object serialization library for cross-language communication.'
+---
+
+WWW 的蓬勃發展，也隨之出現五花八門、各式各樣的應用。雖然各家的技術可能都不盡相同，不過基本上只要能 follow 一些早已成為「潛規則」的公認協定的話，基本上是不會有太大問題的，大家都可以自己搞自己的一樣可以互相溝通。就如 XML 幾乎已經是公認的訊息交換標準了。
+
+不過 XML 的清楚＆詳細的定義及結構也同樣是個雙面刃。當然我覺得這個跟需求和使用的環境有點關連。不過如果以目前常見的 Web 2.0（現在也不知道跳到幾點幾了 XD，還是維持原樣吧）來說，你可能根本不需要這麼詳細去定義 API Service，而且越複雜結構當然就等於較不好的效能。
+
+正因為如此，應該不難注意到，有不少新興的網路服務已經不再以 XML 當做預設的資料交換格式，取而代之的是 JSON
+
+有關 XML 與 JSON[孰優](http://blog.jclark.com/2010/11/xml-vs-web_24.html)[孰劣](http://www.readwriteweb.com/hack/2010/11/json-vs-xml.php)，這個直接用兩者當成關鍵字去搜尋你應該可以輕鬆找到許多文章，所以我也不多提這部份了（其實是因為我也說不出什麼中肯的評論...（倒））。不過像[twitter](https://groups.google.com/forum/#!topic/twitter-development-talk/aVncSX5NxUY)、[Foursquare](http://blog.programmableweb.com/2010/12/09/foursquare-api-v2-is-public-v1-deprecated/)等都已經不再支援 XML 而改為 JSON，至少在規格相對簡單的網路服務而言，JSON 的輕量化設計似乎更方便一些。
+
+不過 JSON 也不是我要說的東西（扯這麼多還沒進主題...毆飛）
+
+在例行性的亂逛的時候不小心看到[這篇文章](http://blog.andrewvc.com/why-arent-you-using-messagepack)，因為標題太聳動所以就點進去看了 XD
+
+> Extremely efficient object serialization library for cross-language communication. It's like JSON, but very fast and small.
+
+老實說，在還沒搞清楚到底 MessagePack 是啥之前就硬要拉 JSON 出來實在有點詐 :p
+
+其實這東西應該跟[Thrift](http://thrift.apache.org/)、[Protocol Buffers](http://code.google.com/p/protobuf/)比較接近，雖然以上這些的最終目的應該都是一樣的－訊息交換！
+
+不過我覺得拿 binary-data 跟 JSON 比實在不太公平 XD
+
+看得出來 MessagePack 主打的就是－跨語言、更小、更快，目前我並不覺得它可以取代 JSON（應該作者也沒這麼想）， 不過如果用在 internal message exchange，相信應該可以看到不錯的成效 :p

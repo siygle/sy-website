@@ -1,0 +1,48 @@
+---
+title: 'Node.js 的分支版本 io.js'
+date: '2014-12-05'
+tags: ['Node.js', 'io.js', '2014']
+draft: false
+summary: '其實剛看到這個消息的時候有種很複雜的感覺 XD'
+---
+
+其實剛看到這個消息的時候有種很複雜的感覺 XD
+
+<script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+
+<blockquote class="twitter-tweet">
+  <p lang="en" dir="ltr">
+    Get excited about{' '}
+    <a href="https://twitter.com/hashtag/iojs?src=hash&amp;ref_src=twsrc%5Etfw">#iojs</a> - Frequent
+    releases- Quick adoption of new v8 releases. Read -{' '}
+    <a href="https://t.co/QNPgKiUVsM">https://t.co/QNPgKiUVsM</a>-{' '}
+    <a href="https://t.co/U6wrM1SnKP">https://t.co/U6wrM1SnKP</a>
+  </p>
+  &mdash; Node.js Security (@nodesecurity){' '}
+  <a href="https://twitter.com/nodesecurity/status/540320218271076352?ref_src=twsrc%5Etfw">
+    December 4, 2014
+  </a>
+</blockquote>
+
+上推兩個連結稍微看一下就可以了解大概，其實已經是幾天前的事了，稍微在這邊作個筆記，說不定未來回過頭來看是值得紀念的一件事 #誤
+
+如果平常有在跟 nodejs issue，應該早早就已經嗅到端倪了，現在只算是正式宣佈而已。基本上 **io.js == nodejs v0.12** 是不會錯，所以短時間應該不會出現什麼相容性的問題，不過未來到底會怎樣就很難說了，畢竟會分支就是因為理念上不合嘛...
+
+[Q&A: Why io.js decided to fork Node.js](http://www.infoworld.com/article/2855057/application-development/why-iojs-decided-to-fork-nodejs.html)  
+[StrongLoop’s Position on io.js](http://strongloop.com/strongblog/position-on-io-js/)
+
+至於到底為什麼會分支出 **[io.js](https://github.com/iojs/io.js)**，我猜根本原因跟遲遲不出現的 v0.12 有點關係，至於有關 v0.12 的八卦，既然你都看到這篇文章了，之前寫的抱怨文應該也有瞄到幾眼才對，在這邊就不多說了 XDD
+
+反正就是[第三代](http://blog.nodejs.org/2014/01/15/the-next-phase-of-node-js/)上任之後，個人覺得有點走向封閉保守路線（個人觀察意見，沒有批評的意思）
+
+1. 除了 [Github Issue](https://github.com/joyent/node/issues) 之外幾乎沒有其他跟社群比較好的互動（Google Group 就算了吧，我沒上 IRC 所以不確定那邊的情況）
+2. 然後版本更新速度極慢（或許覺得 v0.12 是重大更新不能太草率，可是應該還是可以動 v.11 吧，一整年沒升到一個大版號，這樣好嗎!?）
+3. 然後 core team 好像也有進行大換血？ #有卦
+
+所以今天出現 **[io.js](http://iojs.org)** 完全不意外啊，看一下專案目標就可以看出來了 XDD
+
+> taking new v8 releases as fast as possible
+
+> Trying to get to a weekly release cycle.
+
+iojs 成員大部份都是 前/現任 Node.js 的核心成員，不少也都兩邊會持續進行開發，所以真的影響不大，除非未來兩邊的成員跟專案走向都切開的話，到時候再擔心吧。

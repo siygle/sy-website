@@ -1,0 +1,42 @@
+---
+title: 'npm - Manage Your Node Packages'
+date: '2011-08-15'
+tags: ['npm','Node.js']
+draft: false
+summary: '早在 Node.js 出來沒多久，相對應的套件管理也隨著出現了'
+---
+
+伴隨着Node.js的火紅，許許多多我們想不到的應用也紛紛出爐，如何能夠有效的管理這些套件就是一件很麻煩的事，更不用多隨之而來的套件相依性（packages dependency）的問題，不過node的社群中也早早就想到這個問題了，所以早在node.js出來沒多久，相對應的套件管理也隨著出現了，就是本篇要提的－**[npm](http://npmjs.org)**
+
+就跟各大語言中的套件管理一樣，pear|pecl之於PHP、gem之於Ruby、或是pip之於python，其實都是做相同的事。
+
+所以請直接下`man npm`就可以了，收工（你可以再懶一點...）
+
+其他就直接看man || npm help，用法上其實也跟一般套件管理差不多，不過npm也是有多一些額外的新功能（其實我也不知道能不能算「額外」，因為我對其他的都不熟 XD）
+
+### [global vs local](http://blog.nodejs.org/2011/03/23/npm-1-0-global-vs-local-installation/)
+
+自從npm上到1.0之後，對於套件相依的部份有做出一些改變，就是導入了Global & Local的概念。其實也不是多複雜的架構，只是單純把安裝的套件區分為：
+
+* Global-NodeJS安裝路徑下的/lib/node_modules
+* local-專案目錄下的node_modules
+
+我們知道當使用的套件越多，就越有可能發生衝突，管理上也會複雜很多，安裝到local的位置，你就不需要擔心不同套件之間共用套件的衝突（因為都是自己獨立擁有一份），不過你可能會問，這樣不是會多佔用多餘的空間嗎？沒錯，不過基本上你會在意這個嗎 XD
+
+使用方法也相當簡單，就是在自己的開發目錄下放一份定義檔就可以了package.json，這部份可以參考一下`npm help json & npm help developers`
+
+如果想參考實際的範例的話，也可以直接下`npm info PKG_NAME`，找個有名的專案看看它是怎麼設定的。npm本身有內建許多方便的command可以使用，如果你想跑一個最基本的設定檔的話，就用npm init然後照着填就可以了 :p
+
+此外，npm也可以支援scripts的使用，譬如說如果你想要安裝之後把services跑起來，就可以利用這個方式：
+``` js
+{
+  "scripts":{
+    "start":"server.js"
+  }
+}
+```
+這樣npm安裝好套件之後，就會自動執行server.js，還有許多支援許多行為，可以參考`npm help scripts`
+
+當然，你也可以透過npm把自己的套件分享出去－`npm help publish`
+
+直接試著去寫一個簡單的範例吧 :p

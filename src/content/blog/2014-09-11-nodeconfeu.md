@@ -1,0 +1,81 @@
+---
+title: '[整理] - NodeConf EU 2014'
+date: '2014-09-11'
+tags: ['News', 'Node.js', '2014']
+draft: false
+summary: '不知何年何月才能達成去國外參加 nodeconf 的心願（希望有哪位善心人士可以出錢讓我去
+  #誤），不過整理一下相關的資料還是可以順手做到的，讓也無法親臨現場的各位可以快速了解一下今年的議程有多嗨 ;p'
+---
+
+不知何年何月才能達成去國外參加 **nodeconf** 的心願（希望有哪位善心人士可以出錢讓我去 #誤），不過整理一下相關的資料還是可以順手做到的，讓也無法親臨現場的各位可以快速了解一下今年的議程有多嗨 ;p
+
+ps:  
+特別要感謝一下 [@yosuke_furukawa](https://twitter.com/yosuke_furukawa)，更新了許多現場的資料，Thanks a lot!!
+
+pps:  
+只列出目前有放出來的部分，應該還缺了不少，也可以期待會不會有議程錄影放出來，往後有看到再補上。
+
+### Agenda & Speakers
+
+[nodeconfeu 2014](http://nodeconfeu.com/)
+
+### Slides
+
+- [9 anti-patterns for node.js teams](http://www.slideshare.net/jeharrell/9-antipatterns-for-nodejs-teams) by [@juxtajeff](https://twitter.com/juxtajeff)
+- [Back to the Front UI](https://www.dropbox.com/sh/9ra61cq9qgpxyx0/AACXumrkWesFs7jrhI4uUEula/slides.pdf) by [@davidmarkclem](https://twitter.com/davidmarkclem)
+- [Micro Service Composition](https://medium.com/@clifcunn/nodeconf-eu-29dd3ed500ec) by [@clifcunn](https://twitter.com/clifcunn)
+- [Building high quality services at Uber](http://raynos.github.io/nodeconfeu2014-talk) by [@Raynos](https://twitter.com/Raynos)
+- [Demystifying v8 and
+  JavaScript Performance](http://thlorenz.github.io/talks/demystifying-v8/talk.pdf)
+- [Full-Stack Through Microservices](http://mcollina.github.io/nodeconfeu-2014-full-stack-through-microservices/) by [@matteocollina](https://twitter.com/matteocollina)
+- [Node and Micro-Services at IBM](http://www.slideshare.net/dejanglozic/node-and-microservices-at-ibm) by [@dglozic](https://twitter.com/dglozic)
+- [Scaling AB Testing on Netflix.com with Node.js](http://www.slideshare.net/AlexLiu24/nodeconfeu-2014-scaling-ab-testing-on-netflixcom-with-nodejs) by [@stinkydofu](https://twitter.com/stinkydofu)
+- [Mad Science Inventory](https://github.com/substack/nodeconf.eu-2014) by [@substack](https://github.com/substack)
+- [RELATIVISTIC REPLICATION](https://mikolalysenko.github.io/nodeconfeu2014-slides/index.html) by [@mikolalysenko](http://twitter.com/mikolalysenko)
+- [Do NodeBots Dream with Electric Paint?](https://speakerdeck.com/rockbot/do-nodebots-dream-with-electric-paint) by [@rockbot](https://twitter.com/rockbot)
+- [TLS](https://nodeconf.indutny.com) by [@indutny](https://twitter.com/indutny)
+- [The Real World - Plugging the Enterprise Into It](http://www.slideshare.net/akohli/akohli-nodeconfeupublish) by [@akohli](https://twitter.com/akohli)
+
+### Photo
+
+<script async src="//platform.twitter.com/widgets.js" charset="utf-8"></script>
+
+<blockquote class="twitter-tweet" lang="en">
+  <p>
+    This morning shots of <a href="https://twitter.com/hashtag/nodeconfeu?src=hash">#nodeconfeu</a>{' '}
+    are up --&gt; <a href="http://t.co/vqKSnGhB4q">http://t.co/vqKSnGhB4q</a>
+  </p>
+  &mdash; luisfaustino (@luisfaustino){' '}
+  <a href="https://twitter.com/luisfaustino/status/508947962400358400">September 8, 2014</a>
+</blockquote>
+
+<blockquote class="twitter-tweet" lang="en">
+  <p>
+    Js cake at <a href="https://twitter.com/nodeconfeu">@nodeconfeu</a> with{' '}
+    <a href="https://twitter.com/ahollinshead">@ahollinshead</a> and{' '}
+    <a href="https://twitter.com/dberesford">@dberesford</a>{' '}
+    <a href="http://t.co/9e97wXvP8G">pic.twitter.com/9e97wXvP8G</a>
+  </p>
+  &mdash; akohli (@akohli){' '}
+  <a href="https://twitter.com/akohli/status/508920009452965888">September 8, 2014</a>
+</blockquote>
+
+<iframe
+  width="560"
+  height="315"
+  src="https://www.youtube.com/embed/ZeqtV1rkW74"
+  title="YouTube video player"
+  frameborder="0"
+  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+  allowfullscreen
+></iframe>
+
+<iframe
+  width="560"
+  height="315"
+  src="https://www.youtube.com/embed/lYbrC8Z03co"
+  title="YouTube video player"
+  frameborder="0"
+  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+  allowfullscreen
+></iframe>

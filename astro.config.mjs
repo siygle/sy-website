@@ -8,7 +8,7 @@ import rehypeHighlight from 'rehype-highlight';
 import { remarkSocialEmbed } from './src/lib/remark-social-embed';
 
 export default defineConfig({
-  site: 'https://sylee.cc',
+  site: 'https://sylee.dev',
   adapter: cloudflare({
     imageService: 'passthrough',
   }),

@@ -1,0 +1,87 @@
+---
+import { getCollection } from 'astro:content';
+import BaseLayout from '~/layouts/BaseLayout.astro';
+import SocialLinks from '~/components/SocialLinks.astro';
+
+const allPosts = await getCollection('blog', ({ data }) => !data.draft);
+const sortedPosts = allPosts.sort(
+  (a, b) => new Date(b.data.date).getTime() - new Date(a.data.date).getTime()
+);
+const latestPosts = sortedPosts.slice(0, 3);
+
+function formatDate(dateString: string): string {
+  const date = new Date(dateString);
+  return date.toLocaleDateString('en-US', {
+    year: 'numeric',
+    month: 'short',
+    day: 'numeric',
+  });
+}
+---
+
+<BaseLayout
+  title="Sy Lee - Software Engineer"
+  description="Personal website of a software engineer from Taiwan who is passionate about web development"
+>
+  <div class="max-w-2xl lg:max-w-5xl mx-auto px-5">
+    <!-- Hero Section -->
+    <section class="mt-16 sm:mt-32 mb-16">
+      <div class="flex flex-col items-start">
+        <img
+          src="/avatar.jpg"
+          alt="Avatar"
+          class="w-20 h-20 rounded-full mb-8"
+        />
+        <h1 class="text-4xl sm:text-5xl font-mono font-bold text-gray-900 mb-6">
+          My Style, My way, My blog
+        </h1>
+        <p class="text-lg text-gray-600 mb-4 max-w-2xl">
+          I'm <span class="text-gray-900 font-medium">SY</span>, a software
+          engineer from Taiwan who is passionate about web development. I love
+          writing code and staying up-to-date with the <a
+            href="https://chat.sylee.dev/"
+            class="underline">latest web trends</a
+          >.
+        </p>
+        <SocialLinks />
+      </div>
+    </section>
+
+    <!-- Latest Posts Section -->
+    <section class="mb-16">
+      <h2 class="text-2xl font-bold text-gray-900 mb-8">Latest Posts</h2>
+      <div class="space-y-6">
+        {
+          latestPosts.map((post) => (
+            <a href={`/blog/${post.slug}`} class="block group">
+              <article class="py-4 border-b border-gray-200">
+                <div class="flex flex-col sm:flex-row sm:items-baseline sm:justify-between gap-2">
+                  <h3 class="text-lg font-medium text-gray-900 group-hover:text-teal-600 transition-colors">
+                    {post.data.title}
+                  </h3>
+                  <time class="text-sm text-gray-500 shrink-0">
+                    {formatDate(post.data.date)}
+                  </time>
+                </div>
+                {post.data.tags && post.data.tags.length > 0 && (
+                  <div class="flex flex-wrap gap-2 mt-2">
+                    {(Array.isArray(post.data.tags) ? post.data.tags : []).map((tag: string) => (
+                      <span class="text-xs px-2 py-1 bg-gray-100 text-gray-600 rounded">
+                        {tag}
+                      </span>
+                    ))}
+                  </div>
+                )}
+              </article>
+            </a>
+          ))
+        }
+      </div>
+      <div class="mt-8">
+        <a href="/blog" class="text-teal-600 hover:underline font-medium">
+          View all posts &rarr;
+        </a>
+      </div>
+    </section>
+  </div>
+</BaseLayout>

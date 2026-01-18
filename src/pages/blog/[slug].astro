@@ -1,0 +1,62 @@
+---
+import { getCollection, render } from 'astro:content';
+import BaseLayout from '~/layouts/BaseLayout.astro';
+
+export async function getStaticPaths() {
+  const posts = await getCollection('blog');
+  return posts.map((post) => ({
+    params: { slug: post.slug },
+    props: { post },
+  }));
+}
+
+const { post } = Astro.props;
+const { Content } = await render(post);
+
+function formatDate(dateString: string): string {
+  const date = new Date(dateString);
+  return date.toLocaleDateString('en-US', {
+    year: 'numeric',
+    month: 'long',
+    day: 'numeric',
+  });
+}
+
+const tags = Array.isArray(post.data.tags) ? post.data.tags : [];
+---
+
+<BaseLayout
+  title={`${post.data.title} - Sy Lee`}
+  description={post.data.description || ''}
+>
+  <article class="max-w-2xl lg:max-w-3xl mx-auto px-5 py-12">
+    <header class="mb-8">
+      <h1 class="text-4xl md:text-5xl font-bold text-gray-900 mb-4">
+        {post.data.title}
+      </h1>
+      <div class="flex flex-wrap items-center gap-3">
+        <time class="text-sm text-gray-500">
+          {formatDate(post.data.date)}
+        </time>
+        {
+          tags.length > 0 && (
+            <>
+              <span class="text-gray-300">&middot;</span>
+              <div class="flex flex-wrap gap-2">
+                {tags.map((tag: string) => (
+                  <span class="text-xs px-2 py-1 bg-gray-100 text-gray-600 rounded">
+                    {tag}
+                  </span>
+                ))}
+              </div>
+            </>
+          )
+        }
+      </div>
+    </header>
+
+    <div class="prose prose-lg">
+      <Content />
+    </div>
+  </article>
+</BaseLayout>

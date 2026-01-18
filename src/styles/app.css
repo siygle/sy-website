@@ -1,6 +1,5 @@
 @import "tailwindcss";
 @import "highlight.js/styles/github.css" layer(base);
-@import "highlight.js/styles/github-dark.css" layer(base) (prefers-color-scheme: dark);
 @plugin "@tailwindcss/typography";
 
 /* Custom styles */
@@ -10,17 +9,17 @@
   }
 
   body {
-    @apply bg-white text-gray-700 dark:bg-zinc-950 dark:text-gray-300 min-h-screen;
+    @apply bg-white text-gray-700 min-h-screen;
   }
 }
 
 @layer components {
   .prose {
-    @apply prose-gray dark:prose-invert max-w-none;
+    @apply prose-gray max-w-none;
   }
 
   .prose pre {
-    @apply bg-zinc-100 dark:bg-zinc-900 rounded-lg overflow-x-auto;
+    @apply bg-zinc-100 rounded-lg overflow-x-auto;
   }
 
   .prose code {
@@ -55,7 +54,7 @@
   }
 }
 
-/* highlight.js theme overrides for dark mode */
+/* highlight.js theme overrides */
 @layer utilities {
   .hljs {
     @apply bg-transparent;

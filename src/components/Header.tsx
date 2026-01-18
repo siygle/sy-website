@@ -1,33 +1,32 @@
-import { Link } from "@tanstack/react-router";
 import { useState } from "react";
 
 export function Header() {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
 
   return (
-    <header className="sticky top-0 z-50 bg-white/80 dark:bg-zinc-950/80 backdrop-blur-sm border-b border-gray-200 dark:border-zinc-800">
+    <header className="sticky top-0 z-50 bg-white/80 backdrop-blur-sm border-b border-gray-200">
       <nav className="max-w-3xl mx-auto px-5 py-4 flex items-center justify-between">
-        <Link to="/" className="flex items-center gap-2">
+        <a href="/" className="flex items-center gap-2">
           <img
             src="/avatar.jpg"
             alt="Avatar"
             className="w-8 h-8 rounded-full"
           />
-        </Link>
+        </a>
 
         {/* Desktop navigation */}
         <div className="hidden sm:flex items-center gap-6">
-          <Link
-            to="/blog"
-            className="text-gray-600 hover:text-gray-900 dark:text-gray-400 dark:hover:text-gray-100 transition-colors"
+          <a
+            href="/blog"
+            className="text-gray-600 hover:text-gray-900 transition-colors"
           >
             Blog
-          </Link>
+          </a>
           <a
             href="https://chat.sylee.dev"
             target="_blank"
             rel="noopener noreferrer"
-            className="text-gray-600 hover:text-gray-900 dark:text-gray-400 dark:hover:text-gray-100 transition-colors"
+            className="text-gray-600 hover:text-gray-900 transition-colors"
           >
             Newsletter
           </a>
@@ -36,7 +35,7 @@ export function Header() {
         {/* Mobile menu button */}
         <button
           type="button"
-          className="sm:hidden p-2 text-gray-600 dark:text-gray-400"
+          className="sm:hidden p-2 text-gray-600"
           onClick={() => setMobileMenuOpen(!mobileMenuOpen)}
           aria-label="Toggle menu"
         >
@@ -74,20 +73,20 @@ export function Header() {
 
       {/* Mobile menu */}
       {mobileMenuOpen && (
-        <div className="sm:hidden border-t border-gray-200 dark:border-zinc-800 bg-white dark:bg-zinc-950">
+        <div className="sm:hidden border-t border-gray-200 bg-white">
           <div className="px-5 py-4 space-y-4">
-            <Link
-              to="/blog"
-              className="block text-gray-600 hover:text-gray-900 dark:text-gray-400 dark:hover:text-gray-100"
+            <a
+              href="/blog"
+              className="block text-gray-600 hover:text-gray-900"
               onClick={() => setMobileMenuOpen(false)}
             >
               Blog
-            </Link>
+            </a>
             <a
               href="https://chat.sylee.dev"
               target="_blank"
               rel="noopener noreferrer"
-              className="block text-gray-600 hover:text-gray-900 dark:text-gray-400 dark:hover:text-gray-100"
+              className="block text-gray-600 hover:text-gray-900"
             >
               Newsletter
             </a>

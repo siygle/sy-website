@@ -1,0 +1,54 @@
+---
+title: '升級到 macOS Sierra (10.12) 之後 tmux 的問題'
+date: '2016-09-30'
+tags: ['MacOS', 'tmux']
+draft: false
+summary: 'tmux 跟 MacOS 好像是犯衝一樣，幾乎每次升級之後都會遇到一些問題，稍微作個紀錄'
+---
+
+tmux 跟 MacOS 好像是犯衝一樣，幾乎每次升級之後都會遇到一些問題，稍微作個紀錄。
+
+<script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+
+<blockquote class="twitter-tweet" data-cards="hidden" data-lang="en">
+  <p lang="pl" dir="ltr">
+    Problems copying text on Mac OS Sierra · Issue #543 · tmux/tmux{' '}
+    <a href="https://t.co/Dxw0oHjuBF">https://t.co/Dxw0oHjuBF</a> # 各種災情0rz{' '}
+    <a href="https://twitter.com/hashtag/tmux?src=hash">#tmux</a>
+  </p>
+  &mdash; ping 8.8.8.8 (@ferrari_tw){' '}
+  <a href="https://twitter.com/ferrari_tw/status/781039540123426816">September 28, 2016</a>
+</blockquote>
+
+<blockquote class="twitter-tweet" data-cards="hidden" data-lang="en">
+  <p lang="in" dir="ltr">
+    macos sierra: [warn]: kq_init: detected broken kqueue; not using.: File exists · tmux/tmux{' '}
+    <a href="https://t.co/5EJSAMX3lB">https://t.co/5EJSAMX3lB</a> # tmux 也是每升必炸
+  </p>
+  &mdash; ping 8.8.8.8 (@ferrari_tw){' '}
+  <a href="https://twitter.com/ferrari_tw/status/781039414860509184">September 28, 2016</a>
+</blockquote>
+
+目前有遇到兩個問題
+
+1. clipboard 失效
+2. 會噴 `[warn]: kq_init: detected broken kqueue; not using.: File exists` 錯誤訊息
+
+請參閱上面兩個連結，然後記得先裝一下 [reattach-to-user-namespace](https://github.com/ChrisJohnsen/tmux-MacOSX-pasteboard)，然後補上修正就可以了。
+
+**bashrc**
+
+```
+export EVENT_NOKQUEUE=1
+```
+
+**tmux.conf & vimrc**
+
+```
+// tmux.conf
+set -g default-shell $SHELL
+set -g default-command "reattach-to-user-namespace -l ${SHELL}"
+
+//vimrc
+set clipboard=unnamed
+```

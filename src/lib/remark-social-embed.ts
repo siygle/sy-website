@@ -53,11 +53,10 @@ function detectSocialEmbed(url: string): SocialEmbedInfo | null {
 }
 
 function renderTwitterEmbed(info: SocialEmbedInfo): string {
-  // Use a placeholder that will be hydrated by client-side script
-  // The script fetches oEmbed and injects the embed HTML directly
-  return `<div class="social-embed twitter-embed" data-twitter-url="${info.url}">
+  // Use data attributes for programmatic rendering via twttr.widgets.createTweet()
+  return `<div class="social-embed twitter-embed" data-tweet-id="${info.id}" data-tweet-url="${info.url}">
   <blockquote>
-    <a href="${info.url}">Loading tweet...</a>
+    <a href="${info.url}">Loading post from X...</a>
   </blockquote>
 </div>`
 }

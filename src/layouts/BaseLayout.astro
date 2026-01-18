@@ -1,0 +1,118 @@
+---
+import { ViewTransitions } from 'astro:transitions';
+import BaseHead from '~/components/BaseHead.astro';
+import { Header } from '~/components/Header';
+import '~/styles/app.css';
+
+interface Props {
+  title: string;
+  description: string;
+}
+
+const { title, description } = Astro.props;
+---
+
+<!doctype html>
+<html lang="en">
+  <head>
+    <BaseHead title={title} description={description} />
+    <ViewTransitions />
+  </head>
+  <body class="min-h-screen flex flex-col bg-white text-gray-700">
+    <Header client:load />
+    <main class="flex-1">
+      <slot />
+    </main>
+    <script>
+      // Social embed hydration - runs after page load
+      function hydrateBluesky() {
+        const embeds = document.querySelectorAll('.bluesky-embed[data-bluesky-url]');
+        if (embeds.length === 0) return;
+
+        let needsScript = false;
+        embeds.forEach((el) => {
+          const element = el as HTMLElement;
+          if (element.dataset.hydrated) return;
+          element.dataset.hydrated = 'true';
+          needsScript = true;
+          const url = element.dataset.blueskyUrl;
+          fetch('/api/oembed?url=' + encodeURIComponent(url!))
+            .then((r) => {
+              if (!r.ok) throw new Error('HTTP ' + r.status);
+              return r.json();
+            })
+            .then((data) => {
+              if (data.html) {
+                element.innerHTML = data.html;
+                // Trigger Bluesky embed.js to process the new blockquote
+                if ((window as any).bluesky && (window as any).bluesky.scan) {
+                  (window as any).bluesky.scan();
+                }
+              }
+            })
+            .catch((err) => console.error('Bluesky embed error:', err));
+        });
+
+        // Load Bluesky's embed.js script to handle blockquote -> iframe transformation
+        if (needsScript && !document.querySelector('script[src*="embed.bsky.app"]')) {
+          const script = document.createElement('script');
+          script.src = 'https://embed.bsky.app/static/embed.js';
+          script.async = true;
+          document.head.appendChild(script);
+        }
+      }
+
+      function hydrateTwitter() {
+        const embeds = document.querySelectorAll('.twitter-embed[data-tweet-id]');
+        if (embeds.length === 0) return;
+
+        function renderTweets() {
+          embeds.forEach((el) => {
+            const element = el as HTMLElement;
+            if (element.dataset.hydrated) return;
+            element.dataset.hydrated = 'true';
+            const tweetId = element.dataset.tweetId;
+            if (!tweetId) return;
+
+            // Clear placeholder and use createTweet for reliable rendering
+            element.innerHTML = '';
+            (window as any).twttr.widgets.createTweet(tweetId, element, {
+              theme: 'light',
+              dnt: true,
+            }).catch((err: Error) => {
+              console.error('Twitter embed error:', err);
+              element.innerHTML = `<a href="${element.dataset.tweetUrl}" target="_blank" rel="noopener">View on X</a>`;
+            });
+          });
+        }
+
+        if (!(window as any).twttr) {
+          const script = document.createElement('script');
+          script.src = 'https://platform.twitter.com/widgets.js';
+          script.async = true;
+          script.onload = () => {
+            (window as any).twttr.ready(renderTweets);
+          };
+          document.head.appendChild(script);
+        } else {
+          (window as any).twttr.ready(renderTweets);
+        }
+      }
+
+      function hydrateAll() {
+        hydrateBluesky();
+        hydrateTwitter();
+      }
+
+      // Run on initial page load
+      document.addEventListener('DOMContentLoaded', () => {
+        setTimeout(hydrateAll, 100);
+      });
+
+      // Run after Astro View Transitions navigation
+      document.addEventListener('astro:page-load', () => {
+        setTimeout(hydrateAll, 100);
+      });
+    </script>
+  </body>
+</html>

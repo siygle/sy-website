@@ -83,7 +83,7 @@ AI 崛起也在不知不覺中已經過了兩三年的時間，它也逐漸在�
 <blockquote class="twitter-tweet"><p lang="en" dir="ltr">just setting up my twttr</p>&mdash; jack (@jack) <a href="https://twitter.com/jack/status/20?ref_src=twsrc%5Etfw">March 21, 2006</a></blockquote> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
 ```
 
-原本可能身為前端苦手大概就是放棄，或是找其他現成的工具，但因為有 AI 我就試著把需求描述給它，它分析了之後就用 [remark plugin 的方式來實作](https://github.com/siygle/sy-website/blob/master/src/lib/remark-social-embed.ts)，就這樣原本可能會是「找第三方」->「測試」這個流程的反覆幾次，現在一個 AI 來回就實作完成了。
+原本可能身為前端苦手大概就是放棄，或是找其他現成的工具，但因為有 AI 我就試著把需求描述給它，它分析了之後就用 [rehype plugin 的方式來實作](https://github.com/siygle/sy-website/blob/master/src/lib/rehype-social-embed.ts)，就這樣原本可能會是「找第三方」->「測試」這個流程的反覆幾次，現在一個 AI 來回就實作完成了。
 
 的確，它可能不會是一個多少人會用的模組，但這種極小的需求，正是上述 Barefoot Developet 所描述的場景，跟之前有人形容未來的 AI 算力就會變成像現今的水、電一樣基本生存必要的元件，這樣看起來軟體人可能就是未來的水電師傅吧～😂
 

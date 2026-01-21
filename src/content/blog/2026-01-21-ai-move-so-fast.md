@@ -6,7 +6,6 @@ draft: false
 summary: '快到老人已經跟不上的這個世界...'
 authors: ['sy']
 ---
-
 ## 前言
 
 AI 崛起也在不知不覺中已經過了兩三年的時間，它也逐漸在方方面面都開始對我們產生了很大的影響，不過我沒有要展開討論這點，我只想針對自己的老本行來抒發下最近的想法。
@@ -42,14 +41,13 @@ AI 崛起也在不知不覺中已經過了兩三年的時間，它也逐漸在�
 
 ## AI 帶來的那團火
 
-**[要爆了](https://www.youtube.com/watch?v=epNAZ0HHcz8&t=42s)**
-*我想現在可能很多小朋友已經不知道這是什麼埂了* 😅
+**[要爆了](https://www.youtube.com/watch?v=epNAZ0HHcz8&t=42s)** *(我想現在可能很多小朋友已經不知道這是什麼埂了)* 😅
 
-正如 [antirez](https://github.com/antirez) 在結尾說到的那句話 - The fun is still there, untouched，以往軟體開發最有成就感的地方，就在於自己實作出預期的目標之後，看著那個原本自己想像之物轉成成實體的那一瞬間，親自用了、玩了。當 AI 來了之後，它把原本這種反饋的流程加快又增大。
+正如 [ant. rez](https://github.com/antirez) 在結尾說到的那句話 - The fun is still there, untouched，以往軟體開發最有成就感的地方，就在於自己實作出預期的目標之後，看著那個原本自己想像之物轉成成實體的那一瞬間，親自用了、玩了。當 AI 來了之後，它把原本這種反饋的流程加快又增大。
 
 ### 重寫輪子，又怎樣 😂
 
-前篇文章已經是  2024 的事，[那邊](blog/2024-05-08-rewrite-chat)提到用 fresh 重寫過，沒想到下一篇又是重寫吧。最近因為對 Deno 發展有點失落（Fresh 就算了吧，等 2.0 問世等到不想用了），剛好最近對 [TanStack](https://tanstack.com/) 這個生態很有興趣，就想說來重寫試試。
+前篇文章已經是 2024 的事，[那邊](https://sylee.dev/blog/2024-05-08-rewrite-chat)提到用 fresh 重寫過，沒想到下一篇又是重寫吧。最近因為對 Deno 發展有點失落（Fresh 等 2.0 問世等到不想用了），剛好最近對 [TanStack](https://tanstack.com/) 這個生態很有興趣，就想說來重寫試試。
 
 結果大概半天就成形了：
  - 沿用 layout 並優化
@@ -83,7 +81,7 @@ AI 崛起也在不知不覺中已經過了兩三年的時間，它也逐漸在�
 <blockquote class="twitter-tweet"><p lang="en" dir="ltr">just setting up my twttr</p>&mdash; jack (@jack) <a href="https://twitter.com/jack/status/20?ref_src=twsrc%5Etfw">March 21, 2006</a></blockquote> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
 ```
 
-原本可能身為前端苦手大概就是放棄，或是找其他現成的工具，但因為有 AI 我就試著把需求描述給它，它分析了之後就用 [rehype plugin 的方式來實作](https://github.com/siygle/sy-website/blob/master/src/lib/rehype-social-embed.ts)，就這樣原本可能會是「找第三方」->「測試」這個流程的反覆幾次，現在一個 AI 來回就實作完成了。
+原本可能身為前端苦手大概就是放棄，或是找其他現成的工具，但因為有 AI 我就試著把需求描述給它，它分析了之後就用 [remark plugin 的方式來實作](https://github.com/siygle/sy-website/blob/master/src/lib/remark-social-embed.ts)，就這樣原本可能會是「找第三方」->「測試」這個流程的反覆幾次，現在一個 AI 來回就實作完成了。
 
 的確，它可能不會是一個多少人會用的模組，但這種極小的需求，正是上述 Barefoot Developet 所描述的場景，跟之前有人形容未來的 AI 算力就會變成像現今的水、電一樣基本生存必要的元件，這樣看起來軟體人可能就是未來的水電師傅吧～😂
 

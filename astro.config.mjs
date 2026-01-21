@@ -5,7 +5,7 @@ import cloudflare from '@astrojs/cloudflare';
 import tailwindcss from '@tailwindcss/vite';
 import remarkGfm from 'remark-gfm';
 import rehypeHighlight from 'rehype-highlight';
-import { remarkSocialEmbed } from './src/lib/remark-social-embed';
+import { rehypeSocialEmbed } from './src/lib/rehype-social-embed';
 
 export default defineConfig({
   site: 'https://sylee.dev',
@@ -14,13 +14,16 @@ export default defineConfig({
   }),
   integrations: [
     react(),
-    mdx(),
+    mdx({
+      remarkPlugins: [remarkGfm],
+      rehypePlugins: [rehypeSocialEmbed],
+    }),
   ],
   vite: {
     plugins: [tailwindcss()],
   },
   markdown: {
-    remarkPlugins: [remarkGfm, remarkSocialEmbed],
-    rehypePlugins: [[rehypeHighlight, { prefix: 'hljs language-' }]],
+    remarkPlugins: [remarkGfm],
+    rehypePlugins: [rehypeSocialEmbed, [rehypeHighlight, { prefix: 'hljs language-' }]],
   },
 });

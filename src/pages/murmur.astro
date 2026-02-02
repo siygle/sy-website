@@ -1,0 +1,143 @@
+---
+import BaseLayout from '~/layouts/BaseLayout.astro';
+import BlueskyPost from '~/components/BlueskyPost.astro';
+import BlueskyThread from '~/components/BlueskyThread.astro';
+import { getFeedWithThreads, type ProcessedFeedItem } from '~/lib/bluesky';
+
+export const prerender = false;
+
+const BLUESKY_HANDLE = 'sylee.dev';
+const POST_LIMIT = parseInt(import.meta.env.BLUESKY_POST_LIMIT || '7', 10);
+
+const feedData = await getFeedWithThreads(BLUESKY_HANDLE, POST_LIMIT);
+
+// Get week label from a date
+function getWeekLabel(dateString: string): string {
+  const date = new Date(dateString);
+  const now = new Date();
+
+  // Get start of current week (Sunday)
+  const startOfThisWeek = new Date(now);
+  startOfThisWeek.setHours(0, 0, 0, 0);
+  startOfThisWeek.setDate(now.getDate() - now.getDay());
+
+  // Get start of last week
+  const startOfLastWeek = new Date(startOfThisWeek);
+  startOfLastWeek.setDate(startOfLastWeek.getDate() - 7);
+
+  if (date >= startOfThisWeek) {
+    return 'This Week';
+  } else if (date >= startOfLastWeek) {
+    return 'Last Week';
+  } else {
+    // Format as "Week of Jan 1"
+    const weekStart = new Date(date);
+    weekStart.setDate(date.getDate() - date.getDay());
+    return `Week of ${weekStart.toLocaleDateString('en-US', { month: 'short', day: 'numeric' })}`;
+  }
+}
+
+// Get the post date for an item (use thread's last post or single post)
+function getItemDate(item: ProcessedFeedItem): string {
+  if (item.isThread && item.threadPosts && item.threadPosts.length > 0) {
+    return item.threadPosts[item.threadPosts.length - 1].record.createdAt;
+  }
+  return item.post.record.createdAt;
+}
+
+// Group items by week
+type WeekGroup = { label: string; items: ProcessedFeedItem[] };
+const weekGroups: WeekGroup[] = [];
+
+if (!feedData.error && feedData.items.length > 0) {
+  let currentLabel = '';
+  let currentGroup: ProcessedFeedItem[] = [];
+
+  for (const item of feedData.items) {
+    const label = getWeekLabel(getItemDate(item));
+    if (label !== currentLabel) {
+      if (currentGroup.length > 0) {
+        weekGroups.push({ label: currentLabel, items: currentGroup });
+      }
+      currentLabel = label;
+      currentGroup = [item];
+    } else {
+      currentGroup.push(item);
+    }
+  }
+
+  if (currentGroup.length > 0) {
+    weekGroups.push({ label: currentLabel, items: currentGroup });
+  }
+}
+---
+
+<BaseLayout
+  title="Murmur - Sy Lee"
+  description="My thoughts and musings from Bluesky"
+>
+  <div class="max-w-2xl lg:max-w-3xl mx-auto px-5 py-12">
+    <header class="mb-8">
+      <h1 class="text-3xl font-bold text-gray-900">Murmur</h1>
+      <p class="text-gray-600 mt-2">
+        Thoughts from
+        <a
+          href={`https://bsky.app/profile/${BLUESKY_HANDLE}`}
+          class="text-teal-600 hover:underline"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          @{BLUESKY_HANDLE}
+        </a>
+        on Bluesky
+      </p>
+    </header>
+
+    {feedData.error ? (
+      <div class="p-4 bg-red-50 text-red-700 rounded-lg border border-red-200">
+        <p class="font-medium">Unable to load posts</p>
+        <p class="text-sm mt-1">{feedData.error}</p>
+        <a
+          href={`https://bsky.app/profile/${BLUESKY_HANDLE}`}
+          class="text-red-600 underline text-sm mt-2 inline-block"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          View on Bluesky instead
+        </a>
+      </div>
+    ) : weekGroups.length === 0 ? (
+      <p class="text-gray-600">No posts yet.</p>
+    ) : (
+      <div class="space-y-8">
+        {weekGroups.map((group) => (
+          <section>
+            <h2 class="text-sm font-medium text-gray-500 mb-4 sticky top-16 bg-white/80 backdrop-blur-sm py-2 -mx-1 px-1">
+              {group.label}
+            </h2>
+            <div class="space-y-4">
+              {group.items.map((item) => (
+                item.isThread && item.threadPosts ? (
+                  <BlueskyThread posts={item.threadPosts} showDate={true} />
+                ) : (
+                  <BlueskyPost post={item.post} showDate={true} />
+                )
+              ))}
+            </div>
+          </section>
+        ))}
+      </div>
+    )}
+
+    <footer class="mt-12 pt-8 border-t border-gray-200 text-center">
+      <a
+        href={`https://bsky.app/profile/${BLUESKY_HANDLE}`}
+        class="text-teal-600 hover:underline"
+        target="_blank"
+        rel="noopener noreferrer"
+      >
+        Follow @{BLUESKY_HANDLE} on Bluesky
+      </a>
+    </footer>
+  </div>
+</BaseLayout>

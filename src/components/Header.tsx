@@ -23,6 +23,12 @@ export function Header() {
             Blog
           </a>
           <a
+            href="/murmur"
+            className="text-gray-600 hover:text-gray-900 transition-colors"
+          >
+            Murmur
+          </a>
+          <a
             href="https://chat.sylee.dev"
             target="_blank"
             rel="noopener noreferrer"
@@ -81,6 +87,13 @@ export function Header() {
               onClick={() => setMobileMenuOpen(false)}
             >
               Blog
+            </a>
+            <a
+              href="/murmur"
+              className="block text-gray-600 hover:text-gray-900"
+              onClick={() => setMobileMenuOpen(false)}
+            >
+              Murmur
             </a>
             <a
               href="https://chat.sylee.dev"

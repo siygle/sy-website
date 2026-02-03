@@ -77,13 +77,13 @@ if (!feedData.error && feedData.items.length > 0) {
   description="My thoughts and musings from Bluesky"
 >
   <div class="max-w-2xl lg:max-w-3xl mx-auto px-5 py-12">
-    <header class="mb-8">
+    <header class="mb-8 reveal">
       <h1 class="text-3xl font-bold text-gray-900">Murmur</h1>
       <p class="text-gray-600 mt-2">
         Thoughts from
         <a
           href={`https://bsky.app/profile/${BLUESKY_HANDLE}`}
-          class="text-teal-600 hover:underline"
+          class="text-teal-600 hover:underline transition-colors"
           target="_blank"
           rel="noopener noreferrer"
         >
@@ -110,18 +110,20 @@ if (!feedData.error && feedData.items.length > 0) {
       <p class="text-gray-600">No posts yet.</p>
     ) : (
       <div class="space-y-8">
-        {weekGroups.map((group) => (
-          <section>
+        {weekGroups.map((group, groupIndex) => (
+          <section class="reveal" style={`transition-delay: ${groupIndex * 100}ms`}>
             <h2 class="text-sm font-medium text-gray-500 mb-4 sticky top-16 bg-white/80 backdrop-blur-sm py-2 -mx-1 px-1">
               {group.label}
             </h2>
             <div class="space-y-4">
-              {group.items.map((item) => (
-                item.isThread && item.threadPosts ? (
-                  <BlueskyThread posts={item.threadPosts} showDate={true} />
-                ) : (
-                  <BlueskyPost post={item.post} showDate={true} />
-                )
+              {group.items.map((item, itemIndex) => (
+                <div class="reveal" style={`transition-delay: ${groupIndex * 100 + itemIndex * 50}ms`}>
+                  {item.isThread && item.threadPosts ? (
+                    <BlueskyThread posts={item.threadPosts} showDate={true} />
+                  ) : (
+                    <BlueskyPost post={item.post} showDate={true} />
+                  )}
+                </div>
               ))}
             </div>
           </section>

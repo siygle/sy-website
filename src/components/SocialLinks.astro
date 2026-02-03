@@ -37,7 +37,7 @@ const socialLinks = [
       href={link.href}
       target={link.href.startsWith('http') ? '_blank' : undefined}
       rel={link.href.startsWith('http') ? 'noopener noreferrer' : undefined}
-      class="text-gray-500 hover:text-teal-500 transition-colors"
+      class="text-gray-500 hover:text-teal-500 transition-all duration-150 hover:scale-110"
       aria-label={link.name}
     >
       <Fragment set:html={link.icon} />

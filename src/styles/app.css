@@ -11,6 +11,52 @@
   body {
     @apply bg-white text-gray-700 min-h-screen;
   }
+
+  /* Focus states for accessibility */
+  a:focus-visible,
+  button:focus-visible {
+    @apply outline-none ring-2 ring-teal-500 ring-offset-2 rounded;
+  }
+
+  /* View Transition - Clean fade without ghosting */
+  ::view-transition-group(root) {
+    animation-duration: 120ms;
+  }
+
+  ::view-transition-old(root) {
+    animation: none;
+    opacity: 0;
+  }
+
+  ::view-transition-new(root) {
+    animation: fade-in 120ms ease-out;
+  }
+
+  @keyframes fade-in {
+    from { opacity: 0; }
+    to { opacity: 1; }
+  }
+
+  /* Reduced motion support */
+  @media (prefers-reduced-motion: reduce) {
+    ::view-transition-old(root),
+    ::view-transition-new(root) {
+      animation: none;
+    }
+
+    .reveal {
+      opacity: 1;
+      transform: none;
+    }
+
+    *,
+    *::before,
+    *::after {
+      animation-duration: 0.01ms !important;
+      animation-iteration-count: 1 !important;
+      transition-duration: 0.01ms !important;
+    }
+  }
 }
 
 @layer components {
@@ -58,5 +104,35 @@
 @layer utilities {
   .hljs {
     @apply bg-transparent;
+  }
+
+  /* Content reveal animations */
+  .reveal {
+    opacity: 0;
+    transform: translateY(8px);
+    transition: opacity 400ms ease-out, transform 400ms ease-out;
+  }
+
+  .reveal.visible {
+    opacity: 1;
+    transform: translateY(0);
+  }
+
+  /* Stagger delays for lists */
+  .reveal-delay-1 { transition-delay: 50ms; }
+  .reveal-delay-2 { transition-delay: 100ms; }
+  .reveal-delay-3 { transition-delay: 150ms; }
+  .reveal-delay-4 { transition-delay: 200ms; }
+
+  /* Loading bar */
+  .loading-bar {
+    transform: scaleX(0);
+    transform-origin: left;
+    transition: transform 200ms ease-out;
+  }
+
+  html.is-loading .loading-bar {
+    transform: scaleX(0.7);
+    transition: transform 6000ms cubic-bezier(0.4, 0, 0.2, 1);
   }
 }

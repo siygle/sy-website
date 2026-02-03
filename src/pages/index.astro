@@ -30,31 +30,34 @@ function formatDate(dateString: string): string {
         <img
           src="/avatar.jpg"
           alt="Avatar"
-          class="w-20 h-20 rounded-full mb-8"
+          class="w-20 h-20 rounded-full mb-8 reveal"
+          transition:name="site-avatar"
         />
-        <h1 class="text-4xl sm:text-5xl font-mono font-bold text-gray-900 mb-6">
+        <h1 class="text-4xl sm:text-5xl font-mono font-bold text-gray-900 mb-6 reveal reveal-delay-1">
           My Style, My way, My blog
         </h1>
-        <p class="text-lg text-gray-600 mb-4 max-w-2xl">
+        <p class="text-lg text-gray-600 mb-4 max-w-2xl reveal reveal-delay-2">
           I'm <span class="text-gray-900 font-medium">SY</span>, a software
           engineer from Taiwan who is passionate about web development. I love
           writing code and staying up-to-date with the <a
             href="https://chat.sylee.dev/"
-            class="underline">latest web trends</a
+            class="underline hover:text-teal-600 transition-colors">latest web trends</a
           >.
         </p>
-        <SocialLinks />
+        <div class="reveal reveal-delay-3">
+          <SocialLinks />
+        </div>
       </div>
     </section>
 
     <!-- Latest Posts Section -->
     <section class="mb-16">
-      <h2 class="text-2xl font-bold text-gray-900 mb-8">Latest Posts</h2>
+      <h2 class="text-2xl font-bold text-gray-900 mb-8 reveal">Latest Posts</h2>
       <div class="space-y-6">
         {
-          latestPosts.map((post) => (
-            <a href={`/blog/${post.slug}`} class="block group">
-              <article class="py-4 border-b border-gray-200">
+          latestPosts.map((post, index) => (
+            <a href={`/blog/${post.slug}`} class={`block group reveal reveal-delay-${index + 1}`}>
+              <article class="py-4 border-b border-gray-200 hover:border-gray-300 transition-colors">
                 <div class="flex flex-col sm:flex-row sm:items-baseline sm:justify-between gap-2">
                   <h3 class="text-lg font-medium text-gray-900 group-hover:text-teal-600 transition-colors">
                     {post.data.title}
@@ -77,8 +80,8 @@ function formatDate(dateString: string): string {
           ))
         }
       </div>
-      <div class="mt-8">
-        <a href="/blog" class="text-teal-600 hover:underline font-medium">
+      <div class="mt-8 reveal reveal-delay-4">
+        <a href="/blog" class="text-teal-600 hover:underline font-medium transition-colors">
           View all posts &rarr;
         </a>
       </div>

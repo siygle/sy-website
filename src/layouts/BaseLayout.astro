@@ -19,7 +19,10 @@ const { title, description } = Astro.props;
     <ViewTransitions />
   </head>
   <body class="min-h-screen flex flex-col bg-white text-gray-700">
-    <Header client:load />
+    <!-- Loading bar for page transitions -->
+    <div class="loading-bar fixed top-0 left-0 right-0 h-0.5 bg-teal-500 z-[100]" aria-hidden="true"></div>
+
+    <Header client:load transition:persist />
     <main class="flex-1">
       <slot />
     </main>
@@ -113,6 +116,35 @@ const { title, description } = Astro.props;
       document.addEventListener('astro:page-load', () => {
         setTimeout(hydrateAll, 100);
       });
+
+      // Loading bar for view transitions
+      document.addEventListener('astro:before-preparation', () => {
+        document.documentElement.classList.add('is-loading');
+      });
+
+      document.addEventListener('astro:after-swap', () => {
+        document.documentElement.classList.remove('is-loading');
+      });
+
+      // Reveal animations with Intersection Observer
+      function initRevealObserver() {
+        const observer = new IntersectionObserver(
+          (entries) => {
+            entries.forEach((entry) => {
+              if (entry.isIntersecting) {
+                entry.target.classList.add('visible');
+              }
+            });
+          },
+          { threshold: 0.1, rootMargin: '-20px' }
+        );
+
+        document.querySelectorAll('.reveal').forEach((el) => observer.observe(el));
+      }
+
+      // Initialize on page load
+      document.addEventListener('DOMContentLoaded', initRevealObserver);
+      document.addEventListener('astro:page-load', initRevealObserver);
     </script>
   </body>
 </html>

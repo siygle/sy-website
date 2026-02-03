@@ -236,8 +236,17 @@ export async function getFeedWithThreads(
     }
 
     // Deduplicate: if multiple posts from same thread, keep only the latest one
+    // Also skip standalone posts whose URI is the root of a thread being shown
     const seenThreads = new Set<string>();
     const deduplicatedItems: ProcessedFeedItem[] = [];
+
+    // First pass: identify all thread roots that will be shown as threads
+    const shownThreadRoots = new Set<string>();
+    for (const item of processedItems) {
+      if (item.isThread && item.threadPosts && item.post.record.reply) {
+        shownThreadRoots.add(item.post.record.reply.root.uri);
+      }
+    }
 
     for (const item of processedItems) {
       if (item.isThread && item.post.record.reply) {
@@ -246,6 +255,11 @@ export async function getFeedWithThreads(
           continue; // Skip duplicate thread entries
         }
         seenThreads.add(rootUri);
+      } else {
+        // Standalone post - check if it's a thread root that will be shown as part of a thread
+        if (shownThreadRoots.has(item.post.uri)) {
+          continue; // Skip standalone root posts when their thread is being shown
+        }
       }
       deduplicatedItems.push(item);
     }

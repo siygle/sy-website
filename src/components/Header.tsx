@@ -118,6 +118,13 @@ export function Header() {
             Blog
           </a>
           <a
+            href="/tags"
+            className="block py-3 text-gray-600 hover:text-gray-900 transition-colors"
+            onClick={() => setMobileMenuOpen(false)}
+          >
+            Tags
+          </a>
+          <a
             href="/murmur"
             className="block py-3 text-gray-600 hover:text-gray-900 transition-colors"
             onClick={() => setMobileMenuOpen(false)}

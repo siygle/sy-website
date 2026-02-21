@@ -124,6 +124,56 @@
   .reveal-delay-3 { transition-delay: 150ms; }
   .reveal-delay-4 { transition-delay: 200ms; }
 
+  /* Pagefind UI theme overrides */
+  :root {
+    --pagefind-ui-scale: 0.9;
+    --pagefind-ui-primary: #0d9488;
+    --pagefind-ui-text: #374151;
+    --pagefind-ui-background: #ffffff;
+    --pagefind-ui-border: #e5e7eb;
+    --pagefind-ui-tag: #f3f4f6;
+    --pagefind-ui-border-width: 1px;
+    --pagefind-ui-border-radius: 8px;
+    --pagefind-ui-image-border-radius: 8px;
+    --pagefind-ui-image-box-ratio: 3 / 2;
+    --pagefind-ui-font: ui-sans-serif, system-ui, sans-serif;
+  }
+
+  .pagefind-ui .pagefind-ui__search-input:focus {
+    outline: none;
+    box-shadow: 0 0 0 2px #14b8a6;
+    border-color: #14b8a6;
+  }
+
+  .pagefind-ui .pagefind-ui__result-link {
+    color: #111827;
+  }
+
+  .pagefind-ui .pagefind-ui__result-link:hover {
+    color: #0d9488;
+  }
+
+  .pagefind-ui mark {
+    background-color: #ccfbf1;
+    color: #0f766e;
+    padding: 0.1em 0.2em;
+    border-radius: 2px;
+  }
+
+  .pagefind-ui .pagefind-ui__result-excerpt {
+    color: #6b7280;
+  }
+
+  .pagefind-ui .pagefind-ui__button {
+    background-color: #0d9488;
+    border-color: #0d9488;
+  }
+
+  .pagefind-ui .pagefind-ui__button:hover {
+    background-color: #0f766e;
+    border-color: #0f766e;
+  }
+
   /* Loading bar */
   .loading-bar {
     transform: scaleX(0);

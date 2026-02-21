@@ -1,5 +1,5 @@
 ---
-import { ViewTransitions } from 'astro:transitions';
+import { ClientRouter } from 'astro:transitions';
 import BaseHead from '~/components/BaseHead.astro';
 import { Header } from '~/components/Header';
 import '~/styles/app.css';
@@ -16,7 +16,7 @@ const { title, description } = Astro.props;
 <html lang="en">
   <head>
     <BaseHead title={title} description={description} />
-    <ViewTransitions />
+    <ClientRouter />
   </head>
   <body class="min-h-screen flex flex-col bg-white text-gray-700">
     <!-- Loading bar for page transitions -->

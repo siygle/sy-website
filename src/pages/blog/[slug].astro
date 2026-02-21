@@ -1,6 +1,7 @@
 ---
 import { getCollection, render } from 'astro:content';
 import BaseLayout from '~/layouts/BaseLayout.astro';
+import { slugifyTag } from '~/lib/tags';
 
 export async function getStaticPaths() {
   const posts = await getCollection('blog');
@@ -44,9 +45,13 @@ const tags = Array.isArray(post.data.tags) ? post.data.tags : [];
               <span class="text-gray-300">&middot;</span>
               <div class="flex flex-wrap gap-2">
                 {tags.map((tag: string) => (
-                  <span class="text-xs px-2 py-1 bg-gray-100 text-gray-600 rounded">
+                  <a
+                    href={`/tags/${slugifyTag(tag)}`}
+                    class="text-xs px-2 py-1 bg-gray-100 text-gray-600 rounded
+                           hover:bg-teal-50 hover:text-teal-700 transition-colors"
+                  >
                     {tag}
-                  </span>
+                  </a>
                 ))}
               </div>
             </>
@@ -59,4 +64,48 @@ const tags = Array.isArray(post.data.tags) ? post.data.tags : [];
       <Content />
     </div>
   </article>
+
+  <script>
+    function initProgressBar() {
+      const existing = document.getElementById('reading-progress');
+      if (existing) existing.remove();
+
+      const article = document.querySelector('article');
+      if (!article) return;
+
+      const bar = document.createElement('div');
+      bar.id = 'reading-progress';
+      bar.setAttribute('aria-hidden', 'true');
+      Object.assign(bar.style, {
+        position: 'fixed',
+        top: '0',
+        left: '0',
+        height: '2px',
+        width: '0%',
+        backgroundColor: '#14b8a6',
+        zIndex: '50',
+        transition: 'width 100ms ease-out',
+        pointerEvents: 'none',
+      });
+      document.body.appendChild(bar);
+
+      function updateProgress() {
+        const scrollTop = window.scrollY;
+        const docHeight =
+          document.documentElement.scrollHeight - window.innerHeight;
+        if (docHeight <= 0) {
+          bar.style.width = '100%';
+          return;
+        }
+        const progress = Math.min((scrollTop / docHeight) * 100, 100);
+        bar.style.width = `${progress}%`;
+      }
+
+      window.addEventListener('scroll', updateProgress, { passive: true });
+      updateProgress();
+    }
+
+    initProgressBar();
+    document.addEventListener('astro:after-swap', initProgressBar);
+  </script>
 </BaseLayout>

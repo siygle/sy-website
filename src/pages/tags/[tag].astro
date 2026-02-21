@@ -1,0 +1,75 @@
+---
+import { getCollection } from 'astro:content';
+import BaseLayout from '~/layouts/BaseLayout.astro';
+import { getUniqueTags, getPostsByTag } from '~/lib/tags';
+
+export async function getStaticPaths() {
+  const allPosts = await getCollection('blog', ({ data }) => !data.draft);
+  const tags = getUniqueTags(allPosts);
+
+  return tags.map((tagInfo) => ({
+    params: { tag: tagInfo.slug },
+    props: { tagInfo },
+  }));
+}
+
+const { tagInfo } = Astro.props;
+const allPosts = await getCollection('blog', ({ data }) => !data.draft);
+const posts = getPostsByTag(allPosts, tagInfo.slug).sort(
+  (a, b) => new Date(b.data.date).getTime() - new Date(a.data.date).getTime()
+);
+
+function formatDate(dateString: string): string {
+  const date = new Date(dateString);
+  return date.toLocaleDateString('en-US', {
+    year: 'numeric',
+    month: 'long',
+    day: 'numeric',
+  });
+}
+---
+
+<BaseLayout
+  title={`${tagInfo.tag} - Tags - Sy Lee`}
+  description={`Posts tagged with ${tagInfo.tag}`}
+>
+  <div class="max-w-2xl lg:max-w-3xl mx-auto px-5 py-12">
+    <div class="mb-8 reveal">
+      <a
+        href="/tags"
+        class="text-sm text-teal-600 hover:underline transition-colors"
+      >
+        &larr; All Tags
+      </a>
+      <h1 class="text-3xl font-bold text-gray-900 mt-2">
+        <span transition:name={`tag-${tagInfo.slug}`}>{tagInfo.tag}</span>
+        <span class="text-lg font-normal text-gray-500 ml-2">
+          ({tagInfo.count} {tagInfo.count === 1 ? 'post' : 'posts'})
+        </span>
+      </h1>
+    </div>
+
+    <div class="space-y-8">
+      {posts.map((post, index) => (
+        <article
+          class="group reveal"
+          style={`transition-delay: ${Math.min(index * 50, 300)}ms`}
+        >
+          <a href={`/blog/${post.slug}`} class="block">
+            <time class="text-sm text-gray-500">
+              {formatDate(post.data.date)}
+            </time>
+            <h2 class="text-xl font-semibold text-gray-900 group-hover:text-teal-600 transition-colors mt-1">
+              {post.data.title}
+            </h2>
+            {post.data.description && (
+              <p class="text-gray-600 mt-2 line-clamp-2">
+                {post.data.description}
+              </p>
+            )}
+          </a>
+        </article>
+      ))}
+    </div>
+  </div>
+</BaseLayout>

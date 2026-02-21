@@ -24,6 +24,12 @@ export function Header() {
             Blog
           </a>
           <a
+            href="/tags"
+            className="text-gray-600 hover:text-gray-900 transition-all duration-150 hover:-translate-y-px"
+          >
+            Tags
+          </a>
+          <a
             href="/murmur"
             className="text-gray-600 hover:text-gray-900 transition-all duration-150 hover:-translate-y-px"
           >
@@ -75,7 +81,7 @@ export function Header() {
       {/* Mobile menu - animated */}
       <div
         className={`sm:hidden border-t border-gray-200 bg-white overflow-hidden transition-all duration-200 ease-out ${
-          mobileMenuOpen ? "max-h-48 opacity-100" : "max-h-0 opacity-0"
+          mobileMenuOpen ? "max-h-64 opacity-100" : "max-h-0 opacity-0"
         }`}
       >
         <div className="px-5 py-4 flex flex-col gap-1">
@@ -85,6 +91,13 @@ export function Header() {
             onClick={() => setMobileMenuOpen(false)}
           >
             Blog
+          </a>
+          <a
+            href="/tags"
+            className="block py-3 text-gray-600 hover:text-gray-900 transition-colors"
+            onClick={() => setMobileMenuOpen(false)}
+          >
+            Tags
           </a>
           <a
             href="/murmur"

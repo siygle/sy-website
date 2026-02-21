@@ -2,6 +2,7 @@
 import { getCollection } from 'astro:content';
 import BaseLayout from '~/layouts/BaseLayout.astro';
 import SocialLinks from '~/components/SocialLinks.astro';
+import { slugifyTag } from '~/lib/tags';
 
 const allPosts = await getCollection('blog', ({ data }) => !data.draft);
 const sortedPosts = allPosts.sort(
@@ -56,8 +57,8 @@ function formatDate(dateString: string): string {
       <div class="space-y-6">
         {
           latestPosts.map((post, index) => (
-            <a href={`/blog/${post.slug}`} class={`block group reveal reveal-delay-${index + 1}`}>
-              <article class="py-4 border-b border-gray-200 hover:border-gray-300 transition-colors">
+            <article class={`py-4 border-b border-gray-200 hover:border-gray-300 transition-colors reveal reveal-delay-${index + 1}`}>
+              <a href={`/blog/${post.slug}`} class="block group">
                 <div class="flex flex-col sm:flex-row sm:items-baseline sm:justify-between gap-2">
                   <h3 class="text-lg font-medium text-gray-900 group-hover:text-teal-600 transition-colors">
                     {post.data.title}
@@ -66,17 +67,21 @@ function formatDate(dateString: string): string {
                     {formatDate(post.data.date)}
                   </time>
                 </div>
-                {post.data.tags && post.data.tags.length > 0 && (
-                  <div class="flex flex-wrap gap-2 mt-2">
-                    {(Array.isArray(post.data.tags) ? post.data.tags : []).map((tag: string) => (
-                      <span class="text-xs px-2 py-1 bg-gray-100 text-gray-600 rounded">
-                        {tag}
-                      </span>
-                    ))}
-                  </div>
-                )}
-              </article>
-            </a>
+              </a>
+              {post.data.tags && post.data.tags.length > 0 && (
+                <div class="flex flex-wrap gap-2 mt-2">
+                  {(Array.isArray(post.data.tags) ? post.data.tags : []).map((tag: string) => (
+                    <a
+                      href={`/tags/${slugifyTag(tag)}`}
+                      class="text-xs px-2 py-1 bg-gray-100 text-gray-600 rounded
+                             hover:bg-teal-50 hover:text-teal-700 transition-colors"
+                    >
+                      {tag}
+                    </a>
+                  ))}
+                </div>
+              )}
+            </article>
           ))
         }
       </div>

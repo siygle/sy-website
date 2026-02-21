@@ -1,0 +1,30 @@
+---
+import { getCollection } from 'astro:content';
+import BaseLayout from '~/layouts/BaseLayout.astro';
+import { getUniqueTags } from '~/lib/tags';
+
+const allPosts = await getCollection('blog', ({ data }) => !data.draft);
+const tags = getUniqueTags(allPosts);
+---
+
+<BaseLayout title="Tags - Sy Lee" description="Browse posts by tag">
+  <div class="max-w-2xl lg:max-w-3xl mx-auto px-5 py-12">
+    <h1 class="text-3xl font-bold text-gray-900 mb-8 reveal">Tags</h1>
+    <div class="flex flex-wrap gap-3 reveal reveal-delay-1">
+      {tags.map((tagInfo) => {
+        const sizeClass = tagInfo.count >= 6 ? 'text-lg' : tagInfo.count >= 3 ? 'text-base' : 'text-sm';
+        return (
+          <a
+            href={`/tags/${tagInfo.slug}`}
+            class={`${sizeClass} px-3 py-1.5 bg-gray-100 text-gray-700 rounded-full
+                     hover:bg-teal-50 hover:text-teal-700 transition-colors`}
+            transition:name={`tag-${tagInfo.slug}`}
+          >
+            {tagInfo.tag}
+            <span class="text-gray-400 ml-1">({tagInfo.count})</span>
+          </a>
+        );
+      })}
+    </div>
+  </div>
+</BaseLayout>

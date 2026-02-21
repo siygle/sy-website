@@ -1,29 +1,60 @@
 ---
 import { getCollection } from 'astro:content';
+import type { CollectionEntry } from 'astro:content';
 import BaseLayout from '~/layouts/BaseLayout.astro';
-
-const POSTS_PER_PAGE = 10;
 
 const allPosts = await getCollection('blog', ({ data }) => !data.draft);
 const sortedPosts = allPosts.sort(
   (a, b) => new Date(b.data.date).getTime() - new Date(a.data.date).getTime()
 );
 
-const totalPosts = sortedPosts.length;
-const totalPages = Math.ceil(totalPosts / POSTS_PER_PAGE);
-const currentPage = 1;
-const posts = sortedPosts.slice(0, POSTS_PER_PAGE);
-const hasNextPage = currentPage < totalPages;
-const hasPrevPage = false;
+const MONTH_NAMES = [
+  'January', 'February', 'March', 'April', 'May', 'June',
+  'July', 'August', 'September', 'October', 'November', 'December',
+];
 
-function formatDate(dateString: string): string {
-  const date = new Date(dateString);
-  return date.toLocaleDateString('en-US', {
-    year: 'numeric',
-    month: 'long',
-    day: 'numeric',
-  });
+interface MonthGroup {
+  month: number;
+  monthName: string;
+  posts: CollectionEntry<'blog'>[];
 }
+
+interface YearGroup {
+  year: number;
+  postCount: number;
+  months: MonthGroup[];
+}
+
+const yearMap = new Map<number, Map<number, CollectionEntry<'blog'>[]>>();
+
+for (const post of sortedPosts) {
+  const date = new Date(post.data.date);
+  const year = date.getFullYear();
+  const month = date.getMonth();
+
+  if (!yearMap.has(year)) {
+    yearMap.set(year, new Map());
+  }
+  const monthMap = yearMap.get(year)!;
+  if (!monthMap.has(month)) {
+    monthMap.set(month, []);
+  }
+  monthMap.get(month)!.push(post);
+}
+
+const groupedPosts: YearGroup[] = Array.from(yearMap.entries())
+  .sort(([a], [b]) => b - a)
+  .map(([year, monthMap]) => {
+    const months: MonthGroup[] = Array.from(monthMap.entries())
+      .sort(([a], [b]) => b - a)
+      .map(([month, posts]) => ({
+        month,
+        monthName: MONTH_NAMES[month],
+        posts,
+      }));
+    const postCount = months.reduce((sum, m) => sum + m.posts.length, 0);
+    return { year, postCount, months };
+  });
 ---
 
 <BaseLayout
@@ -31,57 +62,62 @@ function formatDate(dateString: string): string {
   description="Blog posts about web development and technology"
 >
   <div class="max-w-2xl lg:max-w-3xl mx-auto px-5 py-12">
-    <h1 class="text-3xl font-bold text-gray-900 mb-8 reveal">Blog</h1>
+    <h1 class="text-3xl font-bold text-gray-900 mb-2 reveal">Blog</h1>
+    <p class="text-gray-500 mb-10 reveal">
+      {sortedPosts.length} posts in the archive
+    </p>
 
-    {
-      posts.length === 0 ? (
-        <p class="text-gray-600">No posts yet.</p>
-      ) : (
-        <>
-          <div class="space-y-8">
-            {posts.map((post, index) => (
-              <article class={`group reveal`} style={`transition-delay: ${Math.min(index * 50, 300)}ms`}>
-                <a href={`/blog/${post.slug}`} class="block">
-                  <time class="text-sm text-gray-500">
-                    {formatDate(post.data.date)}
-                  </time>
-                  <h2 class="text-xl font-semibold text-gray-900 group-hover:text-teal-600 transition-colors mt-1">
-                    {post.data.title}
-                  </h2>
-                  {post.data.description && (
-                    <p class="text-gray-600 mt-2 line-clamp-2">
-                      {post.data.description}
-                    </p>
-                  )}
-                </a>
-              </article>
-            ))}
-          </div>
+    {groupedPosts.length === 0 ? (
+      <p class="text-gray-600">No posts yet.</p>
+    ) : (
+      <div class="space-y-12">
+        {groupedPosts.map((yearGroup) => (
+          <section class="reveal">
+            <div class="flex items-baseline gap-3 mb-6">
+              <h2 class="text-2xl font-bold text-gray-900">
+                {yearGroup.year}
+              </h2>
+              <span class="text-sm text-gray-400">
+                {yearGroup.postCount} {yearGroup.postCount === 1 ? 'post' : 'posts'}
+              </span>
+            </div>
 
-          {totalPages > 1 && (
-            <nav class="flex items-center justify-between mt-12 pt-8 border-t border-gray-200">
-              <div>
-                <span class="text-gray-400">&larr; Previous</span>
-              </div>
-              <div class="text-gray-600">
-                Page {currentPage} of {totalPages}
-              </div>
-              <div>
-                {hasNextPage ? (
-                  <a
-                    href="/blog/page/2"
-                    class="text-teal-600 hover:underline"
-                  >
-                    Next &rarr;
-                  </a>
-                ) : (
-                  <span class="text-gray-400">Next &rarr;</span>
-                )}
-              </div>
-            </nav>
-          )}
-        </>
-      )
-    }
+            <div class="space-y-8 pl-4 border-l-2 border-gray-200">
+              {yearGroup.months.map((monthGroup) => (
+                <div>
+                  <h3 class="text-sm font-semibold text-gray-400 uppercase tracking-wider mb-4">
+                    {monthGroup.monthName}
+                  </h3>
+
+                  <div class="space-y-5">
+                    {monthGroup.posts.map((post) => (
+                      <article class="group">
+                        <a href={`/blog/${post.slug}`} class="block">
+                          <div class="flex flex-col sm:flex-row sm:items-baseline sm:gap-4">
+                            <time class="text-sm text-gray-400 shrink-0 tabular-nums sm:w-16">
+                              {new Date(post.data.date).toLocaleDateString('en-US', { month: 'short', day: 'numeric' })}
+                            </time>
+                            <div class="flex-1">
+                              <h4 class="text-base font-medium text-gray-900 group-hover:text-teal-600 transition-colors">
+                                {post.data.title}
+                              </h4>
+                              {post.data.description && (
+                                <p class="text-sm text-gray-500 mt-1 line-clamp-1">
+                                  {post.data.description}
+                                </p>
+                              )}
+                            </div>
+                          </div>
+                        </a>
+                      </article>
+                    ))}
+                  </div>
+                </div>
+              ))}
+            </div>
+          </section>
+        ))}
+      </div>
+    )}
   </div>
 </BaseLayout>

@@ -8,7 +8,7 @@ const allPosts = await getCollection('blog', ({ data }) => !data.draft);
 const sortedPosts = allPosts.sort(
   (a, b) => new Date(b.data.date).getTime() - new Date(a.data.date).getTime()
 );
-const latestPosts = sortedPosts.slice(0, 3);
+const latestPosts = sortedPosts.slice(0, 5);
 
 function formatDate(dateString: string): string {
   const date = new Date(dateString);
@@ -54,10 +54,10 @@ function formatDate(dateString: string): string {
     <!-- Latest Posts Section -->
     <section class="mb-16">
       <h2 class="text-2xl font-bold text-gray-900 mb-8 reveal">Latest Posts</h2>
-      <div class="space-y-6">
+      <div id="posts-list" class="space-y-6">
         {
           latestPosts.map((post, index) => (
-            <article class={`py-4 border-b border-gray-200 hover:border-gray-300 transition-colors reveal reveal-delay-${index + 1}`}>
+            <article class={`py-4 border-b border-gray-200 hover:border-gray-300 transition-colors reveal reveal-delay-${Math.min(index + 1, 4)}`}>
               <a href={`/blog/${post.slug}`} class="block group">
                 <div class="flex flex-col sm:flex-row sm:items-baseline sm:justify-between gap-2">
                   <h3 class="text-lg font-medium text-gray-900 group-hover:text-teal-600 transition-colors">
@@ -85,11 +85,167 @@ function formatDate(dateString: string): string {
           ))
         }
       </div>
-      <div class="mt-8 reveal reveal-delay-4">
-        <a href="/blog" class="text-teal-600 hover:underline font-medium transition-colors">
+      <nav id="posts-pagination" class="flex items-center justify-between mt-8 pt-6 border-gray-200 reveal reveal-delay-4">
+        <button
+          id="prev-page-btn"
+          type="button"
+          class="text-gray-400 font-medium transition-colors cursor-default"
+          disabled
+        >
+          &larr; Previous
+        </button>
+        <span id="page-indicator" class="text-sm text-gray-500">
+          Page 1
+        </span>
+        <button
+          id="next-page-btn"
+          type="button"
+          class="text-teal-600 hover:underline font-medium transition-colors cursor-pointer"
+        >
+          Next &rarr;
+        </button>
+      </nav>
+      <div class="mt-4 text-center reveal reveal-delay-4">
+        <a href="/blog" class="text-gray-500 hover:text-gray-700 hover:underline text-sm transition-colors">
           View all posts &rarr;
         </a>
       </div>
     </section>
   </div>
+
+  <script>
+    function initPagination() {
+      const list = document.getElementById('posts-list');
+      const prevBtn = document.getElementById('prev-page-btn') as HTMLButtonElement | null;
+      const nextBtn = document.getElementById('next-page-btn') as HTMLButtonElement | null;
+      const indicator = document.getElementById('page-indicator');
+      if (!list || !prevBtn || !nextBtn || !indicator) return;
+
+      let currentPage = 1;
+      let totalPages = 1;
+      let loading = false;
+
+      function formatDate(dateString: string): string {
+        const date = new Date(dateString);
+        return date.toLocaleDateString('en-US', {
+          year: 'numeric',
+          month: 'short',
+          day: 'numeric',
+        });
+      }
+
+      function escapeHtml(str: string): string {
+        const div = document.createElement('div');
+        div.textContent = str;
+        return div.innerHTML;
+      }
+
+      function updateButtons() {
+        if (currentPage <= 1) {
+          prevBtn.disabled = true;
+          prevBtn.className = 'text-gray-400 font-medium transition-colors cursor-default';
+        } else {
+          prevBtn.disabled = false;
+          prevBtn.className = 'text-teal-600 hover:underline font-medium transition-colors cursor-pointer';
+        }
+
+        if (currentPage >= totalPages) {
+          nextBtn.disabled = true;
+          nextBtn.className = 'text-gray-400 font-medium transition-colors cursor-default';
+        } else {
+          nextBtn.disabled = false;
+          nextBtn.className = 'text-teal-600 hover:underline font-medium transition-colors cursor-pointer';
+        }
+
+        indicator.textContent = `Page ${currentPage} of ${totalPages}`;
+      }
+
+      function renderPosts(posts: Array<{ slug: string; title: string; date: string; tags: Array<{ name: string; slug: string }> }>) {
+        list.innerHTML = '';
+        for (const post of posts) {
+          const article = document.createElement('article');
+          article.className = 'py-4 border-b border-gray-200 hover:border-gray-300 transition-colors';
+
+          const tagsHtml = post.tags.length > 0
+            ? `<div class="flex flex-wrap gap-2 mt-2">${post.tags.map((t) =>
+                `<a href="/tags/${escapeHtml(t.slug)}" class="text-xs px-2 py-1 bg-gray-100 text-gray-600 rounded hover:bg-teal-50 hover:text-teal-700 transition-colors">${escapeHtml(t.name)}</a>`
+              ).join('')}</div>`
+            : '';
+
+          article.innerHTML = `
+            <a href="/blog/${escapeHtml(post.slug)}" class="block group">
+              <div class="flex flex-col sm:flex-row sm:items-baseline sm:justify-between gap-2">
+                <h3 class="text-lg font-medium text-gray-900 group-hover:text-teal-600 transition-colors">
+                  ${escapeHtml(post.title)}
+                </h3>
+                <time class="text-sm text-gray-500 shrink-0">
+                  ${formatDate(post.date)}
+                </time>
+              </div>
+            </a>
+            ${tagsHtml}
+          `;
+
+          list.appendChild(article);
+        }
+      }
+
+      async function goToPage(page: number) {
+        if (loading) return;
+        loading = true;
+
+        // Fade out
+        list.style.transition = 'opacity 150ms ease-out, transform 150ms ease-out';
+        list.style.opacity = '0';
+        list.style.transform = 'translateY(8px)';
+
+        try {
+          const res = await fetch(`/api/posts?page=${page}&limit=5`);
+          const data = await res.json();
+
+          currentPage = data.page;
+          totalPages = data.totalPages;
+
+          // Wait for fade-out to finish before swapping content
+          await new Promise((r) => setTimeout(r, 150));
+
+          renderPosts(data.posts);
+          updateButtons();
+
+          // Fade in
+          list.style.transition = 'opacity 300ms ease-out, transform 300ms ease-out';
+          list.style.opacity = '1';
+          list.style.transform = 'translateY(0)';
+
+          list.scrollIntoView({ behavior: 'smooth', block: 'start' });
+        } catch {
+          // Restore visibility on error
+          list.style.opacity = '1';
+          list.style.transform = 'translateY(0)';
+        } finally {
+          loading = false;
+        }
+      }
+
+      // Fetch page 1 to get totalPages, then update the buttons
+      fetch('/api/posts?page=1&limit=5')
+        .then((res) => res.json())
+        .then((data) => {
+          totalPages = data.totalPages;
+          updateButtons();
+        })
+        .catch(() => {});
+
+      prevBtn.addEventListener('click', () => {
+        if (currentPage > 1) goToPage(currentPage - 1);
+      });
+
+      nextBtn.addEventListener('click', () => {
+        if (currentPage < totalPages) goToPage(currentPage + 1);
+      });
+    }
+
+    initPagination();
+    document.addEventListener('astro:after-swap', initPagination);
+  </script>
 </BaseLayout>

@@ -11,6 +11,11 @@ export default defineConfig({
   site: 'https://sylee.dev',
   adapter: cloudflare({
     imageService: 'passthrough',
+    routes: {
+      extend: {
+        exclude: [{ pattern: '/pagefind/*' }],
+      },
+    },
   }),
   integrations: [
     react(),

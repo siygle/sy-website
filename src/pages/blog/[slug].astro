@@ -30,9 +30,9 @@ const tags = Array.isArray(post.data.tags) ? post.data.tags : [];
   title={`${post.data.title} - Sy Lee`}
   description={post.data.description || ''}
 >
-  <article class="max-w-2xl lg:max-w-3xl mx-auto px-5 py-12">
+  <article class="max-w-2xl lg:max-w-3xl mx-auto px-5 py-12" data-pagefind-body>
     <header class="mb-8">
-      <h1 class="text-4xl md:text-5xl font-bold text-gray-900 mb-4">
+      <h1 class="text-4xl md:text-5xl font-bold text-gray-900 mb-4" data-pagefind-meta="title">
         {post.data.title}
       </h1>
       <div class="flex flex-wrap items-center gap-3">

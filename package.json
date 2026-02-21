@@ -5,7 +5,7 @@
   "packageManager": "pnpm@10.17.0",
   "scripts": {
     "dev": "astro dev",
-    "build": "astro build",
+    "build": "astro build && pagefind --site dist && cp -r dist/pagefind public/",
     "preview": "astro preview"
   },
   "dependencies": {
@@ -27,6 +27,7 @@
     "@types/node": "^25.0.9",
     "@types/react": "^19.2.8",
     "@types/react-dom": "^19.2.3",
+    "pagefind": "^1",
     "tailwindcss": "^4.1.18",
     "typescript": "^5.9.3"
   },

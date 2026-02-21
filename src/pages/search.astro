@@ -1,0 +1,49 @@
+---
+import BaseLayout from '~/layouts/BaseLayout.astro';
+---
+
+<BaseLayout
+  title="Search - Sy Lee"
+  description="Search blog posts"
+>
+  <div class="max-w-2xl lg:max-w-3xl mx-auto px-5 py-12">
+    <h1 class="text-3xl font-bold text-gray-900 mb-8 reveal">Search</h1>
+    <div id="search" class="reveal reveal-delay-1"></div>
+  </div>
+</BaseLayout>
+
+<link rel="stylesheet" href="/pagefind/pagefind-ui.css" />
+<script is:inline src="/pagefind/pagefind-ui.js"></script>
+<script is:inline>
+  function initPagefind() {
+    var container = document.getElementById('search');
+    if (!container || container.dataset.pagefindInit === 'true') return;
+    if (typeof PagefindUI === 'undefined') return;
+    container.dataset.pagefindInit = 'true';
+
+    new PagefindUI({
+      element: '#search',
+      showSubResults: true,
+      showImages: false,
+      resetStyles: false,
+      excerptLength: 15,
+      translations: {
+        placeholder: 'Search blog posts...',
+        zero_results: 'No results for [SEARCH_TERM]',
+      },
+    });
+
+    // Handle ?q= URL parameter
+    var query = new URLSearchParams(window.location.search).get('q');
+    if (query) {
+      var input = container.querySelector('input[type="text"]');
+      if (input) {
+        input.value = query;
+        input.dispatchEvent(new Event('input', { bubbles: true }));
+      }
+    }
+  }
+
+  document.addEventListener('DOMContentLoaded', initPagefind);
+  document.addEventListener('astro:page-load', initPagefind);
+</script>

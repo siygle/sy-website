@@ -1,9 +1,20 @@
 ---
 // Giscus comment system - GitHub Discussions based
-// Config values are inlined from PUBLIC_ env vars at build time
+// Read env vars in frontmatter (reliable on Cloudflare), pass via data attributes
+const giscusRepo = import.meta.env.PUBLIC_GISCUS_REPO || '';
+const giscusRepoId = import.meta.env.PUBLIC_GISCUS_REPO_ID || '';
+const giscusCategory = import.meta.env.PUBLIC_GISCUS_CATEGORY || '';
+const giscusCategoryId = import.meta.env.PUBLIC_GISCUS_CATEGORY_ID || '';
 ---
 
-<div id="giscus-container" class="giscus"></div>
+<div
+  id="giscus-container"
+  class="giscus"
+  data-repo={giscusRepo}
+  data-repo-id={giscusRepoId}
+  data-category={giscusCategory}
+  data-category-id={giscusCategoryId}
+></div>
 
 <script>
   function loadGiscus() {
@@ -13,10 +24,10 @@
     // Clear previous content (important for view transitions)
     container.innerHTML = '';
 
-    const repo = import.meta.env.PUBLIC_GISCUS_REPO;
-    const repoId = import.meta.env.PUBLIC_GISCUS_REPO_ID;
-    const category = import.meta.env.PUBLIC_GISCUS_CATEGORY;
-    const categoryId = import.meta.env.PUBLIC_GISCUS_CATEGORY_ID;
+    const repo = container.dataset.repo;
+    const repoId = container.dataset.repoId;
+    const category = container.dataset.category;
+    const categoryId = container.dataset.categoryId;
 
     if (!repo || !repoId || !category || !categoryId) {
       container.innerHTML =

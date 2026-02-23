@@ -1,6 +1,7 @@
 ---
 import { getCollection, render } from 'astro:content';
 import BaseLayout from '~/layouts/BaseLayout.astro';
+import Comments from '~/components/Comments.astro';
 import { slugifyTag } from '~/lib/tags';
 
 export async function getStaticPaths() {
@@ -64,6 +65,8 @@ const tags = Array.isArray(post.data.tags) ? post.data.tags : [];
       <Content />
     </div>
   </article>
+
+  <Comments blueskyUri={post.data.blueskyUri} />
 
   <script>
     function initProgressBar() {

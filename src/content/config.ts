@@ -26,6 +26,7 @@ const blogCollection = defineCollection({
       }),
     ]).optional().default([]),
     draft: z.boolean().optional().default(false),
+    blueskyUri: z.string().optional(),
     // Legacy fields from previous blog system (ignored but accepted)
     summary: z.string().optional(),
     authors: z.array(z.string()).optional(),

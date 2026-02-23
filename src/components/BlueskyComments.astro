@@ -1,0 +1,208 @@
+---
+interface Props {
+  blueskyUri?: string;
+}
+
+const { blueskyUri } = Astro.props;
+const blueskyHandle = import.meta.env.PUBLIC_BLUESKY_HANDLE || 'sylee.dev';
+---
+
+<div
+  id="bluesky-comments-container"
+  data-uri={blueskyUri || ''}
+  data-handle={blueskyHandle}
+>
+  {!blueskyUri ? (
+    <p class="text-gray-400 text-sm text-center py-8">
+      No Bluesky discussion linked to this post.
+    </p>
+  ) : (
+    <div id="bluesky-comments-loading" class="text-center py-8">
+      <div class="inline-block w-5 h-5 border-2 border-gray-300 border-t-teal-500 rounded-full animate-spin"></div>
+      <p class="text-gray-400 text-sm mt-2">Loading comments...</p>
+    </div>
+  )}
+  <div id="bluesky-comments-list" class="hidden"></div>
+  <div id="bluesky-comments-error" class="hidden"></div>
+</div>
+
+<script>
+  const BLUESKY_API = 'https://public.api.bsky.app/xrpc';
+
+  function escapeHtml(str: string): string {
+    return str
+      .replace(/&/g, '&amp;')
+      .replace(/</g, '&lt;')
+      .replace(/>/g, '&gt;')
+      .replace(/"/g, '&quot;')
+      .replace(/'/g, '&#039;');
+  }
+
+  function formatRelativeTime(dateString: string): string {
+    const date = new Date(dateString);
+    const now = new Date();
+    const diffMs = now.getTime() - date.getTime();
+    const diffSec = Math.floor(diffMs / 1000);
+    const diffMin = Math.floor(diffSec / 60);
+    const diffHour = Math.floor(diffMin / 60);
+    const diffDay = Math.floor(diffHour / 24);
+
+    if (diffDay > 7) {
+      return date.toLocaleDateString('en-US', {
+        month: 'short',
+        day: 'numeric',
+      });
+    }
+    if (diffDay > 0) return `${diffDay}d`;
+    if (diffHour > 0) return `${diffHour}h`;
+    if (diffMin > 0) return `${diffMin}m`;
+    return 'now';
+  }
+
+  function getPostUrl(uri: string, handle: string): string {
+    const parts = uri.split('/');
+    const rkey = parts[parts.length - 1];
+    return `https://bsky.app/profile/${handle}/post/${rkey}`;
+  }
+
+  function renderComment(reply: any): string {
+    const post = reply.post;
+    if (!post) return '';
+
+    const author = post.author;
+    const displayName = escapeHtml(author.displayName || author.handle);
+    const handle = escapeHtml(author.handle);
+    const postUrl = getPostUrl(post.uri, author.handle);
+    const text = escapeHtml(post.record.text);
+    const time = formatRelativeTime(post.record.createdAt);
+
+    const avatarHtml = author.avatar
+      ? `<img src="${escapeHtml(author.avatar)}" alt="${displayName}" class="w-8 h-8 rounded-full flex-shrink-0" loading="lazy" />`
+      : `<div class="w-8 h-8 rounded-full bg-gray-200 flex-shrink-0"></div>`;
+
+    const likeHtml =
+      post.likeCount > 0
+        ? `<div class="flex items-center gap-1 mt-2 text-xs text-gray-400">
+            <svg class="w-3.5 h-3.5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z" />
+            </svg>
+            <span>${post.likeCount}</span>
+          </div>`
+        : '';
+
+    return `
+      <div class="flex gap-3 p-3 rounded-lg border border-gray-100 hover:border-gray-200 transition-colors">
+        <a href="https://bsky.app/profile/${handle}" target="_blank" rel="noopener noreferrer" class="flex-shrink-0">
+          ${avatarHtml}
+        </a>
+        <div class="flex-1 min-w-0">
+          <div class="flex items-center gap-2 flex-wrap">
+            <span class="font-medium text-gray-900 text-sm truncate">${displayName}</span>
+            <span class="text-xs text-gray-500 truncate">@${handle}</span>
+            <a href="${escapeHtml(postUrl)}" target="_blank" rel="noopener noreferrer"
+               class="text-xs text-gray-400 hover:text-teal-600 ml-auto flex-shrink-0">${time}</a>
+          </div>
+          <p class="text-gray-700 text-sm mt-1 whitespace-pre-wrap break-words">${text}</p>
+          ${likeHtml}
+        </div>
+      </div>
+    `;
+  }
+
+  async function loadBlueskyComments() {
+    const container = document.getElementById('bluesky-comments-container');
+    if (!container) return;
+
+    const uri = container.dataset.uri;
+    const handle = container.dataset.handle || 'sylee.dev';
+    if (!uri) return;
+
+    const loadingEl = document.getElementById('bluesky-comments-loading');
+    const listEl = document.getElementById('bluesky-comments-list');
+    const errorEl = document.getElementById('bluesky-comments-error');
+    if (!listEl || !errorEl) return;
+
+    // Reset state
+    if (loadingEl) {
+      loadingEl.classList.remove('hidden');
+    }
+    listEl.classList.add('hidden');
+    listEl.innerHTML = '';
+    errorEl.classList.add('hidden');
+    errorEl.innerHTML = '';
+
+    try {
+      const url = new URL(`${BLUESKY_API}/app.bsky.feed.getPostThread`);
+      url.searchParams.set('uri', uri);
+      url.searchParams.set('depth', '1');
+      url.searchParams.set('parentHeight', '0');
+
+      const response = await fetch(url.toString());
+      if (!response.ok) throw new Error(`HTTP ${response.status}`);
+
+      const data = await response.json();
+      const thread = data.thread;
+
+      const replyUrl = getPostUrl(uri, handle);
+
+      if (!thread || !thread.replies || thread.replies.length === 0) {
+        if (loadingEl) loadingEl.classList.add('hidden');
+        listEl.innerHTML = `
+          <p class="text-gray-400 text-sm text-center py-4">No replies yet.</p>
+          <div class="text-center">
+            <a href="${replyUrl}" target="_blank" rel="noopener noreferrer"
+               class="inline-flex items-center gap-2 text-sm text-teal-600 hover:text-teal-700 hover:underline">
+              Reply on Bluesky
+            </a>
+          </div>
+        `;
+        listEl.classList.remove('hidden');
+        return;
+      }
+
+      // Filter valid replies and sort by like count
+      const sortedReplies = thread.replies
+        .filter((r: any) => r.post && !r.blocked && !r.notFound)
+        .sort(
+          (a: any, b: any) =>
+            (b.post.likeCount || 0) - (a.post.likeCount || 0)
+        );
+
+      const commentsHtml = sortedReplies
+        .map((r: any) => renderComment(r))
+        .join('');
+
+      if (loadingEl) loadingEl.classList.add('hidden');
+      listEl.innerHTML = `
+        <div class="flex items-center justify-between mb-4">
+          <span class="text-sm text-gray-500">${sortedReplies.length} ${sortedReplies.length === 1 ? 'reply' : 'replies'}</span>
+          <a href="${replyUrl}" target="_blank" rel="noopener noreferrer"
+             class="text-sm text-teal-600 hover:text-teal-700 hover:underline">
+            Reply on Bluesky
+          </a>
+        </div>
+        <div class="space-y-3">
+          ${commentsHtml}
+        </div>
+      `;
+      listEl.classList.remove('hidden');
+    } catch (err) {
+      console.error('Failed to load Bluesky comments:', err);
+      if (loadingEl) loadingEl.classList.add('hidden');
+      const fallbackUrl = getPostUrl(uri, handle);
+      errorEl.innerHTML = `
+        <div class="text-center py-4">
+          <p class="text-gray-400 text-sm">Unable to load Bluesky comments.</p>
+          <a href="${fallbackUrl}" target="_blank" rel="noopener noreferrer"
+             class="text-sm text-teal-600 hover:underline mt-1 inline-block">
+            View on Bluesky
+          </a>
+        </div>
+      `;
+      errorEl.classList.remove('hidden');
+    }
+  }
+
+  loadBlueskyComments();
+  document.addEventListener('astro:after-swap', loadBlueskyComments);
+</script>

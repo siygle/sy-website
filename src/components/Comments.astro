@@ -1,0 +1,97 @@
+---
+import GiscusComments from './GiscusComments.astro';
+import BlueskyComments from './BlueskyComments.astro';
+
+interface Props {
+  blueskyUri?: string;
+}
+
+const { blueskyUri } = Astro.props;
+---
+
+<section class="max-w-2xl lg:max-w-3xl mx-auto px-5 pb-12" id="comments">
+  <div class="border-t border-gray-200 pt-8">
+    <h2 class="text-lg font-semibold text-gray-900 mb-6">Comments</h2>
+
+    <!-- Tab bar -->
+    <div class="flex gap-1 mb-6 border-b border-gray-200" role="tablist">
+      <button
+        id="tab-giscus"
+        role="tab"
+        aria-selected="true"
+        aria-controls="panel-giscus"
+        class="comment-tab px-4 py-2 text-sm font-medium border-b-2 -mb-px transition-colors"
+      >
+        GitHub
+      </button>
+      <button
+        id="tab-bluesky"
+        role="tab"
+        aria-selected="false"
+        aria-controls="panel-bluesky"
+        class="comment-tab px-4 py-2 text-sm font-medium border-b-2 -mb-px transition-colors"
+      >
+        Bluesky
+      </button>
+    </div>
+
+    <!-- Tab panels -->
+    <div id="panel-giscus" role="tabpanel" aria-labelledby="tab-giscus">
+      <GiscusComments />
+    </div>
+    <div id="panel-bluesky" role="tabpanel" aria-labelledby="tab-bluesky" class="hidden">
+      <BlueskyComments blueskyUri={blueskyUri} />
+    </div>
+  </div>
+</section>
+
+<style>
+  .comment-tab[aria-selected='true'] {
+    color: #0d9488;
+    border-bottom-color: #14b8a6;
+  }
+  .comment-tab[aria-selected='false'] {
+    color: #6b7280;
+    border-bottom-color: transparent;
+  }
+  .comment-tab[aria-selected='false']:hover {
+    color: #374151;
+    border-bottom-color: #d1d5db;
+  }
+</style>
+
+<script>
+  function initCommentTabs() {
+    const tabGiscus = document.getElementById('tab-giscus');
+    const tabBluesky = document.getElementById('tab-bluesky');
+    const panelGiscus = document.getElementById('panel-giscus');
+    const panelBluesky = document.getElementById('panel-bluesky');
+
+    if (!tabGiscus || !tabBluesky || !panelGiscus || !panelBluesky) return;
+
+    function switchTab(active: 'giscus' | 'bluesky') {
+      const isGiscus = active === 'giscus';
+      tabGiscus.setAttribute('aria-selected', String(isGiscus));
+      tabBluesky.setAttribute('aria-selected', String(!isGiscus));
+      panelGiscus.classList.toggle('hidden', !isGiscus);
+      panelBluesky.classList.toggle('hidden', isGiscus);
+      try {
+        localStorage.setItem('comment-system', active);
+      } catch {}
+    }
+
+    tabGiscus.addEventListener('click', () => switchTab('giscus'));
+    tabBluesky.addEventListener('click', () => switchTab('bluesky'));
+
+    // Restore saved preference
+    try {
+      const saved = localStorage.getItem('comment-system');
+      if (saved === 'bluesky') {
+        switchTab('bluesky');
+      }
+    } catch {}
+  }
+
+  initCommentTabs();
+  document.addEventListener('astro:after-swap', initCommentTabs);
+</script>

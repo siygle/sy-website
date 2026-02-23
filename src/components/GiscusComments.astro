@@ -1,0 +1,49 @@
+---
+// Giscus comment system - GitHub Discussions based
+// Config values are inlined from PUBLIC_ env vars at build time
+---
+
+<div id="giscus-container" class="giscus"></div>
+
+<script>
+  function loadGiscus() {
+    const container = document.getElementById('giscus-container');
+    if (!container) return;
+
+    // Clear previous content (important for view transitions)
+    container.innerHTML = '';
+
+    const repo = import.meta.env.PUBLIC_GISCUS_REPO;
+    const repoId = import.meta.env.PUBLIC_GISCUS_REPO_ID;
+    const category = import.meta.env.PUBLIC_GISCUS_CATEGORY;
+    const categoryId = import.meta.env.PUBLIC_GISCUS_CATEGORY_ID;
+
+    if (!repo || !repoId || !category || !categoryId) {
+      container.innerHTML =
+        '<p class="text-gray-400 text-sm text-center py-8">Giscus is not configured.</p>';
+      return;
+    }
+
+    const script = document.createElement('script');
+    script.src = 'https://giscus.app/client.js';
+    script.setAttribute('data-repo', repo);
+    script.setAttribute('data-repo-id', repoId);
+    script.setAttribute('data-category', category);
+    script.setAttribute('data-category-id', categoryId);
+    script.setAttribute('data-mapping', 'pathname');
+    script.setAttribute('data-strict', '0');
+    script.setAttribute('data-reactions-enabled', '1');
+    script.setAttribute('data-emit-metadata', '0');
+    script.setAttribute('data-input-position', 'top');
+    script.setAttribute('data-theme', 'light');
+    script.setAttribute('data-lang', 'en');
+    script.setAttribute('data-loading', 'lazy');
+    script.crossOrigin = 'anonymous';
+    script.async = true;
+
+    container.appendChild(script);
+  }
+
+  loadGiscus();
+  document.addEventListener('astro:after-swap', loadGiscus);
+</script>

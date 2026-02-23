@@ -1,28 +1,22 @@
 ---
 interface Props {
-  blueskyUri?: string;
+  postUrl: string;
 }
 
-const { blueskyUri } = Astro.props;
+const { postUrl } = Astro.props;
 const blueskyHandle = import.meta.env.PUBLIC_BLUESKY_HANDLE || 'sylee.dev';
 ---
 
 <div
   id="bluesky-comments-container"
-  data-uri={blueskyUri || ''}
+  data-post-url={postUrl}
   data-handle={blueskyHandle}
 >
-  {!blueskyUri ? (
-    <p class="text-gray-400 text-sm text-center py-8">
-      No Bluesky discussion linked to this post.
-    </p>
-  ) : (
-    <div id="bluesky-comments-loading" class="text-center py-8">
-      <div class="inline-block w-5 h-5 border-2 border-gray-300 border-t-teal-500 rounded-full animate-spin"></div>
-      <p class="text-gray-400 text-sm mt-2">Loading comments...</p>
-    </div>
-  )}
-  <div id="bluesky-comments-list" class="hidden"></div>
+  <div id="bluesky-comments-loading" class="text-center py-8">
+    <div class="inline-block w-5 h-5 border-2 border-gray-300 border-t-teal-500 rounded-full animate-spin"></div>
+    <p class="text-gray-400 text-sm mt-2">Loading comments...</p>
+  </div>
+  <div id="bluesky-comments-content" class="hidden"></div>
   <div id="bluesky-comments-error" class="hidden"></div>
 </div>
 
@@ -65,6 +59,36 @@ const blueskyHandle = import.meta.env.PUBLIC_BLUESKY_HANDLE || 'sylee.dev';
     return `https://bsky.app/profile/${handle}/post/${rkey}`;
   }
 
+  function renderEngagement(post: any, postUrl: string): string {
+    return `
+      <div class="flex items-center gap-5 py-3 px-1">
+        <a href="${escapeHtml(postUrl)}" target="_blank" rel="noopener noreferrer"
+           class="flex items-center gap-1.5 text-sm text-gray-500 hover:text-teal-600 transition-colors">
+          <svg class="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M8 12h.01M12 12h.01M16 12h.01M21 12c0 4.418-4.03 8-9 8a9.863 9.863 0 01-4.255-.949L3 20l1.395-3.72C3.512 15.042 3 13.574 3 12c0-4.418 4.03-8 9-8s9 3.582 9 8z" />
+          </svg>
+          <span>${post.replyCount || 0}</span>
+        </a>
+        <span class="flex items-center gap-1.5 text-sm text-gray-500">
+          <svg class="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M4 4v5h.582m15.356 2A8.001 8.001 0 004.582 9m0 0H9m11 11v-5h-.581m0 0a8.003 8.003 0 01-15.357-2m15.357 2H15" />
+          </svg>
+          <span>${post.repostCount || 0}</span>
+        </span>
+        <span class="flex items-center gap-1.5 text-sm text-gray-500">
+          <svg class="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z" />
+          </svg>
+          <span>${post.likeCount || 0}</span>
+        </span>
+        <a href="${escapeHtml(postUrl)}" target="_blank" rel="noopener noreferrer"
+           class="ml-auto text-sm text-teal-600 hover:text-teal-700 hover:underline">
+          Reply on Bluesky
+        </a>
+      </div>
+    `;
+  }
+
   function renderComment(reply: any): string {
     const post = reply.post;
     if (!post) return '';
@@ -72,7 +96,7 @@ const blueskyHandle = import.meta.env.PUBLIC_BLUESKY_HANDLE || 'sylee.dev';
     const author = post.author;
     const displayName = escapeHtml(author.displayName || author.handle);
     const handle = escapeHtml(author.handle);
-    const postUrl = getPostUrl(post.uri, author.handle);
+    const commentPostUrl = getPostUrl(post.uri, author.handle);
     const text = escapeHtml(post.record.text);
     const time = formatRelativeTime(post.record.createdAt);
 
@@ -99,7 +123,7 @@ const blueskyHandle = import.meta.env.PUBLIC_BLUESKY_HANDLE || 'sylee.dev';
           <div class="flex items-center gap-2 flex-wrap">
             <span class="font-medium text-gray-900 text-sm truncate">${displayName}</span>
             <span class="text-xs text-gray-500 truncate">@${handle}</span>
-            <a href="${escapeHtml(postUrl)}" target="_blank" rel="noopener noreferrer"
+            <a href="${escapeHtml(commentPostUrl)}" target="_blank" rel="noopener noreferrer"
                class="text-xs text-gray-400 hover:text-teal-600 ml-auto flex-shrink-0">${time}</a>
           </div>
           <p class="text-gray-700 text-sm mt-1 whitespace-pre-wrap break-words">${text}</p>
@@ -109,94 +133,112 @@ const blueskyHandle = import.meta.env.PUBLIC_BLUESKY_HANDLE || 'sylee.dev';
     `;
   }
 
+  async function findBlueskyPost(handle: string, blogUrl: string): Promise<any | null> {
+    const url = new URL(`${BLUESKY_API}/app.bsky.feed.getAuthorFeed`);
+    url.searchParams.set('actor', handle);
+    url.searchParams.set('limit', '30');
+    url.searchParams.set('filter', 'posts_no_replies');
+
+    const response = await fetch(url.toString());
+    if (!response.ok) return null;
+
+    const data = await response.json();
+    const feed = data.feed || [];
+
+    // Normalize the blog URL for matching (strip trailing slash)
+    const normalizedBlogUrl = blogUrl.replace(/\/$/, '');
+
+    for (const item of feed) {
+      const post = item.post;
+      // Check embed.external.uri
+      const embedUri = post.embed?.external?.uri || '';
+      if (embedUri.replace(/\/$/, '') === normalizedBlogUrl) {
+        return post;
+      }
+      // Also check text content for the URL
+      const text = post.record?.text || '';
+      if (text.includes(normalizedBlogUrl) || text.includes(normalizedBlogUrl + '/')) {
+        return post;
+      }
+    }
+    return null;
+  }
+
   async function loadBlueskyComments() {
     const container = document.getElementById('bluesky-comments-container');
     if (!container) return;
 
-    const uri = container.dataset.uri;
+    const blogPostUrl = container.dataset.postUrl;
     const handle = container.dataset.handle || 'sylee.dev';
-    if (!uri) return;
+    if (!blogPostUrl) return;
 
     const loadingEl = document.getElementById('bluesky-comments-loading');
-    const listEl = document.getElementById('bluesky-comments-list');
+    const contentEl = document.getElementById('bluesky-comments-content');
     const errorEl = document.getElementById('bluesky-comments-error');
-    if (!listEl || !errorEl) return;
+    if (!contentEl || !errorEl) return;
 
     // Reset state
-    if (loadingEl) {
-      loadingEl.classList.remove('hidden');
-    }
-    listEl.classList.add('hidden');
-    listEl.innerHTML = '';
+    if (loadingEl) loadingEl.classList.remove('hidden');
+    contentEl.classList.add('hidden');
+    contentEl.innerHTML = '';
     errorEl.classList.add('hidden');
     errorEl.innerHTML = '';
 
     try {
-      const url = new URL(`${BLUESKY_API}/app.bsky.feed.getPostThread`);
-      url.searchParams.set('uri', uri);
-      url.searchParams.set('depth', '1');
-      url.searchParams.set('parentHeight', '0');
+      // Step 1: Find the Bluesky post that links to this blog post
+      const post = await findBlueskyPost(handle, blogPostUrl);
 
-      const response = await fetch(url.toString());
-      if (!response.ok) throw new Error(`HTTP ${response.status}`);
-
-      const data = await response.json();
-      const thread = data.thread;
-
-      const replyUrl = getPostUrl(uri, handle);
-
-      if (!thread || !thread.replies || thread.replies.length === 0) {
+      if (!post) {
         if (loadingEl) loadingEl.classList.add('hidden');
-        listEl.innerHTML = `
-          <p class="text-gray-400 text-sm text-center py-4">No replies yet.</p>
-          <div class="text-center">
-            <a href="${replyUrl}" target="_blank" rel="noopener noreferrer"
-               class="inline-flex items-center gap-2 text-sm text-teal-600 hover:text-teal-700 hover:underline">
-              Reply on Bluesky
-            </a>
-          </div>
+        contentEl.innerHTML = `
+          <p class="text-gray-400 text-sm text-center py-8">
+            No Bluesky post found for this article.
+          </p>
         `;
-        listEl.classList.remove('hidden');
+        contentEl.classList.remove('hidden');
         return;
       }
 
-      // Filter valid replies and sort by like count
-      const sortedReplies = thread.replies
-        .filter((r: any) => r.post && !r.blocked && !r.notFound)
-        .sort(
-          (a: any, b: any) =>
-            (b.post.likeCount || 0) - (a.post.likeCount || 0)
-        );
+      const bskyPostUrl = getPostUrl(post.uri, post.author.handle);
 
-      const commentsHtml = sortedReplies
-        .map((r: any) => renderComment(r))
-        .join('');
+      // Step 2: Show engagement stats
+      let html = renderEngagement(post, bskyPostUrl);
+
+      // Step 3: If there are replies, fetch the thread
+      if (post.replyCount > 0) {
+        const threadUrl = new URL(`${BLUESKY_API}/app.bsky.feed.getPostThread`);
+        threadUrl.searchParams.set('uri', post.uri);
+        threadUrl.searchParams.set('depth', '1');
+        threadUrl.searchParams.set('parentHeight', '0');
+
+        const threadResponse = await fetch(threadUrl.toString());
+        if (threadResponse.ok) {
+          const threadData = await threadResponse.json();
+          const replies = (threadData.thread?.replies || [])
+            .filter((r: any) => r.post && !r.blocked && !r.notFound)
+            .sort(
+              (a: any, b: any) =>
+                (b.post.likeCount || 0) - (a.post.likeCount || 0)
+            );
+
+          if (replies.length > 0) {
+            const commentsHtml = replies
+              .map((r: any) => renderComment(r))
+              .join('');
+            html += `<div class="space-y-3 mt-4">${commentsHtml}</div>`;
+          }
+        }
+      }
 
       if (loadingEl) loadingEl.classList.add('hidden');
-      listEl.innerHTML = `
-        <div class="flex items-center justify-between mb-4">
-          <span class="text-sm text-gray-500">${sortedReplies.length} ${sortedReplies.length === 1 ? 'reply' : 'replies'}</span>
-          <a href="${replyUrl}" target="_blank" rel="noopener noreferrer"
-             class="text-sm text-teal-600 hover:text-teal-700 hover:underline">
-            Reply on Bluesky
-          </a>
-        </div>
-        <div class="space-y-3">
-          ${commentsHtml}
-        </div>
-      `;
-      listEl.classList.remove('hidden');
+      contentEl.innerHTML = html;
+      contentEl.classList.remove('hidden');
     } catch (err) {
       console.error('Failed to load Bluesky comments:', err);
       if (loadingEl) loadingEl.classList.add('hidden');
-      const fallbackUrl = getPostUrl(uri, handle);
       errorEl.innerHTML = `
         <div class="text-center py-4">
           <p class="text-gray-400 text-sm">Unable to load Bluesky comments.</p>
-          <a href="${fallbackUrl}" target="_blank" rel="noopener noreferrer"
-             class="text-sm text-teal-600 hover:underline mt-1 inline-block">
-            View on Bluesky
-          </a>
         </div>
       `;
       errorEl.classList.remove('hidden');

@@ -55,7 +55,7 @@ function formatDate(dateString: string): string {
           class="group reveal"
           style={`transition-delay: ${Math.min(index * 50, 300)}ms`}
         >
-          <a href={`/blog/${post.slug}`} class="block">
+          <a href={`/blog/${post.id}`} class="block">
             <time class="text-sm text-gray-500">
               {formatDate(post.data.date)}
             </time>

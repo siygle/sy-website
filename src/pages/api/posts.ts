@@ -19,7 +19,7 @@ export const GET: APIRoute = async ({ request }) => {
   const posts = sortedPosts.slice(start, end).map((post) => {
     const tags = Array.isArray(post.data.tags) ? post.data.tags : [];
     return {
-      slug: post.slug,
+      slug: post.id,
       title: post.data.title,
       date: post.data.date,
       description: post.data.description || '',

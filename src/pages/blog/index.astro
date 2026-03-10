@@ -92,7 +92,7 @@ const groupedPosts: YearGroup[] = Array.from(yearMap.entries())
                   <div class="space-y-5">
                     {monthGroup.posts.map((post) => (
                       <article class="group">
-                        <a href={`/blog/${post.slug}`} class="block">
+                        <a href={`/blog/${post.id}`} class="block">
                           <div class="flex flex-col sm:flex-row sm:items-baseline sm:gap-4">
                             <time class="text-sm text-gray-400 shrink-0 tabular-nums sm:w-16">
                               {new Date(post.data.date).toLocaleDateString('en-US', { month: 'short', day: 'numeric' })}

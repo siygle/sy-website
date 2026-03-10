@@ -5,15 +5,15 @@
   "packageManager": "pnpm@10.17.0",
   "scripts": {
     "dev": "astro dev",
-    "build": "astro build && pagefind --site dist && cp -r dist/pagefind public/",
+    "build": "astro build && pagefind --site dist/client && cp -r dist/client/pagefind public/",
     "preview": "astro preview"
   },
   "dependencies": {
-    "@astrojs/cloudflare": "~12.6.12",
-    "@astrojs/mdx": "^4.3.13",
-    "@astrojs/react": "^4.4.2",
-    "@astrojs/rss": "^4.0.15",
-    "astro": "^5.16.11",
+    "@astrojs/cloudflare": "~13.0.1",
+    "@astrojs/mdx": "^5.0.0",
+    "@astrojs/react": "^5.0.0",
+    "@astrojs/rss": "^4.0.17",
+    "astro": "^6.0.1",
     "highlight.js": "^11.11.1",
     "react": "^19.2.3",
     "react-dom": "^19.2.3",
@@ -29,7 +29,8 @@
     "@types/react-dom": "^19.2.3",
     "pagefind": "^1",
     "tailwindcss": "^4.1.18",
-    "typescript": "^5.9.3"
+    "typescript": "^5.9.3",
+    "wrangler": "~4.71.0"
   },
   "pnpm": {
     "onlyBuiltDependencies": [

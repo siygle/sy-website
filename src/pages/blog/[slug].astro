@@ -7,7 +7,7 @@ import { slugifyTag } from '~/lib/tags';
 export async function getStaticPaths() {
   const posts = await getCollection('blog');
   return posts.map((post) => ({
-    params: { slug: post.slug },
+    params: { slug: post.id },
     props: { post },
   }));
 }
@@ -66,7 +66,7 @@ const tags = Array.isArray(post.data.tags) ? post.data.tags : [];
     </div>
   </article>
 
-  <Comments postUrl={`${Astro.site}blog/${post.slug}/`} />
+  <Comments postUrl={`${Astro.site}blog/${post.id}/`} />
 
   <script>
     function initProgressBar() {

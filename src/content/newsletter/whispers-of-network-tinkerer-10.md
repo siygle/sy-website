@@ -14,7 +14,7 @@ tags:
 
 ## Node.js 圈子就是要這麼刺激！
 
-[https://twitter.com/siygle/status/1504365268423700481](https://twitter.com/siygle/status/1504365268423700481)
+![](https://twitter.com/siygle/status/1504365268423700481)
 
 烏俄戰爭不知道會持續多久，不過科技圈也[不閒著](https://www.storm.mg/article/4242802?page=1)，雙方都各有擅場，不過（脆弱的） Node.js 生態圈前陣子又被燒到了。😅
 
@@ -24,15 +24,15 @@ tags:
 
 最先被炸到的應該是 vue-cli，然後後續還衍生了更多的 drama...😅
 
-[https://twitter.com/hybridherbst/status/1504223953627369480](https://twitter.com/hybridherbst/status/1504223953627369480)
+![](https://twitter.com/hybridherbst/status/1504223953627369480)
 
-[https://twitter.com/aaefiikmnnnr/status/1504351530098786305](https://twitter.com/aaefiikmnnnr/status/1504351530098786305)
+![](https://twitter.com/aaefiikmnnnr/status/1504351530098786305)
 
 嗯，我的想法就是最上推，支援烏克蘭或是個人表達抵制俄羅斯入侵的行為都是可以的，但是你利用多數人使用的套件去作這種類似病毒的行為，這帶來的傷害應該比作者希望達到的目的更多，而且完全失焦...
 
 ## Node.js 新提案 - test runner
 
-[https://twitter.com/jasnell/status/1503369966241812480](https://twitter.com/jasnell/status/1503369966241812480)
+![](https://twitter.com/jasnell/status/1503369966241812480)
 
 [才剛提過](https://chat.sylee.dev/2022/03/10/%e7%b6%b2%e8%b7%af%e9%bb%91%e6%89%8b%e7%9a%84%e5%91%a2%e5%96%83-9/) Node.js 最近一直從 deno 那邊借鏡了許多功能，然後就又看到這個[新提案](https://github.com/nodejs/node/issues/40954)了（應該是已經通過，相信很快就會加到 master branch 了 😎
 
@@ -79,4 +79,4 @@ let fileAnalysis = myFunctions();
 
 就是這麼的樸實無華，隨手捻來一點都沒有阻礙 😆
 
-[https://twitter.com/malclocke/status/1504718243864653831](https://twitter.com/malclocke/status/1504718243864653831)
+![](https://twitter.com/malclocke/status/1504718243864653831)

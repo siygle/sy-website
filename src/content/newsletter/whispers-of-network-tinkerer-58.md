@@ -20,7 +20,7 @@ category: 不定期的呢喃
 
 雖然未來的事不好說，不過我也曾經提了數次自己目前很喜歡這個平台以及他們的團隊，希望大家都能來試試看，也希望能愛上這個服務。😃
 
-[https://bsky.app/profile/sylee.dev/post/3l7bj2ydpy22r](https://bsky.app/profile/sylee.dev/post/3l7bj2ydpy22r)
+![](https://bsky.app/profile/sylee.dev/post/3l7bj2ydpy22r)
 
 不能不提到它強大的開發社群，在越來越多人登陸 Bluesky 之後，許許多多有趣的開發跟服務，也陸續不斷的出現，希望這股開發者的力量，也可以成為 Bluesky 崛起的一大助力！🤞
 
@@ -32,7 +32,7 @@ category: 不定期的呢喃
 
 其實碎念過不少次了，不多說了，就當愛好者的殷殷期盼 😓。
 
-[https://x.com/rough__sea/status/1857481657281913017](https://x.com/rough__sea/status/1857481657281913017)
+![](https://x.com/rough__sea/status/1857481657281913017)
 
 ### 每次看到設計工具都要記錄一下
 
@@ -42,7 +42,7 @@ category: 不定期的呢喃
 
 對色盲/色弱的開發者來說也是一種福音吧（苦主之一）。突然想到最近搭配 AI 的許多前端頁面的生成式服務，不知道有沒有機會整合這類的設計語言進去（透過 prompt? 🤔），這樣之後設計真的門檻真的會越來越輕鬆了，雖然細節可能還無法達成設計人員的等級，不過如果是簡單元件，或是設計影響不那麼重要的服務，說不定真的幾乎不需要人力來特別處理了。
 
-[https://x.com/ccbikai/status/1854170247634538773](https://x.com/ccbikai/status/1854170247634538773)
+![](https://x.com/ccbikai/status/1854170247634538773)
 
 ## 開源世界真有趣
 
@@ -54,7 +54,7 @@ category: 不定期的呢喃
 
 觀望，我是覺得全相容好像沒那麼簡單，好奇後續會怎麼進行。然後看 WordPress 走到現在這個情況真的是讓人感傷阿，為什麼能好好處理的事會變成這樣。
 
-[https://bsky.app/profile/sylee.dev/post/3l7fp2gbprd2h](https://bsky.app/profile/sylee.dev/post/3l7fp2gbprd2h)
+![](https://bsky.app/profile/sylee.dev/post/3l7fp2gbprd2h)
 
 ### JS 世界最不缺少的就是 package manager 啦
 
@@ -66,7 +66,7 @@ category: 不定期的呢喃
 
 看起來他們的方向可能跟 Deno 家的 JSR 蠻類似的，就是在相容現有的 npm 生態之外，去改進 CLI、registry，不過現在因為還在早期開發，距離實際用在正式環境可能還有一段時間，不過應該值得開發者留意它的發展。👀
 
-[https://bsky.app/profile/vlt.sh/post/3labr7axt2t2p](https://bsky.app/profile/vlt.sh/post/3labr7axt2t2p)
+![](https://bsky.app/profile/vlt.sh/post/3labr7axt2t2p)
 
 ### Toasty - ORM in Rust
 
@@ -100,7 +100,7 @@ category: 不定期的呢喃
 
 [New from Universe 2024: Get the latest previews and releases](https://github.blog/news-insights/product-news/universe-2024-previews-releases/)
 
-[https://www.youtube.com/watch?v=5ov2NYBdGSw](https://www.youtube.com/watch?v=5ov2NYBdGSw)
+![](https://www.youtube.com/watch?v=5ov2NYBdGSw)
 
 - Copilot 要支援多模型了，所以很快可以切換 ChatGPT o1 & o1-mini、Claude 3.5 跟 Gemini 1.5 等。
 
@@ -122,7 +122,7 @@ category: 不定期的呢喃
 
 不過如果之後能擴大到其他軟體的話，或許就有意思了 🤔
 
-[https://x.com/OpenAIDevs/status/1857129790312272179](https://x.com/OpenAIDevs/status/1857129790312272179)
+![](https://x.com/OpenAIDevs/status/1857129790312272179)
 
 ## **網路是個好東西**
 
@@ -134,7 +134,7 @@ category: 不定期的呢喃
 
 雖然世界不太可能這麼順利，不過還是希望[解約](https://www.youtube.com/watch?v=OS9zFH_oSnY)能順利走完，這種爛公司還是別待了🤞
 
-[https://bsky.app/profile/sylee.dev/post/3lb5lwuozk22o](https://bsky.app/profile/sylee.dev/post/3lb5lwuozk22o)
+![](https://bsky.app/profile/sylee.dev/post/3lb5lwuozk22o)
 
 ### 家長懂玩
 
@@ -142,30 +142,30 @@ category: 不定期的呢喃
 
 只能說家長真懂玩，應該是賺了不少。
 
-[https://x.com/StockMKTNewz/status/1851330355753791926](https://x.com/StockMKTNewz/status/1851330355753791926)
+![](https://x.com/StockMKTNewz/status/1851330355753791926)
 
 ### 沒有想到介紹河狸可以這麼有趣 🤣
 
 Discovery 可以啟用這位中文配音嗎 #炸
 
-[https://x.com/wodanggangqiang/status/1856369717977784467](https://x.com/wodanggangqiang/status/1856369717977784467)
+![](https://x.com/wodanggangqiang/status/1856369717977784467)
 
 ### 沒想到還有這種 profile 的形式
 
 只能說開發者都很有創意，如果是 Indie Developer 又更適合了，又有趣又可以達到宣傳自己作品的目的（不過數量要夠多才行 😅）
 
-[https://x.com/tualatrix/status/1852544946248814790](https://x.com/tualatrix/status/1852544946248814790)
+![](https://x.com/tualatrix/status/1852544946248814790)
 
 ### 突破天際的閃電麥昆
 
 這個影片一定要耐著性子看下去 😆
 
-[https://x.com/JZhen72937/status/1855594944007983448](https://x.com/JZhen72937/status/1855594944007983448)
+![](https://x.com/JZhen72937/status/1855594944007983448)
 
 ### 為什麼受傷的總是我
 
 真的會被 IVE 這團笑死，相愛相殺的體現。
 
-[https://x.com/cocoxi_/status/1850920065786380293](https://x.com/cocoxi_/status/1850920065786380293)
+![](https://x.com/cocoxi_/status/1850920065786380293)
 
-[https://x.com/hyeyu05/status/1855976803447542206](https://x.com/hyeyu05/status/1855976803447542206)
+![](https://x.com/hyeyu05/status/1855976803447542206)

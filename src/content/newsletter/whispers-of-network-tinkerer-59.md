@@ -90,7 +90,7 @@ Thorn 的核心目標是利用技術和合作，幫助執法機構、科技公�
 
 真的希望有更多像這類良性的軟體、服務生態，可以圍繞在 Bluesky 持續成長。🤞
 
-[https://bsky.app/profile/deck.blue/post/3lcm6zyy45x2o](https://bsky.app/profile/deck.blue/post/3lcm6zyy45x2o)
+![](https://bsky.app/profile/deck.blue/post/3lcm6zyy45x2o)
 
 ## AWS 大大每年的趨勢預測文又來啦！
 
@@ -128,22 +128,20 @@ AWS 的 CTO [**Werner**](https://bsky.app/profile/werner.social) 每年都會針
 
 *不知道是第幾次簽賭案之後就沒在進場過了，是不是該帶孩子再回球場了呢* 🥹
 
-[https://www.youtube.com/watch?v=kcYVc4k3-Sg](https://www.youtube.com/watch?v=kcYVc4k3-Sg)
+![](https://www.youtube.com/watch?v=kcYVc4k3-Sg)
 
 ### 希望 NewJeans 可以一切順利
 
 看到記者會那天就寫下了下面這則，雖然後續艱難，但希望這群勇敢的孩子可以一切順利（每次講到都要說：「房時爀你真的是爛透了！」）
 
-[https://bsky.app/profile/did:plc:z57tkg4b3hw7fsn47lud3kf5/post/3lc2kkpiqlc2j](https://bsky.app/profile/did:plc:z57tkg4b3hw7fsn47lud3kf5/post/3lc2kkpiqlc2j)
+![](https://bsky.app/profile/did:plc:z57tkg4b3hw7fsn47lud3kf5/post/3lc2kkpiqlc2j)
 
 ### 這個影片怎麼會一直循環播放
 
-[https://x.com/cc_puppy_/status/1863237437851631793](https://x.com/cc_puppy_/status/1863237437851631793)
+![](https://x.com/cc_puppy_/status/1863237437851631793)
 
 ### 我也有一樣的困擾
 
 只要跟 side projects 沾上邊我就做不完 #挺 😅
 
-![src: [https://bsky.app/profile/jasnell.me/post/3lcm6zmoxd22g](https://bsky.app/profile/jasnell.me/post/3lcm6zmoxd22g)](../assets/網路黑手的呢喃 #59 - image.png)
-
-src: [https://bsky.app/profile/jasnell.me/post/3lcm6zmoxd22g](https://bsky.app/profile/jasnell.me/post/3lcm6zmoxd22g)
+![](https://bsky.app/profile/jasnell.me/post/3lcm6zmoxd22g)

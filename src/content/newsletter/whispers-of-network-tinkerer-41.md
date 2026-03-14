@@ -110,7 +110,7 @@ src: [https://twitter.com/kevinzhow/status/1744628110593761555](https://twitter.
 
 Chrome 對於推動 WebAssembly 也是不遺餘力，最近也加上了對 WebAssembly 的除錯功能（不過目前看起來只支援了 C/C++，之後應該會陸續加上其他熱門語言的支持吧？）
 
-[https://twitter.com/jecfish/status/1745875683400687757](https://twitter.com/jecfish/status/1745875683400687757)
+![](https://twitter.com/jecfish/status/1745875683400687757)
 
 # Zig 也是一個酷酷的東西
 
@@ -173,7 +173,7 @@ src: [https://twitter.com/xiaohuggg/status/1747226873195794817](https://twitter.
 
 硬體相關的領域不太熟悉，不過自從看到[黃信惠](https://www.youtube.com/@davidhuanglab)這個頻道之後，就變成忠實觀眾了，每次都可以從獲得不少硬體開發的小知識，大推！
 
-[https://www.youtube.com/watch?v=qzTYrj30u-c](https://www.youtube.com/watch?v=qzTYrj30u-c)
+![](https://www.youtube.com/watch?v=qzTYrj30u-c)
 
 ### 希望各大餐廳都能考慮加上這個選項
 

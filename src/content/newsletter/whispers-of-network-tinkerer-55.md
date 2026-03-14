@@ -16,7 +16,7 @@ category: 不定期的呢喃
 
 直接來一個預告之後就馬上實作了，大家好像逐漸習慣 bun 這麼激進的開發路線 😄
 
-[https://x.com/bunjavascript/status/1836431249176695130/photo/1](https://x.com/bunjavascript/status/1836431249176695130/photo/1)
+![](https://x.com/bunjavascript/status/1836431249176695130/photo/1)
 
 Bun 在最新釋出的版本中，提供了這個酷酷的功能（不過其實也沒什麼，就是透過本來就存在的 ffi 來實作而已，不過這邊 Bun 更進一步，直接可以直接在 JS 程式裡面直接呼叫 C 函式，其他編譯等動作 Bun 都會幫你處理了，所以就可以無痛整合不需要其他的設定。官方還特別為了這個新功能寫了下面這篇文章來說明，也一併展示了幾個範例，[譬如這個直接呼叫 ffmpeg 來處理影片轉檔](https://bun.sh/blog/compile-and-run-c-in-js#what-can-you-build-with-this)，真的是超級舒服（前提是如果你也熟悉 C 的話 😅）
 
@@ -32,7 +32,7 @@ Bun 常常會引入一些頗驚豔的新功能，也蠻希望 Deno 也能跟上�
 
 其實在鄰近 2.0 的最近，Ryan 非常頻繁地出現在好幾個 Podcasts 節目中來談論即將到來的 Deno 2.0，有興趣也可以跳轉各家（[Syntax](https://www.youtube.com/watch?v=tZBCq8Ijkgw)、[JavaScript Jabber](https://topenddevs.com/podcasts/javascript-jabber/episodes/unpacking-deno-2-code-stability-free-speech-and-more-jsj-648#player1?catid=0&trackid=0)、[Stack Overflow](https://stackoverflow.blog/2024/08/20/ryan-dahl-deno-20-scale-improve-npm-nodejs/)、[PodRocket](https://podrocket.logrocket.com/deno-2-ryan-dahl)），其中有特別提到[即將伴隨 2.0 出現的長期支持版本](https://thenewstack.io/deno-2-arrives-with-long-term-support-node-js-compatibility/)，能夠更偏向企業需求、穩定的方向，還是滿值得期待的。
 
-[https://x.com/deno_land/status/1836785438280806492](https://x.com/deno_land/status/1836785438280806492)
+![](https://x.com/deno_land/status/1836785438280806492)
 
 除了各項的 bugfix 跟優化之外，最近 Ry 也提到了伴隨者 Deno 的開發，結合 Deno & v8 的一個很重要的元件 - Rusty V8 也終於走到了穩定版本了，不過因為決定要跟著 V8 的版本，所以第一個穩定版本不是大家熟知的 1.0.0 而是 129.0.0 😄。看起來之後升級與跟 V8 的整合應該會更流暢了（就是跟著 V8 四週一個升級，然後要整合 V8 新功能也會方便許多。
 
@@ -46,7 +46,7 @@ Bun 常常會引入一些頗驚豔的新功能，也蠻希望 Deno 也能跟上�
 
 關於這個爭議的細節，可以參考下面 skeet 附上的幾個連結，裡面有非常詳細的說明，如果你本身也是 JS 開發者或認同這件事的話，也可以透過 [javascript.tm](http://javascript.tm) 連結裡面的署名來支持這個活動。當然如果你是法律專才的話，更歡迎能直接聯絡他們，準備開戰！#誤 🤣
 
-[https://bsky.app/profile/sylee.dev/post/3l4d45xat5p2w](https://bsky.app/profile/sylee.dev/post/3l4d45xat5p2w)
+![](https://bsky.app/profile/sylee.dev/post/3l4d45xat5p2w)
 
 # 開源世界真有趣
 
@@ -58,13 +58,13 @@ Bun 常常會引入一些頗驚豔的新功能，也蠻希望 Deno 也能跟上�
 
 雖然我可能不太會用到這樣的工具，不過能想出這樣的替代方案，只能佩服網路真的是處處強者的地方。😅
 
-[https://x.com/acutmore/status/1836762324452975021](https://x.com/acutmore/status/1836762324452975021)
+![](https://x.com/acutmore/status/1836762324452975021)
 
 ### 這世界又多了一個酷酷的 shell
 
 最近不約而同看到幾位網友都推了這個名叫 nushell 的東西，激起了一點點好奇心就跑去翻了一下，沒想到真的挖到寶了 🤩
 
-[https://bsky.app/profile/sylee.dev/post/3l4o65yv7mkbj](https://bsky.app/profile/sylee.dev/post/3l4o65yv7mkbj)
+![](https://bsky.app/profile/sylee.dev/post/3l4o65yv7mkbj)
 
 我覺得 nushell 的官網做得蠻好的，你一眼看過去就大概知道它是什麼東西了。它自稱 new type of shell 真的沒有過譽，以往我們使用 shell 大多數 DevOps 或管理一些系統、裝置的時候，老手會使用的東西，但畢竟年代久遠，它的語法跟現在比較新型的語言有不小的落差（而且很陽春），導致要上手也不是那麼方便，看起來 nushell 就是針對這些痛點而來的。
 
@@ -88,11 +88,11 @@ src: Nushell - [https://www.nushell.sh/](https://www.nushell.sh/)
 
 *時間軸標好給大家了，有興趣可以直接聽這段 Matt 怎麼說的：*
 
-[https://youtu.be/fnI-QcVSwMU?t=1025](https://youtu.be/fnI-QcVSwMU?t=1025)
+![](https://youtu.be/fnI-QcVSwMU?t=1025)
 
 不過這件事先不要太快站隊比較好，因為 WP Engine 也跳出來反擊了～
 
-[https://x.com/wpengine/status/1838350670564377051](https://x.com/wpengine/status/1838350670564377051)
+![](https://x.com/wpengine/status/1838350670564377051)
 
 他們現在指控 Automattic & CEO Matt 是惡意攻擊他們（而且 Matt 以此為手段來威脅 WP Engine 必須支付費用給他們），這看起來好像會演變成法律攻防，有興趣也可以看一下 WP Engine 的論述文件。值得繼續關注這件事，也希望不要傷害到 WordPress 的開源發展才好（雖然現在的我已經沒在用 WP，不過一路走來還是有點感情的，而且 Automattic 一直以開源、遠端友善著名的企業，希望不要崩壞才好 🤞。
 
@@ -100,11 +100,11 @@ src: Nushell - [https://www.nushell.sh/](https://www.nushell.sh/)
 
 這個 Drama 可能會燒一陣子，Automattic 也準備訴諸法律了。
 
-[https://x.com/siygle/status/1838740506735714476](https://x.com/siygle/status/1838740506735714476)
+![](https://x.com/siygle/status/1838740506735714476)
 
 然後現在走到 WPEngine 出來指控 WordPress 阻擋了 WPEngine 升級 plugins & themes，希望不要演變到無法收拾的地步阿（會不會 WordPress folk 要準備上出現了吧）
 
-[https://x.com/bgardner/status/1839070322617643212](https://x.com/bgardner/status/1839070322617643212)
+![](https://x.com/bgardner/status/1839070322617643212)
 
 # 愛讀冊啦～
 
@@ -121,7 +121,7 @@ Optimizing operations that are already measured in microseconds may seem a littl
 
 不能不承認我還是非常以人廢言的，所以反之有好感的也是會無腦先支持一下，所以看到是 Cloudflare 出品的就覺得應該是值得花這個時間來閱讀一下。
 
-[https://x.com/justjs14/status/1833887759519318101](https://x.com/justjs14/status/1833887759519318101)
+![](https://x.com/justjs14/status/1833887759519318101)
 
 文中主角就是前陣子他們剛放出來的自幹版的 proxy service - [**Pingora](https://blog.cloudflare.com/pingora-open-source/)** 的改善經驗談。在這種世界級的服務下，任何一點小小的改善，累積起來都是想當龐大且影響甚鉅（看一些他們精美的流量 😅 → *the rate of requests leaving pingora-origin (globally) is 35 million requests per second*）
 
@@ -185,7 +185,7 @@ Optimizing operations that are already measured in microseconds may seem a littl
 
 之前好像有分享過，不過看起來體驗真的不錯，之後會不會人手一台阿 😍
 
-[https://x.com/DashHuang/status/1837645431226224937](https://x.com/DashHuang/status/1837645431226224937)
+![](https://x.com/DashHuang/status/1837645431226224937)
 
 ### 最近河馬迷因真的夯
 
@@ -193,17 +193,17 @@ Optimizing operations that are already measured in microseconds may seem a littl
 
 人家常說看可愛生物可以讓自己的心情變好，終於略略能體會到寵物黨的心理了 😄。
 
-[https://x.com/ShanksKek/status/1837724020822720831](https://x.com/ShanksKek/status/1837724020822720831)
+![](https://x.com/ShanksKek/status/1837724020822720831)
 
 有位臺灣深處理泰國的推友會不定期翻譯，歡迎大家 follow 起來！
 
-[https://x.com/piepieyaaa/status/1837862365817458972](https://x.com/piepieyaaa/status/1837862365817458972)
+![](https://x.com/piepieyaaa/status/1837862365817458972)
 
 ### 還是很多為這塊土地努力的人
 
 日前看到的訊息，沒想到亞蘭姊這麼有心，一定要推起來！
 
-[https://x.com/SCBakedpotato/status/1837173617412739490](https://x.com/SCBakedpotato/status/1837173617412739490)
+![](https://x.com/SCBakedpotato/status/1837173617412739490)
 
 [朕經八掰](https://www.youtube.com/@chattingwiththeking)
 
@@ -215,10 +215,10 @@ Optimizing operations that are already measured in microseconds may seem a littl
 
 [小海報 | 海總理 | Substack](https://tzangms.substack.com/)
 
-[https://x.com/tzangms/status/1836927535806071183](https://x.com/tzangms/status/1836927535806071183)
+![](https://x.com/tzangms/status/1836927535806071183)
 
 ### 這畫面太美
 
 好期待明年的到來阿 🤩
 
-[https://x.com/DiscussingFilm/status/1838949045282197931](https://x.com/DiscussingFilm/status/1838949045282197931)
+![](https://x.com/DiscussingFilm/status/1838949045282197931)

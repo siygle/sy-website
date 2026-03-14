@@ -14,7 +14,7 @@ tags:
 
 或者之前有人聽過這個專案名稱，甚至有人有機會已經玩過了，不過自從知道 Hashi 的創辦人退休之後跑去開始一個 terminal 的專案之後，就一直對這個東西有點期待（不過我人品不好沒機會提到玩到），不過終於在 2024 年底的時候看到作者發文準備公開的消息，也不意外在放出來之後就看到不少開發者第一時間就下載來試用了 😄
 
-[https://x.com/mitchellh/status/1871329568310882657](https://x.com/mitchellh/status/1871329568310882657)
+![](https://x.com/mitchellh/status/1871329568310882657)
 
 雖然現在只是 1.0 的版本，不過基本功能也都包含在其中了（雖然還是很陽春），目前試用起來也是非常舒服，說真的對 terminal 這個工具而言，我也不需要什麼特別功能（尤其是硬要跟 AI 綁定在一起，雖然有其方便性，但我寧可透過其他 CLI 來達到就好），單純講究渲染快速的 Ghostty 立刻成為我的新歡。
 
@@ -33,7 +33,7 @@ tags:
 - Major 升版代表有破壞性的改變，不過單純的 v2 → v3 也可能只有一兩個破壞性改動，也可能代表 100 個，作者本人更傾向把多個重大更新，分散到數個升級版本中，這樣讓用戶更容易了解與採用升級版本。
 - 另外，因為人們對於數字的變化，當版本 v2 → v3 對比 v133 → v134，雖然都一樣是 breaking change，但人們會直覺的把 v2 → v3 視為更重大的變更而忽視 v133 → v134 的這種版本變動。
 
-[https://bsky.app/profile/antfu.me/post/3lf5msrem322f](https://bsky.app/profile/antfu.me/post/3lf5msrem322f)
+![](https://bsky.app/profile/antfu.me/post/3lf5msrem322f)
 
 所以作者提出了 Epoch Semantic Versioning 這個概念（原本他希望是四位數字的格式，不過考慮到行之有年的 Semantic Versioning，所以改提出了下列這種，合併了 Epoch & Major 的作法）
 
@@ -53,7 +53,7 @@ tags:
 
 想快速了解它有什麼功能，以及如何使用，可以看一下它們自家的說明影片⬇️
 
-[https://www.youtube.com/watch?v=NaKsfWciJLo](https://www.youtube.com/watch?v=NaKsfWciJLo)
+![](https://www.youtube.com/watch?v=NaKsfWciJLo)
 
 ## RN @ Shopify
 
@@ -89,7 +89,7 @@ JSON Schema 是用來定義 json 資料格式的規範，不少函式庫就支�
 
 時至今日，對於開發硬體產品比起過往已經是更方便許多，不過像這個影片一樣，從頭開始製作自己的筆記型電腦這麼嗨的主題，我也是第一次看到，真的是太酷啦！
 
-[https://www.youtube.com/watch?v=fks3PBodyiE](https://www.youtube.com/watch?v=fks3PBodyiE)
+![](https://www.youtube.com/watch?v=fks3PBodyiE)
 
 除了影片已經很完整介紹作者的開發歷程之外，他也把所有相關的資料都開源出來了，有興趣的可以試試看 😅
 
@@ -113,26 +113,26 @@ JSON Schema 是用來定義 json 資料格式的規範，不少函式庫就支�
 
 最近因為美國的抖音被封，導致有一群外國人跑去用中國的小紅書，而且[大肆稱讚](https://bsky.app/search?q=rednote)。我個人是不太理解這種行為，不過相信很快就會感受到黨的鐵拳 😅。
 
-[https://bsky.app/profile/jaowon.bsky.social/post/3lfqgsw3adk22](https://bsky.app/profile/jaowon.bsky.social/post/3lfqgsw3adk22)
+![](https://bsky.app/profile/jaowon.bsky.social/post/3lfqgsw3adk22)
 
 不過後來看到這個之後，才驚覺原來有很深的佈局。 😆
 
-[https://x.com/baoshu88/status/1879402971408306371](https://x.com/baoshu88/status/1879402971408306371)
+![](https://x.com/baoshu88/status/1879402971408306371)
 
 我只能說，生活在沒有明顯威脅的國家真好，完全不需要有什麼危機意識。
 
 ### 如此中肯
 
-[https://x.com/causemx/status/1871480768586981531](https://x.com/causemx/status/1871480768586981531)
+![](https://x.com/causemx/status/1871480768586981531)
 
 ### 邦妮子例行更新 😆
 
-[https://x.com/__yunhand__/status/1864278825649197351](https://x.com/__yunhand__/status/1864278825649197351)
+![](https://x.com/__yunhand__/status/1864278825649197351)
 
 [https://www.threads.net/@potterkim0531/post/DE5R6U6SAjE?xmt=AQGza7s1mBV4LDzUxVLGJLC8K1tda80z7F_CR_J614iuwg](https://www.threads.net/@potterkim0531/post/DE5R6U6SAjE?xmt=AQGza7s1mBV4LDzUxVLGJLC8K1tda80z7F_CR_J614iuwg)
 
 ### IVE 新歌釋出，大家刷起來！
 
-[https://x.com/wanna_with0813/status/1879320988728607139](https://x.com/wanna_with0813/status/1879320988728607139)
+![](https://x.com/wanna_with0813/status/1879320988728607139)
 
-[https://www.youtube.com/watch?v=g36q0ZLvygQ](https://www.youtube.com/watch?v=g36q0ZLvygQ)
+![](https://www.youtube.com/watch?v=g36q0ZLvygQ)

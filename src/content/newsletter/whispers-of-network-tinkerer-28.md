@@ -20,7 +20,7 @@ Socket 關心您的 npm 安全、Deno 支援 package.json 後的下一步是？T
 
 不過畢竟 [Socket](https://socket.dev/) 是第三方的公司，不知道未來的發展會如何，不過當成一個幫忙檢查安全的小工具，對開發者來說的確是滿方便的。
 
-[https://twitter.com/feross/status/1636438247537782784](https://twitter.com/feross/status/1636438247537782784)
+![](https://twitter.com/feross/status/1636438247537782784)
 
 ## Why Deno decide to support package.json & 下一步是？
 
@@ -33,7 +33,7 @@ Socket 關心您的 npm 安全、Deno 支援 package.json 後的下一步是？T
 
 不過 Ryan 特別提到關於即將發布的 Major upgrade 的一些變更，它們即將要引入一個新的套件引用的方式 → `deno:oak@12` 透過這種方式引用的模組，Deno 將會更進一步處理模組依賴的問題。
 
-[https://twitter.com/deno_land/status/1637663385503268864](https://twitter.com/deno_land/status/1637663385503268864)
+![](https://twitter.com/deno_land/status/1637663385503268864)
 
 除此之外，最近看 Deno repo 也看到一些有趣的東西，譬如像下面這個😄
 
@@ -53,7 +53,7 @@ TS 也默默走到 5.0 了，雖然大家對它評價不一，不過起碼每年
 
 大版本當然是海量更新，不過裡面比較感興趣的只有 [Decorators](https://devblogs.microsoft.com/typescript/announcing-typescript-5-0/#decorators) & [優化](https://devblogs.microsoft.com/typescript/announcing-typescript-5-0/#speed-memory-and-package-size-optimizations)這部分。當然我還是私心希望有天 TS 真的能變成 ECMAScript 的一部分，如果你很喜歡的話，可以考慮 Deno，它立馬就支援到 [5.0 版本](https://github.com/denoland/deno/pull/18294)啦（但是 Decorators 還沒支援😅）
 
-[https://twitter.com/typescript/status/1636416665071288321](https://twitter.com/typescript/status/1636416665071288321)
+![](https://twitter.com/typescript/status/1636416665071288321)
 
 ## ChatGPT & the future of AI
 
@@ -63,11 +63,11 @@ TS 也默默走到 5.0 了，雖然大家對它評價不一，不過起碼每年
 
 最近 OpenAI CEO 上了 Podcast 用蠻長的時間跟主持人討論了許多 AI 的相關問題以及未來的發展，相當值得一聽。
 
-[https://www.youtube.com/watch?v=L_Guz73e6fw](https://www.youtube.com/watch?v=L_Guz73e6fw)
+![](https://www.youtube.com/watch?v=L_Guz73e6fw)
 
 當然。如果你是英文苦手的話，這邊也是有其他達人已經幫忙做好筆記的⬇️
 
-[https://twitter.com/oran_ge/status/1640142896723808262](https://twitter.com/oran_ge/status/1640142896723808262)
+![](https://twitter.com/oran_ge/status/1640142896723808262)
 
 ### 小而美的發佈工具
 
@@ -85,43 +85,43 @@ TS 也默默走到 5.0 了，雖然大家對它評價不一，不過起碼每年
 
 ***連結記起來!! - [tailwindcomponents.com](https://tailwindcomponents.com/)***
 
-[https://twitter.com/vikingmute/status/1632200244355297280](https://twitter.com/vikingmute/status/1632200244355297280)
+![](https://twitter.com/vikingmute/status/1632200244355297280)
 
 ### 世界真的大步向前邁進，太快了！
 
 除了 AI 之外，連遊戲世界也要迎來變革了。話說之後這麼容易建模的話，會不會有結合AI&3D建模兩者的應用，然後你的虛擬助理就具現化了！！
 
-[https://twitter.com/AnsonChen/status/1640261426907594752](https://twitter.com/AnsonChen/status/1640261426907594752)
+![](https://twitter.com/AnsonChen/status/1640261426907594752)
 
 ### 以後會不會出現教寫 prompt 的課程😆
 
-[https://twitter.com/ihower/status/1639451445920669701](https://twitter.com/ihower/status/1639451445920669701)
+![](https://twitter.com/ihower/status/1639451445920669701)
 
 ### 錄Podcast需要好工具
 
-[https://twitter.com/clonncd/status/1637302912903974912](https://twitter.com/clonncd/status/1637302912903974912)
+![](https://twitter.com/clonncd/status/1637302912903974912)
 
 不過也是有大大實測之後給了不堪用的評論🤣(*再回去調整一下吧，Adobe*)
 
-[https://twitter.com/AnsonChen/status/1640398860454612992](https://twitter.com/AnsonChen/status/1640398860454612992)
+![](https://twitter.com/AnsonChen/status/1640398860454612992)
 
 ### 令人感慨
 
 原本都走在眾人前面的 Google，居然也有變成追趕別人的一天，你缺乏的不是才華洋溢的創造力，你缺乏的是能好好把自己的產品打磨得更亮麗的能力。
 
-[https://twitter.com/oasisfeng/status/1638608786356326400](https://twitter.com/oasisfeng/status/1638608786356326400)
+![](https://twitter.com/oasisfeng/status/1638608786356326400)
 
 ### 你不小心說出商業機密了😆
 
 *Bard 是最近 Google 推出的 ChatGPT 競品，因為討論熱度差太多，品質也差很多，防止有人不知道它是什麼😆*
 
-[https://twitter.com/siygle/status/1638360219003781120](https://twitter.com/siygle/status/1638360219003781120)
+![](https://twitter.com/siygle/status/1638360219003781120)
 
 ### 原來奶油可以這樣擠🫢
 
 *受教了！*
 
-[https://twitter.com/roaneatan/status/1639322639809544193](https://twitter.com/roaneatan/status/1639322639809544193)
+![](https://twitter.com/roaneatan/status/1639322639809544193)
 
 ### 什麼時候警察杯杯變這麼幽默了🤣
 

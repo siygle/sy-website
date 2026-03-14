@@ -21,13 +21,13 @@ MongoDB 的場子，終於在疫情關係停滯一陣子之後又[再次紐約�
 
 ## The State of JavaScript Supply Chain Security in 2022
 
-[https://twitter.com/feross/status/1534641027323006976](https://twitter.com/feross/status/1534641027323006976)
+![](https://twitter.com/feross/status/1534641027323006976)
 
 之前幾期都提過的 Node.js/npm 生態圈近期的安全性問題（主要是 Supply Chain Attack），也有不少新創因之而起，譬如之前也提過的 [socket.dev](https://socket.dev/)，剛好在這次的 #OpenJSWorld22 其創辦人就剛好針對這個題目有一場議程分享，蠻值得 Node.js 開發者看看，也可以試試它們家提供的服務。
 
 ## Serverless Postgres - Neon
 
-[https://twitter.com/Neondatabase/status/1537062599703011330](https://twitter.com/Neondatabase/status/1537062599703011330)
+![](https://twitter.com/Neondatabase/status/1537062599703011330)
 
 看 Document-based Database 近年來快速的發展，原本的 RDBMS 當然也不能落後，果然就有新創也是看準這個切入點，提供 Postgres 這套也是相當知名的 Postgres（其實妳也是可以把它拿來當作 Document-based 來用的，雖然知名度一直沒有 MySQL，也是很威的資料庫方案）
 
@@ -35,7 +35,7 @@ MongoDB 的場子，終於在疫情關係停滯一陣子之後又[再次紐約�
 
 ## npm query
 
-[https://twitter.com/bitandbang/status/1534916251461484544](https://twitter.com/bitandbang/status/1534916251461484544)
+![](https://twitter.com/bitandbang/status/1534916251461484544)
 
 最近 npm 提出的其中一個 RFC，完整的說明文件可以參考這邊：[[doc](https://github.com/npm/cli/blob/4511d0d0e45a3a75be90ddfd8ac9dd6cbc5c14b6/docs/content/commands/npm-query.md)]、[[PR](https://github.com/npm/cli/pull/5000)]。這功能是其中一個新的指令 `npm query`，可以讓你透過 CLI 快速針對安裝的套件去進行各種的查詢語句，如下是一個文件舉的例子：
 
@@ -46,7 +46,7 @@ npm query ":type(git)" | jq 'map(.name)' | xargs -I {} npm why {}
 
 ## 歡迎來到Web5的到來!?
 
-[https://twitter.com/TBD54566975/status/1535303403361824768](https://twitter.com/TBD54566975/status/1535303403361824768)
+![](https://twitter.com/TBD54566975/status/1535303403361824768)
 
 說不定有人看到標題就火氣上升了😅
 
@@ -64,6 +64,6 @@ npm query ":type(git)" | jq 'map(.name)' | xargs -I {} npm why {}
 
 整理這篇的時候突然覺得，老是放這些苦悶的東西一點都沒辦法顯出我的本性，還是要多放些樓偏的東西才比較切合「呢喃」這個詞彙。😎
 
-[https://www.youtube.com/watch?v=YUqSqJ6Jnc4](https://www.youtube.com/watch?v=YUqSqJ6Jnc4)
+![](https://www.youtube.com/watch?v=YUqSqJ6Jnc4)
 
 感謝 youtube 的推薦機制（~~大部分時間是感到厭煩~~），原本以為是商品開箱，結果竟然是動手做系列，太猛了（這個頻道大推！）。翻頁時鐘真的好療癒阿，真的會忍不住想動手弄一個（但是硬體實在太苦手🤣）

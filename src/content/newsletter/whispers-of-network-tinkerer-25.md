@@ -21,7 +21,7 @@ tags:
 
 之前已經有提過好幾次關於 bun & Deno 的恩怨情仇，看來沒有要消火的意思阿，一個 podcast 中的一段採訪，就又讓兩邊戰起來了。（頂樓推主真的很故意，還 mention 兩邊約戰...😆。
 
-[https://twitter.com/lcasdev/status/1614669039015727108](https://twitter.com/lcasdev/status/1614669039015727108)
+![](https://twitter.com/lcasdev/status/1614669039015727108)
 
 ## 後 Twitter 時代，誰與爭鋒！
 
@@ -31,11 +31,11 @@ tags:
 
 不過老實說，稍微玩過的想法，這比起另一邊的 Fediverse，這個感覺玩具感太重（當然考慮到它剛推出沒多久，也不太可能有多成熟的生態），雖然[它號稱可以透過簡單的架構達到分散跟隱私的目的](https://github.com/nostr-protocol/nostr)。不過再觀望看看吧～
 
-[https://twitter.com/jack/status/1620552041600000000](https://twitter.com/jack/status/1620552041600000000)
+![](https://twitter.com/jack/status/1620552041600000000)
 
 但其實之前有提過的另一個也是從 Twitter 家催生出來的 - [Bluesky](https://blueskyweb.xyz/)，最近也開始有些動作，不過這專案其實開跑至今也是蠻長一段時間了（但還是沒看到什麼實際的東西），考慮到很多人要來分食，動作太慢的話可能也是沒什麼太大影響了。😅
 
-[https://twitter.com/bluesky/status/1583184127465259009](https://twitter.com/bluesky/status/1583184127465259009)
+![](https://twitter.com/bluesky/status/1583184127465259009)
 
 目前看起來還是 Fediverse 最有機會接下來，畢竟生態圈比起其他競爭者成熟許多，[ActivityPub](https://zh.wikipedia.org/wiki/ActivityPub)協定也行之有年了，不過怎麼讓一般用戶（或是核心用戶）也願意轉移過來，是它能不能笑到最後的因素（還是其實它不在意？畢竟前幾年它也是慢慢活在自己的角落，要不是因為有馬加速師出現 😄）。
 
@@ -53,7 +53,7 @@ tags:
 > 看一下網站的 solgan 真是好勵志阿 😆
 > 
 
-[https://twitter.com/azu_re/status/1620039657710051328](https://twitter.com/azu_re/status/1620039657710051328)
+![](https://twitter.com/azu_re/status/1620039657710051328)
 
 雖然我私心也是很希望看到 Deno 能夠起來，不過目前感覺前路也是滿艱辛的。因為跟 Node.js 生態高度重疊，首要會遇到的問題一定是「為什麼我 Node.js 用的好好的，要換去用一個新的？」，尤其是新品沒有非常明顯的優勢的話。
 
@@ -67,7 +67,7 @@ tags:
 
 最近它們也像詢問開發者的意見來調整它們未來發展的方向，有興趣的開發者也可以幫忙它們一下喔 ⬇️
 
-[https://twitter.com/deno_land/status/1617574544050638850](https://twitter.com/deno_land/status/1617574544050638850)
+![](https://twitter.com/deno_land/status/1617574544050638850)
 
 ## Node.js - what's next?
 
@@ -84,7 +84,7 @@ tags:
 
 當然還有很多，有興趣也可以定期看一下 [Next-10](https://github.com/nodejs/next-10) 裡面的討論，想練一下日文聽力的話可以直接收聽[當天的錄影](https://www.youtube.com/watch?v=cXi4L4IuGZs)。
 
-[https://twitter.com/shisama_/status/1618845722253889536](https://twitter.com/shisama_/status/1618845722253889536)
+![](https://twitter.com/shisama_/status/1618845722253889536)
 
 ---
 
@@ -92,36 +92,36 @@ tags:
 
 ### 變太快真的追不上了😅
 
-[https://twitter.com/fzhantw/status/1614831177562730496](https://twitter.com/fzhantw/status/1614831177562730496)
+![](https://twitter.com/fzhantw/status/1614831177562730496)
 
 ### 我也好想有這種墊高的起跳點😅
 
-[https://twitter.com/anaconda1030089/status/1620272701209473024](https://twitter.com/anaconda1030089/status/1620272701209473024)
+![](https://twitter.com/anaconda1030089/status/1620272701209473024)
 
 ### 怎麼跟我一樣😆
 
 一切都是浮雲～
 
-[https://twitter.com/fffabs/status/1619740105438302209](https://twitter.com/fffabs/status/1619740105438302209)
+![](https://twitter.com/fffabs/status/1619740105438302209)
 
 ### 錯失的疫情裁員紅利 #誤
 
 是怎麼想到這種方法的🤣
 
-[https://twitter.com/vikingmute/status/1619872671529062400](https://twitter.com/vikingmute/status/1619872671529062400)
+![](https://twitter.com/vikingmute/status/1619872671529062400)
 
 ### 實用年更文 😆
 
 買好了嗎 #誤
 
-[https://twitter.com/shouldwang/status/1618600738539864064](https://twitter.com/shouldwang/status/1618600738539864064)
+![](https://twitter.com/shouldwang/status/1618600738539864064)
 
 ### 我都直接攻頂 #誤
 
 還是要穩紮穩打啦XD
 
-[https://twitter.com/loige/status/1618301187056406530](https://twitter.com/loige/status/1618301187056406530)
+![](https://twitter.com/loige/status/1618301187056406530)
 
 ### 其實我還滿年輕的嘛 😆
 
-[https://twitter.com/Megabits_mzq/status/1617738043187933184](https://twitter.com/Megabits_mzq/status/1617738043187933184)
+![](https://twitter.com/Megabits_mzq/status/1617738043187933184)

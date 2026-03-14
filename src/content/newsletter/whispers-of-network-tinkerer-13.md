@@ -34,7 +34,7 @@ const { values, positionals } = parseArgs({ args, options, allowPositionals: tru
 // positionals = ['b']
 ```
 
-[https://twitter.com/BenjaminCoe/status/1514236332205293575](https://twitter.com/BenjaminCoe/status/1514236332205293575)
+![](https://twitter.com/BenjaminCoe/status/1514236332205293575)
 
 ## lockfiles 安全性問題
 
@@ -54,7 +54,7 @@ snyk 也提到可以利用類似 [lockfile-lint](https://github.com/lirantal/loc
 
 我們都知道只要要讓開發者發火很簡單，只要發個文說 `xx is bad，立刻就會戰起來，然後這次戰火就燒到 GraphQL 了！
 
-[https://twitter.com/jmhodges/status/1522282897905840128](https://twitter.com/jmhodges/status/1522282897905840128)
+![](https://twitter.com/jmhodges/status/1522282897905840128)
 
 有人在細數 GraphQL 帶來的問題，然後有人~~（教義派）~~立刻就火了，立刻寫了篇文章來解釋~~（駁斥）~~推文中提到的問題 - [**GraphQL is a Trap?**](https://xuorig.medium.com/graphql-is-a-trap-e83ca380aa8f)。
 
@@ -68,10 +68,10 @@ snyk 也提到可以利用類似 [lockfile-lint](https://github.com/lirantal/loc
 
 希望這個專案能好好開發下去阿~~ 🤞
 
-[https://twitter.com/RustTrending/status/1504828333565313026](https://twitter.com/RustTrending/status/1504828333565313026)
+![](https://twitter.com/RustTrending/status/1504828333565313026)
 
 ## 玩硬體感覺很有趣啊😄
 
 有大大做出了用 Arduino 來讀取打孔紙，轉成 MIDI 音效的酷酷東西（是說不是有音樂盒這種東西嗎 😆），不過感覺有不少有趣的延伸運用，作者也寫了篇[文章](https://qiita.com/NaohiroIIDA/items/abf81750bd48b43a5386?utm_campaign=post_article&utm_medium=twitter&utm_source=twitter_share)記錄下相關的參考資料跟工具。
 
-[https://twitter.com/dannymodules/status/1519743244627705856](https://twitter.com/dannymodules/status/1519743244627705856)
+![](https://twitter.com/dannymodules/status/1519743244627705856)

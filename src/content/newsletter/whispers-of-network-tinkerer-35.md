@@ -141,24 +141,24 @@ src: [https://twitter.com/1Password/status/1696596584559956004](https://twitter.
 
 ### 這太真實我不敢看😅
 
-[https://twitter.com/vikingmute/status/1698305267858031037](https://twitter.com/vikingmute/status/1698305267858031037)
+![](https://twitter.com/vikingmute/status/1698305267858031037)
 
 ### 這世界需要多一些這種大大
 
-[https://twitter.com/al6wul4wul4/status/1687825049792008193](https://twitter.com/al6wul4wul4/status/1687825049792008193)
+![](https://twitter.com/al6wul4wul4/status/1687825049792008193)
 
 ### 幸好我隨身攜帶行動電源 #誤
 
-[https://twitter.com/cornguo/status/1688403849470758912](https://twitter.com/cornguo/status/1688403849470758912)
+![](https://twitter.com/cornguo/status/1688403849470758912)
 
 ### 平常練習歐卡是不是終於可以派上用場了！
 
-[https://twitter.com/htchien/status/1690301437669167105](https://twitter.com/htchien/status/1690301437669167105)
+![](https://twitter.com/htchien/status/1690301437669167105)
 
 ### 非常適合我這個窮人😅
 
-[https://twitter.com/lvwzhen/status/1697436312125747297](https://twitter.com/lvwzhen/status/1697436312125747297)
+![](https://twitter.com/lvwzhen/status/1697436312125747297)
 
 ### 原來蠟筆小新也是勵志類😄
 
-[https://twitter.com/youhaveagift/status/1697873938737689062](https://twitter.com/youhaveagift/status/1697873938737689062)
+![](https://twitter.com/youhaveagift/status/1697873938737689062)

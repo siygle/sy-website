@@ -22,7 +22,7 @@ tags:
 
 **我先用 1.46.1 跑過好像還沒支援，不知道有沒有機會包含在 Deno 2 裡面。*
 
-[https://x.com/yusuktan/status/1828072317324562717](https://x.com/yusuktan/status/1828072317324562717)
+![](https://x.com/yusuktan/status/1828072317324562717)
 
 除了上述這個蠻有趣的新功能之外，他們的 hosting 服務也是持續不斷有再提供更多更方便的好東西，其中這個 Web Cache 也是最近宣布支援的東西。也是因為這個新功能的發佈才知道原來有個定義為 [Cache](https://developer.mozilla.org/en-US/docs/Web/API/Cache) 的標準 API。
 
@@ -74,7 +74,7 @@ Deno.serve(async (req) => {
 
 最近瞄到他們宣佈了一個自家的新服務，就是他們也準備推出自家的雲端平台服務了（嘿嘿，沒錯，立刻就有人拉了隔壁棚的 [Vercel](https://vercel.com/) 上戰場了🤣）。
 
-[https://www.youtube.com/watch?v=olaSFcQZQWQ](https://www.youtube.com/watch?v=olaSFcQZQWQ)
+![](https://www.youtube.com/watch?v=olaSFcQZQWQ)
 
 看一下上面的官方 Demo 應該就大概知道這是什麼了吧（其實名稱已經很明顯了😅），就是更深度整合自家框架的代管服務，而且這也沒什麼新奇，基本上幾乎所有從事語言層級的開發服務商都有類似的服務。（Vercel 雖然不算，不過 Next.js 也算是前端開發的扛壩子了吧，亦或像本站經常出現的 Deno 也是有類似的 Deno Deploy。）
 
@@ -98,7 +98,7 @@ Deno.serve(async (req) => {
 
 然後不意外這個好用的東西一出現，就開始各種應用跟 side project 也跟著出現了 😝，譬如像下篇提到知名 ORM 的 Drizzle 也已經整合 PGlite，所以現在可以無痛切換本地跟遠端的開發。
 
-[https://x.com/sitnikcode/status/1826646718777016772](https://x.com/sitnikcode/status/1826646718777016772)
+![](https://x.com/sitnikcode/status/1826646718777016772)
 
 當然還有更猛一點，直接拿來作更進一步的產品了 ⬇️
 
@@ -116,15 +116,15 @@ Deno.serve(async (req) => {
 
 很難得看到居然有[主流媒體](https://www.youtube.com/channel/UCEcrRXW3oEYfUctetZTAWLw)願意來深入討論目前小步崛起的分散式社交網路，主要當然是針對 ActivityPub（Mastodon）、ATProto（BlueSky），以及走半套的 Threads（但是有大量的用戶）來討論，而且節目裡面還針對不同協定的服務，也都各自邀請了相關的人員來親身說明與介紹，非常專業阿！
 
-[https://www.youtube.com/watch?v=-R9CWq5CBlk](https://www.youtube.com/watch?v=-R9CWq5CBlk)
+![](https://www.youtube.com/watch?v=-R9CWq5CBlk)
 
 雖然我自己對藍天陣營很有好感，不過一段時間以來沒什麼太大的起色也是有點失望，也很擔心會不會這種理想派的東西，其實根本就離現實很遙遠，罵歸罵大部分的流量也都還是在那些大平台上面。不過最近因為 X 跟巴西政府槓上，因為平台被封導致來了一波巴西用戶，以及一批戰力很強的開發者 😆。這週狂噴一堆 side project 出來，真的是太棒啦！
 
-[https://bsky.app/profile/bsky.app/post/3l3277gkjjc2y](https://bsky.app/profile/bsky.app/post/3l3277gkjjc2y)
+![](https://bsky.app/profile/bsky.app/post/3l3277gkjjc2y)
 
 **這波成長一直到現在都還沒停喔，已經突破九百萬啦* 🎉
 
-[https://bsky.app/profile/did:plc:q6gjnaw2blty4crticxkmujt/post/3l3g7lrs3te2i](https://bsky.app/profile/did:plc:q6gjnaw2blty4crticxkmujt/post/3l3g7lrs3te2i)
+![](https://bsky.app/profile/did:plc:q6gjnaw2blty4crticxkmujt/post/3l3g7lrs3te2i)
 
 然後最新消息是，連巴西總統也登入啦
 
@@ -144,7 +144,7 @@ src: [https://bsky.app/profile/did:plc:a5o5pa6imrd52s627zq63zgz](https://bsky.ap
 
 TL;DR 版本可以參考下方推友的速記 ⬇️（還有[幾篇](https://x.com/blackanger/status/1829506615957168201)延伸的[都很值得](https://x.com/blackanger/status/1829513545647853586)看一下）
 
-[https://x.com/blackanger/status/1829346029113930227](https://x.com/blackanger/status/1829346029113930227)
+![](https://x.com/blackanger/status/1829346029113930227)
 
 雖然這是大神之前的戰鬥，無名小卒如我沒什麼資格發言，但不知怎的總覺得技術圈真的很容易因為這種芝麻蒜皮的小事而爭起來，多一些包容吧，如果你不習慣變革，就待在自己的舒適圈也不會怎樣，讓衝組去處理就好（當然我指的衝組也不是那種激進過頭，但是要一堆人幫忙收尾那種 😓）
 
@@ -169,13 +169,13 @@ On the flip side, others argue that just because something's legal, doesn't make
 
 雖然許可允許，但不代表你就應該這樣做（所以說這個世界真的容不下太理想的東西 😭），因為這種行為會破壞原本的開源反饋的正回饋。但或許也會有另一派的人出來說，如果不走回營利的路線，又要怎樣維持軟體的發展？理想跟吃飽飯這種問題本來就沒有一定的結論。
 
-[https://bsky.app/profile/sylee.dev/post/3l3dnxja6bl2o](https://bsky.app/profile/sylee.dev/post/3l3dnxja6bl2o)
+![](https://bsky.app/profile/sylee.dev/post/3l3dnxja6bl2o)
 
 我在這邊也沒有要下什麼結論，不過很推薦大家可以去看看這篇文章的論述，或許你也會自己的想法跟看法。不過我只是想藉這個開頭導到下面這個服務。其實除了那種伸手牌的之外，還是有些人願意努力試著摸索出一條可能更好的路線。
 
 其實一開始是看到 [Terraform 的作者轉推](https://x.com/mitchellh/status/1831733328279695637)了才留意到，原來他擔任了這個服務的顧問。這個名為 Polar 的服務，看起來就是針對開源開發者而來的，提供了一系列經營自己專案的工具跟收費的方式，他們自己的服務本身也是個開源專案，而且也很狗食的用了自己的服務來呈現，可以跳轉這邊 → [https://polar.sh/polarsource/](https://polar.sh/polarsource/)。
 
-[https://x.com/polar_sh/status/1831588973749149763](https://x.com/polar_sh/status/1831588973749149763)
+![](https://x.com/polar_sh/status/1831588973749149763)
 
 除了這種針對開發者而來的服務之外，最近也有留意到幾個團隊加入了這個 [**Open Source Pledge**](https://osspledge.com/) 的組織（看起來應該是自發的），它希望有使用開源軟體的企業或服務，可以透過贊助的方式反饋回開源社群，有兩個要求：
 
@@ -196,7 +196,7 @@ On the flip side, others argue that just because something's legal, doesn't make
 
 結果看到某個中國強者開發者走了另一條路，他也不是轉移到 Cursor，而是把 Cursor 的 AI 功能跟操作方式，想辦法移植到 neovim 上面，真的是太威了！
 
-[https://x.com/yetone/status/1827651133457699022](https://x.com/yetone/status/1827651133457699022)
+![](https://x.com/yetone/status/1827651133457699022)
 
 [https://github.com/yetone/avante.nvim](https://github.com/yetone/avante.nvim)
 
@@ -208,7 +208,7 @@ On the flip side, others argue that just because something's legal, doesn't make
 
 因為其實不少這邊記錄的東西，很多都是從 X 上面看到，也通常會直接轉貼，或者是評論個幾句，如果能把這個行為跟後續的產生結合，想必更可以節省下很多時間。結果沒想到居然有人實作出這個工具了。這個 AI 工具會根據你的 X 推文，自動幫你彙整成一篇週報，而且它還會自動引入來源、影片等資料，真的幾乎可以無痛發佈了，超讚！
 
-[https://x.com/seldo/status/1827815648828985601](https://x.com/seldo/status/1827815648828985601)
+![](https://x.com/seldo/status/1827815648828985601)
 
 這位是之前 npm 的共同創辦人之一，最近看他又換到新公司去了（[LlamaIndex](https://github.com/run-llama/llama_index)），結果追一下有發現這原來是個用來開發 LLM 應用程式的開發框架，真的是追不完的東西，苦啊～
 
@@ -232,7 +232,7 @@ On the flip side, others argue that just because something's legal, doesn't make
 
 不過我看了之後到是寫下了這段：
 
-[https://bsky.app/profile/sylee.dev/post/3l3kexr5kv2dd](https://bsky.app/profile/sylee.dev/post/3l3kexr5kv2dd)
+![](https://bsky.app/profile/sylee.dev/post/3l3kexr5kv2dd)
 
 雖然這類比有些偏頗，畢竟 Replit 提供的功能比 Val Town 還是多了不少，它也支援了除了 JS/TS 之外的其他不同語言的開發，Val Town 大致上還是依賴 JS-eco 來運作的，不過如果單論 AI 協作的這部分的話，我是覺得大家可以來試試 Val Town 的效果看看，應該是不會讓你失望的。
 
@@ -243,17 +243,17 @@ On the flip side, others argue that just because something's legal, doesn't make
 - 不解釋，不刷起來支持這樣對嗎？
 - 幸好曲風不是 JYP 意識流，超愛～
 
-[https://www.youtube.com/watch?v=IIrCrGAX03Y&feature=youtu.be](https://www.youtube.com/watch?v=IIrCrGAX03Y&feature=youtu.be)
+![](https://www.youtube.com/watch?v=IIrCrGAX03Y&feature=youtu.be)
 
 ***還沒刷起來的給我過來坐下 #誤***
 
-[https://x.com/tzuwieee25/status/1831633856409301371](https://x.com/tzuwieee25/status/1831633856409301371)
+![](https://x.com/tzuwieee25/status/1831633856409301371)
 
 ### 我也想每週末這麼廢
 
 在這年代，當狗都比當社畜還好命 😅
 
-[https://x.com/Yoda4ever/status/1827770423293116829](https://x.com/Yoda4ever/status/1827770423293116829)
+![](https://x.com/Yoda4ever/status/1827770423293116829)
 
 ### 真。狼性
 
@@ -263,25 +263,25 @@ On the flip side, others argue that just because something's legal, doesn't make
 
 *苦主是 OffScreen 的作者，[他們團隊製作的 app 真的都很不錯](https://bento.me/mdstudio)，大家可以支持一下～
 
-[https://x.com/liuyi0922/status/1832482565082771843](https://x.com/liuyi0922/status/1832482565082771843)
+![](https://x.com/liuyi0922/status/1832482565082771843)
 
 ### 社畜都是一樣的
 
 透過影片也可以感受到滿滿的倦勤感 🤣
 
-[https://x.com/piepieyaaa/status/1827656393018819017](https://x.com/piepieyaaa/status/1827656393018819017)
+![](https://x.com/piepieyaaa/status/1827656393018819017)
 
 ### 設鬧鐘之所以無用
 
 這，實在太有既視感了  😅
 
-[https://x.com/kirawontmiss/status/1829212051203600837](https://x.com/kirawontmiss/status/1829212051203600837)
+![](https://x.com/kirawontmiss/status/1829212051203600837)
 
 ### 臺灣人有時候也是蠻可愛的
 
 但如果是我的話應該會被嚇死 😄
 
-[https://x.com/TaiwanSpecial/status/1828995886891872369](https://x.com/TaiwanSpecial/status/1828995886891872369)
+![](https://x.com/TaiwanSpecial/status/1828995886891872369)
 
 ### 最近越來越多針對小孩學校程式的產品了～
 
@@ -289,4 +289,4 @@ On the flip side, others argue that just because something's legal, doesn't make
 
 [Micro:bit Educational Foundation](https://microbit.org/)
 
-[https://x.com/hemashushu/status/1831958145931080072](https://x.com/hemashushu/status/1831958145931080072)
+![](https://x.com/hemashushu/status/1831958145931080072)

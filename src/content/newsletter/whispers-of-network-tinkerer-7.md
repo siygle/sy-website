@@ -16,11 +16,11 @@ tags:
 
 https imports - 跟目前 deno 的套件引用的方式很類似，可以透過 https/http 引用遠端的套件（也期待 Node.js/deno 後續的競合會不會激發出更多火花）
 
-[https://twitter.com/about_hiroppy/status/1481559011816505346](https://twitter.com/about_hiroppy/status/1481559011816505346)
+![](https://twitter.com/about_hiroppy/status/1481559011816505346)
 
 Node.js 仍然持續不斷它的成長，默默 LTS 進版到 v16 的它，也帶來了不少功能（`**```**`crypto.randomUUID()` 這個真的方便，不用再為了產個 UUID 還要安裝其他的第三方套件了 😆），還有其他好物別錯過以下的介紹文。
 
-[https://twitter.com/simonplend/status/1435219200822423552](https://twitter.com/simonplend/status/1435219200822423552)
+![](https://twitter.com/simonplend/status/1435219200822423552)
 
 ## Automattic 能拯救網路世界嗎？
 
@@ -36,11 +36,11 @@ Node.js 仍然持續不斷它的成長，默默 LTS 進版到 v16 的它，也�
 
 最近才注意到原來這款 [**Suicide Squad: Kill the Justice League**](https://www.suicidesquadgame.com/en-us)，正是之前大名鼎鼎的 Batman™: Arkham Knight 同個工作室的新作品（之前真的是廢寢忘食的用力玩了好久 😅），但看起來不太會是之前的玩法有點可惜（希望成品是驚喜）
 
-[https://www.youtube.com/watch?v=72RyZMzcIB0](https://www.youtube.com/watch?v=72RyZMzcIB0)
+![](https://www.youtube.com/watch?v=72RyZMzcIB0)
 
 ## Deno in 2021
 
-[https://twitter.com/lcasdev/status/1486011653187645440](https://twitter.com/lcasdev/status/1486011653187645440)
+![](https://twitter.com/lcasdev/status/1486011653187645440)
 
 身為後期之秀，但是 deno 竄起的速度也是非常嚇人，公司、核心團隊、不斷地完善、緊隨 web standard等，在新的一年它也不免俗要回顧一下 2021 年，文末也提到他們已經開始討論 Deno2 的細節了，看到這段真的讓人越來越期待了阿 😙
 

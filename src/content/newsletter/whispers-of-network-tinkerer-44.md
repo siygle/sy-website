@@ -61,7 +61,7 @@ src: [https://twitter.com/lcasdev/status/1762858506003050932](https://twitter.co
 
 甚至還有直接上 podcast 節目分享 JSR 的特性，真的是宣傳滿滿阿，做到這樣應該也是足夠了吧 😃（這應該是近期 Deno 最大的開發專案了吧？）
 
-[https://www.youtube.com/watch?v=dHfZiqVWVhk](https://www.youtube.com/watch?v=dHfZiqVWVhk)
+![](https://www.youtube.com/watch?v=dHfZiqVWVhk)
 
 # 正式開啟藍天宇宙！😎
 
@@ -128,7 +128,7 @@ src: [https://twitter.com/youyuxi/status/1766014404666245582](https://twitter.co
 
 看著跟電影「雲端情人」（[HER](https://www.youtube.com/watch?v=dJTU48_yghs)）相類似的情境出現也是滿微妙的，雖然實用度應該會差距很大，不過誰知道照目前這種發展速度下去，再來個五～十年之後，會不會真的人手一 AI，大家以後跟 AI 講話的機率比起真正的人更加頻繁了呢 😅
 
-[https://www.youtube.com/watch?v=b1X0aBEM5p8](https://www.youtube.com/watch?v=b1X0aBEM5p8)
+![](https://www.youtube.com/watch?v=b1X0aBEM5p8)
 
 ### 家用 AI 機
 
@@ -144,13 +144,13 @@ src: [https://twitter.com/yetone/status/1762055882429624727](https://twitter.com
 
 不過因為這個事件才會出現 Reactjs，這應該算是好事吧（是吧 😳）
 
-[https://twitter.com/zmx/status/1763203221554864327](https://twitter.com/zmx/status/1763203221554864327)
+![](https://twitter.com/zmx/status/1763203221554864327)
 
 ### 鳥山明老師 RIP 😭
 
 陪伴許多人的鳥山明老師日前因病離開了，就算不是他的粉絲也一定看過他的作品，感覺死亡也漸漸逼近到自己成長的這一代了，大家都要好好照顧自己的身體阿～
 
-[https://twitter.com/animesvibes__/status/1765996248115400837](https://twitter.com/animesvibes__/status/1765996248115400837)
+![](https://twitter.com/animesvibes__/status/1765996248115400837)
 
 ### 沒想到我們也即將可以看到 Vault 啦！
 
@@ -158,18 +158,18 @@ src: [https://twitter.com/yetone/status/1762055882429624727](https://twitter.com
 
 雖然電玩改編還是讓人怕怕的，然後之前 Amazon 執導的 The Lord of the Rings 好像評價也是 😅，希望出來的時候不要讓廣大電玩迷失望啊（遙望廢寢忘食的那段時光）66我也經常有這種感覺 😅
 
-[https://twitter.com/falloutonprime/status/1765753298533949843](https://twitter.com/falloutonprime/status/1765753298533949843)
+![](https://twitter.com/falloutonprime/status/1765753298533949843)
 
-[https://www.youtube.com/watch?v=0kQ8i2FpRDk](https://www.youtube.com/watch?v=0kQ8i2FpRDk)
+![](https://www.youtube.com/watch?v=0kQ8i2FpRDk)
 
 ### 我也經常有這種感覺 😅
 
-[https://twitter.com/EryouHao/status/1763109065256005930](https://twitter.com/EryouHao/status/1763109065256005930)
+![](https://twitter.com/EryouHao/status/1763109065256005930)
 
 ### 到底是誰這麼ㄎㄧㄤ啦
 
-[https://twitter.com/GoldenKnife2/status/1762722056762978448](https://twitter.com/GoldenKnife2/status/1762722056762978448)
+![](https://twitter.com/GoldenKnife2/status/1762722056762978448)
 
 ### 既視感，但我是指所有的雲端服務 😂
 
-[https://twitter.com/IroncladDev/status/1762127018072662204](https://twitter.com/IroncladDev/status/1762127018072662204)
+![](https://twitter.com/IroncladDev/status/1762127018072662204)

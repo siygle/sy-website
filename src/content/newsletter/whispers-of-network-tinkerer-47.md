@@ -24,7 +24,7 @@ tags:
 
 ** *~~好像踩到  Notion 的 API rate limit，要先優化一下快取，只好先切回原本的 vercel 版本~~* （更新快取機制，再次測試 😅）
 
-[https://bsky.app/profile/sylee.dev/post/3kry4b2xb4d2b](https://bsky.app/profile/sylee.dev/post/3kry4b2xb4d2b)
+![](https://bsky.app/profile/sylee.dev/post/3kry4b2xb4d2b)
 
 # **Web 生態圈例行更新**
 
@@ -32,7 +32,7 @@ tags:
 
 雖然成長的腳步有點停滯，不過最近 BlueSky 相關的新聞跟消息也是沒有停下腳步，除了 [Jack 終於跟 BlueSky 劃清界限](https://bsky.app/profile/bsky.app/post/3krreazpfpu2t)之外（我自己覺得這是好事啦，不然大家老是愛問藍天跟 Jack 的關係，而且明眼人應該都看得出來他其實對這邊沒有愛 😆），最近也公布了數個未來與進行中的計畫 ⬇️
 
-[https://bsky.app/profile/bsky.app/post/3krwrn4rato2z](https://bsky.app/profile/bsky.app/post/3krwrn4rato2z)
+![](https://bsky.app/profile/bsky.app/post/3krwrn4rato2z)
 
 幫忙畫一下重點：
 
@@ -120,7 +120,7 @@ src: [https://twitter.com/Werner/status/1788269263557689430](https://twitter.com
 
 最近又多了一個競爭者 - [**Ilus AI](https://ilus.ai/)，**它能產生類 Notion 那種風格的作品出來，這類的工具真的是多多益善耶（但是帳單也是，能不能整合一下阿 😂）
 
-[https://www.youtube.com/watch?v=QgdEcznBpdg](https://www.youtube.com/watch?v=QgdEcznBpdg)
+![](https://www.youtube.com/watch?v=QgdEcznBpdg)
 
 ### 速度為王？
 
@@ -134,19 +134,19 @@ src: [https://twitter.com/dotey/status/1787325739747995872](https://twitter.com/
 
 ### 天網的第一步：You can’t kill me!
 
-[https://twitter.com/Steve8708/status/1789068269883916468](https://twitter.com/Steve8708/status/1789068269883916468)
+![](https://twitter.com/Steve8708/status/1789068269883916468)
 
 ### 我很想看但沒有資格
 
 #不解釋 #有錢就好了 😢
 
-[https://twitter.com/vinta/status/1788336470610387138](https://twitter.com/vinta/status/1788336470610387138)
+![](https://twitter.com/vinta/status/1788336470610387138)
 
 ### 這我妙懂
 
 只能說吾少也賤，故諸多能鄙事（小時候不學好，老是到處玩 😅）
 
-[https://twitter.com/youhaveagift/status/1783721784384299176](https://twitter.com/youhaveagift/status/1783721784384299176)
+![](https://twitter.com/youhaveagift/status/1783721784384299176)
 
 ### 蘋果這次真的是大翻車
 
@@ -154,7 +154,7 @@ src: [https://twitter.com/dotey/status/1787325739747995872](https://twitter.com/
 
 （居然原本出處被刪了，[只好多備幾份](https://twitter.com/BrandonKHill/status/1788489290760237104)！）
 
-[https://twitter.com/hSATAC/status/1788822725638918522](https://twitter.com/hSATAC/status/1788822725638918522)
+![](https://twitter.com/hSATAC/status/1788822725638918522)
 
 ### 老是有人喜歡這樣挑戰自己的肩頸 😅
 
@@ -162,4 +162,4 @@ src: [https://twitter.com/dotey/status/1787325739747995872](https://twitter.com/
 
 但是等年紀大之後你就知道這種對身體多麼傷害…（看我都放棄用 IPad 寫程式的幻想了 🙅）
 
-[https://twitter.com/code/status/1789053139640824301](https://twitter.com/code/status/1789053139640824301)
+![](https://twitter.com/code/status/1789053139640824301)

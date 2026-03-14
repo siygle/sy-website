@@ -54,19 +54,19 @@ tags:
 
 小狼女強勢回歸！（是不是放錯重點了）
 
-[https://www.youtube.com/watch?v=xlrj36cAzj4](https://www.youtube.com/watch?v=xlrj36cAzj4)
+![](https://www.youtube.com/watch?v=xlrj36cAzj4)
 
 雖然小騎士還在聖巢，但是大黃蜂還是要先入手
 
-[https://www.youtube.com/watch?v=6XGeJwsUP9c](https://www.youtube.com/watch?v=6XGeJwsUP9c)
+![](https://www.youtube.com/watch?v=6XGeJwsUP9c)
 
 我也想要這台 PS5!!
 
-[https://www.youtube.com/watch?v=4hmGB21muQ0&t=1843s](https://www.youtube.com/watch?v=4hmGB21muQ0&t=1843s)
+![](https://www.youtube.com/watch?v=4hmGB21muQ0&t=1843s)
 
 不知道要看多少 Maker 系列之後才會變身成 Maker
 
-[https://www.youtube.com/watch?v=r52ooBsGr8M](https://www.youtube.com/watch?v=r52ooBsGr8M)
+![](https://www.youtube.com/watch?v=r52ooBsGr8M)
 
 ### 但是好酒沉甕底，還得是 Teahour!!
 
@@ -76,7 +76,7 @@ tags:
 
 雖然是程序員同輩，不過他們的調性完全不是那種一直抓著 buzzword 然後大聊特聊那種類型。就像最新的第六集，居然莫名就切入模擬飛行，然後來賓開始講到他入坑之後滿滿進化的過程（見下推 😁)，推薦大家閒暇之餘收聽，大推！
 
-[https://x.com/ashchan/status/1907291935221379356](https://x.com/ashchan/status/1907291935221379356)
+![](https://x.com/ashchan/status/1907291935221379356)
 
 ## 無趣的世界還是有些令人莞爾的東西，真好 :)
 
@@ -84,4 +84,4 @@ tags:
 
 33 號遠征隊真的好玩，還想到還有這個隱藏梗 #誤
 
-[https://x.com/Jason_Young1231/status/1919206636083876274](https://x.com/Jason_Young1231/status/1919206636083876274)
+![](https://x.com/Jason_Young1231/status/1919206636083876274)

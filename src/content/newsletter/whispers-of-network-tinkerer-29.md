@@ -23,7 +23,7 @@ Node.js 默默達到 v20 的里程碑啦、Deno SaaS template、GraphQL又被拿
 
 看不下文件的話，這邊有整理好的版本😆
 
-[https://twitter.com/bitandbang/status/1646904003169595394](https://twitter.com/bitandbang/status/1646904003169595394)
+![](https://twitter.com/bitandbang/status/1646904003169595394)
 
 ## Deno 釋出 SaaS 模板
 
@@ -35,7 +35,7 @@ Deno 作為後起之秀，也是受到蠻多人的關注，不過雖然有些酷
 
 ***不知道是不是我期望太高了* 😅**
 
-[https://twitter.com/deno_land/status/1643313610117255168](https://twitter.com/deno_land/status/1643313610117255168)
+![](https://twitter.com/deno_land/status/1643313610117255168)
 
 ## GraphQL🔥
 
@@ -47,7 +47,7 @@ Deno 作為後起之秀，也是受到蠻多人的關注，不過雖然有些酷
 
 不過我不否定它的特性的確讓前端變得更方便，這就大家各取所需吧，這也是 Web 生態令人喜愛的一點啦（我自己是不看好它啦，覺得這一兩年發展好像有冷下來了，過個幾年再回來看看誰的觀點能走到最後吧）。
 
-[https://twitter.com/haoel/status/1646305086489116678](https://twitter.com/haoel/status/1646305086489116678)
+![](https://twitter.com/haoel/status/1646305086489116678)
 
 非常認同大大結語時提到的 **KISS（Keep It Simple and Stupid）** 這個特點，Web 生態到蓬勃有時候會帶來許多新奇酷炫的東西，不過走到後來發現，其實基本、簡單的東西才能走的長久。
 
@@ -63,7 +63,7 @@ Deno 作為後起之秀，也是受到蠻多人的關注，不過雖然有些酷
 
 的確是非常方便的小技巧😆
 
-[https://twitter.com/hsins_/status/1645100428013735936](https://twitter.com/hsins_/status/1645100428013735936)
+![](https://twitter.com/hsins_/status/1645100428013735936)
 
 ## 猛猛的區塊鏈部落格平台
 
@@ -82,7 +82,7 @@ Crossbell is a platform for owning your social activities, composed of an EVM-co
 
 老實說我覺得跟 IndieWeb 的核心精神也滿類似的，期待後續它的發展。
 
-[https://twitter.com/realDSH_CN/status/1645790609897324550](https://twitter.com/realDSH_CN/status/1645790609897324550)
+![](https://twitter.com/realDSH_CN/status/1645790609897324550)
 
 ---
 
@@ -90,32 +90,32 @@ Crossbell is a platform for owning your social activities, composed of an EVM-co
 
 ### 傷薪的人才懂😢
 
-[https://twitter.com/forest162dk/status/1645607370490515456](https://twitter.com/forest162dk/status/1645607370490515456)
+![](https://twitter.com/forest162dk/status/1645607370490515456)
 
 ### 原來是數學
 
 我還以為要合起來唸，丟臉的原來是我自己。🤣
 
-[https://twitter.com/chacharu84/status/1646135631574351872](https://twitter.com/chacharu84/status/1646135631574351872)
+![](https://twitter.com/chacharu84/status/1646135631574351872)
 
 ### 我想挖礦還要跟你說嗎？ #誤
 
-[https://twitter.com/macdog/status/1643786673493520384](https://twitter.com/macdog/status/1643786673493520384)
+![](https://twitter.com/macdog/status/1643786673493520384)
 
 ### 福特你真懂行銷😍
 
 *反差萌最有魅力了！沒想到 [Sydney Sweeney](https://www.instagram.com/sydney_sweeney/) 居然是黑手世家起身的，太威啦～*
 
-[https://twitter.com/Ford/status/1639250793705373697](https://twitter.com/Ford/status/1639250793705373697)
+![](https://twitter.com/Ford/status/1639250793705373697)
 
 ### 所有 web 界的大大，不是已經在 Vercel 就是正在前往的途中 #可能無誤
 
-[https://twitter.com/as790726/status/1640901087036346368](https://twitter.com/as790726/status/1640901087036346368)
+![](https://twitter.com/as790726/status/1640901087036346368)
 
 *因為太多人了，所以還要出來澄清一下* 😆
 
-[https://twitter.com/devongovett/status/1640893736535175169](https://twitter.com/devongovett/status/1640893736535175169)
+![](https://twitter.com/devongovett/status/1640893736535175169)
 
 *flag已立*😆
 
-[https://twitter.com/siygle/status/1641322192242892800](https://twitter.com/siygle/status/1641322192242892800)
+![](https://twitter.com/siygle/status/1641322192242892800)

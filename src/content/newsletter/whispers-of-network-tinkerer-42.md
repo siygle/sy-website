@@ -141,27 +141,27 @@ src: [https://twitter.com/ingramchen/status/1753973668185768063](https://twitter
 
 良心提醒，開車戴 Vision Pro 是違法的喔，要小心被警察抓 😆
 
-[https://twitter.com/chrisfralic/status/1754134345105670173](https://twitter.com/chrisfralic/status/1754134345105670173)
+![](https://twitter.com/chrisfralic/status/1754134345105670173)
 
 ### 已經出現好多應用、遊戲、概念啦，期待更多更有趣的玩法！
 
-[https://twitter.com/PofatTseng/status/1754088684029092260](https://twitter.com/PofatTseng/status/1754088684029092260)
+![](https://twitter.com/PofatTseng/status/1754088684029092260)
 
-[https://twitter.com/iamjesserichard/status/1753826288568238339](https://twitter.com/iamjesserichard/status/1753826288568238339)
+![](https://twitter.com/iamjesserichard/status/1753826288568238339)
 
-[https://twitter.com/minchoi/status/1753428879451005249](https://twitter.com/minchoi/status/1753428879451005249)
+![](https://twitter.com/minchoi/status/1753428879451005249)
 
 ### 這辨識的能力有點強
 
 從 FaceID 一路累積過來的經驗，堆積成有點厲害的成果了 🙌
 
-[https://twitter.com/tracy__henry/status/1753549141983330735](https://twitter.com/tracy__henry/status/1753549141983330735)
+![](https://twitter.com/tracy__henry/status/1753549141983330735)
 
 ### 毫不意外[滿滿的網紅開箱](https://www.youtube.com/results?search_query=vision+pro+review)
 
 不過居然可以遇到 Tim Cook 首賣，還是不能不佩服網紅的行動力（~~以及錢錢的力量~~），好羨慕阿 😍
 
-[https://www.youtube.com/watch?v=PdYD6CSPhxo](https://www.youtube.com/watch?v=PdYD6CSPhxo)
+![](https://www.youtube.com/watch?v=PdYD6CSPhxo)
 
 # **網路是個好東西**
 
@@ -177,7 +177,7 @@ src: [https://twitter.com/HSG14215289ooop/status/1753568488038527469](https://tw
 
 每個月都有好多[酷酷的東西](https://twitter.com/nomad_suzuki/status/1753201260088697239)🤣 #錢難賺
 
-[https://twitter.com/nomad_suzuki/status/1753201260088697239](https://twitter.com/nomad_suzuki/status/1753201260088697239)
+![](https://twitter.com/nomad_suzuki/status/1753201260088697239)
 
 ### 話不要亂說，車也不要亂坐😆
 

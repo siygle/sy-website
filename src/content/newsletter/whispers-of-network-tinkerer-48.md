@@ -134,7 +134,7 @@ src: [https://x.com/daininduyuanma/status/1797117900677157161](https://x.com/dai
 
 伴隨著 NVidia 的黃仁勳為了來臺灣參加 Computex 的一連串的新聞，就算原本沒注意到 AI 的人，應該都已經被滿滿的版面洗到不知道也很難了吧（不過我想應該也沒這種人吧 🤣）
 
-[https://www.youtube.com/watch?v=pKXDVsWZmUU](https://www.youtube.com/watch?v=pKXDVsWZmUU)
+![](https://www.youtube.com/watch?v=pKXDVsWZmUU)
 
 第一時間就有直播，相信應該不少人都已經看過了，AI 真的發展迅速，不過我們一般使用者或許比較熟悉的還是以 OpenAI 為首的生成式 AI，不過這只是冰山一角而已，真的很推薦像我這種一般用戶來聽聽這個議程，NVidia 已經面向非常多 AI 應用的領域，也已經開始佈局許多我們可能壓根沒想到的領域，真的是收穫滿滿，感覺像是上了一堂 AI 的通識課一樣。😎
 
@@ -152,11 +152,11 @@ src: [https://x.com/daininduyuanma/status/1797117900677157161](https://x.com/dai
 
 當然還有其他很多東西，只能說 AI 正在以我這種一般人難以理解的速度進化中，然而要驅動這個火車往前衝的動力，就是這些看似基礎的設備跟更新，所以在結尾的部分，黃特別以一段影片來感謝台灣的供應鏈在這波 AI 浪潮中所提供的能量，以及扮演非常重要的角色。
 
-[https://www.youtube.com/watch?v=80ttCfQCc_c](https://www.youtube.com/watch?v=80ttCfQCc_c)
+![](https://www.youtube.com/watch?v=80ttCfQCc_c)
 
 看到網路上許多網友也因為這段而發表了許多不同的想法，自己也心有所感的寫下了這則短語：
 
-[https://bsky.app/profile/did:plc:z57tkg4b3hw7fsn47lud3kf5/post/3ktwkpi4zrsqq](https://bsky.app/profile/did:plc:z57tkg4b3hw7fsn47lud3kf5/post/3ktwkpi4zrsqq)
+![](https://bsky.app/profile/did:plc:z57tkg4b3hw7fsn47lud3kf5/post/3ktwkpi4zrsqq)
 
 雖然有點戲謔的成分在裡面，不過我們真的是好不容易才走到這一步，台灣在這麼艱困的環境下能走到這一步，真的是大家合作努力的結果，但是最近看到國內的種種，很氣、也很無奈，其他國家都知道我們的好，為什麼我們自己不能對自己好一點呢？😢
 
@@ -166,7 +166,7 @@ src: [https://x.com/daininduyuanma/status/1797117900677157161](https://x.com/dai
 
 ML 在自動化產生網站設計的概念，之前在 Vercel 推出 [v0.dev](http://v0.dev) 的時候就相當令人驚豔了，但是 Vercel 並不只是把它視為一個展示性的產品而已，上面提到的剛結束的 Vercel Ship 2024 裡面，也特別又提到了 v0.dev 的現況及它們對這個產品的持續改善，但除了網站之外，最近也看到一些針對行動裝置的設計，也已經看到 ML 的影子了，譬如 Expo 的即時產生手機端的元件，以及針對 Figma 的設計等，真的是沒有要停下來的意思捏！
 
-[https://x.com/yancymin/status/1795308932216525229](https://x.com/yancymin/status/1795308932216525229)
+![](https://x.com/yancymin/status/1795308932216525229)
 
 ## 這次有點落漆的 1+1 家
 
@@ -193,7 +193,7 @@ MS 宣布的 [**Copilot+ PC](https://www.youtube.com/watch?v=5JmkWJNng2I)** 稍�
 
 **想敗！🤩**
 
-[https://www.youtube.com/watch?v=eEkhCdkgeyM](https://www.youtube.com/watch?v=eEkhCdkgeyM)
+![](https://www.youtube.com/watch?v=eEkhCdkgeyM)
 
 ### 這是什麼神奇的 Apple Watch 外殼
 
@@ -201,13 +201,13 @@ MS 宣布的 [**Copilot+ PC](https://www.youtube.com/watch?v=5JmkWJNng2I)** 稍�
 
 本來以為是它們推出的小型手機，沒想到是魔改 Apple Watch，太強了啦！
 
-[https://www.youtube.com/watch?v=Fo0XpTj062I](https://www.youtube.com/watch?v=Fo0XpTj062I)
+![](https://www.youtube.com/watch?v=Fo0XpTj062I)
 
 ### 不能不佩服熱愛者的實作能力
 
 想看一下儀錶板 😄
 
-[https://x.com/Mr_Toshi104/status/1796729956992794883](https://x.com/Mr_Toshi104/status/1796729956992794883)
+![](https://x.com/Mr_Toshi104/status/1796729956992794883)
 
 ### 希望這篇成為大家的心靈雞湯 🤘
 
@@ -225,11 +225,11 @@ MS 宣布的 [**Copilot+ PC](https://www.youtube.com/watch?v=5JmkWJNng2I)** 稍�
 
 **友善提醒：這個版本的 Panorama 非常危險，觀賞前需要審慎評估，不然可能會跟世界脫離連結數分鐘至數小時不等* 😂。
 
-[https://www.youtube.com/watch?v=euN1m2wYCaw](https://www.youtube.com/watch?v=euN1m2wYCaw)
+![](https://www.youtube.com/watch?v=euN1m2wYCaw)
 
 最近終於有一些好事的 [NewJeans](https://www.instagram.com/newjeans_official/)，大家也可以刷一下她們新歌的 MV，這次非常難得居然是在臺灣取景，整部 MV 誠意滿滿，刷起來讓大家看到台灣的美！（如果能等到她們來臺灣辦演唱會就更讚了 😆）
 
-[https://www.youtube.com/watch?v=Q3K0TOvTOno](https://www.youtube.com/watch?v=Q3K0TOvTOno)
+![](https://www.youtube.com/watch?v=Q3K0TOvTOno)
 
 **但我不是追星人怎麼辦？**
 
@@ -241,4 +241,4 @@ MS 宣布的 [**Copilot+ PC](https://www.youtube.com/watch?v=5JmkWJNng2I)** 稍�
 
 而且這次它們找了[柯拉琪](https://www.youtube.com/@collage7275/videos)來合作遊戲的主題曲，超讚阿！
 
-[https://www.youtube.com/watch?v=4-T_O_3q5Ug](https://www.youtube.com/watch?v=4-T_O_3q5Ug)
+![](https://www.youtube.com/watch?v=4-T_O_3q5Ug)

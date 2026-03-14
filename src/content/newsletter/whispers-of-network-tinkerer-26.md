@@ -14,17 +14,17 @@ tags:
 
 Node.js 生態中算滿知名的一個套件 - [core-js](https://github.com/zloirock/core-js)，最近發出一[長篇說明](https://github.com/zloirock/core-js/blob/master/README.md)，準備朝向專門的開源專案方式來繼續它的開發。（但因為身分 & 踩到最近的時事雷，也是馬上有開發者出來砲一波）
 
-[https://twitter.com/RReverser/status/1625245550776930305](https://twitter.com/RReverser/status/1625245550776930305)
+![](https://twitter.com/RReverser/status/1625245550776930305)
 
 雖然有爭議，不過看起來 core-js 的作者近年也是蠻心酸的，要靠 OSS 養身真的還是有一定程度的困難，除非是已經發展出生態圈，有一定規模以上比較有可能吧，看到下面這位大大的留言也是覺得難過 😢
 
-[https://twitter.com/AdamRackis/status/1625509492669485062](https://twitter.com/AdamRackis/status/1625509492669485062)
+![](https://twitter.com/AdamRackis/status/1625509492669485062)
 
 ## 網路時代每位員工都要有隨時促銷自家產品的能力
 
 如果看不出來是什麼意思的話，可以[跳轉這邊](https://twitter.com/steventey/status/1625249362178633731) 😆🤣
 
-[https://twitter.com/whitep4nth3r/status/1625434172247404545](https://twitter.com/whitep4nth3r/status/1625434172247404545)
+![](https://twitter.com/whitep4nth3r/status/1625434172247404545)
 
 ## Make the Browser Great Again!
 
@@ -42,11 +42,11 @@ WebContainer API 終於在最近推出啦！
 
 StackBlitz 的服務，就是以提供線上開發環境為主，目前看起來應該是已經運作相當成熟，所以透過[套件](https://www.npmjs.com/package/@webcontainer/api)釋出，提供其他開發者可以使用此功能。
 
-[https://twitter.com/stackblitz/status/1625552724547993600](https://twitter.com/stackblitz/status/1625552724547993600)
+![](https://twitter.com/stackblitz/status/1625552724547993600)
 
 無獨有偶，類似的競爭產品 - CodeSandbox 也推出了類似的功能 ⬇️
 
-[https://twitter.com/codesandbox/status/1626304039251062785](https://twitter.com/codesandbox/status/1626304039251062785)
+![](https://twitter.com/codesandbox/status/1626304039251062785)
 
 雖然類似不過還是跟 WebContainers 不完全相同，它們也很貼心替大家解釋了這個疑問 😄。
 
@@ -64,7 +64,7 @@ StackBlitz 的服務，就是以提供線上開發環境為主，目前看起來
 
 *不過需要升級到 Plus 版本才能用，訂閱制阿~~ 😅*
 
-[https://www.youtube.com/watch?v=78XukJvz5vg](https://www.youtube.com/watch?v=78XukJvz5vg)
+![](https://www.youtube.com/watch?v=78XukJvz5vg)
 
 ## 又有 Node.js 的 bulit-in module 用 C++ 改寫了
 
@@ -72,7 +72,7 @@ WHATWG URL parse 從 [Node.js 19.7.0 之後](https://github.com/nodejs/node/pull
 
 前陣子 fs 也是有部分改寫，看起來這會不會演變成效能優化的一種手段。
 
-[https://twitter.com/nodejs/status/1622707746716917761](https://twitter.com/nodejs/status/1622707746716917761)
+![](https://twitter.com/nodejs/status/1622707746716917761)
 
 ## 沒想到靜態頁面也可以有加密保護了！
 
@@ -80,7 +80,7 @@ WHATWG URL parse 從 [Node.js 19.7.0 之後](https://github.com/nodejs/node/pull
 
 把線上履歷放著平常加密保護，需要的時候丟過去對方好像也是蠻方便的使用情境 😄
 
-[https://twitter.com/thecat/status/1627086828485615617](https://twitter.com/thecat/status/1627086828485615617)
+![](https://twitter.com/thecat/status/1627086828485615617)
 
 ---
 
@@ -88,16 +88,16 @@ WHATWG URL parse 從 [Node.js 19.7.0 之後](https://github.com/nodejs/node/pull
 
 ### **大大分享接外包的經驗 & 注意事項，非常有參考價值**
 
-[https://twitter.com/haoel/status/1626050907610976259](https://twitter.com/haoel/status/1626050907610976259)
+![](https://twitter.com/haoel/status/1626050907610976259)
 
 ### 公司經營真的很困難阿～
 
-[https://twitter.com/vikingmute/status/1625673343537156096](https://twitter.com/vikingmute/status/1625673343537156096)
+![](https://twitter.com/vikingmute/status/1625673343537156096)
 
 ### 真的，不要懷疑選後面那項就對了 😆
 
-[https://twitter.com/TinyDenny/status/1625117692981133312](https://twitter.com/TinyDenny/status/1625117692981133312)
+![](https://twitter.com/TinyDenny/status/1625117692981133312)
 
 ### 騙騙小孩可以，老人沒有熱情
 
-[https://twitter.com/XinWen_Chang/status/1627460776796762112](https://twitter.com/XinWen_Chang/status/1627460776796762112)
+![](https://twitter.com/XinWen_Chang/status/1627460776796762112)

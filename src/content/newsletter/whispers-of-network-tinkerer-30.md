@@ -32,13 +32,13 @@ npm publish --provenance
 - [https://docs.npmjs.com/generating-provenance-statements](https://docs.npmjs.com/generating-provenance-statements)
 > 
 
-[https://twitter.com/bitandbang/status/1648742620779118642](https://twitter.com/bitandbang/status/1648742620779118642)
+![](https://twitter.com/bitandbang/status/1648742620779118642)
 
 # Deno 最近火力連發！
 
 最近 Deno 這邊也是動作不斷阿，從 [Ryan 上 Node Congress 講了關於新功能 KV](https://chat.sylee.dev/2023/05/01/node-congress-2023-notes#782f84342547473584816c78058cb14c) 之外，新版本 1.33 也立刻接上了，看起來 2.0 好像真的在不遠處了？
 
-[https://twitter.com/deno_land/status/1652030907396530188](https://twitter.com/deno_land/status/1652030907396530188)
+![](https://twitter.com/deno_land/status/1652030907396530188)
 
 除了上述的 1.33 這個大更新之外，從 1.32 開始新增的 KV 也正式公開啦🎉，有興趣的可以去登記測試（*我自己這麼邊緣都很快就通過了，應該不需要等太久*🤣）
 
@@ -46,7 +46,7 @@ npm publish --provenance
 
 稍微玩過的心得，覺得目前 KV 一個很聰明的設計是無縫的開發體驗。在本地端它是用 [sqlite](https://github.com/denoland/deno/blob/main/ext/kv/sqlite.rs) 來模擬一樣的行為，所以你推上 Deno Deploy 完全不需要特別改什麼或增加什麼參數就可以無縫上線，非常舒服😄。
 
-[https://twitter.com/deno_land/status/1651972190965837825](https://twitter.com/deno_land/status/1651972190965837825)
+![](https://twitter.com/deno_land/status/1651972190965837825)
 
 [Deno KV 正式発表！cloudflare KVとcloudflare D1のいいとこ取り？ - Qiita](https://qiita.com/access3151fq/items/ee1cf3e5fc35150dd910)
 
@@ -56,7 +56,7 @@ npm publish --provenance
 
 自推一下前陣子整理的 [Node Congress 2023](https://nodecongress.com/) 幾個自己聽了之後蠻感興趣的題目，對 JS 近期生態感興趣的可以參考看看。
 
-[https://twitter.com/siygle/status/1652957153270038535](https://twitter.com/siygle/status/1652957153270038535)
+![](https://twitter.com/siygle/status/1652957153270038535)
 
 # Vercel Ship！
 
@@ -64,25 +64,25 @@ npm publish --provenance
 
 第一天就丟了大招，終於第一手支援儲存方案⬇️
 
-[https://twitter.com/vercel/status/1653066949335695360](https://twitter.com/vercel/status/1653066949335695360)
+![](https://twitter.com/vercel/status/1653066949335695360)
 
 剛看到的時候，因為隔壁棚也剛推了KV，一樣的命名真的很針對阿，但除了 KV 之外，連 RMDB 跟 object storage 都一併推出很有碾壓感。不過後來發現原來都是[直接用其他第三方的服務](https://twitter.com/shisama_/status/1653077767997775872)（應該是再包成自家的 pkg，更深入跟 Nextjs 框架整合）。
 
 然後就看到幾位網友大大發表了類似的意見😅
 
-[https://twitter.com/ingramchen/status/1653225736403312641](https://twitter.com/ingramchen/status/1653225736403312641)
+![](https://twitter.com/ingramchen/status/1653225736403312641)
 
-[https://twitter.com/mitsuhiko/status/1653395615160606721](https://twitter.com/mitsuhiko/status/1653395615160606721)
+![](https://twitter.com/mitsuhiko/status/1653395615160606721)
 
 還有人更過分直接做了這個對照表😆
 
-[https://twitter.com/siygle/status/1653596652664651778](https://twitter.com/siygle/status/1653596652664651778)
+![](https://twitter.com/siygle/status/1653596652664651778)
 
 雲端服務真的是多一層就要被多刮一層阿，如果沒有整合的難度的話，直接用第一手的服務商還是最省錢的。
 
 當然除了第一天之外，每天都固定會放出一些新功能，不過大家最關注的大概是 Next.js 新版本吧，這也不意外果然是在 keynote 當天一起放出來了：
 
-[https://twitter.com/vercel/status/1654156302531063812](https://twitter.com/vercel/status/1654156302531063812)
+![](https://twitter.com/vercel/status/1654156302531063812)
 
 其中應該是 [Server Actions](https://nextjs.org/docs/app/building-your-application/data-fetching) 這個新功能最讓人驚豔吧，看起來 Next.js 一直走向把前後端打通的這條路上。簡單說，就是透過宣告 `use server` 這個關鍵字，Next.js 就會把它轉換成 server-side function，這樣原本需要前後端串接的行為，現在只要透過 server actions 就可以直接處理了（難怪會被大家笑說 PHP 又回來了😆）。
 
@@ -109,7 +109,7 @@ export default function AddToCart({ productId }) {
 
 關於 Server Actions 除了官方文件，也可以參考下面這個簡單的影片教學，說明的很詳細。
 
-[https://www.youtube.com/watch?v=O94ESaJtHtM](https://www.youtube.com/watch?v=O94ESaJtHtM)
+![](https://www.youtube.com/watch?v=O94ESaJtHtM)
 
 # 開源社群就是要不斷的戰鬥！
 
@@ -135,15 +135,15 @@ export default function AddToCart({ productId }) {
 
 最近關鍵字「[AI孫燕姿](https://www.youtube.com/playlist?list=PLqil1-qewx9jmnoE_P_R39UIO325ZLS1j)」，話說以後這樣錄音還能相信嗎？😆
 
-[https://twitter.com/GPTDAOCN/status/1655443848179642368](https://twitter.com/GPTDAOCN/status/1655443848179642368)
+![](https://twitter.com/GPTDAOCN/status/1655443848179642368)
 
 這個也是我覺得很方便的應用，真希望有客製版可以讓我們自製不同的來源🤞
 
-[https://twitter.com/novoreorx/status/1654682229707251712](https://twitter.com/novoreorx/status/1654682229707251712)
+![](https://twitter.com/novoreorx/status/1654682229707251712)
 
 動畫跟直播感覺也要迎來變革了（顏值是什麼）
 
-[https://twitter.com/ji10me/status/1645796200078270470](https://twitter.com/ji10me/status/1645796200078270470)
+![](https://twitter.com/ji10me/status/1645796200078270470)
 
 下面這個 NVIDIA & OpenAI 的對談也很不錯，技術人的對談總是有不少有料的東西在裡面😄
 
@@ -163,32 +163,32 @@ export default function AddToCart({ productId }) {
 
 ### 原來 [gov.tw](http://gov.tw) 也有推這個，讚！
 
-[https://twitter.com/shouldwang/status/1654523154612752385](https://twitter.com/shouldwang/status/1654523154612752385)
+![](https://twitter.com/shouldwang/status/1654523154612752385)
 
 ### Respect!🫡
 
-[https://twitter.com/JohnZhangSV/status/1655211884797394945](https://twitter.com/JohnZhangSV/status/1655211884797394945)
+![](https://twitter.com/JohnZhangSV/status/1655211884797394945)
 
 ### 絕對不會承認我也是右邊
 
-[https://twitter.com/glenna9305/status/1655448473083469825](https://twitter.com/glenna9305/status/1655448473083469825)
+![](https://twitter.com/glenna9305/status/1655448473083469825)
 
 ### 需要立刻安裝這個酷酷的東西😆
 
-[https://twitter.com/vikingmute/status/1655022698505043969](https://twitter.com/vikingmute/status/1655022698505043969)
+![](https://twitter.com/vikingmute/status/1655022698505043969)
 
 ### UI苦手看到這種好物都要推一下
 
-[https://twitter.com/thecalicastle/status/1653972348335456256](https://twitter.com/thecalicastle/status/1653972348335456256)
+![](https://twitter.com/thecalicastle/status/1653972348335456256)
 
 ### TwitterDrama
 
 鬧劇還在繼續中（可能短時間都不會結束😆）
 
-[https://twitter.com/kurtsunx/status/1650087906751713280](https://twitter.com/kurtsunx/status/1650087906751713280)
+![](https://twitter.com/kurtsunx/status/1650087906751713280)
 
 ### 看看人家是怎麼賺錢的🤩
 
 *一個人的戰鬥力！*
 
-[https://twitter.com/ModestMitkus/status/1648669759452622849](https://twitter.com/ModestMitkus/status/1648669759452622849)
+![](https://twitter.com/ModestMitkus/status/1648669759452622849)

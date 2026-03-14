@@ -16,13 +16,13 @@ tags:
 
 ## deno & npm
 
-[https://twitter.com/azu_re/status/1498263155629527040](https://twitter.com/azu_re/status/1498263155629527040)
+![](https://twitter.com/azu_re/status/1498263155629527040)
 
 其實 deno 陣營也一直有把跟 Node.js 相容當作[一項重要](https://github.com/denoland/deno/issues/12577)的[目標](https://deno.com/blog/v1.15#improving-node-compatibility)，所以看到這個專案出現好像也不意外，一樣是 deno 團隊出品 - [dnt](https://github.com/denoland/dnt/)。簡單說就是 npm package 的轉換工具，開發者在 deno 實作，然後 dnt 幫你處理相容之後，就可以發布到 npm 上了，簡單暴力。
 
 ## Node.js Adds Support for Direct Registry-less HTTPS Imports
 
-[https://twitter.com/fusebitio/status/1496905106863837195](https://twitter.com/fusebitio/status/1496905106863837195)
+![](https://twitter.com/fusebitio/status/1496905106863837195)
 
 之前提過的 Node.js 17 加入的新功能，類似 deno 套件引用的方式（上下兩篇一起看有點微妙😁），這篇文章更深入說明這項功能可以帶來的影響。
 
@@ -44,7 +44,7 @@ lodash 是 JS 的知名套件，有點像瑞士刀的概念把一些常見的資
 
 ## Bring types to JavaScript!
 
-[https://twitter.com/typescript/status/1501634547921801216](https://twitter.com/typescript/status/1501634547921801216)
+![](https://twitter.com/typescript/status/1501634547921801216)
 
 ***這應該算標題黨* 🤣**
 

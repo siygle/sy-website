@@ -14,7 +14,7 @@ tags:
 
 ## Hello, youki!
 
-[https://twitter.com/utam0k/status/1478947384298475522](https://twitter.com/utam0k/status/1478947384298475522)
+![](https://twitter.com/utam0k/status/1478947384298475522)
 
 > youki is an implementation of the OCI runtime-spec in Rust, similar to runc.
 > 
@@ -23,45 +23,45 @@ rust 正在進行一個持續[重寫工具圈](https://github.com/TaKO8Ki/awesom
 
 ## 工欲善其事，必先利咖啡 #誤
 
-[https://twitter.com/manjingyu/status/1479360878038642695](https://twitter.com/manjingyu/status/1479360878038642695)
+![](https://twitter.com/manjingyu/status/1479360878038642695)
 
 身為碼農應該很多都是[咖啡](https://codecoach.co.nz/coffee-mug-code/)[成癮者](https://www.buymeacoffee.com/)，但是你有認真了解自己喜歡到到底是哪種咖啡嗎？這邊有咖啡達人熱心幫各位碼農準備好了，下次點單品咖啡的時候記得查一下 😆
 
 ## 好文推：我做架构的一些原则
 
-[https://twitter.com/haoel/status/1473202816114376710](https://twitter.com/haoel/status/1473202816114376710)
+![](https://twitter.com/haoel/status/1473202816114376710)
 
 [酷壳](https://coolshell.cn/)一直是我很喜歡的部落格，常常可以拜讀到許多深具價值的好文章。最近該站的作者又寫了一篇他如何進行系統架構的準則，相當具有參考價值。🙌
 
 ## 開源圈 drama 再起
 
-[https://twitter.com/Techmeme/status/1480327550069280770](https://twitter.com/Techmeme/status/1480327550069280770)
+![](https://twitter.com/Techmeme/status/1480327550069280770)
 
 最近 npm 生態圈又上演新的 drama 了，就是知名套件 faker.js & color.js 的作者因為氣不過自己開發的套件被大企業長期性的「白嫖」，所以一氣之下就加了一些示威性的東西進去，然後就一堆依賴的套件爆炸了。
 
 最近這幾天都可以看到不少針對這個事件提出看法的一些
 
-[https://twitter.com/mitsuhiko/status/1480505691941093385](https://twitter.com/mitsuhiko/status/1480505691941093385)
+![](https://twitter.com/mitsuhiko/status/1480505691941093385)
 
-[https://twitter.com/arunoda/status/1480480219072847873](https://twitter.com/arunoda/status/1480480219072847873)
+![](https://twitter.com/arunoda/status/1480480219072847873)
 
 除了針對開源維護的討論之外，居然看到 Golang 圈子的 Russ 也針對這個事件提出看法，不過他是針對套件依賴的問題來延伸討論。（簡單地歸納，大神建議套件依賴應該是 [*high-fidelity build*](https://research.swtch.com/vgo-mvs)，而非自動認定套件的最新版本，文中也聽到 npm 其實有現成的指令可以處理，也就是 [`npm shrinkwrap`](https://tech.meituan.com/2015/10/23/npm-shrinkwrap.html)）。
 
-[https://twitter.com/_rsc/status/1480583224220864514](https://twitter.com/_rsc/status/1480583224220864514)
+![](https://twitter.com/_rsc/status/1480583224220864514)
 
 也可以看到一些中文推圈的大大對這件事的一些意見反饋
 
-[https://twitter.com/gugod/status/1480552560046280706](https://twitter.com/gugod/status/1480552560046280706)
+![](https://twitter.com/gugod/status/1480552560046280706)
 
-[https://twitter.com/ingramchen/status/1480713106640994304](https://twitter.com/ingramchen/status/1480713106640994304)
+![](https://twitter.com/ingramchen/status/1480713106640994304)
 
-[https://twitter.com/viktor_lin/status/1480472924977266696](https://twitter.com/viktor_lin/status/1480472924977266696)
+![](https://twitter.com/viktor_lin/status/1480472924977266696)
 
-[https://twitter.com/bitinn/status/1480403434419286018](https://twitter.com/bitinn/status/1480403434419286018)
+![](https://twitter.com/bitinn/status/1480403434419286018)
 
 這是我自己的想法 😁
 
-[https://twitter.com/siygle/status/1480443018822168583](https://twitter.com/siygle/status/1480443018822168583)
+![](https://twitter.com/siygle/status/1480443018822168583)
 
 不過說真的這可能也不是短時間有辦法解決的問題，我也真心不覺得真的會有什麼大企業會認真看待這個問題，更別提規模更小的公司或新創了。
 

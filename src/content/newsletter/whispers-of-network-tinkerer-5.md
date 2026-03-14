@@ -15,19 +15,19 @@ tags:
 
 ## Deno 也成為 TC39 的成員了
 
-[https://twitter.com/deno_land/status/1470349492583075840](https://twitter.com/deno_land/status/1470349492583075840)
+![](https://twitter.com/deno_land/status/1470349492583075840)
 
 Deno 身為 JS 生態圈的一員，加入 TC39 也是遲早的事。Deno 跟標準的速度比起 Node.js 有過之而無不及，所以可以期待它們的加入讓 JS 未來的發展更有活力。
 
 ## 產品宣傳片的模範
 
-[https://twitter.com/NotionHQ/status/1473337685020319748?t=MMhLMrZpR5hqBoNWCpaJIg&s=19](https://twitter.com/NotionHQ/status/1473337685020319748?t=MMhLMrZpR5hqBoNWCpaJIg&s=19)
+![](https://twitter.com/NotionHQ/status/1473337685020319748?t=MMhLMrZpR5hqBoNWCpaJIg&s=19)
 
 Notion 常常用一些實際使用情境的方式來宣傳自家產品，覺得這非常不錯也是值得大家在作行銷時候可以參考的好方法。
 
 ## rust好物，不學嗎 😎
 
-[https://twitter.com/jack/status/1474263588651126788](https://twitter.com/jack/status/1474263588651126788)
+![](https://twitter.com/jack/status/1474263588651126788)
 
 jack 認證，不趁這個機會來學一下嗎ww
 

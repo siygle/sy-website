@@ -145,7 +145,7 @@ src: [https://twitter.com/fuxiangPro/status/1720984636602605901](https://twitter
 
 剛結束的 OpenAI 發表會，裡面真的是內容滿滿，又是一次重磅出擊，看起來不少新創都要陸續倒地了。
 
-[https://www.youtube.com/live/U9mJuUkhUzk?si=4NT2WciGAzDDqrbY](https://www.youtube.com/live/U9mJuUkhUzk?si=4NT2WciGAzDDqrbY)
+![](https://www.youtube.com/live/U9mJuUkhUzk?si=4NT2WciGAzDDqrbY)
 
 有大大幫我們整理了發表會內容，可以跳轉[這邊](https://mp.weixin.qq.com/s/K7vtemjyST2grGBJAtQjbw)。
 
@@ -162,34 +162,34 @@ src: [https://twitter.com/fuxiangPro/status/1720984636602605901](https://twitter
 
 就算已經退休好一陣子，打起球來還是這麼殺（我知道你一定是故意的😎）
 
-[https://twitter.com/Markus_9527/status/1721784868261278093](https://twitter.com/Markus_9527/status/1721784868261278093)
+![](https://twitter.com/Markus_9527/status/1721784868261278093)
 
 ### 十二月只有一件重要的事！
 
 居然有機會能在有生之年看到 GTA6 問世了嗎😅
 
-[https://twitter.com/RockstarGames/status/1722237703553798312](https://twitter.com/RockstarGames/status/1722237703553798312)
+![](https://twitter.com/RockstarGames/status/1722237703553798312)
 
 ### 不能重選嗎？🤣
 
-[https://twitter.com/buitengebieden/status/1719468485351256084](https://twitter.com/buitengebieden/status/1719468485351256084)
+![](https://twitter.com/buitengebieden/status/1719468485351256084)
 
 ### g0v 就是要推！
 
-[https://twitter.com/g0vtw/status/1720380302336610346](https://twitter.com/g0vtw/status/1720380302336610346)
+![](https://twitter.com/g0vtw/status/1720380302336610346)
 
 ### 被家務耽誤的高手媽媽
 
-[https://twitter.com/takomalu1/status/1718612687163158979](https://twitter.com/takomalu1/status/1718612687163158979)
+![](https://twitter.com/takomalu1/status/1718612687163158979)
 
 ### 之後遊戲裡面會不會都是 AI 產生出來的東西了
 
 不過這對遊戲製作者來說應該是個福音😅。
 
-[https://twitter.com/lencx_/status/1719371423708578077](https://twitter.com/lencx_/status/1719371423708578077)
+![](https://twitter.com/lencx_/status/1719371423708578077)
 
 ### 我也想要這個酷酷的東西😄
 
 這個子標題好像每集都會出現 #炸
 
-[https://twitter.com/memeflyfly/status/1720452603908444592](https://twitter.com/memeflyfly/status/1720452603908444592)
+![](https://twitter.com/memeflyfly/status/1720452603908444592)

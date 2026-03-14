@@ -22,13 +22,13 @@ tags:
 
 這個產品是個 Mac app，它會把你看過的（看描述跟 demo 應該是螢幕出現的）、聽過的、說過的（近來火紅的 WFH 一定有的線上會議），都記錄下來，然後可以透過簡單的介面來搜尋，而且資料跟運算完全都是本地處理，感覺非常猛阿！
 
-[https://twitter.com/dsiroker/status/1587415342896148480](https://twitter.com/dsiroker/status/1587415342896148480)
+![](https://twitter.com/dsiroker/status/1587415342896148480)
 
 ## 安全真的是很難搞的事😅
 
 前幾集有陸續提過幾個目前在 Node.js 生態圈裡面的安全性問題（大多是依賴鏈攻擊），不過其實安全相關的議題真的是又大又精深，這次官方也特別把一些常見的攻擊跟危險撰寫成一份[文件](https://nodejs.org/en/docs/guides/security/)。雖然是針對 Node.js 生態來舉例說明，不過只要是處理網路相關服務的，都值得拜讀一番。
 
-[https://twitter.com/_rafaelgss/status/1590703062704082946](https://twitter.com/_rafaelgss/status/1590703062704082946)
+![](https://twitter.com/_rafaelgss/status/1590703062704082946)
 
 ## Node.js越來越強~~（肥）~~啦！
 
@@ -40,21 +40,21 @@ tags:
 
 雖然這功能在 [npm 實在太多了](https://www.npmjs.com/package/serve)，但能原生支援的話，之後使用上就更方便啦！🎉
 
-[https://twitter.com/shisama_/status/1589646398349144064](https://twitter.com/shisama_/status/1589646398349144064)
+![](https://twitter.com/shisama_/status/1589646398349144064)
 
 npm 也默默進版到 v9 的版號了，目前[看起來](https://github.com/npm/cli/blob/latest/CHANGELOG.md)大多是汰除一些原有的指令，跟 auth 參數的調整，還沒看到什麼非常重大的功能更新。
 
-[https://twitter.com/MylesBorins/status/1590482425121247233](https://twitter.com/MylesBorins/status/1590482425121247233)
+![](https://twitter.com/MylesBorins/status/1590482425121247233)
 
 ## Github Universe 2022
 
 日前剛結束的 [**Github Universe**](https://githubuniverse.com/) 已成為 Github 宣佈新功能，甚至是下一代產品的場合，今年的內容也是相當豐富，有興趣可以跳轉官方剛釋出的[新聞稿](https://github.blog/2022-11-09-everything-new-from-github-universe-2022/)。
 
-[https://twitter.com/github/status/1590978384254959617](https://twitter.com/github/status/1590978384254959617)
+![](https://twitter.com/github/status/1590978384254959617)
 
-[https://www.youtube.com/watch?v=ZH71p_KaxGI](https://www.youtube.com/watch?v=ZH71p_KaxGI)
+![](https://www.youtube.com/watch?v=ZH71p_KaxGI)
 
-[https://www.youtube.com/watch?v=owXWqvvOTQw](https://www.youtube.com/watch?v=owXWqvvOTQw)
+![](https://www.youtube.com/watch?v=owXWqvvOTQw)
 
 Copilot 跟 Codspaces 其實都是之前就已經釋出（或是開始提供測試）的產品，所以沒有什麼非常特別的地方。不過它們放出的幾個[次代產品](https://githubnext.com/)就蠻有意思了😎
 
@@ -72,13 +72,13 @@ Copilot 跟 Codspaces 其實都是之前就已經釋出（或是開始提供測�
 
 本以為賺這麼一大票應該是可以退休了，沒想到最近看到他又投入新的創業之路了，這次是針對雲端服務的 - [Tier.run](https://www.tier.run/)，它是針對使用雲平台的開發者的痛點：「每月帳單」，來切入的新創。能透過簡單的設定檔來針對不同預算，彈性調整使用雲端服務的額度（它們自稱「Terraform for your pricing」蠻有趣的😄）。
 
-[https://twitter.com/izs/status/1587580579981103105](https://twitter.com/izs/status/1587580579981103105)
+![](https://twitter.com/izs/status/1587580579981103105)
 
 ### 當你難受你就比爛
 
 *有種被療癒的感覺🤣*
 
-[https://twitter.com/mengkunghsieh/status/1590662225102278656](https://twitter.com/mengkunghsieh/status/1590662225102278656)
+![](https://twitter.com/mengkunghsieh/status/1590662225102278656)
 
 ### WFH必讀寶典🙌
 
@@ -86,7 +86,7 @@ Copilot 跟 Codspaces 其實都是之前就已經釋出（或是開始提供測�
 
 *「你好，在嗎？」榮登最惹怒人的一句話🤣*
 
-[https://twitter.com/aki_chy/status/1587030845231345664](https://twitter.com/aki_chy/status/1587030845231345664)
+![](https://twitter.com/aki_chy/status/1587030845231345664)
 
 ### 推特霹靂火🔥
 
@@ -96,7 +96,7 @@ Copilot 跟 Codspaces 其實都是之前就已經釋出（或是開始提供測�
 
 是說這樣說不定以後就沒有推文可以嵌入了，哭哭～
 
-[https://twitter.com/JFrankensteiner/status/1589418718819647489](https://twitter.com/JFrankensteiner/status/1589418718819647489)
+![](https://twitter.com/JFrankensteiner/status/1589418718819647489)
 
 [https://pca.st/fsn5mfxd](https://pca.st/fsn5mfxd)
 
@@ -104,4 +104,4 @@ Copilot 跟 Codspaces 其實都是之前就已經釋出（或是開始提供測�
 
 對了，如果你想一個清淨的地方遠離塵囂，可以考慮 Mastodon 這個聯邦制的社交網絡。
 
-[https://twitter.com/bitinn/status/1589097815552438272](https://twitter.com/bitinn/status/1589097815552438272)
+![](https://twitter.com/bitinn/status/1589097815552438272)

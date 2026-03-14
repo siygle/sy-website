@@ -28,7 +28,7 @@ Raycast 原來這麼猛、WASIX 又是什麼啦！Deno KV 有可能加上 queue 
 > Plus, wasn’t Node a runtime that forced developers to use a programming language that many see as flawed? With a package ecosystem riddled by security problems that caused half of the entire web not to work at times? Plus a bunch of other issues, so that its creator went ahead to fix all mistakes in a new shiny runtime?
 > 
 
-[https://twitter.com/randyloop/status/1663948866117578752](https://twitter.com/randyloop/status/1663948866117578752)
+![](https://twitter.com/randyloop/status/1663948866117578752)
 
 # WASIX = WASI + **POSIX**
 
@@ -45,7 +45,7 @@ Raycast 原來這麼猛、WASIX 又是什麼啦！Deno KV 有可能加上 queue 
 $ wasmer run --net curl/curl -- https://www.google.com
 ```
 
-[https://twitter.com/wasmerio/status/1663568328084934658](https://twitter.com/wasmerio/status/1663568328084934658)
+![](https://twitter.com/wasmerio/status/1663568328084934658)
 
 看起來 WebAssembly 好似前途光明👀
 
@@ -67,19 +67,19 @@ db.queueListen(async (msg: unknown) => {
 
 目前還在討論中所以可能介面還會調整，不過有點疑問能不能做到跨專案的轉接，畢竟 queue 應該滿常用在非同步處理的 producer/consumer 上面，但印象中 Kv 是專案綁定的，所以…？（再觀察看看之後的進度，不過看到這個出現還是很開心啦😄）
 
-[https://twitter.com/_ayame113_/status/1667744664974397440](https://twitter.com/_ayame113_/status/1667744664974397440)
+![](https://twitter.com/_ayame113_/status/1667744664974397440)
 
 # Bluesky custom feed
 
 自從看到 [Bluesky](https://bsky.app/) 放出這個功能之後，就一直想找時間來玩玩看，最近終於達成這個心願啦😄，這邊自推一下心得文，如果也已經有 Bluesky 帳號的開發者也想玩玩這個趣的新功能的話，希望這個踩雷文可以幫上一些忙。
 
-[https://twitter.com/siygle/status/1668304440577912834](https://twitter.com/siygle/status/1668304440577912834)
+![](https://twitter.com/siygle/status/1668304440577912834)
 
 # cargo <file>.rs
 
 最近開始默默啃起 rust 來，工作領域對於靜態語言實在接觸不多，不過最近對於 rust/zig 之流的新起之秀，比起去兜弄 C++/C　比起提得起學習的動力，所以希望之後呢喃也能默默增加這塊的分享。🤞
 
-[https://twitter.com/weihanglo/status/1667096491695931392](https://twitter.com/weihanglo/status/1667096491695931392)
+![](https://twitter.com/weihanglo/status/1667096491695931392)
 
 這個是無意間看到 cargo 核心維護者的轉推，看起來之後拿 rust 來寫 script 之類的應用也會變得很簡單了。不過這個 RP 看起來是另一個更大計劃的第一步而已，有興趣的可以直接參考 RFC 🔽
 
@@ -99,7 +99,7 @@ console.log(`The current Git commit hash is ${getGitCommitHash()}`);
 
 老實說，雖然之前一些事對 Bun 不太有好感，不過不能不佩服它的超強開發效率（我都懷疑作者是不是都不休息的😅），以及它很願意嘗試一些特別的功能，我覺得這也是 JS 生態迷人的地方（不過有時候也是很惱人，每個實作都不一樣，每個人都要重造輪子，到處都是相容的問題等😓）。
 
-[https://twitter.com/jarredsumner/status/1664034648639549442](https://twitter.com/jarredsumner/status/1664034648639549442)
+![](https://twitter.com/jarredsumner/status/1664034648639549442)
 
 # 排山倒海的AI潮
 
@@ -111,7 +111,7 @@ console.log(`The current Git commit hash is ${getGitCommitHash()}`);
 
 最近 Photoshop 也引入了 Machine learning 來做到更方便的修圖功能（以後難道真的只要學會詠唱就夠了嗎？😆 ）。下圖是個火力展示，以後模特兒也只需要買一張就夠了。#大誤
 
-[https://twitter.com/iritec_jp/status/1663637160996790272](https://twitter.com/iritec_jp/status/1663637160996790272)
+![](https://twitter.com/iritec_jp/status/1663637160996790272)
 
 ### raycast 真的動好快
 
@@ -119,7 +119,7 @@ console.log(`The current Git commit hash is ${getGitCommitHash()}`);
 
 ***白話翻譯：一個能管理、收藏，還有提供 prompt 範例的好工具！***
 
-[https://twitter.com/raycastapp/status/1667157106192183298](https://twitter.com/raycastapp/status/1667157106192183298)
+![](https://twitter.com/raycastapp/status/1667157106192183298)
 
 ### Facebook 出品 text-to-music 的模型
 
@@ -146,7 +146,7 @@ Framer 這家以網站設計製作工具著名的線上服務，最近不免俗�
 
 **以後是不是不會設計也可以接案了*😆
 
-[https://twitter.com/indigo11/status/1669101396338278401](https://twitter.com/indigo11/status/1669101396338278401)
+![](https://twitter.com/indigo11/status/1669101396338278401)
 
 # 網路是個好東西
 
@@ -162,13 +162,13 @@ Framer 這家以網站設計製作工具著名的線上服務，最近不免俗�
 
 這身絕技我真是自嘆不如，長江後浪推前浪🤣
 
-[https://twitter.com/punk2898/status/1668838776653910016](https://twitter.com/punk2898/status/1668838776653910016)
+![](https://twitter.com/punk2898/status/1668838776653910016)
 
 ### 最近才發現 UpNote 這個好物！
 
 感謝海總的推薦，真的是第一次知道這個（當初如果早一點知道，說不定就不會換到 Notion 上面了啦），還有…新海誠新作預定！？😆
 
-[https://twitter.com/tzangms/status/1667066650506706947](https://twitter.com/tzangms/status/1667066650506706947)
+![](https://twitter.com/tzangms/status/1667066650506706947)
 
 ### 我猜到開頭，卻猜不到這結局
 
@@ -176,20 +176,20 @@ Framer 這家以網站設計製作工具著名的線上服務，最近不免俗�
 
 *順便推薦下這位開發者的[自創影片](https://twitter.com/rita_codes)，應該身為同行都很有感🤣
 
-[https://twitter.com/rita_codes/status/1668227080046223365](https://twitter.com/rita_codes/status/1668227080046223365)
+![](https://twitter.com/rita_codes/status/1668227080046223365)
 
 ### 應該是要🤞?
 
-[https://twitter.com/kevinzhow/status/1664582285730123779](https://twitter.com/kevinzhow/status/1664582285730123779)
+![](https://twitter.com/kevinzhow/status/1664582285730123779)
 
 ### 有經歷過的都知道
 
 我以身為 0.5x 工程師為傲 #大誤 🤣
 
-[https://twitter.com/chris__sev/status/1666525500116967424](https://twitter.com/chris__sev/status/1666525500116967424)
+![](https://twitter.com/chris__sev/status/1666525500116967424)
 
 ### 我也是今天才知道😅
 
 誤會微軟了，原來這麼 hardcore！
 
-[https://twitter.com/terrynini38514/status/1664912265164759042](https://twitter.com/terrynini38514/status/1664912265164759042)
+![](https://twitter.com/terrynini38514/status/1664912265164759042)

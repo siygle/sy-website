@@ -169,13 +169,13 @@ src: [https://x.com/MC_SHIZU/status/1798862223269560829](https://x.com/MC_SHIZU/
 
 原本 zed 就有整合了 Github Copilot 的功能，不過最近開發團隊放出即將支援 [**Ollama**](https://www.ollama.com/)，也就是說之後不需要用 Github，直接跑 Ollama 支援的本地模型就可以了，超期待阿～ 👀
 
-[https://x.com/KyleRayKelley/status/1800635412123374012](https://x.com/KyleRayKelley/status/1800635412123374012)
+![](https://x.com/KyleRayKelley/status/1800635412123374012)
 
 ## 大家實作克隆版的速度會不會太快 😅
 
 剛結束沒多久的 WWDC，相信就算不想還是被滿滿的 AI 洗版的各位，應該有留意到 iPad 上面即將支援名為 Math Notes 的功能，就是能透過 AI 直接把數學算式的結果算出來。想不到已經有人刻出克隆版本了，真是太強大了！
 
-[https://x.com/tuturetom/status/1802655719319277796](https://x.com/tuturetom/status/1802655719319277796)
+![](https://x.com/tuturetom/status/1802655719319277796)
 
 [https://github.com/ayushpai/AI-Math-Notes](https://github.com/ayushpai/AI-Math-Notes)
 
@@ -199,14 +199,14 @@ src: [https://x.com/dhh/status/1800458160039489774](https://x.com/dhh/status/180
 
 不知道是不是太多人反映，官方居然釋出正式主題曲的 MV 啦！大家打不過的時候不妨休息一下聽個歌吧（誰像你這麼弱 ⇒ *我真的是弱雞，不開劇情模式真的打不過 #手殘黨想哭* 😅）
 
-[https://www.youtube.com/watch?v=jo_-vr1FwJ0](https://www.youtube.com/watch?v=jo_-vr1FwJ0)
+![](https://www.youtube.com/watch?v=jo_-vr1FwJ0)
 
 ### 技能樹點錯了 😅
 
 如果能一邊一睡一邊賺錢就太好了 #誤
 
-[https://x.com/youhaveagift/status/1802598621051044183](https://x.com/youhaveagift/status/1802598621051044183)
+![](https://x.com/youhaveagift/status/1802598621051044183)
 
 ### 希望大家都要好好練習
 
-[https://x.com/kachu_CChaha/status/1800204188686914012](https://x.com/kachu_CChaha/status/1800204188686914012)
+![](https://x.com/kachu_CChaha/status/1800204188686914012)

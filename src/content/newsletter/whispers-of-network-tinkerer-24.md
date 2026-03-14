@@ -26,7 +26,7 @@ tags:
 > [nodejs/node #43818](https://github.com/nodejs/node/issues/43818#issuecomment-1183239025)
 > 
 
-[https://twitter.com/about_hiroppy/status/1610916569131155456](https://twitter.com/about_hiroppy/status/1610916569131155456)
+![](https://twitter.com/about_hiroppy/status/1610916569131155456)
 
 ## Client-side image compression
 
@@ -44,13 +44,13 @@ tags:
 
 實作方式作者有簡述在[專案頁面](https://npm-kiosk.remotion.dev/)上，應該就是透過隨機ID + Stripe payment session ID，再加上 Github package token 來對應。開發者跟使用上的流程都跟原本 NPM 沒有差別，就只是安裝連結從 npm registry 改成購買端產生的連結而已。
 
-[https://twitter.com/JNYBGR/status/1612430804780474369](https://twitter.com/JNYBGR/status/1612430804780474369)
+![](https://twitter.com/JNYBGR/status/1612430804780474369)
 
 ## HTTP/3 也是個好東西?
 
 [Planetscale](https://planetscale.com/) 是間提供 serverless MYSQL 服務的新創，他們對於自家服務的優化也是不遺餘力，這篇是他們對於引用 HTTP/3 對於服務品質的研究評估，蠻有意思的。簡而言之，HTTP/3 對於高延遲的網路環境有明顯的改善，他們也火速在自家服務上提供了 HTTP/3 的支援（不過能不能用上就要看客戶端的評估啦 😄），研究的過程蠻值得，也可以看另一個 YT 製作的[解說版本](https://www.youtube.com/watch?v=3cpUdppYzJw)。
 
-[https://twitter.com/mattrobenolt/status/1610680867118276608](https://twitter.com/mattrobenolt/status/1610680867118276608)
+![](https://twitter.com/mattrobenolt/status/1610680867118276608)
 
 ---
 
@@ -58,24 +58,24 @@ tags:
 
 ### 雨後春筍般冒出的 AI 應用服務
 
-[https://twitter.com/steventey/status/1610656840412696578](https://twitter.com/steventey/status/1610656840412696578)
+![](https://twitter.com/steventey/status/1610656840412696578)
 
 真的 爆 炸 多，有興趣可以看一下這串 😆
 
 但是別忘了 AI 是好貴的玩具 🤣
 
-[https://twitter.com/smallufo/status/1611609129210253313](https://twitter.com/smallufo/status/1611609129210253313)
+![](https://twitter.com/smallufo/status/1611609129210253313)
 
 ### 好用的 logseq 也有整合 chatGPT 的擴充啦
 
-[https://twitter.com/Tisoga/status/1611430367327846403](https://twitter.com/Tisoga/status/1611430367327846403)
+![](https://twitter.com/Tisoga/status/1611430367327846403)
 
 ### 小工具大合集！
 
 當你需要各式各樣的小功能時，可以先來這邊看看 😃
 
-[https://twitter.com/HiTw93/status/1611666452368560129](https://twitter.com/HiTw93/status/1611666452368560129)
+![](https://twitter.com/HiTw93/status/1611666452368560129)
 
 ### 在資本主義的鐵拳下，所有人都要倒下 #誤
 
-[https://twitter.com/leadream4/status/1612819156331823104](https://twitter.com/leadream4/status/1612819156331823104)
+![](https://twitter.com/leadream4/status/1612819156331823104)

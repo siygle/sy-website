@@ -23,7 +23,7 @@ tags:
 
 前幾天 Deno 自己頻道上辦了一個線上 session，裡面針對剛釋出的 1.40 以及即將出現的 2 都有些略的介紹，有興趣的開發者可以收聽看看。其實前陣子才剛挖到官方文件已經放上了 [1 → 2 的升級文件](https://docs.deno.com/runtime/manual/advanced/migrate_deprecations)，不過現在看起來好像大多都是提到穩定 API 跟繼續強化 Node.js 生態的相容性，還有也是前陣子放出來的 [**jsr**](https://jsr.io)（看起來是自家的 registry，但會相容 Node.js 使用）。
 
-[https://www.youtube.com/watch?v=yndyelbC_QA](https://www.youtube.com/watch?v=yndyelbC_QA)
+![](https://www.youtube.com/watch?v=yndyelbC_QA)
 
 ***截稿前更新*** 😅
 
@@ -76,7 +76,7 @@ src: [https://twitter.com/AWSOpen/status/1753192980452614197](https://twitter.co
 
 雖然比起 ML 百花齊放，WebAssembly 好像沒收到多少的注意，不過其還是默默在進化中，而且它也是悄悄的[搭上了 ML 的車](https://github.com/WebAssembly/wasi-nn)。
 
-[https://www.youtube.com/watch?v=sxz-MxMNmRY](https://www.youtube.com/watch?v=sxz-MxMNmRY)
+![](https://www.youtube.com/watch?v=sxz-MxMNmRY)
 
 其他的相關提案也一步步到位，譬如這邊提到的 [WASI](https://github.com/WebAssembly/WASI)，一旦 WASI 到位，WebAssembly 就更能夠跨出瀏覽器的限制，延伸到更多的應用之上。目前 Preview 1（POXIS、CloudABI）已經完成而 [Preview 2](https://github.com/WebAssembly/WASI/blob/main/Proposals.md)（I/O、File、HTTP） 進行中，然後是 Preview 3（Async），還沒定稿之前也可能會視狀況加上其他重要的功能，到此應該就可以涵蓋大多數的應用，或許 2024 年底就會出現不少有趣的東西啦 😄！
 
@@ -94,7 +94,7 @@ src: [https://twitter.com/yujimur/status/1758344846048456739](https://twitter.co
 
 甚至它們的 CEO 還在 X 上面接受網友點播，即時產生出對應的影片來，真的是太強大的火力展示🙌
 
-[https://twitter.com/sama/status/1758206825756000613](https://twitter.com/sama/status/1758206825756000613)
+![](https://twitter.com/sama/status/1758206825756000613)
 
 看來 OpenAI 的技術優勢還是相當巨大，今天下來之前拿到投資的幾個新創不知道現在是怎麼想的，~~之前似乎很強勢的 [Pika](https://pika.art/home) 不知道會不會來一個兩者對比之類的~~（[才剛準備寫就發現有人發了測試](https://twitter.com/0xAmberBella/status/1758379538692899052)，看來目前是 OpenAI 實力碾壓），不過今天最傷心的我看還是莫過於 Google 了，重磅推出 [Gemini Pro 1.5](https://twitter.com/Google/status/1758209601109987641) 結果一下子就被 OpenAI 的 Sora [搶走大部分的眼球了](https://twitter.com/ai_for_success/status/1758229146927550659)。😅
 

@@ -64,7 +64,7 @@ Deno.serve(route(routes, defaultHandler));
 
 此外 Deno 也針對平行處理有了一些改善，也留意到最近要出現的 [1.46 預告](https://x.com/rough__sea/status/1823039962209476613)裡面好像也有包含這部分，所以應該是有比較穩定的實作了。最近它們放出了一場關於這個議題的內部分享，有興趣的開發者可以收聽看看：
 
-[https://www.youtube.com/watch?v=T_2Ls07A83o](https://www.youtube.com/watch?v=T_2Ls07A83o)
+![](https://www.youtube.com/watch?v=T_2Ls07A83o)
 
 ### 日漸增加的垃圾套件問題 😓
 
@@ -179,7 +179,7 @@ globalThis.cancelDemo = demo();
 
 無意間看到這間 AI 團隊分享，可能因為使用情境的關係，他們並不多需要太大量的 UI 設計，所以就看到他們怎麼在完全沒有設計師的情況之下進行，蠻有意思的，這也算是另類的狗食吧 😆
 
-[https://x.com/forrestzh_/status/1820714878505779446](https://x.com/forrestzh_/status/1820714878505779446)
+![](https://x.com/forrestzh_/status/1820714878505779446)
 
 ### Github 也瞄向 Hugging Face 了
 
@@ -189,7 +189,7 @@ globalThis.cancelDemo = demo();
 
 真的是無痛上手，立刻開始 AI 🤣
 
-[https://www.youtube.com/watch?v=WiBB8Lsgl7I](https://www.youtube.com/watch?v=WiBB8Lsgl7I)
+![](https://www.youtube.com/watch?v=WiBB8Lsgl7I)
 
 [Introducing GitHub Models: A new generation of AI engineers building on GitHub](https://github.blog/news-insights/product-news/introducing-github-models/)
 
@@ -199,7 +199,7 @@ globalThis.cancelDemo = demo();
 
 雖然我只是等四年的年跟仔，不過看到台灣選手表現越來越好真的是與有榮焉，大家都超棒的啦！
 
-[https://x.com/ChingteLai/status/1822880364244685049](https://x.com/ChingteLai/status/1822880364244685049)
+![](https://x.com/ChingteLai/status/1822880364244685049)
 
 如果更有能力或手頭也更餘裕的人，可以考慮從這運動贊助平台這邊來長期支持體育選手喔！雖然我們看四年好像一下子而已，不過其中訓練的艱苦，只有選手們才知道，他們也的確需要民眾更多的支持～ 💪
 
@@ -209,13 +209,13 @@ globalThis.cancelDemo = demo();
 
 看到大大有整理了之前聽過的愛沙尼亞數位居民的申請流程與方法，看完之後覺得好有趣阿，希望有機會邁向 Indie developer 之路的話，有用上的機會（敲碗續集阿～～ 😆）
 
-[https://x.com/hulitw/status/1822944624882720961](https://x.com/hulitw/status/1822944624882720961)
+![](https://x.com/hulitw/status/1822944624882720961)
 
 ### 以後玩遊戲好累 😅
 
 但是又多了一個玩遊戲的藉口—**我在運動！**
 
-[https://x.com/AnsonChen/status/1818528133554782491](https://x.com/AnsonChen/status/1818528133554782491)
+![](https://x.com/AnsonChen/status/1818528133554782491)
 
 ### 冠冕堂皇說著荒謬話
 
@@ -225,7 +225,7 @@ globalThis.cancelDemo = demo();
 
 *這可以當成脫口秀收聽，應該算是好東西吧 😅
 
-[https://x.com/wastemobile/status/1822628931633074595](https://x.com/wastemobile/status/1822628931633074595)
+![](https://x.com/wastemobile/status/1822628931633074595)
 
 ## NewJeans 專區 #誤
 
@@ -233,6 +233,6 @@ globalThis.cancelDemo = demo();
 
 ### 最近是足球世代！
 
-[https://x.com/newjeans_loop/status/1819707736277594460](https://x.com/newjeans_loop/status/1819707736277594460)
+![](https://x.com/newjeans_loop/status/1819707736277594460)
 
-[https://x.com/newjeans_loop/status/1819699230791090266](https://x.com/newjeans_loop/status/1819699230791090266)
+![](https://x.com/newjeans_loop/status/1819699230791090266)

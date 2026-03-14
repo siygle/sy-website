@@ -53,19 +53,19 @@ Node.js 一直活得好好的，再加入許多競品之後，Node.js 的社群�
 
 另外因為這次的事件，不知道有沒有人也留意到這則推文，看著這種戲謔的文字當初一看到的時候就覺得怪怪的，不過也看到了不少人轉推並調侃了幾句。其實他不是真正的主事者啦，而是趁著這個事件也實際展示下 fake news 的影響層面，真的是又快又猛。
 
-[https://x.com/vinceflibustier/status/1814233715641389456](https://x.com/vinceflibustier/status/1814233715641389456)
+![](https://x.com/vinceflibustier/status/1814233715641389456)
 
 ### 原來敵人就在身邊
 
 因為炎上所以不少節目都有提到這件事，剛好[股癌](https://open.spotify.com/episode/0xmFQbpQsvoZUWxZDU2pJH?si=hb-UYamyTlWDigSOsrUMOQ)也提到了資安市場的局勢就提到，結果就剛好看到有人放出了目前資安的市占，原來 MS 爸爸就在旁邊虎視眈眈 😅。
 
-[https://x.com/IEObserve/status/1814879949079388418](https://x.com/IEObserve/status/1814879949079388418)
+![](https://x.com/IEObserve/status/1814879949079388418)
 
 # Local-First Conf 2024
 
 前陣子剛好有機會得知 Local-first 這個東西，就利用一些時間抓了幾個有興趣的議程來聽聽，在收穫不少之餘，也順手寫下了這篇心得記錄文，到底這個名為 Local-first 的軟體架構又是什麼東西呢？有興趣的話可以跳轉下文 😎
 
-[https://bsky.app/profile/sylee.dev/post/3ky6iuoqmwf2j](https://bsky.app/profile/sylee.dev/post/3ky6iuoqmwf2j)
+![](https://bsky.app/profile/sylee.dev/post/3ky6iuoqmwf2j)
 
 # 開源世界真有趣
 
@@ -89,7 +89,7 @@ src: [https://x.com/e18e_dev/status/1806684617740587331](https://x.com/e18e_dev/
 
 不知道是不是有點疲乏了，最近對 AI 相關新聞好像都沒什麼興趣，不過這世界還是在各個不同的模型彼此的軍備競賽中前行。可能因為許多對手逐漸追了上來，OpenAI 也沒有停下它的腳步（雖然最近真的沒太多讓人驚豔的東西推出 😅）
 
-[https://bsky.app/profile/verge-poster.bsky.social/post/3kxkwlj73vj2r](https://bsky.app/profile/verge-poster.bsky.social/post/3kxkwlj73vj2r)
+![](https://bsky.app/profile/verge-poster.bsky.social/post/3kxkwlj73vj2r)
 
 既然沒有新東西，就是針對不同需求的情境推出適合的產生，以擴大佔有率。所以這次 OpenAI 是放出了 GPT-40 mini 的針對小模型。
 
@@ -106,7 +106,7 @@ src: [https://x.com/OpenAIDevs/status/1813990748406317221](https://x.com/OpenAID
 
 不過老實說，目前看到不少開發者更看好 Claude 的效果，雖然知道 OpenAI 應該手上還是有什麼大招，不過在這個競爭激烈的戰場，真的不往前衝很快就會被追上了（更別說還有一個開源大玩家 Meta 在等著 😎）
 
-[https://x.com/oran_ge/status/1815576654301086055](https://x.com/oran_ge/status/1815576654301086055)
+![](https://x.com/oran_ge/status/1815576654301086055)
 
 ### Edge AI & Apple，不遠矣？
 
@@ -116,13 +116,13 @@ src: [https://x.com/OpenAIDevs/status/1813990748406317221](https://x.com/OpenAID
 
 **不過 Apple 會不會開放這條路，又是另一個問題了* 😂
 
-[https://x.com/mo_baioumy/status/1816261362311385320](https://x.com/mo_baioumy/status/1816261362311385320)
+![](https://x.com/mo_baioumy/status/1816261362311385320)
 
 # 自幹版鍵盤真的威！
 
 看到海總分享的那個手把手自幹鍵盤的教學覺得好熱血阿！能自組硬體的技能真好，至今還沒辦法跨界到那邊去，好生羨慕。結果才沒看完多久，又看到另一篇自組行動打字機的分享，是大家都開始走這個路線了是嗎 😅。
 
-[https://x.com/tzangms/status/1817737041003827253](https://x.com/tzangms/status/1817737041003827253)
+![](https://x.com/tzangms/status/1817737041003827253)
 
 ![src: [https://cassidoo.co/post/micro-journal/](https://cassidoo.co/post/micro-journal/)](../assets/網路黑手的呢喃 #51 - Untitled 2.png)
 
@@ -134,7 +134,7 @@ src: [https://cassidoo.co/post/micro-journal/](https://cassidoo.co/post/micro-jo
 
 [https://github.com/unkyulee/micro-journal](https://github.com/unkyulee/micro-journal)
 
-[https://www.youtube.com/watch?v=1ZP9wwYMaMY](https://www.youtube.com/watch?v=1ZP9wwYMaMY)
+![](https://www.youtube.com/watch?v=1ZP9wwYMaMY)
 
 # **網路是個好東西**
 
@@ -142,7 +142,7 @@ src: [https://cassidoo.co/post/micro-journal/](https://cassidoo.co/post/micro-jo
 
 *我只是說說* 😆
 
-[https://x.com/Tegutech/status/1814202924844900774](https://x.com/Tegutech/status/1814202924844900774)
+![](https://x.com/Tegutech/status/1814202924844900774)
 
 看到這個還是有心動一下，說不定終於可以把 iPad 當作工作機的願望達成了！看作者提到這是透過一個最近剛在 App store 上架的一個虛擬機的軟體 ⬇️
 
@@ -154,19 +154,19 @@ src: [https://cassidoo.co/post/micro-journal/](https://cassidoo.co/post/micro-jo
 
 我常說下次再見也是類似的概念 #不合群 😅
 
-[https://x.com/Bya_kuei/status/1811369934242689362](https://x.com/Bya_kuei/status/1811369934242689362)
+![](https://x.com/Bya_kuei/status/1811369934242689362)
 
 ### 星鏈越來越猛啦！
 
 馬老闆雖然把 X 搞得烏煙瘴氣，但其他本業還是值得期待，剛推出的迷你版星鏈，真的以後不管到哪都可以開心用網路了耶 #違
 
-[https://x.com/Starlink/status/1811443366711754942](https://x.com/Starlink/status/1811443366711754942)
+![](https://x.com/Starlink/status/1811443366711754942)
 
 ### 有沒有這麼酷的校歌
 
 日本高校的故事怎麼都這麼熱血阿，連校歌都可以這麼酷！（我跑去搜尋了一波，[它們的校歌真的是這首](https://www.youtube.com/watch?v=f0u1C4Fpu5o)，不要懷疑 😆）
 
-[https://x.com/futurenote2040/status/1813717644597747992](https://x.com/futurenote2040/status/1813717644597747992)
+![](https://x.com/futurenote2040/status/1813717644597747992)
 
 ### 我決定開闢一個 NewJeans 專區 #誤
 
@@ -174,12 +174,12 @@ src: [https://cassidoo.co/post/micro-journal/](https://cassidoo.co/post/micro-jo
 
 鈕郡司戰隊，參上！
 
-[https://x.com/newjeans_loop/status/1815031939075813566](https://x.com/newjeans_loop/status/1815031939075813566)
+![](https://x.com/newjeans_loop/status/1815031939075813566)
 
 火力展示
 
-[https://x.com/newjeans_loop/status/1814329164591444458](https://x.com/newjeans_loop/status/1814329164591444458)
+![](https://x.com/newjeans_loop/status/1814329164591444458)
 
-[https://x.com/nano__jeans_/status/1813098132580016581](https://x.com/nano__jeans_/status/1813098132580016581)
+![](https://x.com/nano__jeans_/status/1813098132580016581)
 
-[https://x.com/onlyhanni2k4/status/1815048540902850589](https://x.com/onlyhanni2k4/status/1815048540902850589)
+![](https://x.com/onlyhanni2k4/status/1815048540902850589)

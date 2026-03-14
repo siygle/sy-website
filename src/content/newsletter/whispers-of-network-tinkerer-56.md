@@ -25,7 +25,7 @@ tags:
 
 不過也是蠻好奇開發工具要怎麼轉換成穩定營收，畢竟開發者真的是最難取悅的一群人…
 
-[https://x.com/voidzerodev/status/1841100762203492595](https://x.com/voidzerodev/status/1841100762203492595)
+![](https://x.com/voidzerodev/status/1841100762203492595)
 
 ### OpenNEXT 這個專案，有點危 😎
 
@@ -44,19 +44,19 @@ SST is a framework that makes it easy to build modern full-stack applications on
 
 所以這種直接挖牆角的行為，不知道會不會後來演變成跟上一篇提到的 WordPress Drama 一樣的狀況，不好說阿 😅。
 
-[https://bsky.app/profile/sylee.dev/post/3l52ycbfz4m2l](https://bsky.app/profile/sylee.dev/post/3l52ycbfz4m2l)
+![](https://bsky.app/profile/sylee.dev/post/3l52ycbfz4m2l)
 
 ### 截稿前的新版本 - Deno2 & Bun 1.1.30
 
 本來想說還要等下去，沒想到 Deno 2 終於出現啦，10/10 Deno 2.0 準備正式釋出啦！看起來當天會有一個線上的發佈直播會，沒跟到直播的開發者，可以點下方連結去看完整的內容，裡面有 ry 針對 Deno 有很詳細的介紹，然而會後的 AMA 也首次看到了 Deno 團隊的樣貌，看起來他們終於可以喘口氣了 😎
 
-[https://x.com/deno_land/status/1843641930783305934](https://x.com/deno_land/status/1843641930783305934)
+![](https://x.com/deno_land/status/1843641930783305934)
 
 然後不獨有偶，隔壁棚的 Bun 也一併放出新版本 1.1.30。看起來它可能想走 JS toolchain 的方向，可以看到新版本也整合了 npm & bundle 的功能，給 JS 開發者一個無腦開箱（又更快）的開發工具 🤔。
 
 多個 runtime 彼此競爭，大家都有各自不同的設計，雖然有時候覺得 JS 的世界很阿雜，但有時候看到不同的實作抉擇，熱熱鬧鬧很有活力的樣子，又覺得很有意思～（你就繼續自虐吧 😅）
 
-[https://x.com/bunjavascript/status/1843630360133009872](https://x.com/bunjavascript/status/1843630360133009872)
+![](https://x.com/bunjavascript/status/1843630360133009872)
 
 ### TC39 又來了，出現一個酷酷的東西
 
@@ -64,11 +64,11 @@ SST is a framework that makes it easy to build modern full-stack applications on
 
 結果這次就來一個猛的 → https://github.com/tc39/proposal-structs ⬇️ 😆
 
-[https://x.com/_hisriver/status/1843671089534382244](https://x.com/_hisriver/status/1843671089534382244)
+![](https://x.com/_hisriver/status/1843671089534382244)
 
 不常碰 system language 不過看起來相關開發者都蠻看好的，解放了 JS 這類動態語言的潛力，可以用更偏向靜態語言的方法、更有效運用記憶體。看到 Bun 的作者也評論到了這個提案，看起來這個功能如果真的引入實作，應該是有不少的可能性出現 😄。
 
-[https://x.com/jarredsumner/status/1843665451446112392](https://x.com/jarredsumner/status/1843665451446112392)
+![](https://x.com/jarredsumner/status/1843665451446112392)
 
 不過其實除了上述這個提案之外，也看到在這次的 TC39 也有一場提到了關於如何改善現在的 JS 的開發生態的分享 ⬇️，這題目真的是有點大阿，看起來是打算從 JS Engine 的架構重新去思考（真的看不太懂裡面的不少細節，這需要大大講解了 😓）
 
@@ -94,7 +94,7 @@ SST is a framework that makes it easy to build modern full-stack applications on
 
 然後最近他們也丟出了他們自家的 mobile app 開發方案 - [**Hotwire Native**](https://native.hotwired.dev/)。雖然這種 hybird 的模式一直受到某些原生開發者的…特殊評論 😆，不過它的確就是走一條快速開發的道路。Hotwire 跟另外更知名的專案 react native 或是 flutter 這類看起來應該是更輕量化，面對的應該也是比較簡單的 app，不過它提倡可以運用 Bridge Components & Native Screens 抽換成更貼近 native 體驗的元件，感覺也是蠻適合逐步調整的使用情境。
 
-[https://x.com/dhh/status/1840079708362551640](https://x.com/dhh/status/1840079708362551640)
+![](https://x.com/dhh/status/1840079708362551640)
 
 # 愛讀冊啦～
 
@@ -145,11 +145,11 @@ Data is a big driver of engineering at Discord, and the data speaks for itself: 
 
 **在這個知識掛帥的時代，最不值錢的就是知識本身了…**😅
 
-[https://x.com/lobatt/status/1843275689765793875](https://x.com/lobatt/status/1843275689765793875)
+![](https://x.com/lobatt/status/1843275689765793875)
 
 不過單論產品成效也是蠻不錯的，畢竟這個大家都想快速產出東西的時代，寫一份文稿就可以同時產生 Podcasts 內容，多麼開心 🤣（也看到有[大大用這個方式在測試了](https://www.youtube.com/@ffred)）。G 家的產品團隊最近也出來分享它們是怎麼打造出這個產品以及一些開發經驗，當然，一定是要順便火力展示的啦！⬇️
 
-[https://x.com/jayspiel_/status/1842243021955633278](https://x.com/jayspiel_/status/1842243021955633278)
+![](https://x.com/jayspiel_/status/1842243021955633278)
 
 ### Coding + AI 真的是廝殺戰場
 
@@ -159,7 +159,7 @@ Data is a big driver of engineering at Discord, and the data speaks for itself: 
 
 不同於 IDE 之流的 vscode 或是 Cursor，都只有針對程式本身，不過像 Val Town 或是這次出世的 StackBlitz，因為本身也是提供服務的平台，所以能做到更完整的 AI 產生 → 全棧 → 部署，一條龍處理完畢，當然是更方便了。
 
-[https://x.com/elmd_/status/1843264918356730238](https://x.com/elmd_/status/1843264918356730238)
+![](https://x.com/elmd_/status/1843264918356730238)
 
 此外，這是 StackBlitz 還有更猛的一點是，它直接把這個新服務（[https://bolt.new/](https://bolt.new/)）開源了，所以你可以直接讀代碼知道他們是怎麼實作出來了，真是太威了！
 
@@ -167,7 +167,7 @@ Data is a big driver of engineering at Discord, and the data speaks for itself: 
 
 不過老實說目前這種 AI 很快可以產生（或取代）寫程式的觀點，也是有些開發者不認同的 🔽 😅
 
-[https://x.com/cloudwu/status/1842756759259430945](https://x.com/cloudwu/status/1842756759259430945)
+![](https://x.com/cloudwu/status/1842756759259430945)
 
 我自己是覺得某些簡單的小功能，或是 side project 的起手式，拿這類的工具來實作的確是快上不少，不過如果是大型的專案、或是非 web 相關的，現階段可能幫助就沒這麼明顯（？），個人觀察，也是歡迎其他有不同意見的開發者可以分享自己的經驗談。
 
@@ -179,17 +179,17 @@ Data is a big driver of engineering at Discord, and the data speaks for itself: 
 
 原來看動物影片是真的可以紓壓的 🤣
 
-[https://x.com/and_khamoo/status/1843264797732921485](https://x.com/and_khamoo/status/1843264797732921485)
+![](https://x.com/and_khamoo/status/1843264797732921485)
 
-[https://x.com/KookCapitalLLC/status/1842987183621153180](https://x.com/KookCapitalLLC/status/1842987183621153180)
+![](https://x.com/KookCapitalLLC/status/1842987183621153180)
 
-[https://x.com/khamoo_fc/status/1840628852135227636](https://x.com/khamoo_fc/status/1840628852135227636)
+![](https://x.com/khamoo_fc/status/1840628852135227636)
 
 ### 我們飯的是四次元愛豆無誤
 
 喵 🐱🤣
 
-[https://x.com/__yunhand__/status/1842852967273390358](https://x.com/__yunhand__/status/1842852967273390358)
+![](https://x.com/__yunhand__/status/1842852967273390358)
 
 ### 像文青般了解現在的時間
 
@@ -207,4 +207,4 @@ Data is a big driver of engineering at Discord, and the data speaks for itself: 
 
 不過木村大神好貼心阿，真的幫青年搭配了一週的裝搭。然後更猛的有人已經幫忙整理好了 🙌
 
-[https://x.com/littlegoodjack/status/1840561706428465525](https://x.com/littlegoodjack/status/1840561706428465525)
+![](https://x.com/littlegoodjack/status/1840561706428465525)

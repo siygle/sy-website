@@ -177,7 +177,7 @@ Deno 先發了篇文章，講了模組系統分歧的問題，提到原本跟 No
 
 最近它們又有新動作了 → `npm install ai` 一個他們打包好針對 AI 服務開發的 SDK，透過這個工具（當然也要搭配他們的平台🤣），就可以快速開發 Machine Learning 的網路服務。
 
-[https://twitter.com/steventey/status/1669407912400388096](https://twitter.com/steventey/status/1669407912400388096)
+![](https://twitter.com/steventey/status/1669407912400388096)
 
 除此之外，Vercel 還成立了 AI Accelerator 的計畫，跟創業加速器類似不過特別針對 AI 的應用就是了。
 
@@ -189,19 +189,19 @@ Deno 先發了篇文章，講了模組系統分歧的問題，提到原本跟 No
 
 姑且不論貴鬆鬆的費用，在網路服務這塊（特別是前端的部分）Vercel 還是一如往常地動作非常快速。
 
-[https://twitter.com/AIWhispers4U/status/1669895301237456897](https://twitter.com/AIWhispers4U/status/1669895301237456897)
+![](https://twitter.com/AIWhispers4U/status/1669895301237456897)
 
 ### 要賺錢果然還是要 buzzword
 
 很猛的獨立開發者，順便跟大家上了一課，爭什麼語言、架構、技術桟都是多餘的，趁著風頭先把錢掙了才是重點 #好像無誤 😆
 
-[https://twitter.com/ingramchen/status/1676071998429220865](https://twitter.com/ingramchen/status/1676071998429220865)
+![](https://twitter.com/ingramchen/status/1676071998429220865)
 
 # 網路是個好東西
 
 ### 看到機器人就好興奮啊!!~~
 
-[https://twitter.com/xiaohuggg/status/1676233229907673088?s=20](https://twitter.com/xiaohuggg/status/1676233229907673088?s=20)
+![](https://twitter.com/xiaohuggg/status/1676233229907673088?s=20)
 
 ### 覺得這根本是Mastodon的最佳應用
 
@@ -211,11 +211,11 @@ ref: [https://g0v.social/@walkingice/110644585368958809](https://g0v.social/@wal
 
 ### 我最近每天都是這個狀態😆
 
-[https://twitter.com/shouldhaveanima/status/1673002035816595456](https://twitter.com/shouldhaveanima/status/1673002035816595456)
+![](https://twitter.com/shouldhaveanima/status/1673002035816595456)
 
 ### Burnout 真的很可怕，大家身心都要照顧好～
 
-[https://twitter.com/haoqunjiang/status/1673691794650054656](https://twitter.com/haoqunjiang/status/1673691794650054656)
+![](https://twitter.com/haoqunjiang/status/1673691794650054656)
 
 ### Respect!
 
@@ -225,4 +225,4 @@ ref: [https://twitter.com/weihanglo/status/1675088724953030687](https://twitter.
 
 ### 臺灣超棒的啦！（代言人也很棒😍）
 
-[https://twitter.com/Taiwan_in_Japan/status/1672192775792754689](https://twitter.com/Taiwan_in_Japan/status/1672192775792754689)
+![](https://twitter.com/Taiwan_in_Japan/status/1672192775792754689)

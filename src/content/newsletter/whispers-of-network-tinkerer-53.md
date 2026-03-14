@@ -48,7 +48,7 @@ src: [https://x.com/kentcdodds/status/1824188520191365535](https://x.com/kentcdo
 
 不過除了 Deno 新版本之後，另一個更吸引我的消息是，終於進入穩定版本的 Deno 標準函式庫 🎉。在透過 JSR 的助力之下，主流的 Node.js 以及其他 JS runtime 應該都可以無痛使用它（有興趣也可以跳轉這個[官方推文的簡介](https://x.com/deno_land/status/1826406094287368293)，針對這個標準函式庫所涵蓋的功能作了一波簡介。
 
-[https://www.youtube.com/watch?v=RFhM34rBWnU](https://www.youtube.com/watch?v=RFhM34rBWnU)
+![](https://www.youtube.com/watch?v=RFhM34rBWnU)
 
 提到這個話題，如果要詳細的討論下去應該又是會掀起一波論戰，不過我自己的立場應該是滿明顯的，我覺得能有個類似工具包的標準函式庫，對新入門，甚至一般開發者來說應該都是利多於弊，尤其這個老是不停重造輪子的 JS-Eco，如果能把這類的工具包有組織地維護跟開發，就更可以把力量放到其他的領域（目前有疑慮可能 Deno 畢竟還是算營利公司，雖然開源之後轉移不太是問題，不過如果有個開源組織來負責，說不定也更可以吸引更多貢獻者投入一起維護）。
 
@@ -84,7 +84,7 @@ src: [https://x.com/kentcdodds/status/1824188520191365535](https://x.com/kentcdo
 
 **如果 Notion 也可以提供這種功能就好了，比起產生文字的 AI 功能，程式碼才更有用阿～*
 
-[https://x.com/vikingmute/status/1826796814982676619](https://x.com/vikingmute/status/1826796814982676619)
+![](https://x.com/vikingmute/status/1826796814982676619)
 
 ### 手機程式測試的好工具 - Tophat
 
@@ -92,7 +92,7 @@ src: [https://x.com/kentcdodds/status/1824188520191365535](https://x.com/kentcdo
 
 我對手機端開發沒那麼熟悉，但我想應該也是有不少類似的工具與服務存在。不過剛好偶然看到了 Shopify 最近也釋出了類似的工具 - [**tophat**](https://github.com/Shopify/tophat)。幾乎就是 Vercel 功能，只是現在也可以針對手機開發來一鍵開啟目標版本的 app 了（可以參考下方的展示影片）🤩。
 
-[https://x.com/mustafa01ali/status/1825920486666084360](https://x.com/mustafa01ali/status/1825920486666084360)
+![](https://x.com/mustafa01ali/status/1825920486666084360)
 
 如果對這個工具感興趣的話，也可以去拜讀一下 Shopify 撰寫的專文 ⬇️
 
@@ -106,7 +106,7 @@ src: [https://x.com/kentcdodds/status/1824188520191365535](https://x.com/kentcdo
 
 太讚也太用心了，推推！
 
-[https://bsky.app/profile/hongminhee.org/post/3l2gmdb3owx2b](https://bsky.app/profile/hongminhee.org/post/3l2gmdb3owx2b)
+![](https://bsky.app/profile/hongminhee.org/post/3l2gmdb3owx2b)
 
 這位大大除了這個之外，他也是 Fediverse 的大力推廣者喔，有好幾個相關的專案（包含目前 Ghost 準備整合的 ActivityPub 就是用了他開發的專案喔，超威！
 
@@ -150,7 +150,7 @@ src: [https://x.com/kentcdodds/status/1824188520191365535](https://x.com/kentcdo
 
 不過你實際去玩玩看，真的會讓你驚豔到，它的操作、互動方式，以及產生出的程式碼，都會讓你眼睛一亮。（有興趣可以先瞄一次創辦人的 LIVE Demo）⬇️
 
-[https://x.com/stevekrouse/status/1826680757466865732](https://x.com/stevekrouse/status/1826680757466865732)
+![](https://x.com/stevekrouse/status/1826680757466865732)
 
 除了實戰之外， Val Town 還特別撰寫了這篇文章，記錄了他們是如何實作出目前這個品質極高的成品，一步一步的優化，以及他做了那些事來讓整個產生的體驗跟品質可以更好，這篇文章真的很值得每位開發者細細閱讀，工匠精神就是像這樣，真是佩服這些強者 🫡。
 
@@ -172,7 +172,7 @@ src: [https://x.com/kentcdodds/status/1824188520191365535](https://x.com/kentcdo
 
 *Let’s wait and see. #不好說* 😅
 
-[https://x.com/zeddotdev/status/1825967812629631034](https://x.com/zeddotdev/status/1825967812629631034)
+![](https://x.com/zeddotdev/status/1825967812629631034)
 
 ### Cloud Run & Ollama
 
@@ -182,7 +182,7 @@ src: [https://x.com/kentcdodds/status/1824188520191365535](https://x.com/kentcdo
 
 雖然我對 G 家產品不太有信心，然後它的 GCP 介面也是非常的…微妙。但是畢竟還是~~（喜歡一直宣傳）~~擁抱 AI 的企業，最快整合 GPU 的使用想必會讓 Cloud Run 多了不少應用的場景。
 
-[https://www.youtube.com/watch?v=mMFOmkFLgbc](https://www.youtube.com/watch?v=mMFOmkFLgbc)
+![](https://www.youtube.com/watch?v=mMFOmkFLgbc)
 
 # **網路是個好東西**
 
@@ -193,7 +193,7 @@ src: [https://x.com/kentcdodds/status/1824188520191365535](https://x.com/kentcdo
 - 為了技術棧爭吵是沒什麼意義的，做出有人需要的服務就會有人買單，用戶真的不在乎這個。
 - Just follow your heart 😄
 
-[https://x.com/SaitoWu/status/1826067739494215707](https://x.com/SaitoWu/status/1826067739494215707)
+![](https://x.com/SaitoWu/status/1826067739494215707)
 
 ### 你本週悟空了嗎
 
@@ -201,28 +201,28 @@ src: [https://x.com/kentcdodds/status/1824188520191365535](https://x.com/kentcdo
 
 依然手殘黨的我又不知道要卡多久之外，也是有一些有趣的數據值得看看 😆
 
-[https://x.com/IEObserve/status/1826585895119847883](https://x.com/IEObserve/status/1826585895119847883)
+![](https://x.com/IEObserve/status/1826585895119847883)
 
 ### Born to be a Hero
 
 再誇張一點沒關係 😁
 
-[https://x.com/cynical_zenitsu/status/1827230782618005747](https://x.com/cynical_zenitsu/status/1827230782618005747)
+![](https://x.com/cynical_zenitsu/status/1827230782618005747)
 
 ### Netflix 偷偷放大絕
 
-[https://x.com/netflix/status/1825970947511210182](https://x.com/netflix/status/1825970947511210182)
+![](https://x.com/netflix/status/1825970947511210182)
 
 ### 本週的我在 IVE 與 NewJeans 之間搖擺不定
 
 多麼幸福的掙扎 😆
 
-[https://x.com/ayjpix/status/1826935841513759156](https://x.com/ayjpix/status/1826935841513759156)
+![](https://x.com/ayjpix/status/1826935841513759156)
 
-[https://x.com/Minggom_16/status/1826577320058200125](https://x.com/Minggom_16/status/1826577320058200125)
+![](https://x.com/Minggom_16/status/1826577320058200125)
 
-[https://x.com/ayjpix/status/1826928334074458324](https://x.com/ayjpix/status/1826928334074458324)
+![](https://x.com/ayjpix/status/1826928334074458324)
 
-[https://x.com/newjeans_loop/status/1826568267819090406](https://x.com/newjeans_loop/status/1826568267819090406)
+![](https://x.com/newjeans_loop/status/1826568267819090406)
 
-[https://x.com/IVEstarship/status/1827934010955497638](https://x.com/IVEstarship/status/1827934010955497638)
+![](https://x.com/IVEstarship/status/1827934010955497638)

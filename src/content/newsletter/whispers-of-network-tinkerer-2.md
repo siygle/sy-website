@@ -7,7 +7,7 @@ tags:
 ---
 ## Remix
 
-[https://twitter.com/remix_run/status/1462900248016130051](https://twitter.com/remix_run/status/1462900248016130051)
+![](https://twitter.com/remix_run/status/1462900248016130051)
 
 常常聽到別人嘲諷 JS 生態圈，就是不斷地重寫輪子，有時候看到這種消息總是會不自主又想起這句話😅，嗯，又來一個新 SSR Framework 了 - [Remix](https://remix.run/)。這也是知名套件 [react-router](https://reactrouter.com/) 背後的[團隊](https://github.com/orgs/remix-run/people)主力開發的。
 
@@ -15,7 +15,7 @@ tags:
 
 ## JAMStack 正夯
 
-[https://twitter.com/vercel/status/1463134883539156995](https://twitter.com/vercel/status/1463134883539156995)
+![](https://twitter.com/vercel/status/1463134883539156995)
 
 最近為 JAMStack 發力的幾個知名服務，都陸續拿到新一輪的新創融資，看來 JAMStack最近也滿夯的，想要拿投資的應該知道該往什麼地方了😎 #誤
 
@@ -23,7 +23,7 @@ tags:
 
 ## Deno & Slack
 
-[https://twitter.com/deno_land/status/1460681995231576068](https://twitter.com/deno_land/status/1460681995231576068)
+![](https://twitter.com/deno_land/status/1460681995231576068)
 
 老實說看到這個新聞有點訝異，怎麼 Slack 又要改版了（違），不過看到它們居然選了 deno 當成下一代的開發平台還是有點期待，不知道有沒有機會推出一些有趣的東西。（因為目前是封測，或許有些大公司有機會試玩了，希望能分享一下心得😁）。
 

@@ -49,7 +49,7 @@ src: [https://twitter.com/rough__sea](https://twitter.com/rough__sea)
 
 其中提到一個回歸原因就是最近 Node.js 放出的紀錄片，真的是內容滿滿，身為一路走來的老人感觸好深，雖然 JS 三不五時就會被拿來調侃，本身也有很多缺陷，但是社群的活力一直是它最令人喜愛的地方（當然 Drama 也是不會少 😁）
 
-[https://www.youtube.com/watch?v=LB8KwiiUGy0](https://www.youtube.com/watch?v=LB8KwiiUGy0)
+![](https://www.youtube.com/watch?v=LB8KwiiUGy0)
 
 ## 幾個更新的消息
 
@@ -59,7 +59,7 @@ src: [https://twitter.com/rough__sea](https://twitter.com/rough__sea)
 
 不能不說，Bun 真的是目前 Node.js 繼承者中最突出的那個，感覺它們選擇走的路線很聰明，也看到不少第三方也開始擁抱它們了（比 Deno 還多的感覺 😂），可以期待它們後續的發展～
 
-[https://www.youtube.com/watch?v=yXTFOeGly9o](https://www.youtube.com/watch?v=yXTFOeGly9o)
+![](https://www.youtube.com/watch?v=yXTFOeGly9o)
 
 ### Node.js v20.12.0（LTS）出爐，還有大家也可以久違回去看一下官網喔 😁
 
@@ -154,24 +154,24 @@ src: [https://twitter.com/kevinzhow/status/1772810844117819688](https://twitter.
 
 ### 好像不只 Elastic 有這種感覺而已
 
-[https://twitter.com/jasonbosco/status/1769878223427338440](https://twitter.com/jasonbosco/status/1769878223427338440)
+![](https://twitter.com/jasonbosco/status/1769878223427338440)
 
 ### 熟悉的感覺😂
 
-[https://twitter.com/moeSkyHigh/status/1770615940843184552](https://twitter.com/moeSkyHigh/status/1770615940843184552)
+![](https://twitter.com/moeSkyHigh/status/1770615940843184552)
 
 ### 雖然有點殘忍，但是有種爽快感😆
 
-[https://twitter.com/InternetH0F/status/1772493698732830741](https://twitter.com/InternetH0F/status/1772493698732830741)
+![](https://twitter.com/InternetH0F/status/1772493698732830741)
 
 ### 辦公室的好東西
 
 是說這個一組怎麼夠用，起碼要標配 3~4 組才能涵蓋這個角度的突擊。😂
 
-[https://twitter.com/twibuznews/status/1772541080157995482](https://twitter.com/twibuznews/status/1772541080157995482)
+![](https://twitter.com/twibuznews/status/1772541080157995482)
 
 ### 科技發展是一個循環
 
 雖然這個應用看起來有點搞笑，但是科技的發展好像常常這樣，轉過來又轉回去。
 
-[https://twitter.com/benhylak/status/1772729326104187270](https://twitter.com/benhylak/status/1772729326104187270)
+![](https://twitter.com/benhylak/status/1772729326104187270)

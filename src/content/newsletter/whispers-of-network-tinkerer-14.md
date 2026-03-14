@@ -33,7 +33,7 @@ Cloudflare 也是我覺得很酷的一間公司，它們對於網路相關的服
 
 感覺有機會可以一定程度取代其他的雲端大廠，Storage ([R2](https://blog.cloudflare.com/r2-open-beta)）加上 Edge serverless 就可以弄出不少東西了，然後現在它們也提供自家的 SQL database - [D1](https://www.cloudflare.com/lp/d1/)，然後它是基於 sqlite 的😆，最近 Cloudflare 也是滿猛的，越來越多有趣的東西。
 
-[https://twitter.com/Cloudflare/status/1523348823128834048](https://twitter.com/Cloudflare/status/1523348823128834048)
+![](https://twitter.com/Cloudflare/status/1523348823128834048)
 
 ## Cloudflare Worker: open source
 
@@ -41,7 +41,7 @@ Cloudflare 也是我覺得很酷的一間公司，它們對於網路相關的服
 
 這也就是為什麼第一則提到的 WinterCG 之所以需要成立的原因，這樣算起來起碼就有三個類 JS 的 runtime 了：Node.js/deno/Cloudflare Worker。
 
-[https://twitter.com/ritakozlov_/status/1523652698784296961](https://twitter.com/ritakozlov_/status/1523652698784296961)
+![](https://twitter.com/ritakozlov_/status/1523652698784296961)
 
 ## 是喔，又是 npm 了
 
@@ -55,7 +55,7 @@ Cloudflare 也是我覺得很酷的一間公司，它們對於網路相關的服
 
 另一個是新創 [Socket](https://socket.dev/)，而且它們已經拿到創投資金了，在 package.json 的變動時，即時幫開發者依賴的模組作[相關的安全檢查](https://socket.dev/npm/issue)（不過印象 [Snyk](https://snyk.io/) 好像有類似的服務？但它們宣稱比 Snyk 的監測服務更好😎），目前有 Github app 可以使用，但現在還很陽春，後續會有更多功能推出，希望可以它們能對 Supply-Chain attack 的問題有更好的防護手段，成員中有不少是 Node.js 知名的開發者，值得期待。
 
-[https://twitter.com/feross/status/1524419187334017025](https://twitter.com/feross/status/1524419187334017025)
+![](https://twitter.com/feross/status/1524419187334017025)
 
 然後也有人是從另一個角度切入的 😄
 
@@ -63,7 +63,7 @@ Cloudflare 也是我覺得很酷的一間公司，它們對於網路相關的服
 
 尤其當這個套件又已經被很多人引用的話，真的一瞬間就可以造成很大的傷害。雖然可以預期還會不斷出現這類的事件，但看來有人起身開始思索解決的方法，也是蠻值得開心的，這也是開源社群迷人之處吧。
 
-[https://twitter.com/devdevcharlie/status/1522604033449422849](https://twitter.com/devdevcharlie/status/1522604033449422849)
+![](https://twitter.com/devdevcharlie/status/1522604033449422849)
 
 ## Permission Model
 
@@ -73,7 +73,7 @@ Cloudflare 也是我覺得很酷的一間公司，它們對於網路相關的服
 
 核心概念有點類似目前 deno 的模式，就是你必須指定程式執行需要哪些權限，若沒有就會噴錯，可以在執行階段變更權限（看起來是只能[拒絕](https://github.com/nodejs/security-wg/issues/791#issuecomment-1139685445)）。不過目前尚在討論的階段，還不確定會不會正式引入，希望在各大集思廣益之下，能設計出一些有效改善 Node.js 生態安全性問題的方案。🤞
 
-[https://twitter.com/marcin_hoppe/status/1517831296218812417](https://twitter.com/marcin_hoppe/status/1517831296218812417)
+![](https://twitter.com/marcin_hoppe/status/1517831296218812417)
 
 ## What do you think?
 
@@ -81,4 +81,4 @@ Deno 前幾天發了這個有趣的推詢問各開發者，不知道有在玩 De
 
 兩難阿🤣
 
-[https://twitter.com/deno_land/status/1527627754019205125](https://twitter.com/deno_land/status/1527627754019205125)
+![](https://twitter.com/deno_land/status/1527627754019205125)

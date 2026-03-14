@@ -22,7 +22,7 @@ tags:
 
 [QUIC](https://medium.com/jalexs-murmur/intro-http3-quic-dc11e77bbb9f) 應該就是 HTTP3 的部分了，雖然 HTTP2 到現在好像都還沒普及，現在走到 3 可能也只是實驗性質居多，不過 [Node.js 那邊也是在 v23](https://github.com/nodejs/node/pull/44325) 開始逐步實作了，希望可以帶動一些其他的應用出現。
 
-[https://x.com/rough__sea/status/1870225654257725478](https://x.com/rough__sea/status/1870225654257725478)
+![](https://x.com/rough__sea/status/1870225654257725478)
 
 然後因為 QUIC 已經實作，所以其他的應用也會開始出現了，譬如 WebSocket 的進化版 - [WebTransport](https://github.com/w3c/webtransport) 也出現在下一版的功能中了。（其實我是看到 PR 才知道這個東西的，真的是進化的速度太快已經追不上了 😅）
 
@@ -30,19 +30,19 @@ tags:
 
 另外，之前提過的 KV 的本地實作就是 SQLite，印象中原本就是 Deno KV 先出現，然後 Node.js 實作 node:sqlite，結果現在為了相容 Deno 又支援了 `node:sqlite` 的功能，覺得也是很微妙 😅
 
-[https://x.com/rough__sea/status/1875749204129382694](https://x.com/rough__sea/status/1875749204129382694)
+![](https://x.com/rough__sea/status/1875749204129382694)
 
 然後最近 Deno 的 Star 也正式突破 10 萬大關了（雖然實際使用的比率感覺還比不上這個數量 😓），體感 2.0 之後 Deno 受到的關注好像有變多一些，不過缺少一些強力的使用場景，讓它還是有點不上不下，還是希望能越來越成熟並吸引更多開發者。
 
-[https://x.com/deno_land/status/1870134621230538956](https://x.com/deno_land/status/1870134621230538956)
+![](https://x.com/deno_land/status/1870134621230538956)
 
 不過隔壁棚的 Bun 也沒閒著，看到它們也準備加上 S3 的功能（我自己是不太喜歡這種功能內建到 runtime 裡面的，覺得這應該是 modules 去處理的），可能大家都是走向 all-in-one 的方向去，畢竟 JS 生態的碎片化也是一直被詬病的問題之一，雖然 all-in-one 有好處，不過我更傾向 Deno 用 std 來處理的方法，更優雅一點。
 
-[https://x.com/jarredsumner/status/1875432015870546058](https://x.com/jarredsumner/status/1875432015870546058)
+![](https://x.com/jarredsumner/status/1875432015870546058)
 
 最後老牌的 Node.js 也沒停下腳步，最近熱門的應該就是最新的 v23 版本已經支援執行 TypeScript 檔案啦！ 🎉
 
-[https://x.com/satanacchio/status/1876690820155531775](https://x.com/satanacchio/status/1876690820155531775)
+![](https://x.com/satanacchio/status/1876690820155531775)
 
 但這也只算初步而已，目前也還不是完全支援 TS 的所有功能，然後 Node.js 這邊也還有進行中的後續，其他的細節可以參考其他開發者已經整理好的文件 ⬇️
 
@@ -99,7 +99,7 @@ SQLite 應該是大家很熟悉的一個輕量嵌入式資料庫，因為簡單�
 
 這種年更文也差不多都是在歲末年初的時候出現，今年的版本也發了（不過正如我寫的，老了之後真的什麼都沒有興趣了，尤其是 JS 生態更是心累，永遠類似的東西不斷出現 😓），不過有興趣想知道最近又出現什麼有趣的東西的話，還是可以看看。（果不其然多了 AI 這個新的分類）
 
-[https://bsky.app/profile/sylee.dev/post/3lfajtps6q22k](https://bsky.app/profile/sylee.dev/post/3lfajtps6q22k)
+![](https://bsky.app/profile/sylee.dev/post/3lfajtps6q22k)
 
 ## 方便的截圖小工具
 
@@ -127,7 +127,7 @@ src: [https://x.com/Evan_Lin/status/1873656100102537308](https://x.com/Evan_Lin/
 
 雖然這種小型機也不是什麼神奇的東西，不過畢竟是 AI 霸主出的自帶光環。然後看起來就是面向工作室或中小型企業有 AI 需求的話，可以作為一個輕量版的自架機使用。說不定之後真的是人人家中都要有一台 AI Hub 了。
 
-[https://bsky.app/profile/sylee.dev/post/3lf55s3lygk26](https://bsky.app/profile/sylee.dev/post/3lf55s3lygk26)
+![](https://bsky.app/profile/sylee.dev/post/3lf55s3lygk26)
 
 不過另外帶到說不定 Nvidia 有可能要跨進 desktop CPU 的計畫，覺得這世界變化真的是太快了，原本的霸主 Intel 會不會 2025 消逝的速度會更快阿～（後來翻了下資料，原來 Nvidia 本來就有一款 [Grace CPU](https://www.nvidia.com/zh-tw/data-center/grace-cpu/) 了）
 
@@ -141,13 +141,13 @@ src: [https://x.com/Evan_Lin/status/1873656100102537308](https://x.com/Evan_Lin/
 
 [罷免民主快餐 aka 罷免新手懶人包 | Linktree](https://linktr.ee/apple004)
 
-[https://x.com/mmm_twlzl/status/1869593120092172678](https://x.com/mmm_twlzl/status/1869593120092172678)
+![](https://x.com/mmm_twlzl/status/1869593120092172678)
 
 ### 看到廣末就要推！
 
 沒想到居然可以看到她以歌手的身分登場 😆
 
-[https://x.com/memeonmusic/status/1876119198738571572](https://x.com/memeonmusic/status/1876119198738571572)
+![](https://x.com/memeonmusic/status/1876119198738571572)
 
 ### ~~奧術續作！~~  被騙了，[原來只是遊戲](https://gnn.gamer.com.tw/detail.php?sn=279267) 😢
 
@@ -155,16 +155,16 @@ src: [https://x.com/Evan_Lin/status/1873656100102537308](https://x.com/Evan_Lin/
 
 但看起來的確是奧術裡面的人物，難道續作**諾克薩斯**真的 2025/1/10 就要上了！這會不會太嗨了，拳頭社早就默默開始製作了嗎？
 
-[https://www.youtube.com/watch?v=I76wvt0aEE4](https://www.youtube.com/watch?v=I76wvt0aEE4)
+![](https://www.youtube.com/watch?v=I76wvt0aEE4)
 
 ### 最近世界太悶，只能繼續看可愛 Moo Deng 😅
 
-[https://x.com/auramoneyman/status/1876752955321282753](https://x.com/auramoneyman/status/1876752955321282753)
+![](https://x.com/auramoneyman/status/1876752955321282753)
 
-[https://x.com/sighyam/status/1837903612871094669](https://x.com/sighyam/status/1837903612871094669)
+![](https://x.com/sighyam/status/1837903612871094669)
 
-[https://x.com/auramoneyman/status/1866226369975251005](https://x.com/auramoneyman/status/1866226369975251005)
+![](https://x.com/auramoneyman/status/1866226369975251005)
 
-[https://x.com/auramoneyman/status/1862787440718524595](https://x.com/auramoneyman/status/1862787440718524595)
+![](https://x.com/auramoneyman/status/1862787440718524595)
 
-[https://x.com/auramoneyman/status/1868683361818222630](https://x.com/auramoneyman/status/1868683361818222630)
+![](https://x.com/auramoneyman/status/1868683361818222630)

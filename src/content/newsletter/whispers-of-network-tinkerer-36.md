@@ -15,7 +15,7 @@ Bun 1.0 終於出爐、例行的 Deno/Node.js 新東西更新、Fermyon 這次�
 
 # 終於問世 Bun 1.0
 
-[https://www.youtube.com/watch?v=BsnCpESUEqM](https://www.youtube.com/watch?v=BsnCpESUEqM)
+![](https://www.youtube.com/watch?v=BsnCpESUEqM)
 
 Bun 終於釋出他們一個穩定的大版號了（1.0）🎉。
 
@@ -99,7 +99,7 @@ Deno 終於在近期釋出，Deno Deploy 已經開始支援 `npm specifiers` 的
 
 不過前陣子看到 Bun 放出這個範例，透過 Plugin API + FFI 可以做到直接引用原檔，不用再手動先編譯好 lib 之後再引用，雖然類似語法糖而已不過能整合到這樣的話才更方便啊！🤞
 
-[https://x.com/jarredsumner/status/1681608754067046400?s=20](https://x.com/jarredsumner/status/1681608754067046400?s=20)
+![](https://x.com/jarredsumner/status/1681608754067046400?s=20)
 
 ### 開源維護者值得我們的尊重
 
@@ -107,7 +107,7 @@ Deno 終於在近期釋出，Deno Deploy 已經開始支援 `npm specifiers` 的
 
 不過其中有些人，卻開始攻擊或是用一些很無禮的語句來批評 Node.js 專案或維護者，也導致有些維護者因而退出了。個人覺得我們當伸手牌的人，有什麼資格去攻擊那些花費自己寶貴時間的人，尤其你可能只是出一張嘴不頭疼的人。如果你真的看不下去想做些甚麼，發 PR、提出 Proposal 來與其他開發者討論有沒有改善的可能，都比起出一張嘴來得有用。
 
-[https://twitter.com/siygle/status/1702346443208745194](https://twitter.com/siygle/status/1702346443208745194)
+![](https://twitter.com/siygle/status/1702346443208745194)
 
 # WebAssembly + Machine Learning!
 
@@ -149,7 +149,7 @@ src: [https://twitter.com/MichelleBakels/status/1703775584025752002](https://twi
 
 真的是人才輩出阿，不過這個世界需要多一些這樣的人，如此一來，就算之後不懂手語也能夠互相溝通了🎉
 
-[https://twitter.com/xiaohuggg/status/1703702454842581497](https://twitter.com/xiaohuggg/status/1703702454842581497)
+![](https://twitter.com/xiaohuggg/status/1703702454842581497)
 
 # People change, and we should celebrate it!
 
@@ -169,7 +169,7 @@ src: [https://twitter.com/siygle/status/1702934627332321744](https://twitter.com
 
 *其實除了 TJ 之外，有另一位當時也是戰力很強的 [substack](https://substack.net/) 也消失了，連 [Github Profile](https://github.com/substack) 都砍掉了*😢
 
-[https://www.youtube.com/watch?v=faxfLmChjVQ](https://www.youtube.com/watch?v=faxfLmChjVQ)
+![](https://www.youtube.com/watch?v=faxfLmChjVQ)
 
 # 網路是個好東西
 
@@ -183,7 +183,7 @@ src: [https://twitter.com/DavidKPiano/status/1700672267863077119](https://twitte
 
 一去不復返的好日子，為什麼這個世界越來越糟…
 
-[https://twitter.com/ghosTM55/status/1699069439713628565](https://twitter.com/ghosTM55/status/1699069439713628565)
+![](https://twitter.com/ghosTM55/status/1699069439713628565)
 
 ### 我也是這麼覺得😅
 
@@ -195,20 +195,20 @@ src: [https://twitter.com/tw111111111111/status/1701240469437452471](https://twi
 
 ### 太過聰明😎
 
-[https://twitter.com/tw111111111111/status/1701201689712459945](https://twitter.com/tw111111111111/status/1701201689712459945)
+![](https://twitter.com/tw111111111111/status/1701201689712459945)
 
 ### 人中之龍！
 
-[https://twitter.com/hsins_/status/1702231069293232198](https://twitter.com/hsins_/status/1702231069293232198)
+![](https://twitter.com/hsins_/status/1702231069293232198)
 
 ### 望週知
 
 現在真的很難判斷到底是 Google 比較爛，還是那個叫 X 的東西。🤷
 
-[https://twitter.com/thecat/status/1701378099794055328](https://twitter.com/thecat/status/1701378099794055328)
+![](https://twitter.com/thecat/status/1701378099794055328)
 
 ### 窮人版機械鍵盤
 
 我只買得起這個了😅
 
-[https://twitter.com/jedisct1/status/1699312091620909407](https://twitter.com/jedisct1/status/1699312091620909407)
+![](https://twitter.com/jedisct1/status/1699312091620909407)

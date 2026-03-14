@@ -158,19 +158,19 @@ src: [https://twitter.com/cloudwu/status/1687374069270994944](https://twitter.co
 
 這個製作成本應該不低😅
 
-[https://twitter.com/tyomateee/status/1687101581471412224](https://twitter.com/tyomateee/status/1687101581471412224)
+![](https://twitter.com/tyomateee/status/1687101581471412224)
 
 ### 哪裡可以買到這個
 
 我真的需要這個酷酷的東西😆
 
-[https://twitter.com/SawyerMerritt/status/1684747747868467201](https://twitter.com/SawyerMerritt/status/1684747747868467201)
+![](https://twitter.com/SawyerMerritt/status/1684747747868467201)
 
 ### 我也好想有這筆錢😢
 
 **#有錢就好了**
 
-[https://twitter.com/ssrna/status/1678416017662328839](https://twitter.com/ssrna/status/1678416017662328839)
+![](https://twitter.com/ssrna/status/1678416017662328839)
 
 想看本人說這段話可以跳轉[這裡](https://www.youtube.com/watch?v=e1updjrH7iU)！😆
 
@@ -186,11 +186,11 @@ Shopify有個內部工具，會把每個會議標上對應的價格，如此它�
 *B：你已經浪費大家 $50 元了。*🔥
 ```
 
-[https://twitter.com/petergyang/status/1679130177819881475](https://twitter.com/petergyang/status/1679130177819881475)
+![](https://twitter.com/petergyang/status/1679130177819881475)
 
 ### 我絕對不知道這是什麼意思😅
 
-[https://twitter.com/iammemeloper/status/1683562191566536708](https://twitter.com/iammemeloper/status/1683562191566536708)
+![](https://twitter.com/iammemeloper/status/1683562191566536708)
 
 ### 這真的太猛了，樂高時鐘！
 

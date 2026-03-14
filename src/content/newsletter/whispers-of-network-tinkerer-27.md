@@ -18,11 +18,11 @@ tags:
 
 之前提過好幾次的 single executable application 的功能，終於有第一個實作的版本啦，就在最新釋出的開發版本 - 19.7.0！好期待這個專案之後的發展啊，不知道有沒有機會讓未來的發布跟部署都能更精簡。
 
-[https://twitter.com/azu_re/status/1628193437135798273](https://twitter.com/azu_re/status/1628193437135798273)
+![](https://twitter.com/azu_re/status/1628193437135798273)
 
 此外剛好有 core team 成員介紹了 Node.js 近期還支援了哪些新功能，也可以參考一下 ⬇️（其實應該在這邊都陸續提過了啦 😎）
 
-[https://twitter.com/ruyadorno/status/1628484773227253763](https://twitter.com/ruyadorno/status/1628484773227253763)
+![](https://twitter.com/ruyadorno/status/1628484773227253763)
 
 ## Node.js 也準備要支援 FFI 啦！
 
@@ -32,13 +32,13 @@ tags:
 
 一旦支援 [FFI(Foreign Function Interface)](https://en.wikipedia.org/wiki/Foreign_function_interface)，Node.js 要整合其他靜態語言函式庫就更方便了。🙌（看提案裡面原作者的說明，目前初稿的 FFI 只能算最基本也還有許多限制，應該可以期待之後還會有更多的改進～）
 
-[https://twitter.com/bengl/status/1631055802059333632](https://twitter.com/bengl/status/1631055802059333632)
+![](https://twitter.com/bengl/status/1631055802059333632)
 
 ## Deno 1.31 & coming 2.0?
 
 Deno 最近都很固定就會發布新版，然後近期看起來對 Node.js 生態的支持是首重的任務，所以新版幾乎也都圍繞在這點上，剛出爐的 1.31 也開始支援 Node.js 專案裡必備的 `package.json` 檔案，對於相容也更進了一步。
 
-[https://twitter.com/deno_land/status/1629123230492463106](https://twitter.com/deno_land/status/1629123230492463106)
+![](https://twitter.com/deno_land/status/1629123230492463106)
 
 不過老實說，最近對於 Deno 的定位覺得有點尷尬，對於前輩 Node.js 也逐步增加了許多類似 Deno 優點的功能，譬如之前提過的[權限系統](https://github.com/nodejs/node/pull/44004)，或是更進一步的 [Single executable applications](https://nodejs.org/docs/latest-v19.x/api/single-executable-applications.html)，跟 Deno 之前越來越貼近了，然後還有不少[後起之秀](https://bun.sh/)，[各有自己的主場](https://github.com/cloudflare/workerd)，也不知道 Deno 有沒有機會殺出重圍站穩自己的腳步？
 
@@ -46,13 +46,13 @@ Deno 最近都很固定就會發布新版，然後近期看起來對 Node.js 生
 
 ps: 最近他們的[官方帳號](https://twitter.com/deno_land)經常會更新許多 tips，對 Deno 有興趣的開發者不妨可以追蹤起來。然後看起來他們也越來越重視相關的文件跟範例這類的資源，對於想投入的新開發者很有幫助。
 
-[https://twitter.com/hashedrock/status/1635514059079688192](https://twitter.com/hashedrock/status/1635514059079688192)
+![](https://twitter.com/hashedrock/status/1635514059079688192)
 
 ## Fediverse 有機會繼續擴展嗎？
 
 之前提過 Automattic 旗下也算知名的 Tumblr [宣佈要支援 ActivityPub 協定](https://www.ithome.com.tw/news/154430)，也算正式宣告要支援 Fediverse（雖然一直等到現在都還沒實現😅)，然後最近又看到這個消息⬇️
 
-[https://twitter.com/TechCrunch/status/1635321424062844929](https://twitter.com/TechCrunch/status/1635321424062844929)
+![](https://twitter.com/TechCrunch/status/1635321424062844929)
 
 看起來的確很像是 Automattic 會做的事阿😄
 
@@ -60,7 +60,7 @@ ps: 最近他們的[官方帳號](https://twitter.com/deno_land)經常會更新�
 
 WordPress 這個難以撼動的市占王者宣佈支援或許是個契機，然後最近冒出來的 [Meta 好像也打算弄一個類似的產品](https://www.businessinsider.com/meta-working-on-twitter-like-social-network-p92-instagram-logins-2023-3)的新聞，說不定也有機會推波助瀾，可以期待看看 😆
 
-[https://twitter.com/mattn_jp/status/1635888782959611905?s=61&t=-8QfXIkAo_EJ2rtVc89xcg](https://twitter.com/mattn_jp/status/1635888782959611905?s=61&t=-8QfXIkAo_EJ2rtVc89xcg)
+![](https://twitter.com/mattn_jp/status/1635888782959611905?s=61&t=-8QfXIkAo_EJ2rtVc89xcg)
 
 說到這邊又想起隔壁棚的 [bluesky](https://bsky.app)，最近悄悄開始邀請制的測試，畫面真的是完全致敬 twitter 啊（不過我覺得這不算壞事拉，如果希望能最大程度挖角原 twitter 的使用者的話，相似的使用介面應該很有幫助。）
 
@@ -76,7 +76,7 @@ WordPress 這個難以撼動的市占王者宣佈支援或許是個契機，然�
 
 ps：不過原本以為連模組都可以支援，看起來好像沒有😢
 
-[https://twitter.com/stevekrouse/status/1635720615628767287](https://twitter.com/stevekrouse/status/1635720615628767287)
+![](https://twitter.com/stevekrouse/status/1635720615628767287)
 
 ---
 
@@ -84,32 +84,32 @@ ps：不過原本以為連模組都可以支援，看起來好像沒有😢
 
 ### 可以開始期待每個人在不久的將來都有個語音助理了嗎🤩
 
-[https://twitter.com/cyukang/status/1635248899073150977](https://twitter.com/cyukang/status/1635248899073150977)
+![](https://twitter.com/cyukang/status/1635248899073150977)
 
 ### 動起來動起來，備戰GPT4!
 
 看你人工智慧比較厲害，還是我人海戰 #誤
 
-[https://twitter.com/walkingice/status/1635889019518345216](https://twitter.com/walkingice/status/1635889019518345216)
+![](https://twitter.com/walkingice/status/1635889019518345216)
 
 ### 沒有富爸爸真的很辛苦😢
 
 我也很喜歡 Gitlab，印象中他們算是跟 Automattic 兩大知名的全遠端軟體開發商，有點感傷啊，在資本主義的鐵拳下大家都要趴下…
 
-[https://twitter.com/vikingmute/status/1635445268878606339](https://twitter.com/vikingmute/status/1635445268878606339)
+![](https://twitter.com/vikingmute/status/1635445268878606339)
 
 ### 難怪我一直都這麼平靜🤣
 
-[https://twitter.com/leafwind/status/1635277274584059909](https://twitter.com/leafwind/status/1635277274584059909)
+![](https://twitter.com/leafwind/status/1635277274584059909)
 
 ### 千萬別得罪天橋底下說書的🤣
 
-[https://twitter.com/zptgddq/status/1634910155392557057](https://twitter.com/zptgddq/status/1634910155392557057)
+![](https://twitter.com/zptgddq/status/1634910155392557057)
 
 ### 今天才猛然了解這個血淋淋的現實🫢
 
-[https://twitter.com/Wesker_Davis/status/1632334887280869376](https://twitter.com/Wesker_Davis/status/1632334887280869376)
+![](https://twitter.com/Wesker_Davis/status/1632334887280869376)
 
 ### 千萬不要買錯戒指 #誤
 
-[https://twitter.com/tw111111111111/status/1635998455431589888](https://twitter.com/tw111111111111/status/1635998455431589888)
+![](https://twitter.com/tw111111111111/status/1635998455431589888)

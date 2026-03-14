@@ -17,7 +17,7 @@ MongoDB 7.0！還有一些有趣的新東西、Cloudflare #BirthdayWeek、The st
 
 雖然還是不少開發者不把 NoSQL 當成偏門左道，不過不能不說身為其中的領頭羊 MongoDB，還是一種快速開發實作下，相當好用的儲存方案。雖然一開始以 NoSQL 起身，不過 MongoDB 也是持續不斷在優化自己的資料庫與雲服務，前一陣子剛結束的 [**MongoDB.local 2023**](https://www.youtube.com/playlist?list=PL4RCxklHWZ9u2GenfMloNQPskKq4LZilO) 也提到不少即將推出的新功能。
 
-[https://www.youtube.com/watch?v=uA8ATFAc4JM](https://www.youtube.com/watch?v=uA8ATFAc4JM)
+![](https://www.youtube.com/watch?v=uA8ATFAc4JM)
 
 主軸應該可以分成兩個部分，一個是 MongoDB 7 的新功能，另一個當然就是搭上 Buzzword 的 AI 常見的 Vector Search 的功能，其中還有許多新東西，如果有興趣的話可以看一下議程。
 
@@ -91,13 +91,13 @@ src: [https://twitter.com/mhdawson1/status/1714323191139639471](https://twitter.
 
 Node.js 終於考慮要設計一個專案代表的吉祥物了（就跟 [Rust](https://www.google.com/search?q=rust+mascot&sca_esv=575623720&rlz=1C5CHFA_enTW1068TW1068&tbm=isch&sxsrf=AM9HkKlfZ3teow9pLZNA1TwngBbQt0NZIg:1697995040520&source=lnms&sa=X&ved=2ahUKEwjow-G5lIqCAxUfdvUHHXz1DzkQ_AUoAXoECAIQAw&biw=1512&bih=742&dpr=2) 的螃蟹或 [Go](https://www.google.com/search?q=go+mascot&tbm=isch&ved=2ahUKEwi5tOu6lIqCAxX40zQHHRl0BD4Q2-cCegQIABAA&oq=go+mascot&gs_lcp=CgNpbWcQAzIHCAAQExCABDIICAAQBxAeEBMyCAgAEAcQHhATMggIABAHEB4QEzIICAAQBxAeEBMyCAgAEAcQHhATMggIABAHEB4QEzIICAAQBxAeEBMyCAgAEAcQHhATMggIABAHEB4QEzoICAAQCBAeEBM6BQgAEIAEOgYIABAHEB5QyAlYuhdg2hhoA3AAeACAAT2IAf0CkgEBN5gBAKABAaoBC2d3cy13aXotaW1nwAEB&sclient=img&ei=Ilk1ZbmbL_in0-kPmeiR8AM&bih=742&biw=1512&rlz=1C5CHFA_enTW1068TW1068) 的地鼠一樣)，好期待阿🥹（之前有人提到 [rocket turtle](https://github.com/nodejs/admin/issues/828) 覺得真的滿適合的，有種自我解嘲的含義，而且這 symbol 我印象也是之前某個 Node.js 專案先設計的）
 
-[https://twitter.com/nodejs/status/1713984983566610540](https://twitter.com/nodejs/status/1713984983566610540)
+![](https://twitter.com/nodejs/status/1713984983566610540)
 
 ### Deno Fest
 
 還在等待 Deno 2.0 出現的時刻，沒想到它們居然跑去日本開了一個小型 [Conference](https://deno-fest-2023.deno.dev/)，其中不少核心成員都出席了（當然也都各自講了一些相關的議程），有興趣的可以收聽它們當天的[議程錄影](https://www.youtube.com/watch?v=dAt-r7-Imgk)喔。（但是沒盼到期待的 2.0 或新功能，大部分是講述目前現有 Deno 生態圈的部分😢）
 
-[https://twitter.com/toranoana_lab/status/1715304686071447891](https://twitter.com/toranoana_lab/status/1715304686071447891)
+![](https://twitter.com/toranoana_lab/status/1715304686071447891)
 
 # The State of WebAssembly 2023
 
@@ -123,17 +123,17 @@ src: [https://blog.scottlogic.com/2023/10/18/the-state-of-webassembly-2023.html]
 
 之前提過 Swift 爸爸現在跑來 AI 創業，然後它們弄了一個類 python 的新語言，專門針對機器學習這個領域來優化它的執行效能，最近終於把 Mac 版本釋出了，不知道之後還會帶給大家什麼驚奇。😄
 
-[https://twitter.com/Modular_AI/status/1714020585775448473](https://twitter.com/Modular_AI/status/1714020585775448473)
+![](https://twitter.com/Modular_AI/status/1714020585775448473)
 
 ### 越來越猛了，之後內容感覺會被農場大量攻佔😓
 
-[https://twitter.com/Zuntan03/status/1704807854384066714](https://twitter.com/Zuntan03/status/1704807854384066714)
+![](https://twitter.com/Zuntan03/status/1704807854384066714)
 
 # 網路是個好東西
 
 ### 看不懂這是褒是貶🤣
 
-[https://twitter.com/jayair/status/1716542046310150615](https://twitter.com/jayair/status/1716542046310150615)
+![](https://twitter.com/jayair/status/1716542046310150615)
 
 ### Notion高級技巧👀
 
@@ -141,35 +141,35 @@ src: [https://blog.scottlogic.com/2023/10/18/the-state-of-webassembly-2023.html]
 
 *不過現在搭配 AI 的功能，都需要另外再付一筆費用，真的是越來越貴的訂閱費阿。*😅
 
-[https://www.youtube.com/watch?v=7z0HYLZX8Xg](https://www.youtube.com/watch?v=7z0HYLZX8Xg)
+![](https://www.youtube.com/watch?v=7z0HYLZX8Xg)
 
 ### 直到我背部中了一箭😢
 
 年紀大真的開始各種痛，大家都要好好照顧自己的身體阿 🤞
 
-[https://twitter.com/yschen25/status/1712433945911107863](https://twitter.com/yschen25/status/1712433945911107863)
+![](https://twitter.com/yschen25/status/1712433945911107863)
 
 ### 拯救現代人的絕好物
 
 這樣就可以放心躺著滑了 #大誤
 
-[https://twitter.com/seevua/status/1712634262019580072](https://twitter.com/seevua/status/1712634262019580072)
+![](https://twitter.com/seevua/status/1712634262019580072)
 
 ### 原來尷尬的是我 😅
 
-[https://twitter.com/tw111111111111/status/1714315149765677213](https://twitter.com/tw111111111111/status/1714315149765677213)
+![](https://twitter.com/tw111111111111/status/1714315149765677213)
 
 ### 最帥的阿杯無誤
 
 最近 Nvidia 真的跟著 AI 聲勢也是水漲船高，不過除了聽他說 Machine Learning 的東西之外，不少訪談都蠻值得一聽了，真的是隱藏不住的帥！
 
-[https://twitter.com/pirrer/status/1714125373045366943](https://twitter.com/pirrer/status/1714125373045366943)
+![](https://twitter.com/pirrer/status/1714125373045366943)
 
 ### 身為老粉的我也想被甩
 
 不懂這梗可以跳轉[這邊](https://www.youtube.com/watch?v=uhZTG8w0t7c)🤣
 
-[https://twitter.com/maka_0805/status/1713522908713361817](https://twitter.com/maka_0805/status/1713522908713361817)
+![](https://twitter.com/maka_0805/status/1713522908713361817)
 
 ### 歐卡玩家就是這麼樸實無華🤣
 

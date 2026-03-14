@@ -24,7 +24,7 @@ tags:
 
 還有 Queues 跟原本就很完整的網路相關功能。覺得越來越可以跟御三家抗衡了呢😎
 
-[https://twitter.com/Cloudflare/status/1657793145487208448](https://twitter.com/Cloudflare/status/1657793145487208448)
+![](https://twitter.com/Cloudflare/status/1657793145487208448)
 
 ## [**Introducing Constellation, bringing AI to the Cloudflare stack**](https://blog.cloudflare.com/introducing-constellation/)
 
@@ -162,7 +162,7 @@ const browser = await puppeteer.launch(env.MYBROWSER);
 
 但如果你以為它就只是這樣而已，那就太小看它了，除了擺設、佈置的元素之外，我覺得 [Roooms.xyz](http://Roooms.xyz) 最厲害的地方是它提供用戶可以自己[撰寫程式](https://rooms.xyz/docs)(嘿嘿，喜歡lua嗎😄)，來讓裡面的元件有一些獨特的互動行為，可以看[**範例**](https://rooms.xyz/tutorial)或一些強者[已經做好的成品](https://rooms.xyz/)，非常酷！
 
-[https://twitter.com/jasontoff/status/1658429535841296388](https://twitter.com/jasontoff/status/1658429535841296388)
+![](https://twitter.com/jasontoff/status/1658429535841296388)
 
 ---
 
@@ -172,13 +172,13 @@ const browser = await puppeteer.launch(env.MYBROWSER);
 
 其實我完全沒見過 haoel，連[唯一一次他受邀](https://twitter.com/Brecht/status/1658647747116019713)來參加臺灣研討會 ModernWeb 也剛好沒參加到， 所以就僅僅是「酷壳讀者」這個聯繫而已，不過不管換過幾個 RSS Reader，他的 RSS Feed 始終都存留在我的訂閱清單裡面。無論是部落格針對技術方面的侃侃而談，還是推特上面不經意看到的不卑不亢、不溫不火的言論與回覆，都從中學到了不少。
 
-[https://twitter.com/ghosTM55/status/1657946836643241985](https://twitter.com/ghosTM55/status/1657946836643241985)
+![](https://twitter.com/ghosTM55/status/1657946836643241985)
 
 看到中國開發者自發開始收集大家對耗子哥的緬懷文，也著手要把他留下的這些文字、記錄、知識好好保存下來，突然也感受到一股暖流，比起大家常見網路上火爆、虛假、嘲諷的那一面更讓人多了份感動。
 
 [https://github.com/megaease/Remembering-Haoel](https://github.com/megaease/Remembering-Haoel)
 
-[https://twitter.com/haoel/status/1648737026613862400](https://twitter.com/haoel/status/1648737026613862400)
+![](https://twitter.com/haoel/status/1648737026613862400)
 
 看到網友轉了耗子哥曾經發過的這則推文，在這個時間點想想也覺得蠻有意思的，或許某天我們人雖然不在了，但是思想或精神卻以某種方式留存了下來，不也是某種 cyberpunk 式的浪漫嗎？
 
@@ -200,12 +200,12 @@ const browser = await puppeteer.launch(env.MYBROWSER);
 
 ## 雲端情人不遠矣
 
-[https://twitter.com/GPTDAOCN/status/1656182426484477953](https://twitter.com/GPTDAOCN/status/1656182426484477953)
+![](https://twitter.com/GPTDAOCN/status/1656182426484477953)
 
 有興趣想聽完整版本的話，可以到這邊 ⬇️
 
 > **The Disappearing Computer: An Exclusive Preview of Humane’s Screenless Tech | Imran Chaudhri | TED**
-[https://www.youtube.com/watch?v=gMsQO5u7-NQ](https://www.youtube.com/watch?v=gMsQO5u7-NQ)
+![](https://www.youtube.com/watch?v=gMsQO5u7-NQ)
 > 
 
 ## 另類的應用
@@ -218,7 +218,7 @@ const browser = await puppeteer.launch(env.MYBROWSER);
 
 其中他們有引用 ChatGPT 來協助即時分析新聞來源的關聯程度，如果足夠相關就自動觸發後續的行為，蠻有意思的。
 
-[https://twitter.com/AdriaanvRossum/status/1633318894508146689](https://twitter.com/AdriaanvRossum/status/1633318894508146689)
+![](https://twitter.com/AdriaanvRossum/status/1633318894508146689)
 
 ---
 
@@ -228,7 +228,7 @@ const browser = await puppeteer.launch(env.MYBROWSER);
 
 原來這是真的，真是受教了！
 
-[https://twitter.com/DQ_yam/status/1658723524864020481](https://twitter.com/DQ_yam/status/1658723524864020481)
+![](https://twitter.com/DQ_yam/status/1658723524864020481)
 
 ## 出生即厭世
 
@@ -238,24 +238,24 @@ const browser = await puppeteer.launch(env.MYBROWSER);
 
 ## 他只是個孩子阿～
 
-[https://twitter.com/cctvidiots/status/1658089454488395778](https://twitter.com/cctvidiots/status/1658089454488395778)
+![](https://twitter.com/cctvidiots/status/1658089454488395778)
 
 ## 白狼說的話要聽
 
 在家玩有趣多了👍
 
-[https://twitter.com/Blue01530961/status/1658061890214588417](https://twitter.com/Blue01530961/status/1658061890214588417)
+![](https://twitter.com/Blue01530961/status/1658061890214588417)
 
 ## 總是該來些福利
 
 其實我是想偷推 LE SSERAFIM 最近又有新歌啦，[UNFORGIVEN](https://www.youtube.com/watch?v=UBURTj20HXI) 聽起來！
 
-[https://twitter.com/tzangms/status/1658317420086304768](https://twitter.com/tzangms/status/1658317420086304768)
+![](https://twitter.com/tzangms/status/1658317420086304768)
 
 ## 海拉魯大陸上，正在經歷第一次工業革命😄
 
-[https://twitter.com/AceTaiwan/status/1657221162009763841](https://twitter.com/AceTaiwan/status/1657221162009763841)
+![](https://twitter.com/AceTaiwan/status/1657221162009763841)
 
 在某個時間點，我們都成了卑鄙的外鄉人 #誤
 
-[https://twitter.com/Switch_movie_SS/status/1658958724638334976](https://twitter.com/Switch_movie_SS/status/1658958724638334976)
+![](https://twitter.com/Switch_movie_SS/status/1658958724638334976)

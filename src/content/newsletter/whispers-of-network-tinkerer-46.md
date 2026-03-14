@@ -98,13 +98,13 @@ src: [https://twitter.com/kettanaito/status/1780875036405985685](https://twitter
 
 雖然大家都說愛惜生命，遠離 k8s（並沒有），不過伴隨 container 一起崛起的 k8s 也不知不覺邁進了 1.30 版本的時候了，我只是個菜菜的使用者不敢說自己跟它很熟，所以介紹它就交給大大來吧，對 1.30 版本又多了哪些新功能，可以[跳轉這邊](https://moelove.info/2024/04/02/Kubernetes-v1.30-%E6%96%B0%E7%89%B9%E6%80%A7%E4%B8%80%E8%A7%88/)。
 
-[https://twitter.com/KubernetesPod/status/1780728830468210935](https://twitter.com/KubernetesPod/status/1780728830468210935)
+![](https://twitter.com/KubernetesPod/status/1780728830468210935)
 
 ### 原來 lodash 還有在開發 😅
 
 我一度以為這個專案已經進入維護模式了，結果猛然看到作者發了這推文。不知道大家對這種 helper 的看法是什麼，不過我是很希望像這種工具型的還是很需要的，如果哪天 JS 世界會出現標準函式庫的話，希望它務必能加進去。（btw，大大現在也是 [bun](https://bun.sh/) 的成員之一）
 
-[https://twitter.com/jdalton/status/1780626154900070708](https://twitter.com/jdalton/status/1780626154900070708)
+![](https://twitter.com/jdalton/status/1780626154900070708)
 
 ### 深入剖析 JSR
 
@@ -130,11 +130,11 @@ src: [https://deno.com/blog/how-we-built-jsr](https://deno.com/blog/how-we-built
 
 除了 AI 之外，從這個訪談可以聽到其實 Meta 有打算把 AI、Device、Metaverse 結合起來的企圖心（雖然現在看到 Metaverse 可能很多人只想到它們「掉漆」的展示成果），不過很多願景在技術到位之後或許又是另一番風景，期待看看吧。
 
-[https://www.youtube.com/watch?v=8HrzoEvLWH0](https://www.youtube.com/watch?v=8HrzoEvLWH0)
+![](https://www.youtube.com/watch?v=8HrzoEvLWH0)
 
 同場加映由 HuggingFace 提供的數據，看起來這個開源打法很有成效阿 😛
 
-[https://twitter.com/ClementDelangue/status/1781068939641999388](https://twitter.com/ClementDelangue/status/1781068939641999388)
+![](https://twitter.com/ClementDelangue/status/1781068939641999388)
 
 ### 又來個影像的應用
 
@@ -142,7 +142,7 @@ src: [https://deno.com/blog/how-we-built-jsr](https://deno.com/blog/how-we-built
 
 不過這一看之後，應該應該會被有心人士拿去作類似 deepfake 的行為吧。
 
-[https://twitter.com/kuhaku__ai/status/1780342252184772660](https://twitter.com/kuhaku__ai/status/1780342252184772660)
+![](https://twitter.com/kuhaku__ai/status/1780342252184772660)
 
 ### 這個一定有搞頭的吧
 
@@ -150,13 +150,13 @@ src: [https://deno.com/blog/how-we-built-jsr](https://deno.com/blog/how-we-built
 
 裡面有個針對文字分析情緒的部分，這個原作者看起來是用中國的服務提供者 [APISpace](https://www.apispace.com/eolink/api/wbqgfx/introduction)，這個或者可以轉用其他類似的牆外服務（像這種 - https://github.com/SannketNikam/Emotion-Detection-in-Text，搜尋一下應該也是可以找到不少）。
 
-[https://x.com/imxiaohu/status/1780945982253044013](https://x.com/imxiaohu/status/1780945982253044013)
+![](https://x.com/imxiaohu/status/1780945982253044013)
 
 ### 個人用 ML 開發機
 
 無意間看到推友提到 [tinybox](https://tinygrad.org/) 這個東西（原來 Geohot 現在也跑來 AI 的場子玩了 😄）
 
-[https://twitter.com/kalanyei/status/1780450845999665182](https://twitter.com/kalanyei/status/1780450845999665182)
+![](https://twitter.com/kalanyei/status/1780450845999665182)
 
 覺得大大們的行動力跟其他人真的不是同一個等級的。不過想起之前有其他網友提到 NVIDIA 也有針對[邊緣場景](https://www.nvidia.com/zh-tw/autonomous-machines/embedded-systems/)的設備，看起來也是可以作為個人開發使用。不能不說 AI 真的是全民運動，針對各種使用族群都不放過，各項設備一應俱全 😅，不過如果實在手邊的錢錢多到不像話，也是可以考慮上更威的 ⬇️
 
@@ -168,7 +168,7 @@ src: [https://deno.com/blog/how-we-built-jsr](https://deno.com/blog/how-we-built
 
 大家都有去 IU 演唱會嗎？（我沒有，因為人品搶不到😭），沒想到除了來臺灣開唱之外還給了粉絲們這麼特別的服務。
 
-[https://twitter.com/IU_winter/status/1778710607518429634](https://twitter.com/IU_winter/status/1778710607518429634)
+![](https://twitter.com/IU_winter/status/1778710607518429634)
 
 **歌單聽起來！**
 
@@ -176,32 +176,32 @@ src: [https://deno.com/blog/how-we-built-jsr](https://deno.com/blog/how-we-built
 
 **同場加映（我也想被帶走 #被揍）**
 
-[https://twitter.com/imvosl/status/1780907324355608799](https://twitter.com/imvosl/status/1780907324355608799)
+![](https://twitter.com/imvosl/status/1780907324355608799)
 
 ### 過於真實
 
 我絕對不會承認跟我有 87% 相似。🤣
 
-[https://twitter.com/Yoda4ever/status/1779864358941835474](https://twitter.com/Yoda4ever/status/1779864358941835474)
+![](https://twitter.com/Yoda4ever/status/1779864358941835474)
 
 ### 買起來！
 
 真的是鞭辟入裡的忠告。 #但是我的錢包一直哭
 
-[https://x.com/glenna9305/status/1780931847314362755](https://x.com/glenna9305/status/1780931847314362755)
+![](https://x.com/glenna9305/status/1780931847314362755)
 
 ### 夢幻逸品😍
 
 看到安森大大介紹這個結合機械鍵盤跟樂高的夢幻逸品，敗家魂瞬間燃起（但是我最近剛入手新鍵盤，應該沒辦法過審，只能哭泣 😭）
 
-[https://www.youtube.com/watch?v=xyWQLwV_PQ0](https://www.youtube.com/watch?v=xyWQLwV_PQ0)
+![](https://www.youtube.com/watch?v=xyWQLwV_PQ0)
 
 ### 原來是我們認真了
 
-[https://twitter.com/ayanamist/status/1779715540518637747](https://twitter.com/ayanamist/status/1779715540518637747)
+![](https://twitter.com/ayanamist/status/1779715540518637747)
 
 ### 井字棋永動機
 
 會不會沒有結束的一天啊，好可怕的遊戲 😅
 
-[https://twitter.com/Rainmaker1973/status/1779548640530321464](https://twitter.com/Rainmaker1973/status/1779548640530321464)
+![](https://twitter.com/Rainmaker1973/status/1779548640530321464)

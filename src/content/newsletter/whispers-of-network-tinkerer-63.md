@@ -20,37 +20,26 @@ tags:
 
 推上看到有人貼出 Next.js 的重大安全性議題，只要 `x-middleware-subrequest` 這個 header 設為 false 就可以跳過後續的中間層的行為，導致後續的驗證行為等同無效。關於這個事件也有許多大大整理的[詳細的時間軸](https://bsky.app/profile/eduardoboucas.com/post/3lky5uuo5os2o)、[問題核心的程式碼](https://simonwillison.net/2025/Mar/23/nextjs-and-the-corrupt-middleware/)，以及[詳細的整理資料](https://projectdiscovery.io/blog/nextjs-middleware-authorization-bypass)可以參考。
 
-![src: [https://github.com/advisories/GHSA-f82v-jwr5-mffw](https://github.com/advisories/GHSA-f82v-jwr5-mffw)](../assets/網路黑手的呢喃 #63 - image.png)
-
-src: [https://github.com/advisories/GHSA-f82v-jwr5-mffw](https://github.com/advisories/GHSA-f82v-jwr5-mffw)
+[Authorization Bypass in Next.js Middleware](https://github.com/advisories/GHSA-f82v-jwr5-mffw)
 
 也有其他開發者做了一些補充，譬如[只有完全依賴 middleware 來驗證](https://x.com/steventey/status/1903618143060386084)這種行為，才會被影響，此外 Vercel 官方也[說明](https://nextjs.org/blog/cve-2025-29927)代管的服務不會有這個問題，只有 self-hosted 的服務才會受到這個安全性問題的影響。被標上 Critical 當然就代表是非常嚴重的問題，畢竟這漏洞無疑代表所有驗證的行為都失效，可能造成後續私密資料外洩，不過除了不少開發者提到這個誇張的漏洞之外，沒想到還會出現許多意想之外的 drama 😅
 
 首先是 Cloudflare 跟 Vercel 就「安全」這個議題就戰起來了 😅（直接看到兩個 CEO 在推上互酸）
 
-![這篇一定要來個截圖，怕之後高機率被刪 😅 [https://x.com/rauchg/status/1903590962498326771](https://x.com/rauchg/status/1903590962498326771)](../assets/網路黑手的呢喃 #63 - image 1.png)
-
-這篇一定要來個截圖，怕之後高機率被刪 😅 [https://x.com/rauchg/status/1903590962498326771](https://x.com/rauchg/status/1903590962498326771)
+這篇一定要來個截圖，怕之後高機率被刪 😅
+![](https://x.com/rauchg/status/1903590962498326771)
 
 然後換不甘寂寞的 Replit 接力上陣，開始砲 Next.js 長期以來給其他使用者帶來的痛苦，說了他們更願意採用（前陣子提過的）OpenNext 這類的開放替代。結果 Vercel CTO 回擊說你們擺明就是爽爽用。
 
-![src: [https://x.com/amasad/status/1903640376629657832](https://x.com/amasad/status/1903640376629657832)](../assets/網路黑手的呢喃 #63 - image 2.png)
-
-src: [https://x.com/amasad/status/1903640376629657832](https://x.com/amasad/status/1903640376629657832)
+![](https://x.com/amasad/status/1903640376629657832)
 
 接著就是開發者們的互相表態忠誠度的時間啦～ 😆另外也開啟了 Next.js 許多針對自家平台的特性，以及針對侵蝕 React 開發者取得話語權的問題之類。
 
-![src: [https://x.com/yacineMTB/status/1903558965012668778](https://x.com/yacineMTB/status/1903558965012668778)](../assets/網路黑手的呢喃 #63 - image 3.png)
+![](https://x.com/yacineMTB/status/1903558965012668778)
 
-src: [https://x.com/yacineMTB/status/1903558965012668778](https://x.com/yacineMTB/status/1903558965012668778)
+![](https://x.com/suwakopro/status/1903651660238627161)
 
-![src: [https://x.com/suwakopro/status/1903651660238627161](https://x.com/suwakopro/status/1903651660238627161)](../assets/網路黑手的呢喃 #63 - image 4.png)
-
-src: [https://x.com/suwakopro/status/1903651660238627161](https://x.com/suwakopro/status/1903651660238627161)
-
-![src: [https://x.com/deathlas3r/status/1903883363217535188](https://x.com/deathlas3r/status/1903883363217535188)](../assets/網路黑手的呢喃 #63 - image 5.png)
-
-src: [https://x.com/deathlas3r/status/1903883363217535188](https://x.com/deathlas3r/status/1903883363217535188)
+![](https://x.com/deathlas3r/status/1903883363217535188)
 
 <aside>
 💡
@@ -67,7 +56,7 @@ src: [https://x.com/deathlas3r/status/1903883363217535188](https://x.com/deathla
 
 前幾天就看到一些相關開發者已經[開始在鋪埂](https://x.com/zoolsher/status/1896906768942616681)，果然後來丟出這個酷酷的東西。
 
-[https://bsky.app/profile/sylee.dev/post/3ljm2aad6qq2x](https://bsky.app/profile/sylee.dev/post/3ljm2aad6qq2x)
+![](https://bsky.app/profile/sylee.dev/post/3ljm2aad6qq2x)
 
 這個名為 Lynx 的專案，就是字節自家的 react-native 方案，一樣是針對跨平台的開發框架，不過雖然目的類似，不過實作跟架構都有相當的不同，然後根據他們自家人的說法，目前 ByteDance 旗下許多的 native app 都是透過 Lynx 開發的，這個火力展示就相當猛了。😃
 
@@ -85,13 +74,13 @@ Today, Lynx powers an extremely wide spectrum of surfaces—from the lightweight
 
 伴隨著 AI 崛起，目前除了五花八門的應用之外，Edge AI 這塊好像也漸漸成為各家廠商必爭之地，譬如像剛結束的 GTX，Nvidia 端出的 Spark & Station，考慮到後續 AI 應該會走向多模型混合的使用方式，這類的產品應該會相繼出爐才對。
 
-[https://www.youtube.com/watch?v=6p4U1kSiegg](https://www.youtube.com/watch?v=6p4U1kSiegg)
+![](https://www.youtube.com/watch?v=6p4U1kSiegg)
 
 不過雖然是已經面向一般工作室或小型企業，$3,000 美元的售價有時候也不是每個企業主都能夠接受的價位，所以也會出現更多實惠或是自己動手的方案。譬如下面這個自己設計的四顯卡（他有開源出來有興趣的也可以自己弄一套出來），甚至是原本做模組化筆電的 Framework 都推出了桌上型的工具機。
 
-[https://x.com/karminski3/status/1896718986294800807](https://x.com/karminski3/status/1896718986294800807)
+![](https://x.com/karminski3/status/1896718986294800807)
 
-[https://www.youtube.com/watch?v=zI6ZQls54Ms](https://www.youtube.com/watch?v=zI6ZQls54Ms)
+![](https://www.youtube.com/watch?v=zI6ZQls54Ms)
 
 <aside>
 💡
@@ -102,15 +91,15 @@ Today, Lynx powers an extremely wide spectrum of surfaces—from the lightweight
 
 ## TypeScript 移植到 Golang，然後就炎上了 😅
 
-[https://www.youtube.com/watch?v=pNlq-EVld70](https://www.youtube.com/watch?v=pNlq-EVld70)
+![](https://www.youtube.com/watch?v=pNlq-EVld70)
 
 記得那天真的是第一時間看到這個影片被丟出來，本來以為是要推出什麼酷酷的新功能來達到增速，沒想到居然原本是自舉的 Typescript 編譯器 tsc 宣布移植到 Golang 了，因為太過震驚所以當下發了這篇廢文。🤣
 
-[https://bsky.app/profile/sylee.dev/post/3lk4dsrtvac2r](https://bsky.app/profile/sylee.dev/post/3lk4dsrtvac2r)
+![](https://bsky.app/profile/sylee.dev/post/3lk4dsrtvac2r)
 
 不過後來的走向變成「為什麼不用 rust」vs「rust 都是一群自嗨的傢伙」這個方向，甚至還有上升到如下這類開始互相攻擊的言論，覺得真的是夠了…。
 
-[https://x.com/VicVijayakumar/status/1899634343791698397](https://x.com/VicVijayakumar/status/1899634343791698397)
+![](https://x.com/VicVijayakumar/status/1899634343791698397)
 
 其實後續有許多說明，大大自己也在訪談中提到，其實重點是因為 RePorting 而不是重寫，所以為了維護兩個語言的工作，採用最貼近的語言（但又可以改善效能問題），綜合這些因為答案就呼之欲出了～（這篇 Github 上面的回覆應該是非常清楚，有興趣可以前去拜讀一下）。
 
@@ -118,7 +107,7 @@ Today, Lynx powers an extremely wide spectrum of surfaces—from the lightweight
 
 另外也看到一位之前 npm 後來跳去 MS 寫 rust 的大大也出來稍微講了這件事，有來詢問以及綜合目標的確是 Golang 為目前最好的選擇。
 
-[https://bsky.app/profile/zkat.tech/post/3lk4u6lgcqs2z](https://bsky.app/profile/zkat.tech/post/3lk4u6lgcqs2z)
+![](https://bsky.app/profile/zkat.tech/post/3lk4u6lgcqs2z)
 
 老實說這種神仙打架輪不到我這種 nobody 來品頭論足什麼，只要工具好用、跑起來更友善、更爽，誰還在乎到底是用什麼寫的，當基本教義派最無聊了（當然身為 rust 粉還是期盼有一條支線是真的打算用 Rust 重寫過，還是期待 [voidzero](https://voidzero.dev/) 有沒有機會 🤣
 
@@ -135,7 +124,7 @@ Today, Lynx powers an extremely wide spectrum of surfaces—from the lightweight
 
 我自己最近的確是也想來試試看 Bun 的成熟度，效率的部分看起來倒是不需要太擔心，畢竟常常看到作者 benchmark 連發，他們應該是非常看重這部分。
 
-[https://bsky.app/profile/sylee.dev/post/3lk65kilath2n](https://bsky.app/profile/sylee.dev/post/3lk65kilath2n)
+![](https://bsky.app/profile/sylee.dev/post/3lk65kilath2n)
 
 <aside>
 💡
@@ -148,7 +137,7 @@ Today, Lynx powers an extremely wide spectrum of surfaces—from the lightweight
 
 </aside>
 
-[https://x.com/aidenybai/status/1902777155085537481](https://x.com/aidenybai/status/1902777155085537481)
+![](https://x.com/aidenybai/status/1902777155085537481)
 
 <aside>
 💡
@@ -159,7 +148,7 @@ Today, Lynx powers an extremely wide spectrum of surfaces—from the lightweight
 
 </aside>
 
-[https://x.com/jarredsumner/status/1899773563961577494](https://x.com/jarredsumner/status/1899773563961577494)
+![](https://x.com/jarredsumner/status/1899773563961577494)
 
 ## 這是什麼酷酷的東西 👀
 
@@ -173,7 +162,7 @@ Today, Lynx powers an extremely wide spectrum of surfaces—from the lightweight
 2. 目標開發網路服務：目前看範例一個簡單的後端應該沒問題了，該有的[路由](https://aiscript.dev/guide/web/route)、檢查、資料庫、驗證等功能都支援了。
 3. 整合 AI 開發：這應該是它的特點之一了，可以直接在程式碼呼叫 AI Prompt、對應的錯誤處理、可以包裝成函式便於重用，以及甚至還支援到 [Agent](https://aiscript.dev/guide/ai/agent) 的功能。
 
-[https://x.com/_hisriver/status/1898948789249229082](https://x.com/_hisriver/status/1898948789249229082)
+![](https://x.com/_hisriver/status/1898948789249229082)
 
 <aside>
 💡
@@ -188,19 +177,19 @@ Today, Lynx powers an extremely wide spectrum of surfaces—from the lightweight
 
 不解釋，因為到現在前作都還躺在收藏庫裡面 😭
 
-[https://bsky.app/profile/sylee.dev/post/3ljkwt7pz4k2x](https://bsky.app/profile/sylee.dev/post/3ljkwt7pz4k2x)
+![](https://bsky.app/profile/sylee.dev/post/3ljkwt7pz4k2x)
 
 ### 直接打臉 **LeetCode**
 
 看到這件事只有覺得爽（不過我是酸葡萄啦，因為我絕對是考不過的 😅），但這種只為面試的畸形產物，消失可能比較好一點。
 
-[https://x.com/leafwind/status/1896710670579835241](https://x.com/leafwind/status/1896710670579835241)
+![](https://x.com/leafwind/status/1896710670579835241)
 
 ### 邦妮子每週都要更好一點 😆
 
-[https://x.com/shrimpbb88/status/1897263055354126768](https://x.com/shrimpbb88/status/1897263055354126768)
+![](https://x.com/shrimpbb88/status/1897263055354126768)
 
-[https://x.com/siygle/status/1899848562126750022](https://x.com/siygle/status/1899848562126750022)
+![](https://x.com/siygle/status/1899848562126750022)
 
 ### 也未免太有心了 😂
 
@@ -212,8 +201,8 @@ Today, Lynx powers an extremely wide spectrum of surfaces—from the lightweight
 
 是說演藝界手腳不乾淨的人真的超級多，隨時隨地都在亂來 😡
 
-[https://x.com/ShadowC1001/status/1902584418797265255](https://x.com/ShadowC1001/status/1902584418797265255)
+![](https://x.com/ShadowC1001/status/1902584418797265255)
 
 ### 真的是猛，具象化的馬利歐賽車 🤩
 
-[https://x.com/AnsonChen/status/1903690778645344747](https://x.com/AnsonChen/status/1903690778645344747)
+![](https://x.com/AnsonChen/status/1903690778645344747)

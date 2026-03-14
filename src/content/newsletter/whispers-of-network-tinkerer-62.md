@@ -17,7 +17,7 @@ tags:
 
 最近看到它們更往前走了一步，宣布將以 Open Governance 接續後續的開發與維護，從公告中可以看到成員除了 Deno 之外，還包含了 Evan、Isaac、James 這些同為 JS 生態知名的開發者參與其中，這些很能代表前端開發、註冊表服務，以及其他 JS runtime 這些領域，如果真的良好運作對 JSR 的未來感覺是非常值得期待阿～ 🤩
 
-[https://bsky.app/profile/did:plc:dijfw5anky2izdhc2y6hi73g/post/3lhc5oxhsts2i](https://bsky.app/profile/did:plc:dijfw5anky2izdhc2y6hi73g/post/3lhc5oxhsts2i)
+![](https://bsky.app/profile/did:plc:dijfw5anky2izdhc2y6hi73g/post/3lhc5oxhsts2i)
 
 *雖然後勢看好，不過個人還是有顧慮的的地方，就是後續的營運成本該怎麼處理（總不可能一直靠 Deno 自家跟贊助吧，有良好的錢錢來源也是很重要的）以及 Deno 自己開太多戰場導致自顧不暇（轉頭看 Deploy & Fresh* 😓*），希望是我自己杞人憂天就好…*
 
@@ -37,13 +37,13 @@ Oracle 方當然也提出了自己的主張，這部分感謝 AI 工具我們可
 
 ## Deno 2.2
 
-[https://bsky.app/profile/did:plc:dijfw5anky2izdhc2y6hi73g/post/3lik4t5pcys2i](https://bsky.app/profile/did:plc:dijfw5anky2izdhc2y6hi73g/post/3lik4t5pcys2i)
+![](https://bsky.app/profile/did:plc:dijfw5anky2izdhc2y6hi73g/post/3lik4t5pcys2i)
 
 Deno 也是默默走到 2.2 的版本了，雖然目前還是不慍不火的樣子，不過看起來他們還是維持自己的步伐，持續改善 Deno 以及增加各種新功能，關於 2.2 版本的詳細功能，大家可以直接跳轉 Deno 的公告。
 
 比較留意到的是增加了 [OpenTelemetry](https://docs.deno.com/runtime/fundamentals/open_telemetry/) 的支援（所以之後要接上 monitor、log 等就更加方便了）、還有針對 lint 增加的 [plugin API](https://docs.deno.com/runtime/reference/lint_plugins/)，可以自定義自己需要的檢查規則，另外看到也從這個版本正式支援了 `node:sqlite` 的功能（我原本看到是有點納悶，一直以為 kv 的功能就應該有支援了 😅）
 
-[https://www.youtube.com/watch?v=RM1j52eF2og](https://www.youtube.com/watch?v=RM1j52eF2og)
+![](https://www.youtube.com/watch?v=RM1j52eF2og)
 
 *其實現在每次講到 Deno 就想說些甚麼（不過上面 JSR 那邊已經碎念過就算了），總歸一句就是雞肋，唉。*
 
@@ -93,7 +93,7 @@ Optional details go here
 
 雖然我現在幾乎沒在用 Firefox 了，不過看到它們崩壞到這種地步，也是覺得感傷…
 
-[https://x.com/LundukeJournal/status/1895198058289471966](https://x.com/LundukeJournal/status/1895198058289471966)
+![](https://x.com/LundukeJournal/status/1895198058289471966)
 
 ## CDK 終於支援 GC 了
 
@@ -120,35 +120,35 @@ cdk gc \
 
 雖然跟技術沒什麼關係，不過看到最近美國跟烏克蘭談崩的事情，總還是想說個幾句。只能說現在局勢讓人悲觀，一直在前線死撐的烏克蘭，又遇到美國改朝換代變成保守主義的時刻，他們可能壓力也是很大才會失控。雖然我這種 nobody 在這邊說什麼都不會影響到實際的局勢，不過還是希望善的一方能夠有好的結果，不然這世界真的是太令人絕望了… 🙏🤞
 
-[https://x.com/visegrad24/status/1895533418752196862](https://x.com/visegrad24/status/1895533418752196862)
+![](https://x.com/visegrad24/status/1895533418752196862)
 
 ## **網路是個好東西**
 
 ### 最近平衡感不太好的 Moodeng 😂
 
-[https://x.com/and_khamoo/status/1892174742070894723](https://x.com/and_khamoo/status/1892174742070894723)
+![](https://x.com/and_khamoo/status/1892174742070894723)
 
-[https://x.com/gurugarzah/status/1891886818846552137](https://x.com/gurugarzah/status/1891886818846552137)
+![](https://x.com/gurugarzah/status/1891886818846552137)
 
-[https://x.com/KhaokheowZoo/status/1891816876973396265](https://x.com/KhaokheowZoo/status/1891816876973396265)
+![](https://x.com/KhaokheowZoo/status/1891816876973396265)
 
 ### 高級黑 🤣
 
-[https://x.com/code/status/1895145393513525743](https://x.com/code/status/1895145393513525743)
+![](https://x.com/code/status/1895145393513525743)
 
 如果沒追到相關訊息，你可能不知道為什麼 vscode 要發這個推文，背景資訊可以參考下推 🤣
 
-[https://x.com/CatChen/status/1894811407851704501](https://x.com/CatChen/status/1894811407851704501)
+![](https://x.com/CatChen/status/1894811407851704501)
 
 ### 真的會哭，製作組太有心了吧 😭
 
-[https://x.com/ilt0125_YN/status/1895065946555064700](https://x.com/ilt0125_YN/status/1895065946555064700)
+![](https://x.com/ilt0125_YN/status/1895065946555064700)
 
 ### 我是 #誤
 
 能夠隨心所欲的生活真的是很令人羨慕的一件事 😍。
 
-[https://x.com/kurtsunx/status/1894596941524472002](https://x.com/kurtsunx/status/1894596941524472002)
+![](https://x.com/kurtsunx/status/1894596941524472002)
 
 不過除了魔物獵人之外，我也要大推一下 Kingdom Come: Deliverance 2，真的是今年截至目前為止最愛的遊戲了。
 

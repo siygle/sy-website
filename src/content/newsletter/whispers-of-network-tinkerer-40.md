@@ -34,7 +34,7 @@ tags:
 
 另外這個則是關係 `deno compile` 的延伸，目前透過 compile 的這個指令，可以把 deno app 打包成一個可執行檔，對於使用及佈署都非常方便，不過目前靜態檔案還沒辦法包含進去，而這個 issue 就是相關的討論，希望哪天可以走到像其他靜態語言一樣🤞
 
-[https://youtu.be/qM90fMwKbzc?t=309](https://youtu.be/qM90fMwKbzc?t=309)
+![](https://youtu.be/qM90fMwKbzc?t=309)
 
 最近其實 Ryan 在 weekly 有提到 Deno 2.0 大約會在 2024/04 的時候出現，不過目前還看不出主要的 breaking changes 會是什麼。經歷過 Node.js 的成長歲月之後，除了年紀大了之外，那種熱血也漸漸轉變成更傾向穩定的想法。老實說雖然自己偏心 Deno 但目前真的看不太出它的絕對優勢在哪（甚至比起來可能 Bun 還更多人喜愛，因為它很單純目標就是更猛的 Node.js drop-in replacement），不過滿希望它走向穩定、更偏向企業用戶為目標，就等 2.0 問世之後再來看看吧。🤞
 
@@ -72,7 +72,7 @@ src: [https://twitter.com/Piglei/status/1742399105891270747](https://twitter.com
 
 ### 你過得好嗎？
 
-[https://www.youtube.com/watch?v=hhB3L2gwxg4&feature=youtu.be](https://www.youtube.com/watch?v=hhB3L2gwxg4&feature=youtu.be)
+![](https://www.youtube.com/watch?v=hhB3L2gwxg4&feature=youtu.be)
 
 原本是無意間看到這部介紹從韓國搬來台灣經營事業的一對夫妻的影片開始，無意間就寫下來一些對這次選舉的想法。
 

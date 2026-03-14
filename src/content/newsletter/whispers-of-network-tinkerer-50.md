@@ -139,7 +139,7 @@ src: [https://x.com/defunkt/status/1807779408092234134](https://x.com/defunkt/st
 
 src: [https://x.com/mitsuhiko/status/1805478152539386095](https://x.com/mitsuhiko/status/1805478152539386095)
 
-[https://bsky.app/profile/danabra.mov/post/3kvlkrpus522z](https://bsky.app/profile/danabra.mov/post/3kvlkrpus522z)
+![](https://bsky.app/profile/danabra.mov/post/3kvlkrpus522z)
 
 當然，每個人都有他自己的觀點，你也可以不認同，不過覺得針對願意花大量時間在開源專案的開發者，我自己還是更願意多一些體諒跟相信。
 
@@ -155,7 +155,7 @@ src: [https://x.com/mitsuhiko/status/1805478152539386095](https://x.com/mitsuhik
 
 所以在開心之餘也發了下面這則 skeet，開源開發者真的很需要使用者的贊助，要維護一個專案是很辛苦也很不容易的事。🙌
 
-[https://bsky.app/profile/did:plc:z57tkg4b3hw7fsn47lud3kf5/post/3kvocj6quyy2o](https://bsky.app/profile/did:plc:z57tkg4b3hw7fsn47lud3kf5/post/3kvocj6quyy2o)
+![](https://bsky.app/profile/did:plc:z57tkg4b3hw7fsn47lud3kf5/post/3kvocj6quyy2o)
 
 ### dotenv 新版本 - dotenvx
 
@@ -177,7 +177,7 @@ src: [https://x.com/mitsuhiko/status/1805478152539386095](https://x.com/mitsuhik
 
 LangChain 官方的 YouTube 頻道上也有很多相關的教學與範例，如果想了解 LangGraph Cloud 的功能與特性，對於我們開發、管理 LLMs app 有什麼幫助，可以參考下面這個範例說明：
 
-[https://www.youtube.com/watch?v=EKNiz_fWrDk](https://www.youtube.com/watch?v=EKNiz_fWrDk)
+![](https://www.youtube.com/watch?v=EKNiz_fWrDk)
 
 ### 前仆後繼的 AI 裝置
 
@@ -203,7 +203,7 @@ LangChain 官方的 YouTube 頻道上也有很多相關的教學與範例，如�
 
 ### 希望這真能成為臺灣人普遍擁有的特質 🥰
 
-[https://x.com/MoonMoon724/status/1804468138123375010](https://x.com/MoonMoon724/status/1804468138123375010)
+![](https://x.com/MoonMoon724/status/1804468138123375010)
 
 ### 手殘黨福音
 
@@ -211,40 +211,40 @@ LangChain 官方的 YouTube 頻道上也有很多相關的教學與範例，如�
 
 身為手殘黨的我，對於這類魂系遊戲真的不太行，所以常常也玩著玩著就棄坑了，不過最近看到一位直播網紅用了腦波控制的方式來玩，成功打過了 DLC 的舞獅 BOSS，看起來就算是手殘黨，好像也有機會可以重回交界地了！
 
-[https://x.com/Dexerto/status/1804740072551461260](https://x.com/Dexerto/status/1804740072551461260)
+![](https://x.com/Dexerto/status/1804740072551461260)
 
 ### 聽完之後好糾結
 
 我陷入了被說服與抵抗之間…
 
-[https://x.com/RV_ismyjoy_/status/1806692811817079248](https://x.com/RV_ismyjoy_/status/1806692811817079248)
+![](https://x.com/RV_ismyjoy_/status/1806692811817079248)
 
 ### 鬼滅準備進[無限城](https://kimetsu.com/anime/mugenjyohen_movie/)啦，最終章！🔥
 
 大家都看過剛結束的柱訓練篇嗎？不能不說最後一集真的是太熱血了阿！
 
-[https://x.com/yu_neoEG/status/1807427795804704946](https://x.com/yu_neoEG/status/1807427795804704946)
+![](https://x.com/yu_neoEG/status/1807427795804704946)
 
 我現在腦海中都是這段配樂，好希望之後也會有音樂集推出 😍
 
-[https://x.com/knyesta/status/1807437102201618479](https://x.com/knyesta/status/1807437102201618479)
+![](https://x.com/knyesta/status/1807437102201618479)
 
 動畫組這麼用心製作，接下來的三部曲希望都進電影院支持一下！
 
-[https://x.com/siygle/status/1808173393252176134](https://x.com/siygle/status/1808173393252176134)
+![](https://x.com/siygle/status/1808173393252176134)
 
 ### 邦妮子集合啦！
 
 最近幸好飯上了 [**New Jeans](https://www.instagram.com/newjeans_official/)** 才能夠有力氣面對[**諸多爛事](https://www.google.com/search?q=%E5%9C%8B%E6%B0%91%E9%BB%A8+%E6%B0%91%E7%9C%BE%E9%BB%A8&rlz=1C5CHFA_enTW1068TW1068&oq=%E5%9C%8B%E6%B0%91%E9%BB%A8+%E6%B0%91%E7%9C%BE%E9%BB%A8&gs_lcrp=EgZjaHJvbWUyCQgAEEUYORiABDIHCAEQABiABDIHCAIQABiABDIHCAMQABiABDIHCAQQABiABDIHCAUQABiABDIHCAYQABiABDIHCAcQABiABDIHCAgQABiABDIHCAkQABiABNIBCTE3NzQyajBqMagCALACAA&sourceid=chrome&ie=UTF-8)（**可以不要說的這麼順利成章嗎 😅）。最近剛好 NJ 在東京巨蛋舉辦了粉絲見面會（NewJeans Bunnies Camp 2024）。
 
-[https://www.youtube.com/playlist?list=PLCbuvKvLvnURyVzWay2mV2BqnkC-jcSBZ](https://www.youtube.com/playlist?list=PLCbuvKvLvnURyVzWay2mV2BqnkC-jcSBZ)
+![](https://www.youtube.com/playlist?list=PLCbuvKvLvnURyVzWay2mV2BqnkC-jcSBZ)
 
 除了原本就耳熟能詳的曲目之外，原本就走復古風的 NJ，這次有三位成員翻唱了三首日本經典的歌曲，分別是松田聖子的[青い珊瑚礁](https://www.youtube.com/watch?v=hKFR5T0pcw8)、竹內瑪莉亞的 [Plastic Love](https://www.youtube.com/watch?v=T_lC2O1oIew)，以及本人入坑 Vaundy 的[踊り子](https://www.youtube.com/watch?v=7HgJIAUtICU)（絕對不是因為 Minji 的關係 😆，但如果想知道為什麼她選了這首可以[跳轉這邊](https://x.com/siygle/status/1807673681956766048)）**。**
 
-[https://www.youtube.com/watch?v=9U983WWQayY&list=PLCbuvKvLvnURyVzWay2mV2BqnkC-jcSBZ&index=16](https://www.youtube.com/watch?v=9U983WWQayY&list=PLCbuvKvLvnURyVzWay2mV2BqnkC-jcSBZ&index=16)
+![](https://www.youtube.com/watch?v=9U983WWQayY&list=PLCbuvKvLvnURyVzWay2mV2BqnkC-jcSBZ&index=16)
 
 *而且還發了一篇超級失禮的推文* （*實在是因為小松拍攝的 MV 演繹的太好，讓我一瞬間誤會以為主唱就是她，爆失禮* 😅）。
 
-[https://x.com/LanLanFatCat/status/1806912364635427077](https://x.com/LanLanFatCat/status/1806912364635427077)
+![](https://x.com/LanLanFatCat/status/1806912364635427077)
 
 ***在這個糟透的時間點，卻有 NJ 陪著邦妮子們，身為大叔粉真是太幸福啦！*** 🥰

@@ -19,7 +19,7 @@ tags:
 
 然後也發現連官方 X 也一併改了 😅
 
-[https://x.com/teahourdev/status/1902264734445117893](https://x.com/teahourdev/status/1902264734445117893)
+![](https://x.com/teahourdev/status/1902264734445117893)
 
 <aside>
 💡
@@ -32,7 +32,7 @@ tags:
 
 *截稿前 Ch2 也釋出了* 😄🎉
 
-[https://bsky.app/profile/sylee.dev/post/3lm4pdvkvuk2t](https://bsky.app/profile/sylee.dev/post/3lm4pdvkvuk2t)
+![](https://bsky.app/profile/sylee.dev/post/3lm4pdvkvuk2t)
 
 ## Shell 就是好物 - Dagger Shell
 
@@ -65,7 +65,7 @@ Dagger Shell is the fastest way to interact with the Dagger API. Dagger Shell br
 
 **All-in-MCP!! #誤**
 
-[https://x.com/sama/status/1904957253456941061](https://x.com/sama/status/1904957253456941061)
+![](https://x.com/sama/status/1904957253456941061)
 
 老闆都發佈了，內容資源當然要馬上趕上才行嘛，文件跟相關的範例 repo 都一併釋出了，有興趣想嘗鮮的開發者不妨試試（不過大概也不用多久就是滿地的範例了，AI 時代阿～ 😅）
 
@@ -90,7 +90,7 @@ Dagger Shell is the fastest way to interact with the Dagger API. Dagger Shell br
 
 最近剛好看到 TC 特別寫了一篇介紹數個基於 AT Protocol 的應用，這個 BlueSky 核心運作的協定，不只是能驅動 BlueSky，更能夠作為分散式架構的訊息互通的基礎協定。對這個生態有興趣的開發者，不妨看看目前已經有多少不同的服務已經採用了 AT Protocol 來建構 ⬇️
 
-[https://bsky.app/profile/sylee.dev/post/3llndkadkq227](https://bsky.app/profile/sylee.dev/post/3llndkadkq227)
+![](https://bsky.app/profile/sylee.dev/post/3llndkadkq227)
 
 除了新聞介紹之外，最近社群也剛舉辦了 AT Protocol 第一屆的研討會，其中的[議程也都陸續放出來了](https://www.youtube.com/playlist?list=PLyIg0j_mbb2tVegEMBg5ke2Z-1ALksU-I)，裡面有相當豐富的內容，這邊只稍微列出幾個自己有追然後感興趣的地方 ⬇️
 
@@ -98,7 +98,7 @@ Dagger Shell is the fastest way to interact with the Dagger API. Dagger Shell br
 
 CEO 的場子，當然是要精神喊話一下，內容簡短扼要，對藍天（以及背後更重要的 AT Protocol）的理念，可以透過這個場子初步了解一下（還有意外成為[焦點的衣服](https://bsky.app/profile/bsky.app/post/3lkodsqshc22h) - 沒有凱撒的世界 😎）
 
-[https://www.youtube.com/watch?v=dZ08qoNO0K4](https://www.youtube.com/watch?v=dZ08qoNO0K4)
+![](https://www.youtube.com/watch?v=dZ08qoNO0K4)
 
 ### Paul Frazee - Where did we come from where will we go
 
@@ -106,19 +106,19 @@ CEO 的場子，當然是要精神喊話一下，內容簡短扼要，對藍天�
 
 對於藍天未來的方向，這場一定不要錯過，裡面提到許多規劃中的項目都很有意思。不過我自己是對一個簡單自架的專案很感興趣（聽說目前是叫 IndieSky），不知道之後實際丟出來會是怎樣（如果能用一個 RPi 的硬體設備就能跑起來的話，一定會很有意思 😛）。
 
-[https://www.youtube.com/watch?v=i0hz9uzHEbc](https://www.youtube.com/watch?v=i0hz9uzHEbc)
+![](https://www.youtube.com/watch?v=i0hz9uzHEbc)
 
 ### Daniel Holmgren - ATProto Ethos
 
 AT Protocol 的協定作者之一，這場主要在講述 AT Protocol 的精神，以及為什麼他們會這麼設計等，內容頗硬（其實有不少我也不太理解 😅)，不過如果想深入了解這個協定的核心理念的話，可以試著聽看看。（講者後來也寫了[一篇專文](https://atproto.com/articles/atproto-ethos)，有更完整詳細的介紹）
 
-[https://www.youtube.com/watch?v=1A-0k58TfPo](https://www.youtube.com/watch?v=1A-0k58TfPo)
+![](https://www.youtube.com/watch?v=1A-0k58TfPo)
 
 ### Devin Ivy - The Shape of Apps to Come
 
 本場的講者也是 BlueSky 的核心成員之一，這場就是以開發者的角度來闡述，如果要開發一個基於 AT Protocol 的應用程式的話要怎麼進行，以及相關的實作細節。
 
-[https://www.youtube.com/watch?v=bPvuRQW1Ykk](https://www.youtube.com/watch?v=bPvuRQW1Ykk)
+![](https://www.youtube.com/watch?v=bPvuRQW1Ykk)
 
 ### **Nick Gerakines - Smoke Signal an journey in building open ecosystems for communities**
 
@@ -126,7 +126,7 @@ AT Protocol 的協定作者之一，這場主要在講述 AT Protocol 的精神�
 
 *另外一提，這位作者也是深耕 AT Protocol 的開發者之一，有開源許多相關套件 - https://github.com/astrenoxcoop*。
 
-[https://www.youtube.com/watch?v=BnOtwX5Ogmw](https://www.youtube.com/watch?v=BnOtwX5Ogmw)
+![](https://www.youtube.com/watch?v=BnOtwX5Ogmw)
 
 ### [***tangled](https://tangled.sh/) -** tightly-knit social coding*
 
@@ -159,7 +159,7 @@ AT Protocol 的協定作者之一，這場主要在講述 AT Protocol 的精神�
 
 雖然一直不是它的支持者，不過畢竟也是一路跟 Windows、Office 成長的過來的，看到他們近年來華麗轉身也是很佩服，沒想到一間老企業也是有中興的可能。
 
-[https://x.com/Microsoft/status/1908142566094119421](https://x.com/Microsoft/status/1908142566094119421)
+![](https://x.com/Microsoft/status/1908142566094119421)
 
 蓋茲爸爸也放出了一篇專文，除了闡述了早期微軟的發展史之外，也開源了 Altair BASIC 的程式（這個網頁作的也是相當酷 😎）
 
@@ -167,7 +167,7 @@ AT Protocol 的協定作者之一，這場主要在講述 AT Protocol 的精神�
 
 ### 好用程式庫分析小工具
 
-[https://x.com/hellokaton/status/1906580259727958089](https://x.com/hellokaton/status/1906580259727958089)
+![](https://x.com/hellokaton/status/1906580259727958089)
 
 底下是跑了 denoland/fresh 的範例，大概可以看出跑出來的成效。是個可以簡單又快速的了解 repo 架構的好工具，[翻了下程式碼](https://github.com/ahmedkhaleel2004/gitdiagram/tree/main)看起來應該也是抓內容然後丟到 claude 去跑出分析（真的什麼都先用 AI 處理了阿～）
 
@@ -177,16 +177,11 @@ AT Protocol 的協定作者之一，這場主要在講述 AT Protocol 的精神�
 
 荒謬的世界還是持續喔～
 
-![src: [https://x.com/fetalkpodcast/status/1906391604224782594](https://x.com/fetalkpodcast/status/1906391604224782594)](../assets/網路黑手的呢喃 #64 - image 1.png)
-
-src: [https://x.com/fetalkpodcast/status/1906391604224782594](https://x.com/fetalkpodcast/status/1906391604224782594)
-
-![src: [https://x.com/d4m1n/status/1905669155090563116](https://x.com/d4m1n/status/1905669155090563116)](../assets/網路黑手的呢喃 #64 - image 2.png)
-
-src: [https://x.com/d4m1n/status/1905669155090563116](https://x.com/d4m1n/status/1905669155090563116)
+![](https://x.com/fetalkpodcast/status/1906391604224782594)
+![](https://x.com/d4m1n/status/1905669155090563116)
 
 ### 大家動起來！
 
 這根本就是為了久坐宅宅族精心設計，衛福部真懂 😅
 
-[https://x.com/MOHW_Taiwan/status/1908726010394402841](https://x.com/MOHW_Taiwan/status/1908726010394402841)
+![](https://x.com/MOHW_Taiwan/status/1908726010394402841)

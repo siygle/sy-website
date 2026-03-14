@@ -77,7 +77,7 @@ src: [https://twitter.com/pnpmjs/status/1723024342580146558](https://twitter.com
 
 當然這篇文章也引來不少大老的[評論](https://twitter.com/ericsimons40/status/1729263124581384297)，看到不少也認同這個趨勢，不過可能不會那麼快發生啦😆
 
-[https://twitter.com/ericsimons40/status/1729263124581384297](https://twitter.com/ericsimons40/status/1729263124581384297)
+![](https://twitter.com/ericsimons40/status/1729263124581384297)
 
 # 跟上 buzzword!! Bet on AI 🤣
 
@@ -106,13 +106,13 @@ src: [https://twitter.com/Modular_AI/status/1731737711138967854](https://twitter
 
 有大大用了開源方案弄出下列這個類 #[HeyGen](https://www.heygen.com/) 的效果，覺得可怕，之後還能相信我們看到、聽到的東西嗎？😅
 
-[https://twitter.com/Gorden_Sun/status/1724697614560686463](https://twitter.com/Gorden_Sun/status/1724697614560686463)
+![](https://twitter.com/Gorden_Sun/status/1724697614560686463)
 
 ### LLM 入門指引
 
 網路真的是充滿資源阿，這邊有網友整理，由 OpenAI 成員主講介紹何謂 LLM，能夠讓你對於目前火紅的 Machine Learning 的基礎與運作，有更深入的認識。
 
-[https://twitter.com/dotey/status/1728959646138880026](https://twitter.com/dotey/status/1728959646138880026)
+![](https://twitter.com/dotey/status/1728959646138880026)
 
 # **網路是個好東西**
 
@@ -120,28 +120,28 @@ src: [https://twitter.com/Modular_AI/status/1731737711138967854](https://twitter
 
 看來這次也換成男女雙主角了，然後還要等到 2025 😢😅
 
-[https://youtu.be/QdBZY2fkU-0?si=oRzswsOlMGW0_03j](https://youtu.be/QdBZY2fkU-0?si=oRzswsOlMGW0_03j)
+![](https://youtu.be/QdBZY2fkU-0?si=oRzswsOlMGW0_03j)
 
 ### 隨時做好翻去日本的打算 #大誤
 
-[https://x.com/PevenC/status/1730810763189907865?s=20](https://x.com/PevenC/status/1730810763189907865?s=20)
+![](https://x.com/PevenC/status/1730810763189907865?s=20)
 
 ### 現在個人網站的門檻越來越高了😅
 
 這位 [Raycast](https://www.raycast.com/) DX 最近改寫了他的個人網站，非常酷！他也寫了一篇[專文](https://ped.ro/writing/website-refresh-2023)來仔細描寫完整的過程以及細節（有設計天分的人真好啊🥹)。
 
-[https://twitter.com/peduarte/status/1729126249870586221](https://twitter.com/peduarte/status/1729126249870586221)
+![](https://twitter.com/peduarte/status/1729126249870586221)
 
 ### 原來我有無堅不摧的盔甲😅
 
-[https://twitter.com/Plant_poisoning/status/1727988329919221820](https://twitter.com/Plant_poisoning/status/1727988329919221820)
+![](https://twitter.com/Plant_poisoning/status/1727988329919221820)
 
 ### 龍族教義2!!
 
 大家趕快把假請好 #誤 #20240322
 
-[https://www.youtube.com/watch?v=Uv5Rumu7GAk](https://www.youtube.com/watch?v=Uv5Rumu7GAk)
+![](https://www.youtube.com/watch?v=Uv5Rumu7GAk)
 
 ### 原來宅宅自帶防護罩😆
 
-[https://twitter.com/jun2ralife/status/1729678348551422366](https://twitter.com/jun2ralife/status/1729678348551422366)
+![](https://twitter.com/jun2ralife/status/1729678348551422366)

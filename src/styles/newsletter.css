@@ -198,16 +198,100 @@
 
   .newsletter-prose pre {
     @apply rounded-lg overflow-x-auto;
-    background-color: #f5f5f5 !important;
+    background-color: #f8f8f8 !important;
+    border: 1px solid #e5e5e5;
+    padding: 1.25rem !important;
+    font-size: 0.875rem !important;
+    line-height: 1.7 !important;
   }
 
   .newsletter-prose code {
     @apply text-sm;
   }
 
+  /* Inline code */
+  .newsletter-prose :where(code):not(:where(pre code, [class~="not-prose"], [class~="not-prose"] *)) {
+    background-color: #f0f0f0;
+    border: 1px solid #e5e5e5;
+    border-radius: 3px;
+    padding: 0.15em 0.35em;
+    font-size: 0.85em;
+    color: #1a1a1a;
+  }
+
   .newsletter-prose :where(code):not(:where([class~="not-prose"], [class~="not-prose"] *))::before,
   .newsletter-prose :where(code):not(:where([class~="not-prose"], [class~="not-prose"] *))::after {
     content: "";
+  }
+
+  /* Shiki / astro-code overrides */
+  .newsletter-prose .astro-code,
+  .newsletter-prose [data-theme] {
+    background-color: #f8f8f8 !important;
+    border: 1px solid #e5e5e5;
+    border-radius: 0.5rem;
+    padding: 1.25rem !important;
+    font-size: 0.875rem !important;
+    line-height: 1.7 !important;
+    color: #1a1a1a !important;
+    overflow-x: auto;
+  }
+
+  .newsletter-prose .astro-code code,
+  .newsletter-prose [data-theme] code {
+    background: transparent !important;
+    border: none !important;
+    padding: 0 !important;
+    font-size: inherit !important;
+    color: inherit !important;
+  }
+
+  /*
+   * Force Shiki dark themes to light — github-light palette.
+   * Shiki uses inline style on every <span>, so we must override
+   * with !important on span[style] inside .astro-code.
+   */
+  .newsletter-prose .astro-code.github-dark,
+  .newsletter-prose pre[style*="background-color:#24292e"] {
+    background-color: #f8f8f8 !important;
+    color: #24292f !important;
+  }
+
+  .newsletter-prose .astro-code.github-dark span[style*="color:#E1E4E8"],
+  .newsletter-prose .astro-code.github-dark span[style*="color:#e1e4e8"] {
+    color: #24292f !important;
+  }
+  .newsletter-prose .astro-code.github-dark span[style*="color:#B392F0"],
+  .newsletter-prose .astro-code.github-dark span[style*="color:#b392f0"] {
+    color: #8250df !important;
+  }
+  .newsletter-prose .astro-code.github-dark span[style*="color:#79B8FF"],
+  .newsletter-prose .astro-code.github-dark span[style*="color:#79b8ff"] {
+    color: #0550ae !important;
+  }
+  .newsletter-prose .astro-code.github-dark span[style*="color:#9ECBFF"],
+  .newsletter-prose .astro-code.github-dark span[style*="color:#9ecbff"] {
+    color: #0a3069 !important;
+  }
+  .newsletter-prose .astro-code.github-dark span[style*="color:#F97583"],
+  .newsletter-prose .astro-code.github-dark span[style*="color:#f97583"] {
+    color: #cf222e !important;
+  }
+  .newsletter-prose .astro-code.github-dark span[style*="color:#FFAB70"],
+  .newsletter-prose .astro-code.github-dark span[style*="color:#ffab70"] {
+    color: #953800 !important;
+  }
+  .newsletter-prose .astro-code.github-dark span[style*="color:#6A737D"],
+  .newsletter-prose .astro-code.github-dark span[style*="color:#6a737d"] {
+    color: #6e7781 !important;
+  }
+  .newsletter-prose .astro-code.github-dark span[style*="color:#85E89D"],
+  .newsletter-prose .astro-code.github-dark span[style*="color:#85e89d"] {
+    color: #116329 !important;
+  }
+  .newsletter-prose .astro-code.github-dark span[style*="color:#FDAEB7"],
+  .newsletter-prose .astro-code.github-dark span[style*="color:#fdaeb7"] {
+    color: #82071e !important;
   }
 
   /* Social embed overrides */

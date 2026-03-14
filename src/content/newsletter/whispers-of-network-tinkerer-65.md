@@ -15,7 +15,7 @@ tags:
 
 Like father like son，想當然爾他的小孩也走上了開源貢獻者的路，而且最近還看到他分享了如何優化 Node.js 發佈流程基礎架構的分享，真的超酷的啦！
 
-[https://bsky.app/profile/jasnell.me/post/3lm4lu5osnk2k](https://bsky.app/profile/jasnell.me/post/3lm4lu5osnk2k)
+![](https://bsky.app/profile/jasnell.me/post/3lm4lu5osnk2k)
 
 除了開源傳承的部分之外，在架構改善的部分，主要是從 Self-hosting 改成依賴 Cloudflare 架構，主要的專案也一併開源出來了 🔽，本篇就是提及它們如何進行轉移的工作。
 
@@ -32,7 +32,7 @@ Like father like son，想當然爾他的小孩也走上了開源貢獻者的路
 
 ## Cloudflare Developer Week
 
-[https://bsky.app/profile/cloudflare.social/post/3lmrp455vxs2u](https://bsky.app/profile/cloudflare.social/post/3lmrp455vxs2u)
+![](https://bsky.app/profile/cloudflare.social/post/3lmrp455vxs2u)
 
 每年 Cloudflare 都會舉辦一個 Developer Week 的活動，當然就是自家新產品的火力展示，因為自身業務的關心，過去幾年幾乎都是雲端平台的各種新功能，不過在 AI 崛起之後，Cloudflare 也是很聚焦在這塊市場的開拓。快速列幾個自己比較感興趣的東西，不過如果想知道完整到底 Cloudflare 推出了哪些東西，可以跳轉上方的連結。
 
@@ -50,7 +50,7 @@ Like father like son，想當然爾他的小孩也走上了開源貢獻者的路
 
 除了 AI 之外，Cloudflare 也沒忘記它們的雲端服務的本業，這次也是推出了不少看齊御三家的功能，譬如終於等到的 [Secret](https://blog.cloudflare.com/secrets-store-beta/) 儲存服務、[VPC](https://blog.cloudflare.com/workers-virtual-private-cloud/)，以及[持續擴大對前端各框架的支援](https://blog.cloudflare.com/full-stack-development-on-cloudflare-workers/)。
 
-[https://x.com/yusukebe/status/1909602290358796580](https://x.com/yusukebe/status/1909602290358796580)
+![](https://x.com/yusukebe/status/1909602290358796580)
 
 另外最讓人期待的莫過於終於支援的 [Container](https://blog.cloudflare.com/cloudflare-containers-coming-2025/) 啦！（不過老實說跟我原本想像類似 ECS 的用法不太一樣，看起來它們好像都是深度綁定 Workers 來使用的，前面的各種新功能都可以看到類似的用法 🤔）。
 
@@ -71,11 +71,11 @@ Like father like son，想當然爾他的小孩也走上了開源貢獻者的路
 
 原本以為它是劍指 MCP 而來，不過後來看到有說明跟 MCP 的定位不太一樣，A2A 是為了 Agent 之間的互動而定義的協定（如下）
 
-[https://x.com/omarsar0/status/1909980581510754431](https://x.com/omarsar0/status/1909980581510754431)
+![](https://x.com/omarsar0/status/1909980581510754431)
 
 不過嘛，後來又看到有大大出來說了幾句，看來我還是太嫩了 😅。是說都能處理 Agent 的互動這種更複雜的行為，偏向單向拉資料的 MCP 又怎麼會沒辦法處理呢。
 
-[https://x.com/solomonstre/status/1909971067113742732](https://x.com/solomonstre/status/1909971067113742732)
+![](https://x.com/solomonstre/status/1909971067113742732)
 
 <aside>
 💡
@@ -133,7 +133,7 @@ BTW，雖然 G 社在基礎協定這塊看起來還是比起 AI 公司的 Anthro
 
 不過現在除了文章之外，連程式碼都出現類似的功能了，就是 [Devin.AI](http://Devin.AI) 最近推出的 DeepWiki 這個服務，能夠幫你快速整理好程式專案的內容、文件、甚至來架構圖都產生給你，此外也可以透過對話更深入去針對內容提問。
 
-[https://x.com/cognition_labs/status/1915816544480989288](https://x.com/cognition_labs/status/1915816544480989288)
+![](https://x.com/cognition_labs/status/1915816544480989288)
 
 使用方法就是把原本 [`github.com`](http://github.com) 換成 [`deepwiki.com`](http://deepwiki.com) 就可以了，譬如用 deno 當成範例 🔽
 
@@ -160,15 +160,15 @@ BTW，雖然 G 社在基礎協定這塊看起來還是比起 AI 公司的 Anthro
 
 真的感謝網路上諸位大大，創造了這麼多方便的工具！
 
-[https://x.com/miantiao_me/status/1915382825840263175](https://x.com/miantiao_me/status/1915382825840263175)
+![](https://x.com/miantiao_me/status/1915382825840263175)
 
 ### 最近好愛看 Maker 的作品 😍
 
 這種手作的影片真的是我的最愛，看著看著總會有股紓壓感，好期待有天也可以加入 maker 的行列。
 
-[https://www.youtube.com/watch?v=Z2ucOgtgJas](https://www.youtube.com/watch?v=Z2ucOgtgJas)
+![](https://www.youtube.com/watch?v=Z2ucOgtgJas)
 
-[https://www.youtube.com/watch?v=L5PvQj1vfC4](https://www.youtube.com/watch?v=L5PvQj1vfC4)
+![](https://www.youtube.com/watch?v=L5PvQj1vfC4)
 
 這個是用 E-Ink 加上 RPi 就可以簡單實作的桌上數位相框（當然它不只能當相框而已啦 😄），然後作者也連完整的控制應用程式都開源出來給大家可以輕鬆架設了，超棒！
 
@@ -178,8 +178,8 @@ BTW，雖然 G 社在基礎協定這塊看起來還是比起 AI 公司的 Anthro
 
 真的當初不懂事，不知道星期三的好，直到不經意追了一集就停不下來直接追完第一季。現在，終於等到第二季重磅回歸啦！ 💐
 
-[https://www.youtube.com/watch?v=uQx8jKiIDTI](https://www.youtube.com/watch?v=uQx8jKiIDTI)
+![](https://www.youtube.com/watch?v=uQx8jKiIDTI)
 
 這次還特別拆成兩段上線（有推友[提及](https://x.com/wtcdm/status/1915039409000579396)最近 Netflix 好像經常這樣搞）。
 
-[https://x.com/WednesdaysDaily/status/1915029988023079157](https://x.com/WednesdaysDaily/status/1915029988023079157)
+![](https://x.com/WednesdaysDaily/status/1915029988023079157)

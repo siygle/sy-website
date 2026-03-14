@@ -1,0 +1,214 @@
+---
+import type { GetStaticPathsOptions } from 'astro';
+import { getCollection } from 'astro:content';
+import NewsletterLayout from '~/layouts/NewsletterLayout.astro';
+
+export async function getStaticPaths({ paginate }: GetStaticPathsOptions) {
+  const newsletters = await getCollection('newsletter');
+
+  const sorted = newsletters.sort((a, b) => {
+    const numA = parseInt(a.id.match(/(\d+)/)?.[1] || '0');
+    const numB = parseInt(b.id.match(/(\d+)/)?.[1] || '0');
+    return numB - numA;
+  });
+
+  const pageSize = Number(import.meta.env.NEWSLETTER_PAGE_SIZE) || 7;
+  return paginate(sorted, { pageSize });
+}
+
+const { page } = Astro.props;
+const isFirstPage = page.currentPage === 1;
+const featured = isFirstPage ? page.data[0] : null;
+const listItems = isFirstPage ? page.data.slice(1) : page.data;
+
+function formatDateShort(dateString: string): string {
+  const date = new Date(dateString);
+  const mon = date.toLocaleDateString('en-US', { month: 'short' }).toUpperCase();
+  const day = date.getDate();
+  return `${mon} ${day}`;
+}
+
+function formatDateFull(dateString: string): string {
+  const date = new Date(dateString);
+  return date.toLocaleDateString('en-US', {
+    year: 'numeric',
+    month: 'short',
+    day: 'numeric',
+  }).toUpperCase();
+}
+
+function getIssueNumber(id: string): string {
+  return id.match(/(\d+)/)?.[1] || '';
+}
+
+function getTopTags(tags: string[], max = 3): string[] {
+  return (tags || [])
+    .filter((t) => t.toLowerCase() !== 'newsletter' && t.toLowerCase() !== 'news')
+    .slice(0, max);
+}
+
+function getPageNumbers(current: number, last: number): (number | '...')[] {
+  if (last <= 7) return Array.from({ length: last }, (_, i) => i + 1);
+  const pages: (number | '...')[] = [1];
+  if (current > 3) pages.push('...');
+  for (let i = Math.max(2, current - 1); i <= Math.min(last - 1, current + 1); i++) {
+    pages.push(i);
+  }
+  if (current < last - 2) pages.push('...');
+  pages.push(last);
+  return pages;
+}
+
+function pageUrl(num: number): string {
+  return num === 1 ? '/newsletter' : `/newsletter/${num}`;
+}
+
+const pageNumbers = getPageNumbers(page.currentPage, page.lastPage);
+---
+
+<NewsletterLayout title="網路黑手的呢喃 - Newsletter" description="網路黑手的呢喃 — 關於科技、開源、網路世界的不定期電子報">
+
+  {/* ── HERO (page 1 only) ── */}
+  {featured && (() => {
+    const num = getIssueNumber(featured.id);
+    const tags = getTopTags(featured.data.tags);
+    return (
+      <section class="mb-12">
+        {/* Issue + date row */}
+        <div class="flex items-center justify-between mb-5">
+          <span class="text-lg font-bold tracking-[0.1em] uppercase text-[#525252]">
+            Issue #{num}
+          </span>
+          <time class="text-lg font-bold tracking-[0.1em] uppercase text-[#525252]">
+            {formatDateFull(featured.data.date)}
+          </time>
+        </div>
+
+        {/* Masthead */}
+        <h1 class="newsletter-hero-title text-6xl md:text-8xl mb-8">
+          網路黑手的呢喃
+        </h1>
+
+        {/* Tags */}
+        {tags.length > 0 && (
+          <div class="flex gap-2 mb-6">
+            {tags.map((tag) => (
+              <span class="text-sm font-bold tracking-[0.05em] uppercase bg-black text-white px-3 py-1">
+                {tag}
+              </span>
+            ))}
+          </div>
+        )}
+
+        {/* Featured article */}
+        <a href={`/newsletter/${featured.id.replace('.md', '')}`} class="group block no-underline">
+          <h2 class="newsletter-featured-title text-4xl md:text-5xl mb-5 group-hover:text-[#525252] transition-colors">
+            {featured.data.title}
+          </h2>
+          {featured.data.description && (
+            <p class="text-lg md:text-xl leading-relaxed text-[#333] max-w-[700px]">
+              {featured.data.description}
+            </p>
+          )}
+        </a>
+      </section>
+    );
+  })()}
+
+  {/* ── DIVIDER ── */}
+  <div class="newsletter-divider mb-8"></div>
+
+  {/* ── SECTION HEADING ── */}
+  <h3 class="newsletter-section-heading mb-8">
+    {isFirstPage ? 'Latest Issues' : 'All Issues'}
+  </h3>
+
+  {/* ── ARTICLE LIST ── */}
+  <section>
+    {listItems.map((issue) => {
+      const num = getIssueNumber(issue.id);
+      const tags = getTopTags(issue.data.tags, 2);
+      return (
+        <a
+          href={`/newsletter/${issue.id.replace('.md', '')}`}
+          class="newsletter-article-row group block no-underline py-6 border-b border-[#e5e5e5]"
+        >
+          <div class="flex gap-6 md:gap-10">
+            {/* Left column — date + tags */}
+            <div class="shrink-0 w-[100px] md:w-[180px]">
+              <time class="block text-base md:text-xl font-black tracking-[0.02em] text-black">
+                {formatDateShort(issue.data.date)}
+              </time>
+              {tags.length > 0 && (
+                <div class="mt-2 flex flex-wrap gap-x-2 gap-y-1">
+                  {tags.map((tag) => (
+                    <span class="text-xs font-bold tracking-[0.05em] uppercase text-[#525252]">
+                      {tag}
+                    </span>
+                  ))}
+                </div>
+              )}
+            </div>
+
+            {/* Right column — title + description */}
+            <div class="flex-1 min-w-0">
+              <h4 class="newsletter-article-title text-xl md:text-3xl group-hover:text-[#525252] transition-colors">
+                {issue.data.title}
+              </h4>
+              {issue.data.description && (
+                <p class="text-base md:text-lg text-[#525252] leading-relaxed mt-2 line-clamp-2">
+                  {issue.data.description}
+                </p>
+              )}
+            </div>
+          </div>
+        </a>
+      );
+    })}
+  </section>
+
+  {/* ── PAGINATION ── */}
+  {page.lastPage > 1 && (
+    <nav class="newsletter-pagination mt-12 flex items-center justify-between">
+      <a
+        href={page.url.prev || '#'}
+        class:list={[
+          'newsletter-page-arrow',
+          !page.url.prev && 'newsletter-page-arrow--disabled',
+        ]}
+        aria-disabled={!page.url.prev}
+      >
+        <svg class="w-4 h-4" fill="currentColor" viewBox="0 0 448 512"><path d="M9.4 233.4c-12.5 12.5-12.5 32.8 0 45.3l160 160c12.5 12.5 32.8 12.5 45.3 0s12.5-32.8 0-45.3L109.2 288H416c17.7 0 32-14.3 32-32s-14.3-32-32-32H109.2l105.4-105.4c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0l-160 160z" /></svg>
+        PREV
+      </a>
+
+      <div class="flex items-center gap-1">
+        {pageNumbers.map((num) =>
+          num === '...' ? (
+            <span class="w-10 h-10 flex items-center justify-center text-sm font-bold text-black">...</span>
+          ) : (
+            <a
+              href={pageUrl(num)}
+              class="newsletter-page-num"
+              aria-current={num === page.currentPage ? 'page' : undefined}
+            >
+              {num}
+            </a>
+          )
+        )}
+      </div>
+
+      <a
+        href={page.url.next || '#'}
+        class:list={[
+          'newsletter-page-arrow',
+          !page.url.next && 'newsletter-page-arrow--disabled',
+        ]}
+        aria-disabled={!page.url.next}
+      >
+        NEXT
+        <svg class="w-4 h-4" fill="currentColor" viewBox="0 0 448 512"><path d="M438.6 278.6c12.5-12.5 12.5-32.8 0-45.3l-160-160c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3L338.8 224H32c-17.7 0-32 14.3-32 32s14.3 32 32 32h306.7L233.4 393.4c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0l160-160z" /></svg>
+      </a>
+    </nav>
+  )}
+</NewsletterLayout>

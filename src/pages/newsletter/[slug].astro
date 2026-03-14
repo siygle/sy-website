@@ -1,0 +1,90 @@
+---
+import { getCollection, render } from 'astro:content';
+import NewsletterLayout from '~/layouts/NewsletterLayout.astro';
+
+export async function getStaticPaths() {
+  const newsletters = await getCollection('newsletter');
+  return newsletters.map((issue) => ({
+    params: { slug: issue.id },
+    props: { issue },
+  }));
+}
+
+const { issue } = Astro.props;
+const { Content } = await render(issue);
+
+// Get all newsletters sorted by issue number for prev/next
+const allNewsletters = await getCollection('newsletter');
+const sorted = allNewsletters.sort((a, b) => {
+  const numA = parseInt(a.id.match(/(\d+)/)?.[1] || '0');
+  const numB = parseInt(b.id.match(/(\d+)/)?.[1] || '0');
+  return numA - numB;
+});
+
+const currentIndex = sorted.findIndex((n) => n.id === issue.id);
+const prev = currentIndex > 0 ? sorted[currentIndex - 1] : null;
+const next = currentIndex < sorted.length - 1 ? sorted[currentIndex + 1] : null;
+
+function getIssueNumber(id: string): string {
+  return id.match(/(\d+)/)?.[1] || '';
+}
+
+function formatDate(dateString: string): string {
+  const date = new Date(dateString);
+  return date.toLocaleDateString('en-US', {
+    year: 'numeric',
+    month: 'short',
+    day: 'numeric',
+  }).toUpperCase();
+}
+
+const issueNum = getIssueNumber(issue.id);
+---
+
+<NewsletterLayout
+  title={`${issue.data.title} - 網路黑手的呢喃`}
+  description={issue.data.description || ''}
+>
+  <article>
+    <header class="mb-10">
+      <div class="flex items-center justify-between mb-5">
+        <span class="text-lg font-bold tracking-[0.1em] uppercase text-[#525252]">
+          Issue #{issueNum}
+        </span>
+        <time class="text-lg font-bold tracking-[0.1em] uppercase text-[#525252]">
+          {formatDate(issue.data.date)}
+        </time>
+      </div>
+      <h1 class="newsletter-featured-title text-4xl md:text-5xl mb-4">
+        {issue.data.title}
+      </h1>
+      {issue.data.description && (
+        <p class="text-lg text-[#525252] leading-relaxed max-w-[700px]">
+          {issue.data.description}
+        </p>
+      )}
+      <div class="newsletter-divider mt-8"></div>
+    </header>
+
+    <div class="newsletter-prose">
+      <Content />
+    </div>
+  </article>
+
+  <!-- Prev/Next navigation -->
+  <div class="newsletter-divider mt-12 mb-6"></div>
+  <nav class="newsletter-nav flex justify-between items-center">
+    {prev ? (
+      <a href={`/newsletter/${prev.id}`} class="flex items-center gap-2">
+        <svg class="w-3.5 h-3.5" fill="currentColor" viewBox="0 0 448 512"><path d="M9.4 233.4c-12.5 12.5-12.5 32.8 0 45.3l160 160c12.5 12.5 32.8 12.5 45.3 0s12.5-32.8 0-45.3L109.2 288H416c17.7 0 32-14.3 32-32s-14.3-32-32-32H109.2l105.4-105.4c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0l-160 160z" /></svg>
+        <span class="text-xs">#{getIssueNumber(prev.id)}</span>
+      </a>
+    ) : <div />}
+    {next ? (
+      <a href={`/newsletter/${next.id}`} class="flex items-center gap-2 ml-auto">
+        <span class="text-xs">#{getIssueNumber(next.id)}</span>
+        <svg class="w-3.5 h-3.5" fill="currentColor" viewBox="0 0 448 512"><path d="M438.6 278.6c12.5-12.5 12.5-32.8 0-45.3l-160-160c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3L338.8 224H32c-17.7 0-32 14.3-32 32s14.3 32 32 32h306.7L233.4 393.4c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0l160-160z" /></svg>
+      </a>
+    ) : <div />}
+  </nav>
+</NewsletterLayout>

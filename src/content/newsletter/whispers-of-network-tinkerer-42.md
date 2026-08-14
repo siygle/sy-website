@@ -24,8 +24,6 @@ Deno 例行更新，這次是 [1.40](https://deno.com/blog/v1.40)（會是 Deno2
 
 一開始因為 ry 跟 Rust 的關係，對 Deno 這個專案一直有好感，也滿希望它能做出自己的特色來，不過在強力競爭者 Bun 崛起的現在，Deno 感覺定位好像有點尷尬，希望它能狠狠給我打臉。🤞
 
-![src: [https://twitter.com/deno_land/status/1750514791607644437](https://twitter.com/deno_land/status/1750514791607644437)](../assets/網路黑手的呢喃 #42 - Untitled.png)
-
 src: [https://twitter.com/deno_land/status/1750514791607644437](https://twitter.com/deno_land/status/1750514791607644437)
 
 最近它們也[回顧了過去一年中的進展](https://deno.com/blog/deno-in-2023)，其實 Deno 也是默默一直在進化，不過實在是隔壁棚的 Bun 實在開發力度太驚人，然後一開始沒有很積極作 Node.js/npm 相容的這塊，後來才提起直追（不過老實說我也還不是很確定它們對模組的定位，因為[看起來 2.0 又要推一個自家的](https://jsr.io) 🤔）。
@@ -33,8 +31,6 @@ src: [https://twitter.com/deno_land/status/1750514791607644437](https://twitter.
 ### Bun or Windows on the road
 
 Bun 也準備要跨到 Windows 了，倒數計時中，然後 [1.1.0](https://twitter.com/jarredsumner/status/1753465407141474482) 可能也在不遠處了，最近在眾 JS runtime 之中，Bun 的戰鬥力應該是數一數二的了，期待外來這一年中還會帶給大家什麼驚喜。
-
-![src: [https://twitter.com/bunjavascript/status/1753267105909416079](https://twitter.com/bunjavascript/status/1753267105909416079)](../assets/網路黑手的呢喃 #42 - Untitled 1.png)
 
 src: [https://twitter.com/bunjavascript/status/1753267105909416079](https://twitter.com/bunjavascript/status/1753267105909416079)
 
@@ -51,8 +47,6 @@ src: [https://twitter.com/bunjavascript/status/1753267105909416079](https://twit
 
 如果想知道未來這一年又有那些項目將被視為重點項目，[可以參考這邊](https://wpt.fyi/interop-2024?stable)（Mozilla 也有針對 2024 [寫了一篇](https://hacks.mozilla.org/2024/02/announcing-interop-2024/)喔，當然 [Google 也有一篇](https://web.dev/blog/interop-2024)～）。
 
-![src: [https://twitter.com/webkit/status/1753102868012503529](https://twitter.com/webkit/status/1753102868012503529)](../assets/網路黑手的呢喃 #42 - Untitled 2.png)
-
 src: [https://twitter.com/webkit/status/1753102868012503529](https://twitter.com/webkit/status/1753102868012503529)
 
 ### 最近前端到底是怎麼了😓
@@ -65,8 +59,6 @@ src: [https://twitter.com/webkit/status/1753102868012503529](https://twitter.com
 
 *個人意見，大家的看法、想法可能都不同，就當是我老了、跑不動了* 😅*，不想在 tach-stack 上面琢磨，只想把僅存的力氣放在解決問題跟產品設計上。*
 
-![src: [https://twitter.com/antirez/status/1750478644936425914](https://twitter.com/antirez/status/1750478644936425914)](../assets/網路黑手的呢喃 #42 - Untitled 3.png)
-
 src: [https://twitter.com/antirez/status/1750478644936425914](https://twitter.com/antirez/status/1750478644936425914)
 
 ### 2024 的前端又會變成怎樣呢？
@@ -75,21 +67,15 @@ src: [https://twitter.com/antirez/status/1750478644936425914](https://twitter.co
 
 承上題，雖然 FE 的世界越來越讓人灰心，不過還是偶有一些讓人驚豔的東西出現，[這篇對 FE 2023 的總結，以及對 2024 的預測相當有料](https://buttondown.email/whatever_jamie/archive/frontend-predictions-for-2024/)，裡面看到不少有趣的專案跟資料，大推！（下面是有網路上熱心幫忙翻譯的版本）
 
-![src: [https://twitter.com/LinguaBrowse/status/1754056998285660561](https://twitter.com/LinguaBrowse/status/1754056998285660561)](../assets/網路黑手的呢喃 #42 - Untitled 4.png)
-
 src: [https://twitter.com/LinguaBrowse/status/1754056998285660561](https://twitter.com/LinguaBrowse/status/1754056998285660561)
 
 # Docker 推自家新服務 - Docker Build Cloud
 
 看到 Docker 這一步不能說很意外，感覺是可預期的發展，畢竟它家的核心就是容器服務嘛。這次推出的 Docker Build Cloud 簡單說就是可以遠端幫你建構 docker container。
 
-![src: [https://twitter.com/ajeetsraina/status/1750004725649662187](https://twitter.com/ajeetsraina/status/1750004725649662187)](../assets/網路黑手的呢喃 #42 - Untitled 5.png)
-
 src: [https://twitter.com/ajeetsraina/status/1750004725649662187](https://twitter.com/ajeetsraina/status/1750004725649662187)
 
 這對一般用戶或者架構相對較小的企業可能比較沒什麼感覺，不過如果服務比較大或複雜，原本編譯的時間需要很長的情況下，根據目前測試的結果可以有相當有感的改善幅度（可以參考下開發者已經測試的比較 ⬇️）
-
-![src: [https://twitter.com/fatihbaltaci_/status/1749876727440965817](https://twitter.com/fatihbaltaci_/status/1749876727440965817)](../assets/網路黑手的呢喃 #42 - Untitled 6.png)
 
 src: [https://twitter.com/fatihbaltaci_/status/1749876727440965817](https://twitter.com/fatihbaltaci_/status/1749876727440965817)
 
@@ -105,8 +91,6 @@ src: [https://twitter.com/fatihbaltaci_/status/1749876727440965817](https://twit
 
 真的超讚！👍
 
-![src: [https://twitter.com/xiaohuggg/status/1749711488884130247](https://twitter.com/xiaohuggg/status/1749711488884130247)](../assets/網路黑手的呢喃 #42 - Untitled 7.png)
-
 src: [https://twitter.com/xiaohuggg/status/1749711488884130247](https://twitter.com/xiaohuggg/status/1749711488884130247)
 
 ### 看起來 Meta 打算用開源硬扛到底😄
@@ -114,8 +98,6 @@ src: [https://twitter.com/xiaohuggg/status/1749711488884130247](https://twitter.
 雖然 OpenAI 還是以 ChatGPT 領跑目前的 AI 應用，不過很多後起之秀也是很讓人期待，其中 Meta 就是其中一名佼佼者，而他們開源的  [Llama](https://llama.meta.com/) 也是相當強悍的模型之一，最近除了[老闆親自出來確認](https://twitter.com/AIatMeta/status/1753195225311563848) AI 的後續龐大投資之外，它們的開源模型 [Llama 2](https://twitter.com/AIatMeta/status/1752013879532782075) 也有很大的進展。
 
 不知道有沒有機會跟 OpenAI 來個黃金交叉，不過起碼目前 [Meta 的股價](https://twitter.com/Carnage4Life/status/1753431910490263727)應該讓股東很滿意😄
-
-![src: [https://twitter.com/JefferyTatsuya/status/1752222571037442199](https://twitter.com/JefferyTatsuya/status/1752222571037442199)](../assets/網路黑手的呢喃 #42 - Untitled 8.png)
 
 src: [https://twitter.com/JefferyTatsuya/status/1752222571037442199](https://twitter.com/JefferyTatsuya/status/1752222571037442199)
 
@@ -128,8 +110,6 @@ src: [https://twitter.com/JefferyTatsuya/status/1752222571037442199](https://twi
 當然提到 Vision Pro 一定是 Apple 自家技術桟（不熟😅），不過如果你是 React Native 的愛用者，它們也[有針對 Vision Pro 的支持](https://twitter.com/o_kwasniewski/status/1753392157904326891)，[其他模組](https://twitter.com/tomekzaw_/status/1753914430939611338)應該也會陸續跟上（甚至還有[看到大大已經送審 app](https://twitter.com/o_kwasniewski/status/1754081806104621073)，不知道出來的效果是怎樣 👀）
 
 另一個跟 Vision Pro 沒什麼關係，不過因為是 Apple 出品就一起擺在這邊，因為很難得能看到 Apple 出現開源作品😂，就是下面這個 → `pkl` ，看名稱應該也知道它的用途了，就是拿來寫參數設定的新語言，如果有碰 terraform 的開發者應該會覺得跟 [HCL](https://github.com/hashicorp/hcl) 滿類似的，看起來應該是 Apple 用在自家服務上衍生出來的產品？不過不知道會不會陸續推到其他東西上，可以觀察看看。
-
-![src: [https://twitter.com/ingramchen/status/1753973668185768063](https://twitter.com/ingramchen/status/1753973668185768063)](../assets/網路黑手的呢喃 #42 - Untitled 9.png)
 
 src: [https://twitter.com/ingramchen/status/1753973668185768063](https://twitter.com/ingramchen/status/1753973668185768063)
 
@@ -169,8 +149,6 @@ src: [https://twitter.com/ingramchen/status/1753973668185768063](https://twitter
 
 自從知道 NET 這間企業有針對弱勢家庭的孩童挑選衣服的義舉之後（而且用很棒的方式），就對這間公司很有好感，臺灣真的值得多一些這種好企業。最近基隆的爭議延燒，雖然幫不上太多，但希望透過這邊能多擴散這件事，讓更多人能來關注這件~~（[很扯的](https://www.youtube.com/watch?v=5U4kMdB0isE)）~~事。😡
 
-![src: [https://twitter.com/HSG14215289ooop/status/1753568488038527469](https://twitter.com/HSG14215289ooop/status/1753568488038527469)](../assets/網路黑手的呢喃 #42 - Untitled 10.png)
-
 src: [https://twitter.com/HSG14215289ooop/status/1753568488038527469](https://twitter.com/HSG14215289ooop/status/1753568488038527469)
 
 ### 我又想要這個酷酷的東西了
@@ -181,12 +159,7 @@ src: [https://twitter.com/HSG14215289ooop/status/1753568488038527469](https://tw
 
 ### 話不要亂說，車也不要亂坐😆
 
-![src: [https://twitter.com/worinibaba/status/1752909136407511435](https://twitter.com/worinibaba/status/1752909136407511435)](../assets/網路黑手的呢喃 #42 - Untitled 11.png)
-
 src: [https://twitter.com/worinibaba/status/1752909136407511435](https://twitter.com/worinibaba/status/1752909136407511435)
 
 ### 我得了一種看到[酷酷鍵盤](https://worklouder.cc/nomad-e/)就想敗家的病😅
 
-![Untitled](../assets/網路黑手的呢喃 #42 - Untitled 12.png)
-
-![Untitled](../assets/網路黑手的呢喃 #42 - Untitled 13.png)

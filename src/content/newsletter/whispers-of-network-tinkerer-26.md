@@ -50,8 +50,6 @@ StackBlitz 的服務，就是以提供線上開發環境為主，目前看起來
 
 雖然類似不過還是跟 WebContainers 不完全相同，它們也很貼心替大家解釋了這個疑問 😄。
 
-![Untitled](../assets/網路黑手的呢喃 #26 - Untitled.png)
-
 ## iOS 開發不是夢
 
 順著上一個題目帶出這個小新聞。

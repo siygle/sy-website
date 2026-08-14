@@ -22,6 +22,7 @@ Like father like son，想當然爾他的小孩也走上了開源貢獻者的路
 [https://github.com/nodejs/release-cloudflare-worker](https://github.com/nodejs/release-cloudflare-worker)
 
 <aside>
+
 💡
 
 看到能夠出現跨代傳承的開源開發者，真的很感動（雖然自己應該是非常困難），不過還是很期待有更多人能投入到開源專案的工作中。
@@ -55,6 +56,7 @@ Like father like son，想當然爾他的小孩也走上了開源貢獻者的路
 另外最讓人期待的莫過於終於支援的 [Container](https://blog.cloudflare.com/cloudflare-containers-coming-2025/) 啦！（不過老實說跟我原本想像類似 ECS 的用法不太一樣，看起來它們好像都是深度綁定 Workers 來使用的，前面的各種新功能都可以看到類似的用法 🤔）。
 
 <aside>
+
 💡
 
 雖然自己沒有大量使用 Cloudflare 的服務，頂多跑跑一些小工具跟 side project，不過一直對這家有好感，還有它神秘（？）的經營策略，經常能讓開發者用相對低廉的價格來使用。不過還是期待它能快速補上 Cloud vendor 的方方面面之外，系統本身的穩定好像也經常被拿出來消遣 [[1](https://x.com/rxliuli/status/1907748835348328733)][[2](https://x.com/tualatrix/status/1903377710048842094)]。
@@ -78,6 +80,7 @@ Like father like son，想當然爾他的小孩也走上了開源貢獻者的路
 ![](https://x.com/solomonstre/status/1909971067113742732)
 
 <aside>
+
 💡
 
 BTW，雖然 G 社在基礎協定這塊看起來還是比起 AI 公司的 Anthropic 更老練一些，當然後發者優勢也讓他可以把協定考慮地更周詳之後再推出來。不過對 G 社本身就不太有信心啊，而且其實直接對 MCP 去提改善的提案不就好了 🤔
@@ -117,6 +120,7 @@ BTW，雖然 G 社在基礎協定這塊看起來還是比起 AI 公司的 Anthro
 [](https://www.reuters.com/sustainability/boards-policy-regulation/google-contemplated-exclusive-gemini-ai-deals-with-android-makers-2025-04-22/?taid=68081297d33d7100019ef53b&utm_campaign=trueAnthem:+Trending+Content&utm_medium=trueAnthem&utm_source=twitter)
 
 <aside>
+
 💡
 
 看起來 OpenAI 除了 AI 模型之外也是積極再嘗試其他的應用層面的可能性，雖然目前都只是傳聞的階段，不過裡面有幾項能成真的話，這個世界應該會變得更有趣一些。 🤣
@@ -141,9 +145,8 @@ BTW，雖然 G 社在基礎協定這塊看起來還是比起 AI 公司的 Anthro
 [https://deepwiki.com/denoland/deno](https://deepwiki.com/denoland/deno)
 ```
 
-![image.png](../assets/網路黑手的呢喃 #65 - image.png)
-
 <aside>
+
 💡
 
 如果之後這個服務能持續改善的話，之後讀原始碼真的越來越方便了。 😍

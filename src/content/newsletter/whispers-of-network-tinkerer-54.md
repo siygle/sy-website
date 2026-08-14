@@ -56,6 +56,7 @@ Deno.serve(async (req) => {
 一個名為 [Rspack](https://rspack.dev/blog/announcing-1-0) 的 JS bundler 宣布它們終於達到了 1.0 的穩定版本了！
 
 <aside>
+
 💡 Rspack is a next-generation JavaScript bundler written in Rust, compatible with the webpack API and ecosystem, and is 10 times faster than webpack.
 
 </aside>
@@ -108,8 +109,6 @@ Deno.serve(async (req) => {
 
 好期待後續還會出現多少有趣的東西 😏
 
-![image.png](../assets/網路黑手的呢喃 #54 - image.png)
-
 ### 雖然艱辛還是繼續向前的聯邦宇宙
 
 在 Twitter 變成 X ~~（並且崩壞）~~的過程中，不知道大多數的用戶是選擇掙扎還是妥協。雖然數據跟新聞都提到 X 的糟糕導致很多廣告主不願意再繼續投資在這個平台上（對喔，然後馬老闆還覺得是大家的錯，提起了告訴要告那些不買廣告的人，超棒滴）。
@@ -127,8 +126,6 @@ Deno.serve(async (req) => {
 ![](https://bsky.app/profile/did:plc:q6gjnaw2blty4crticxkmujt/post/3l3g7lrs3te2i)
 
 然後最新消息是，連巴西總統也登入啦
-
-![src: [https://bsky.app/profile/did:plc:a5o5pa6imrd52s627zq63zgz](https://bsky.app/profile/did:plc:a5o5pa6imrd52s627zq63zgz)](../assets/網路黑手的呢喃 #54 - image 1.png)
 
 src: [https://bsky.app/profile/did:plc:a5o5pa6imrd52s627zq63zgz](https://bsky.app/profile/did:plc:a5o5pa6imrd52s627zq63zgz)
 
@@ -161,6 +158,7 @@ TL;DR 版本可以參考下方推友的速記 ⬇️（還有[幾篇](https://x.
 覺得上面這句話，像是個無聲的抗議…😞
 
 <aside>
+
 💡
 
 On the flip side, others argue that just because something's legal, doesn't make it ethical. This view emphasizes the spirit of open source, not just the letter of the license.

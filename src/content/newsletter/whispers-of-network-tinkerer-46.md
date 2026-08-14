@@ -24,8 +24,6 @@ tags:
 
 雖然年紀大了，沒辦法跟之前一樣熱血，對於新技術的看法跟想法也都跟之前不太一樣了，不過網路還是一樣是個有趣的東西呢，不知道再過 10 年之後又會是怎樣的風景呢？ 😁
 
-![src: [https://twitter.com/kettanaito/status/1780875036405985685](https://twitter.com/kettanaito/status/1780875036405985685)](../assets/網路黑手的呢喃 #46 - Untitled.png)
-
 src: [https://twitter.com/kettanaito/status/1780875036405985685](https://twitter.com/kettanaito/status/1780875036405985685)
 
 *後來[還有人問了另一個更老的東西](https://twitter.com/vvoyer/status/1780897865465835971)，哼，我[還是知道](https://github.com/browserify/path-browserify)咧（除了比別人老沒別的東西贏過其他人*😢）
@@ -35,8 +33,6 @@ src: [https://twitter.com/kettanaito/status/1780875036405985685](https://twitter
 無意間看到這個有趣的主題，原作者也把當初的分享[**投影片**](https://slides.com/ai/privacy)分享出來，有興趣的開發者可以瀏覽看看，主要提到最近越來越被重視的網路使用的隱私權，內容相關全面，從一開頭的 common knowledge 開始，然後後面說到怎樣的架構設計，更能夠提供較好隱私的服務，甚至還有以不同國家可能遭遇不同的問題來思考。
 
 平常我們都可能在開發或設計產品的時候都不太會注意這部分，蠻有意思的。
-
-![ src: [https://twitter.com/sitnikcode/status/1779172039175082299](https://twitter.com/sitnikcode/status/1779172039175082299)](../assets/網路黑手的呢喃 #46 - Untitled 1.png)
 
  src: [https://twitter.com/sitnikcode/status/1779172039175082299](https://twitter.com/sitnikcode/status/1779172039175082299)
 
@@ -111,8 +107,6 @@ src: [https://twitter.com/kettanaito/status/1780875036405985685](https://twitter
 前陣子 Deno 丟出新的 JS package registry 服務 - [JSR](https://jsr.io/)，目前看起來有不少正面的迴響，雖然不知道有沒有機會挑戰 npm 的地位，不過起碼是個很有趣的嘗試。
 
 最近 Deno 團隊也特別[撰寫了一篇文章](https://deno.com/blog/how-we-built-jsr)，深入說明 JSR 的實作細節 ⬇️
-
-![src: [https://deno.com/blog/how-we-built-jsr](https://deno.com/blog/how-we-built-jsr)](../assets/網路黑手的呢喃 #46 - Untitled 2.png)
 
 src: [https://deno.com/blog/how-we-built-jsr](https://deno.com/blog/how-we-built-jsr)
 

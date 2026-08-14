@@ -25,8 +25,6 @@ Web 例行更新：Node.js、Deno 都持續進化，不過 Bun 真的是越來�
 
 觀望，畢竟我也不太會用到這類的功能，不過覺得 JS 生態老是不斷重造輪子有點煩人了，光是個套件管理器就有好幾家產品（所以才會出現 Corepack 這種東西），就不能像 Rust 一樣好好用 Cargo，大家一起來把不好的地方修正就好嗎？（老了，喪失動力只想好好躺平 😅）
 
-![src: [https://twitter.com/styfle/status/1745578786207281454](https://twitter.com/styfle/status/1745578786207281454)](../assets/網路黑手的呢喃 #41 - Untitled.png)
-
 src: [https://twitter.com/styfle/status/1745578786207281454](https://twitter.com/styfle/status/1745578786207281454)
 
 ### Deno 真的要另推一個 package manager？
@@ -43,13 +41,9 @@ src: [https://twitter.com/styfle/status/1745578786207281454](https://twitter.com
 
 印象中之前 Bun 開發文件有提到 [transpiler](https://bun.sh/docs/api/transpiler)，說不定這類功能都依賴它快速實作出來（看 [RP](https://github.com/oven-sh/bun/pull/8178/files) 應該是？），再次體認到底層 API 設計的重要😄。
 
-![src: [https://twitter.com/jarredsumner/status/1746892626618671322](https://twitter.com/jarredsumner/status/1746892626618671322)](../assets/網路黑手的呢喃 #41 - Untitled 1.png)
-
 src: [https://twitter.com/jarredsumner/status/1746892626618671322](https://twitter.com/jarredsumner/status/1746892626618671322)
 
 另外這個是剛出爐沒多久的 1.0.24 版本加上的功能，可以直接用 js 來撰寫 [shell script](https://bun.sh/blog/the-bun-shell) 的功能（對這項功能有興趣可以參考連結的官方文），不能不說對近對 Bun 有點改觀了，他們真的是猛！不僅開發戰力非常強大，感覺他們對目標也很明確，許多新加上的功能都是圍繞著這個目標在建構的，真的覺得 Deno 再不趕快提起直追，等 Bun 越來越穩定之後可能差距會被拉得更開 😅。
-
-![src: [https://twitter.com/bunjavascript/status/1748587391433253044](https://twitter.com/bunjavascript/status/1748587391433253044)](../assets/網路黑手的呢喃 #41 - Untitled 2.png)
 
 src: [https://twitter.com/bunjavascript/status/1748587391433253044](https://twitter.com/bunjavascript/status/1748587391433253044)
 
@@ -75,8 +69,6 @@ src: [https://twitter.com/bunjavascript/status/1748587391433253044](https://twit
 
 之前提過的 [WingLang](https://chat.sylee.dev/2023/07/05/%E7%B6%B2%E8%B7%AF%E9%BB%91%E6%89%8B%E7%9A%84%E5%91%A2%E5%96%83-33#c346f4992ff24831994ca4c28061aa8d) 這個針對雲平台開發而生的有趣專案，其中它們有個蠻有趣的功能，就是可以直接透過 GUI 來設定你的雲架構，看起來好用的東西也會很快被其他人「借鏡」啦。AWS 自家的 CDK 也推出類似的功能，看起來簡化雲端架構，也是各家開發工具有留意到的一塊，說不定很快又會有其他家跟上了。😄
 
-![src: [https://twitter.com/danilop/status/1747661058188214579](https://twitter.com/danilop/status/1747661058188214579)](../assets/網路黑手的呢喃 #41 - Untitled 3.png)
-
 src: [https://twitter.com/danilop/status/1747661058188214579](https://twitter.com/danilop/status/1747661058188214579)
 
 # 2024 is the year for WebAssembly?
@@ -84,8 +76,6 @@ src: [https://twitter.com/danilop/status/1747661058188214579](https://twitter.co
 #先不要（亂立 flag 是很危險的一件事😅）
 
 這篇由 Fermyon 的創辦人撰寫關於 2024 發展的預測，雖然這種 buzzword 每年都可以看到， WebAssembly 也被「喊聲」了好一陣子了，不過隨著越來越多的標準及元件到位，也逐漸看到越來越多的相關應用出現，說不定真的有機會起飛。
-
-![src: [https://twitter.com/technosophos/status/1743015192873599198](https://twitter.com/technosophos/status/1743015192873599198)](../assets/網路黑手的呢喃 #41 - Untitled 4.png)
 
 src: [https://twitter.com/technosophos/status/1743015192873599198](https://twitter.com/technosophos/status/1743015192873599198)
 
@@ -101,8 +91,6 @@ src: [https://twitter.com/technosophos/status/1743015192873599198](https://twitt
 ### Apple 好像也有動作？
 
 對 Apple 的生態圈不是很熟悉，不過也是有大大挖到關鍵字出現了，雖然不太確定它們會怎麼使用，可以期待看看後續。👀
-
-![src: [https://twitter.com/kevinzhow/status/1744628110593761555](https://twitter.com/kevinzhow/status/1744628110593761555)](../assets/網路黑手的呢喃 #41 - Untitled 5.png)
 
 src: [https://twitter.com/kevinzhow/status/1744628110593761555](https://twitter.com/kevinzhow/status/1744628110593761555)
 
@@ -123,17 +111,11 @@ Chrome 對於推動 WebAssembly 也是不遺餘力，最近也加上了對 WebAs
 
 真的不開玩笑，它們直接在報告中列出如何運用所以的贊助金額，其中**超過了 66% 的比例**是撥給了對 Zig 專案的貢獻者（如下圖），這種把開源貢獻者列為首要的作法，真的跟一般的組織很不一樣，更別說那些只拿但都不願一些回饋的資本企業了😠。（然後也[有人不意外提到了 Rust](https://bsky.app/profile/jamesmunns.com/post/3kjd7zxpny52e)）
 
-![Untitled](../assets/網路黑手的呢喃 #41 - Untitled 6.png)
-
 HashiCorp 的前創辦人（Mitchell）也是 Zig 的愛用者，他在看到財務報告之後，也身先士卒還號召喜歡這個語言的開發者，可以多多幫助這個專案，他也依循其他贊助者捐了一筆等值的贊助，真的太威！（真希望開源能夠有更正向的經營，不然常常看到很多開源貢獻者不是一窮二白，不然就是身心備受煎熬😢）
-
-![src: src: [https://twitter.com/mitchellh/status/1748011347923935552](https://twitter.com/mitchellh/status/1748011347923935552)](../assets/網路黑手的呢喃 #41 - Untitled 7.png)
 
 src: src: [https://twitter.com/mitchellh/status/1748011347923935552](https://twitter.com/mitchellh/status/1748011347923935552)
 
 最近崛起的 bun，Zig 也是它們的開發鏈之一，所以它們也是固定的贊助者之一喔，讚！👍
-
-![src: [https://twitter.com/jarredsumner/status/1748101961231331589](https://twitter.com/jarredsumner/status/1748101961231331589)](../assets/網路黑手的呢喃 #41 - Untitled 8.png)
 
 src: [https://twitter.com/jarredsumner/status/1748101961231331589](https://twitter.com/jarredsumner/status/1748101961231331589)
 
@@ -145,15 +127,11 @@ src: [https://twitter.com/jarredsumner/status/1748101961231331589](https://twitt
 
 身為碼農最大的痛苦，應該有一部分開發者可以感同身受吧，寫 commit message 真的是太煩人了，果然我大 ML 就立刻有人想到並實作這類的功能了，現在 vscode 也支援囉 🎉
 
-![src: [https://twitter.com/code/status/1745164198282236295](https://twitter.com/code/status/1745164198282236295)](../assets/網路黑手的呢喃 #41 - Untitled 9.png)
-
 src: [https://twitter.com/code/status/1745164198282236295](https://twitter.com/code/status/1745164198282236295)
 
 ### 果然也有人動腦筋到 SQL 上啦
 
 果然所有不是非自然語言的東西，都會準備用 AI 來改善了😄。
-
-![src: [https://twitter.com/xiaohuggg/status/1747226873195794817](https://twitter.com/xiaohuggg/status/1747226873195794817)](../assets/網路黑手的呢喃 #41 - Untitled 10.png)
 
 src: [https://twitter.com/xiaohuggg/status/1747226873195794817](https://twitter.com/xiaohuggg/status/1747226873195794817)
 
@@ -179,8 +157,6 @@ src: [https://twitter.com/xiaohuggg/status/1747226873195794817](https://twitter.
 
 一行字解決人生中最大的難題😂
 
-![src: [https://twitter.com/Cldeop/status/1748223511364043169](https://twitter.com/Cldeop/status/1748223511364043169)](../assets/網路黑手的呢喃 #41 - Untitled 11.png)
-
 src: [https://twitter.com/Cldeop/status/1748223511364043169](https://twitter.com/Cldeop/status/1748223511364043169)
 
 ### 也想被這種攻擊
@@ -189,22 +165,16 @@ src: [https://twitter.com/Cldeop/status/1748223511364043169](https://twitter.com
 
 但是最近真的很愛韓韶禧，是位真性情的女漢子😆
 
-![src: [https://twitter.com/tw_americano/status/1748544318523191728](https://twitter.com/tw_americano/status/1748544318523191728)](../assets/網路黑手的呢喃 #41 - Untitled 12.png)
-
 src: [https://twitter.com/tw_americano/status/1748544318523191728](https://twitter.com/tw_americano/status/1748544318523191728)
 
 ### 信仰總是無法即時充值😭
 
 好希望有跟上~~（正確）~~車的一天喔…
 
-![src: [https://twitter.com/kojilin/status/1748512231141396701](https://twitter.com/kojilin/status/1748512231141396701)](../assets/網路黑手的呢喃 #41 - Untitled 13.png)
-
 src: [https://twitter.com/kojilin/status/1748512231141396701](https://twitter.com/kojilin/status/1748512231141396701)
 
 ### 我最近也是這麼覺得
 
 大家真的不要去搶什麼門票，待在家裡聽最棒了（轉頭衝刺），特別是 [4/6、4/7](https://www.instagram.com/p/C2KnMYWySCl/?utm_source=ig_embed&ig_rid=340bcb2a-e7a6-4a4c-9bd4-d8f7f0c96ec7&img_index=2) 這週大家一定要好好地待在家裡喔～
-
-![src: [https://twitter.com/taco_0131/status/1747575909086052383](https://twitter.com/taco_0131/status/1747575909086052383)](../assets/網路黑手的呢喃 #41 - Untitled 14.png)
 
 src: [https://twitter.com/taco_0131/status/1747575909086052383](https://twitter.com/taco_0131/status/1747575909086052383)

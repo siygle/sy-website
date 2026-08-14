@@ -90,8 +90,6 @@ tags:
 
 覺得很難過也很無奈的寫下了這段話
 
-![src: [https://bsky.app/profile/sylee.dev/post/3lykni2364c2f](https://bsky.app/profile/sylee.dev/post/3lykni2364c2f)](../assets/這世界怎麼了 #67 - image.png)
-
 src: [https://bsky.app/profile/sylee.dev/post/3lykni2364c2f](https://bsky.app/profile/sylee.dev/post/3lykni2364c2f)
 
 可能因為這種激化的對立讓我不由得想起目前臺灣的社會氛圍，也逐漸被推到這種現象，大家對不同意的言論，簡單地塑造成對立面然後往死裡打，這種情況繼續下去不同立場彼此之間不僅失去了對談的可能，也失去了理性共存的機會，剩下就是無止盡的攻擊而已。

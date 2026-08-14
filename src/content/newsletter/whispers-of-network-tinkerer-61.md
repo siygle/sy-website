@@ -37,8 +37,6 @@ tags:
 
 所以作者提出了 Epoch Semantic Versioning 這個概念（原本他希望是四位數字的格式，不過考慮到行之有年的 Semantic Versioning，所以改提出了下列這種，合併了 Epoch & Major 的作法）
 
-![image.png](../assets/網路黑手的呢喃 #61 - image.png)
-
 看起來就是透過 EPOCH 這個機制，把 breaking change 再切分出「不相容的變更」&「重大的不相容變更」兩種情境。蠻有意思的討論，不知道會不會有其他開發者也跟上一樣的方法。😃
 
 ## Expo 重磅消息！

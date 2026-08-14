@@ -22,6 +22,7 @@ tags:
 ![](https://x.com/teahourdev/status/1902264734445117893)
 
 <aside>
+
 💡
 
 雖然主持人有些變動，不過 teahour 的味道還是跟之前很像 😄。我自己很喜歡它那種圍繞在軟體人為主卻走向亂聊的氛圍，雖然隨興但其他分享的觀點或內容，常常是讓我很驚喜的。（真的很難實際去描述，可以參考本集其中的一段，講到各自選出三位影響自己的 programmer，真的就帶出很多有趣的東西。**想聽聽看可以跳轉 1:14:25 的時間點**）
@@ -45,6 +46,7 @@ tags:
 [A Shell for the Container Age: Introducing Dagger Shell - Dagger](https://dagger.io/blog/dagger-shell)
 
 <aside>
+
 💡
 
 ```
@@ -74,6 +76,7 @@ Dagger Shell is the fastest way to interact with the Dagger API. Dagger Shell br
 [openai-agents-python/examples/mcp at main · openai/openai-agents-python](https://github.com/openai/openai-agents-python/tree/main/examples/mcp)
 
 <aside>
+
 💡
 
 最近每天滑推都是看到滿滿的 MCP，看來這個熱潮短時間應該還不會散去了 😅
@@ -145,6 +148,7 @@ AT Protocol 的協定作者之一，這場主要在講述 AT Protocol 的精神�
 [Offline Sync Public Beta](https://turso.tech/blog/turso-offline-sync-public-beta)
 
 <aside>
+
 💡
 
 雖然沒實際開發過 Local-First 的應用，不過還是持續會看看有沒有什麼有趣的應用出現。除了 Local-First 之外，Turso 也是我一直注意的資料庫服務商，最近他們推了一個 [Developer 的付費方案](https://x.com/glcst/status/1902367141040406557)，4.99 但是非常划算，如果有開發 side project 的開發者不妨可以試試看。
@@ -170,8 +174,6 @@ AT Protocol 的協定作者之一，這場主要在講述 AT Protocol 的精神�
 ![](https://x.com/hellokaton/status/1906580259727958089)
 
 底下是跑了 denoland/fresh 的範例，大概可以看出跑出來的成效。是個可以簡單又快速的了解 repo 架構的好工具，[翻了下程式碼](https://github.com/ahmedkhaleel2004/gitdiagram/tree/main)看起來應該也是抓內容然後丟到 claude 去跑出分析（真的什麼都先用 AI 處理了阿～）
-
-![image.png](../assets/網路黑手的呢喃 #64 - image.png)
 
 ### Vibe 起來！
 

@@ -21,13 +21,9 @@ Node.js 吉祥物以及新版本出爐！Deno 推出新 registry - JSR、藍天�
 
 雖然不是跟開發直接相關的，不過走了這麼久 Node.js 終於有自己代表的圖樣了，超棒啦（看看隔壁棚幾乎每個都有 😓），不過討論的過程也是很有趣[可以看這邊](https://github.com/nodejs/admin/issues/828)。
 
-![src: [https://twitter.com/nodejs/status/1759953849849167878](https://twitter.com/nodejs/status/1759953849849167878)](../assets/網路黑手的呢喃 #44 - Untitled.png)
-
 src: [https://twitter.com/nodejs/status/1759953849849167878](https://twitter.com/nodejs/status/1759953849849167878)
 
 不過老實說，如果是 0.x 就入隊的開發者，應該看到這個並不會陌生，因為這個形象在之前就出現過了（我記得是[這個專案](https://www.npmjs.com/package/dnode)，然後就看到一個熟悉的 ID：substack，這可不是近期大家熟知的 newsletter 服務喔，是 Node.js 早期很知名的一位開發者 - [**James Halliday**](https://www.youtube.com/watch?v=faxfLmChjVQ)）。
-
-![src: [https://twitter.com/dshaw/status/1760197910531281352](https://twitter.com/dshaw/status/1760197910531281352)](../assets/網路黑手的呢喃 #44 - Untitled 1.png)
 
 src: [https://twitter.com/dshaw/status/1760197910531281352](https://twitter.com/dshaw/status/1760197910531281352)
 
@@ -37,25 +33,17 @@ src: [https://twitter.com/dshaw/status/1760197910531281352](https://twitter.com/
 
 好久沒更新 Node.js 了，不過倒是不需擔心它也是一直走自己的路線，截稿之前剛好上了一版 [**21.7.0**](https://github.com/nodejs/node/releases/tag/v21.7.0)，裡面也是看到一些熟悉的東西，像是之前提過的 Single Executable Apps（說到 SEA，發現[有些專案](https://github.com/microsoft/playwright/pull/29557)也開始測試了，而且還有更好的執行速度，讚讚！）、最近剛加上的 `.env` 相關功能持續改進，然後還有讓我有點突兀的新功能 - [styleText](https://github.com/nodejs/node/pull/51850)，看來應該下一個穩定版本的分支也快要出現了吧。Keep moving forward！
 
-![src: [https://twitter.com/satanacchio/status/1765459330583699746](https://twitter.com/satanacchio/status/1765459330583699746)](../assets/網路黑手的呢喃 #44 - Untitled 2.png)
-
 src: [https://twitter.com/satanacchio/status/1765459330583699746](https://twitter.com/satanacchio/status/1765459330583699746)
 
 ### [JSR](https://jsr.io/) 正式公開測試啦！
 
 [上次提到的 JSR](https://chat.sylee.dev/2024/02/16/%E7%B6%B2%E8%B7%AF%E9%BB%91%E6%89%8B%E7%9A%84%E5%91%A2%E5%96%83-43#ce0750f6b879493a9627afcf20baea4d)，沒想到這麼快就開放出來了，而且 Deno 官方也是做足準備了呢，除了公開註冊之外，專案本身也跟著開源放到 Github 上面了，所以對它們怎麼實作出這個號稱下個世代的 JavaScript Registry 好奇的話，可以直接看[程式碼](https://github.com/jsr-io/jsr)啦！😄
 
-![src: [https://deno.com/blog/jsr_open_beta](https://deno.com/blog/jsr_open_beta)](../assets/網路黑手的呢喃 #44 - Untitled 3.png)
-
 src: [https://deno.com/blog/jsr_open_beta](https://deno.com/blog/jsr_open_beta)
 
 除了上次提到一些關於 JSR 比較特別的功能之外，最近 Deno 成員也經常在推上分享關於 JSR 的特性，節錄一些看到有點驚豔的部分：
 
-![src: [https://twitter.com/undefined_void/status/1763595861966102739](https://twitter.com/undefined_void/status/1763595861966102739)](../assets/網路黑手的呢喃 #44 - Untitled 4.png)
-
 src: [https://twitter.com/undefined_void/status/1763595861966102739](https://twitter.com/undefined_void/status/1763595861966102739)
-
-![src: [https://twitter.com/lcasdev/status/1762858506003050932](https://twitter.com/lcasdev/status/1762858506003050932)](../assets/網路黑手的呢喃 #44 - Untitled 5.png)
 
 src: [https://twitter.com/lcasdev/status/1762858506003050932](https://twitter.com/lcasdev/status/1762858506003050932)
 
@@ -66,8 +54,6 @@ src: [https://twitter.com/lcasdev/status/1762858506003050932](https://twitter.co
 # 正式開啟藍天宇宙！😎
 
 最近終於開放的 Bluesky，看起來腳步並沒有要停下來的意思，在日前它們又發佈了一項重磅消息，就是現在起所有人都可以運行自己的 instance 加入藍天宇宙啦！目前看來是早期測試的版本，專案叫 PDS（Personal Data Server）有興趣的可以直接到 [Github repo](https://github.com/bluesky-social/pds) 上去看看，官方很貼心的提供了很友善的版本可以無痛佈署 & 跑起。
-
-![src: [https://bsky.app/profile/bsky.app/post/3klzn456sls2w](https://bsky.app/profile/bsky.app/post/3klzn456sls2w)](../assets/網路黑手的呢喃 #44 - Untitled 6.png)
 
 src: [https://bsky.app/profile/bsky.app/post/3klzn456sls2w](https://bsky.app/profile/bsky.app/post/3klzn456sls2w)
 
@@ -87,13 +73,9 @@ src: [https://bsky.app/profile/bsky.app/post/3klzn456sls2w](https://bsky.app/pro
 
 其實這個 pingora 的專案，在[幾年前就提過](https://blog.cloudflare.com/how-we-built-pingora-the-proxy-that-connects-cloudflare-to-the-internet-zh-tw)了，不過這次 Cloudflare 算是正式開源它，這個身為 nginx 的競品，在承受過 Cloudflare 量級的壓測之下，應該的確值得大家花點眼球來研究一下🕶️，不過嫌整理太麻煩的話，已經有大大幫大家整理好完成的開發脈絡囉，可以跳轉此文 → [**【Rust 研学】Cloudflare 开源最强网络框架 Pingora](https://mp.weixin.qq.com/s/q6S5qP10VOmqb147PFaZJQ)。**
 
-![src: [https://twitter.com/vaniusrb/status/1762825201526374540](https://twitter.com/vaniusrb/status/1762825201526374540)](../assets/網路黑手的呢喃 #44 - Untitled 7.png)
-
 src: [https://twitter.com/vaniusrb/status/1762825201526374540](https://twitter.com/vaniusrb/status/1762825201526374540)
 
 除了上面的 pingora 之外，一直還常見的 JS toolchain 又出現一個用 Rust 撰寫的新品了，就是下面提到的 [**Rolldown**](https://github.com/rolldown-rs/rolldown)。大家看到是 Vue 的龍大應該也差不多猜出應該跟 Vue 生態圈有關，就是知名建構工具 Vite，其中處理打包的這部分，之後就會由 Rolldown 來接手處理。想必工具越好越快，各位開發者就越開心啦！（除了 DHH 之外，[我絕對沒有在偷臭](https://world.hey.com/dhh/you-can-t-get-faster-than-no-build-7a44131c) 😂）
-
-![src: [https://twitter.com/youyuxi/status/1766014404666245582](https://twitter.com/youyuxi/status/1766014404666245582)](../assets/網路黑手的呢喃 #44 - Untitled 8.png)
 
 src: [https://twitter.com/youyuxi/status/1766014404666245582](https://twitter.com/youyuxi/status/1766014404666245582)
 
@@ -133,8 +115,6 @@ src: [https://twitter.com/youyuxi/status/1766014404666245582](https://twitter.co
 ### 家用 AI 機
 
 最近無意見看到推友[提到這個](https://www.nvidia.com/zh-tw/autonomous-machines/embedded-systems/jetson-nano/)，才警覺沒想到 NVidia 居然已經把腦筋動到桌上機這塊了，這樣之後開發者就可以自買自架自訓練了嘛（真是錢坑補不完）。
-
-![src: [https://twitter.com/yetone/status/1762055882429624727](https://twitter.com/yetone/status/1762055882429624727)](../assets/網路黑手的呢喃 #44 - Untitled 9.png)
 
 src: [https://twitter.com/yetone/status/1762055882429624727](https://twitter.com/yetone/status/1762055882429624727)
 

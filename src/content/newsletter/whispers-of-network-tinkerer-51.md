@@ -79,8 +79,6 @@ Node.js 一直活得好好的，再加入許多競品之後，Node.js 的社群�
 
 說到效能，最近也有個有趣的東西出現，就是由幾位 vue 的核心成員提出的 [e18e](https://e18e.dev/)（我其實不知道這個簡稱是怎麼對應到 Ecosystem Performance 的說 😅），看起來像是一個為了改善 JS 生態效能的一個開源社群，除了 Github 之外它們也成立了 [Discord](https://discord.com/invite/ThTP5QWCCQ) 的群組供開發者可以在上面討論相關的議題。
 
-![src: [https://x.com/e18e_dev/status/1806684617740587331](https://x.com/e18e_dev/status/1806684617740587331)](../assets/網路黑手的呢喃 #51 - Untitled.png)
-
 src: [https://x.com/e18e_dev/status/1806684617740587331](https://x.com/e18e_dev/status/1806684617740587331)
 
 # 引領風潮的 ML
@@ -99,8 +97,6 @@ src: [https://x.com/e18e_dev/status/1806684617740587331](https://x.com/e18e_dev/
 > 
 
 不過可能大家比較感興趣的是價格的部分，這次非常有競爭力，可以預期有許多 AI 服務會用的很開心，看起來 AI 服務也逐漸邁向 IT 基礎建設的方向走去了。😄
-
-![src: [https://x.com/OpenAIDevs/status/1813990748406317221](https://x.com/OpenAIDevs/status/1813990748406317221)](../assets/網路黑手的呢喃 #51 - Untitled 1.png)
 
 src: [https://x.com/OpenAIDevs/status/1813990748406317221](https://x.com/OpenAIDevs/status/1813990748406317221)
 
@@ -123,8 +119,6 @@ src: [https://x.com/OpenAIDevs/status/1813990748406317221](https://x.com/OpenAID
 看到海總分享的那個手把手自幹鍵盤的教學覺得好熱血阿！能自組硬體的技能真好，至今還沒辦法跨界到那邊去，好生羨慕。結果才沒看完多久，又看到另一篇自組行動打字機的分享，是大家都開始走這個路線了是嗎 😅。
 
 ![](https://x.com/tzangms/status/1817737041003827253)
-
-![src: [https://cassidoo.co/post/micro-journal/](https://cassidoo.co/post/micro-journal/)](../assets/網路黑手的呢喃 #51 - Untitled 2.png)
 
 src: [https://cassidoo.co/post/micro-journal/](https://cassidoo.co/post/micro-journal/)
 

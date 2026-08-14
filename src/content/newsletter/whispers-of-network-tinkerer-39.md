@@ -22,8 +22,6 @@ Deno 最近丟出的幾個有趣的東西、大 JS 走向 native 是不可避免
 
 其實一開始看到 Subhosting 本來以為是針對 self-hosting 有什麼新功能，不過後來看了介紹才知道這更是針對類 SaaS 的用戶而推出的（譬如 [Netlify cloud functions](https://www.netlify.com/platform/core/functions/) 這類的功能『*這功能的確是基於 Deno 平台的喔*😄』），能夠讓這類的平台能夠更簡單、更安全執行 3rd 的程式，想更深入的了解，可以參考[這篇 Deno 的官方文](https://deno.com/blog/subhosting-security-run-untrusted-code)。
 
-![src: [https://deno.com/blog/subhosting](https://deno.com/blog/subhosting)](../assets/網路黑手的呢喃 #39 - Untitled.png)
-
 src: [https://deno.com/blog/subhosting](https://deno.com/blog/subhosting)
 
 除了上述的 Subhosting 之外，另外一項就比較針對一般的開發者了，這也是很常見的一個功能 - cron，已經加入到 [1.38](https://deno.com/blog/cron#using-deno-cron) 版本裡了，用法跟一般大家熟知的 unix cron 也是很類似 🔽
@@ -36,13 +34,9 @@ Deno.cron("My Cronjob", "*/10 * * * *", () => {
 
 一般 cron 的排程行為大家應該都很熟悉，不過 Deno.cron 有個更酷的地方在於，它無縫整合了自家的雲平台 Deno Deploy，所以你可以很方便直接在原有的程式裡面加上你需要跑的排程行為，這可以參考 Deno 提供的範例（[排程更新天氣資料，存到 KV，然後提供一個簡單的 API 可以取得儲存的天氣資料](https://dash.deno.com/playground/deno-cron-weather)）👍。
 
-![src: [https://deno.com/blog/cron](https://deno.com/blog/cron)](../assets/網路黑手的呢喃 #39 - Untitled 1.png)
-
 src: [https://deno.com/blog/cron](https://deno.com/blog/cron)
 
 然後還有個小彩蛋（自以為😆），就是從 Newsletter 無意見看到這個看起來是測試階段的東西，搭配之後會出現的一個新指令 `deno publish` 看起來好像是 Deno 打算弄一個自用的 registry，不過一切都還不明朗的情況下，不是很確定它們這樣規劃的目的是什麼（應該不會是打算做 registry 服務吧），觀望 👀
-
-![ src: [https://bsky.app/profile/sylee.dev/post/3kf5dlkslq62d](https://bsky.app/profile/sylee.dev/post/3kf5dlkslq62d)](../assets/網路黑手的呢喃 #39 - Untitled 2.png)
 
  src: [https://bsky.app/profile/sylee.dev/post/3kf5dlkslq62d](https://bsky.app/profile/sylee.dev/post/3kf5dlkslq62d)
 
@@ -57,8 +51,6 @@ src: [https://deno.com/blog/cron](https://deno.com/blog/cron)
 ### pnpm 以 rust 重寫？
 
 無意間看到這個訊息，目前已經以「快」為口號的另一個 Node.js package manager - [pnpm](https://pnpm.io/)，看來也還是不滿足現況，看到他們打算以 rust 改寫的[討論串](https://github.com/orgs/pnpm/discussions/7296)，看起來可以用 rust 改寫的 JS tooling，終究會被改寫成 rust 🤣。
-
-![src: [https://twitter.com/pnpmjs/status/1723024342580146558](https://twitter.com/pnpmjs/status/1723024342580146558)](../assets/網路黑手的呢喃 #39 - Untitled 3.png)
 
 src: [https://twitter.com/pnpmjs/status/1723024342580146558](https://twitter.com/pnpmjs/status/1723024342580146558)
 
@@ -91,8 +83,6 @@ src: [https://twitter.com/pnpmjs/status/1723024342580146558](https://twitter.com
 > 
 
 詳情可以看[官方的公告](https://www.modular.com/blog/key-announcements-from-modcon-2023)，或是直接看[當天發表會錄影](https://www.youtube.com/watch?v=VKxNGFhpYQc)。現在各雲端大廠也都各自推出自己面向 AI 的開發工具，看來這場圍繞著 AI 的新戰場才剛開始而已。
-
-![src: [https://twitter.com/Modular_AI/status/1731737711138967854](https://twitter.com/Modular_AI/status/1731737711138967854)](../assets/網路黑手的呢喃 #39 - Untitled 4.png)
 
 src: [https://twitter.com/Modular_AI/status/1731737711138967854](https://twitter.com/Modular_AI/status/1731737711138967854)
 

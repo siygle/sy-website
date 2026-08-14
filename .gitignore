@@ -151,3 +151,7 @@ public/pagefind
 
 # Wrangler local state
 .wrangler/
+
+# Local CMS testing (not committed)
+.dev.vars
+wrangler.local.jsonc

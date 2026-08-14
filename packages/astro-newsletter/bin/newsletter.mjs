@@ -19,6 +19,7 @@ import { parseArgs } from 'node:util';
 import { spawnSync } from 'node:child_process';
 import { parsePost, serializePost } from '../src/markdown/frontmatter.ts';
 import { httpRunner } from '../src/server/d1.ts';
+import { localRunner } from '../src/server/local-d1.ts';
 import { listPosts, upsertPost } from '../src/server/repo.ts';
 
 const here = dirname(fileURLToPath(import.meta.url));
@@ -35,7 +36,16 @@ const FLAGS = {
   local: { type: 'boolean' },
   remote: { type: 'boolean' },
   database: { type: 'string' },
+  binding: { type: 'string' },
+  config: { type: 'string' },
 };
+
+// Pick a D1 runner from flags: --remote uses the REST API (CF_* env), otherwise
+// wrangler's local D1 via the given --config. Returns { runner, dispose }.
+async function runnerFor(f) {
+  if (f.remote) return { runner: remoteRunner(), dispose: undefined };
+  return localRunner(f.binding ?? 'NEWSLETTER_DB', f.config ?? 'wrangler.local.jsonc');
+}
 
 function flags(args) {
   return parseArgs({ args, options: FLAGS, allowPositionals: false }).values;
@@ -104,7 +114,8 @@ async function cmdMigrate(args) {
   const db = f.database ?? 'NEWSLETTER_DB';
   if (f.local || !f.remote) {
     console.log(`Applying schema to local D1 (${db}) via wrangler…`);
-    wrangler(['d1', 'execute', db, '--local', '--file', schemaPath]);
+    const cfg = f.config ?? 'wrangler.local.jsonc';
+    wrangler(['d1', 'execute', db, '--local', '--config', cfg, '--file', schemaPath]);
   }
   if (f.remote) {
     console.log('Applying schema to remote D1 via REST API…');
@@ -126,28 +137,28 @@ async function cmdImport(args) {
     console.error('import needs --from <dir>');
     process.exit(1);
   }
-  if (f.local) {
-    console.error('local import is not implemented yet; use --remote with CF_* env');
-    process.exit(2);
-  }
   const dir = resolve(repoRoot, f.from);
   const files = listMarkdown(dir);
-  const runner = remoteRunner();
+  const { runner, dispose } = await runnerFor(f);
   const now = new Date().toISOString();
-  for (const file of files) {
-    const slug = file.replace(/\.md$/, '');
-    const record = parsePost(readFileSync(join(dir, file), 'utf8'), slug);
-    await upsertPost(runner, {
-      slug,
-      issue: issueFromSlug(slug),
-      title: record.title,
-      date: record.date,
-      description: record.description,
-      tags: record.tags,
-      body: record.body,
-      status: 'published',
-      now,
-    });
+  try {
+    for (const file of files) {
+      const slug = file.replace(/\.md$/, '');
+      const record = parsePost(readFileSync(join(dir, file), 'utf8'), slug);
+      await upsertPost(runner, {
+        slug,
+        issue: issueFromSlug(slug),
+        title: record.title,
+        date: record.date,
+        description: record.description,
+        tags: record.tags,
+        body: record.body,
+        status: 'published',
+        now,
+      });
+    }
+  } finally {
+    if (dispose) await dispose();
   }
   console.log(`imported ${files.length} post(s) into D1 ✅`);
 }
@@ -159,14 +170,15 @@ async function cmdExport(args) {
     console.error('export needs --to <dir>');
     process.exit(1);
   }
-  if (f.local) {
-    console.error('local export is not implemented yet; use --remote with CF_* env');
-    process.exit(2);
-  }
   const outDir = resolve(repoRoot, f.to);
   mkdirSync(outDir, { recursive: true });
-  const runner = remoteRunner();
-  const posts = await listPosts(runner);
+  const { runner, dispose } = await runnerFor(f);
+  let posts;
+  try {
+    posts = await listPosts(runner);
+  } finally {
+    if (dispose) await dispose();
+  }
   for (const post of posts) {
     const text = serializePost({
       slug: post.slug,

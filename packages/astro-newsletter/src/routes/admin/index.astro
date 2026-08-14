@@ -1,0 +1,89 @@
+---
+export const prerender = false;
+import config from 'virtual:astro-newsletter/config';
+import '../../styles/admin.css';
+import { getRunner, getSecret } from '../../server/runtime';
+import { requireSession } from '../../server/auth';
+import { listPosts } from '../../server/repo';
+
+const adminPath = config.admin.path;
+const secret = getSecret('NEWSLETTER_SESSION_SECRET');
+if (!secret || !(await requireSession(Astro.request, secret))) {
+  return Astro.redirect(`${adminPath}/login`);
+}
+
+const posts = await listPosts(getRunner(config.cms.d1Binding));
+
+function fmtDate(d: string) {
+  return d || '—';
+}
+---
+
+<!doctype html>
+<html lang="zh-Hant">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Posts · {config.branding.title}</title>
+  </head>
+  <body class="nl-admin">
+    <header class="bar">
+      <a href={adminPath}>{config.branding.title} — Admin</a>
+      <div class="row">
+        <a class="btn secondary" href={config.basePath} target="_blank">View site ↗</a>
+        <button class="btn secondary" id="logout" type="button">Logout</button>
+      </div>
+    </header>
+
+    <main>
+      <div class="toolbar">
+        <button class="btn" id="new" type="button">+ New post</button>
+      </div>
+
+      <table>
+        <thead>
+          <tr><th>Issue</th><th>Title</th><th>Date</th><th>Status</th><th>Updated</th><th></th></tr>
+        </thead>
+        <tbody>
+          {posts.map((p) => (
+            <tr>
+              <td>{p.issue ?? '—'}</td>
+              <td><a href={`${adminPath}/edit/${encodeURIComponent(p.slug)}`}>{p.title || p.slug}</a></td>
+              <td>{fmtDate(p.date)}</td>
+              <td><span class={`status ${p.status}`}>{p.status}</span></td>
+              <td>{p.updated_at?.slice(0, 10)}</td>
+              <td class="row">
+                <a class="btn secondary" href={`${adminPath}/preview/${encodeURIComponent(p.slug)}`} target="_blank">Preview</a>
+                <button class="btn danger" data-del={p.slug} type="button">Delete</button>
+              </td>
+            </tr>
+          ))}
+          {posts.length === 0 && (
+            <tr><td colspan="6" style="color:#666">No posts yet. Create one to get started.</td></tr>
+          )}
+        </tbody>
+      </table>
+    </main>
+
+    <script define:vars={{ adminPath }}>
+      document.getElementById('new').addEventListener('click', () => {
+        const slug = prompt('New post slug (letters, digits, hyphens; not all digits):');
+        if (!slug) return;
+        location.href = `${adminPath}/edit/${encodeURIComponent(slug.trim())}`;
+      });
+      document.getElementById('logout').addEventListener('click', async () => {
+        await fetch(`${adminPath}/api/logout`, { method: 'POST' });
+        location.href = `${adminPath}/login`;
+      });
+      document.querySelectorAll('[data-del]').forEach((btn) => {
+        btn.addEventListener('click', async () => {
+          const slug = btn.getAttribute('data-del');
+          if (!confirm(`Delete "${slug}"? This cannot be undone.`)) return;
+          const res = await fetch(`${adminPath}/api/posts/${encodeURIComponent(slug)}`, { method: 'DELETE' });
+          if (res.ok) location.reload();
+          else alert('Delete failed.');
+        });
+      });
+    </script>
+  </body>
+</html>

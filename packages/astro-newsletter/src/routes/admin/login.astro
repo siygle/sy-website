@@ -1,0 +1,51 @@
+---
+export const prerender = false;
+import config from 'virtual:astro-newsletter/config';
+import '../../styles/admin.css';
+
+const adminPath = config.admin.path;
+const title = config.branding.title;
+---
+
+<!doctype html>
+<html lang="zh-Hant">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Login · {title}</title>
+  </head>
+  <body class="nl-admin">
+    <main style="max-width: 380px;">
+      <h1>{title} — Admin</h1>
+      <div id="msg" class="msg"></div>
+      <form id="login">
+        <label for="password">Password</label>
+        <input type="password" id="password" name="password" autocomplete="current-password" required />
+        <div class="toolbar">
+          <button class="btn" type="submit">Login</button>
+        </div>
+      </form>
+    </main>
+
+    <script define:vars={{ adminPath }}>
+      const form = document.getElementById('login');
+      const msg = document.getElementById('msg');
+      form.addEventListener('submit', async (e) => {
+        e.preventDefault();
+        msg.className = 'msg';
+        const password = document.getElementById('password').value;
+        const res = await fetch(`${adminPath}/api/session`, {
+          method: 'POST',
+          headers: { 'content-type': 'application/json' },
+          body: JSON.stringify({ password }),
+        });
+        if (res.ok) {
+          location.href = adminPath;
+        } else {
+          msg.textContent = 'Incorrect password.';
+          msg.className = 'msg err';
+        }
+      });
+    </script>
+  </body>
+</html>

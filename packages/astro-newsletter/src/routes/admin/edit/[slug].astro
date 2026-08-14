@@ -1,0 +1,138 @@
+---
+export const prerender = false;
+import config from 'virtual:astro-newsletter/config';
+import '../../../styles/admin.css';
+import { getRunner, getSecret } from '../../../server/runtime';
+import { requireSession } from '../../../server/auth';
+import { getPost } from '../../../server/repo';
+import Editor from '../../../components/Editor.tsx';
+
+const adminPath = config.admin.path;
+const secret = getSecret('NEWSLETTER_SESSION_SECRET');
+if (!secret || !(await requireSession(Astro.request, secret))) {
+  return Astro.redirect(`${adminPath}/login`);
+}
+
+const slug = Astro.params.slug!;
+const existing = await getPost(getRunner(config.cms.d1Binding), slug);
+const post = existing ?? {
+  slug,
+  issue: null,
+  title: '',
+  date: new Date().toISOString().slice(0, 10),
+  description: '',
+  tags: [] as string[],
+  body: '',
+  status: 'draft' as const,
+};
+---
+
+<!doctype html>
+<html lang="zh-Hant">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Edit {post.slug} · {config.branding.title}</title>
+  </head>
+  <body class="nl-admin">
+    <header class="bar">
+      <a href={adminPath}>← Posts</a>
+      <div class="row">
+        <span class={`status ${post.status}`}>{post.status}</span>
+      </div>
+    </header>
+
+    <main>
+      <h1>{existing ? 'Edit' : 'New'} — <code>{post.slug}</code></h1>
+      <div id="msg" class="msg"></div>
+
+      <div class="grid2">
+        <div>
+          <label for="title">Title</label>
+          <input type="text" id="title" value={post.title} />
+        </div>
+        <div>
+          <label for="date">Date</label>
+          <input type="date" id="date" value={post.date} />
+        </div>
+      </div>
+      <div class="grid2">
+        <div>
+          <label for="tags">Tags (comma-separated)</label>
+          <input type="text" id="tags" value={post.tags.join(', ')} />
+        </div>
+        <div>
+          <label for="issue">Issue #</label>
+          <input type="text" id="issue" value={post.issue ?? ''} inputmode="numeric" />
+        </div>
+      </div>
+      <label for="description">Description</label>
+      <input type="text" id="description" value={post.description} />
+
+      <label>Body</label>
+      <Editor
+        client:only="react"
+        initialMarkdown={post.body}
+        targetId="body"
+        uploadUrl={`${adminPath}/api/upload`}
+      />
+      <textarea id="body" style="display:none">{post.body}</textarea>
+
+      <div class="toolbar">
+        <button class="btn" id="save" type="button">Save draft</button>
+        <button class="btn secondary" id="preview" type="button">Save &amp; preview ↗</button>
+        <button class="btn secondary" id="publish" type="button">Publish</button>
+      </div>
+    </main>
+
+    <script define:vars={{ adminPath, slug: post.slug }}>
+      const $ = (id) => document.getElementById(id);
+      const msg = $('msg');
+      function show(text, ok = false) {
+        msg.textContent = text;
+        msg.className = 'msg ' + (ok ? 'ok' : 'err');
+      }
+
+      function collect() {
+        const issueRaw = $('issue').value.trim();
+        return {
+          slug,
+          title: $('title').value,
+          date: $('date').value,
+          description: $('description').value,
+          tags: $('tags').value.split(',').map((t) => t.trim()).filter(Boolean),
+          issue: issueRaw ? Number(issueRaw) : null,
+          body: $('body').value,
+        };
+      }
+
+      async function save() {
+        const res = await fetch(`${adminPath}/api/posts`, {
+          method: 'POST',
+          headers: { 'content-type': 'application/json' },
+          body: JSON.stringify(collect()),
+        });
+        if (res.ok) {
+          show('Saved.', true);
+          return true;
+        }
+        const data = await res.json().catch(() => ({}));
+        show('Save failed: ' + (data.error || res.status));
+        return false;
+      }
+
+      $('save').addEventListener('click', save);
+      $('preview').addEventListener('click', async () => {
+        if (await save()) window.open(`${adminPath}/preview/${encodeURIComponent(slug)}`, '_blank');
+      });
+      $('publish').addEventListener('click', async () => {
+        if (!(await save())) return;
+        if (!confirm('Publish and trigger a site rebuild?')) return;
+        const res = await fetch(`${adminPath}/api/posts/${encodeURIComponent(slug)}/publish`, { method: 'POST' });
+        const data = await res.json().catch(() => ({}));
+        if (res.ok) show(data.rebuildTriggered ? 'Published — rebuild triggered.' : 'Published (no deploy hook configured).', true);
+        else show('Publish failed.');
+      });
+    </script>
+  </body>
+</html>

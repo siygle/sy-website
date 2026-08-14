@@ -148,3 +148,6 @@ public/pagefind
 
 # Astro
 .astro/
+
+# Wrangler local state
+.wrangler/

@@ -11,3 +11,11 @@ CREATE TABLE IF NOT EXISTS newsletter_posts (
   updated_at  TEXT NOT NULL
 );
 CREATE INDEX IF NOT EXISTS idx_newsletter_status_issue ON newsletter_posts(status, issue DESC);
+
+-- Admin login throttling (per client IP). Epoch-ms timestamps.
+CREATE TABLE IF NOT EXISTS newsletter_login_attempts (
+  ip           TEXT PRIMARY KEY,
+  fails        INTEGER NOT NULL DEFAULT 0,
+  window_start INTEGER NOT NULL,
+  locked_until INTEGER NOT NULL DEFAULT 0
+);

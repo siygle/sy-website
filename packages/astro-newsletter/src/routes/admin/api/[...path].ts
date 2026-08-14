@@ -2,6 +2,8 @@ import type { APIRoute } from 'astro';
 import config from 'virtual:astro-newsletter/config';
 import { getRunner, getSecret, getBucket } from '../../../server/runtime';
 import { listPosts, getPost, upsertPost, deletePost, publishPost } from '../../../server/repo';
+import { isLoginLocked, registerLoginFailure, clearLoginAttempts } from '../../../server/ratelimit';
+import type { D1Runner } from '../../../server/d1';
 import {
   verifyPassword,
   signSession,
@@ -30,18 +32,47 @@ async function authed(request: Request): Promise<boolean> {
   return requireSession(request, secret);
 }
 
+// Never let an unexpected throw bubble up as a bare 503 — return a clean 500.
+function guard(fn: APIRoute): APIRoute {
+  return async (ctx) => {
+    try {
+      return await fn(ctx);
+    } catch {
+      return json({ error: 'server error' }, { status: 500 });
+    }
+  };
+}
+
 // ── POST ────────────────────────────────────────────────────────────────────
-export const POST: APIRoute = async ({ params, request }) => {
+const postHandler: APIRoute = async ({ params, request }) => {
   const path = (params.path as string) ?? '';
 
   // Login is the only unauthenticated endpoint.
   if (path === 'session') {
     const secret = getSecret('NEWSLETTER_SESSION_SECRET');
     const password = getSecret('NEWSLETTER_ADMIN_PASSWORD');
+    const ip = request.headers.get('CF-Connecting-IP') ?? 'unknown';
+
+    // Best-effort brute-force throttle (fails open if D1 is unavailable).
+    let limiter: D1Runner | null = null;
+    try {
+      limiter = getRunner(config.cms.d1Binding);
+    } catch {
+      limiter = null;
+    }
+    if (limiter) {
+      const gate = await isLoginLocked(limiter, ip, Date.now()).catch(() => ({ locked: false, retryAfterSec: 0 }));
+      if (gate.locked) {
+        return json({ error: 'too many attempts' }, { status: 429, headers: { 'retry-after': String(gate.retryAfterSec) } });
+      }
+    }
+
     const body = (await request.json().catch(() => ({}))) as { password?: string };
     if (!secret || !verifyPassword(String(body.password ?? ''), password)) {
+      if (limiter) await registerLoginFailure(limiter, ip, Date.now()).catch(() => {});
       return unauthorized(); // identical response on any failure
     }
+    if (limiter) await clearLoginAttempts(limiter, ip).catch(() => {});
     const token = await signSession(secret);
     return json({ ok: true }, { headers: { 'set-cookie': sessionCookie(token, adminPath) } });
   }
@@ -112,7 +143,7 @@ export const POST: APIRoute = async ({ params, request }) => {
 };
 
 // ── GET ─────────────────────────────────────────────────────────────────────
-export const GET: APIRoute = async ({ params, request }) => {
+const getHandler: APIRoute = async ({ params, request }) => {
   if (!(await authed(request))) return unauthorized();
   const runner = getRunner(config.cms.d1Binding);
   const path = (params.path as string) ?? '';
@@ -129,7 +160,7 @@ export const GET: APIRoute = async ({ params, request }) => {
 };
 
 // ── DELETE ──────────────────────────────────────────────────────────────────
-export const DELETE: APIRoute = async ({ params, request }) => {
+const deleteHandler: APIRoute = async ({ params, request }) => {
   if (!(await authed(request))) return unauthorized();
   const runner = getRunner(config.cms.d1Binding);
   const path = (params.path as string) ?? '';
@@ -161,3 +192,7 @@ async function uploadHandler(request: Request): Promise<Response> {
   const url = base ? `${base}/${key}` : `/${key}`;
   return json({ ok: true, url });
 }
+
+export const POST = guard(postHandler);
+export const GET = guard(getHandler);
+export const DELETE = guard(deleteHandler);

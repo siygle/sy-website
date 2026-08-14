@@ -72,6 +72,9 @@ are **not** injected at all.
 - `/newsletter/admin/preview/[slug]` — SSR draft preview in the real layout
 - Auth: one password + an HMAC-signed cookie (Web Crypto, zero deps). Every admin
   route/API calls `requireSession`; failures return an identical 401.
+- Login is throttled per client IP (5 failures / 15 min → 15 min lockout, 429),
+  backed by a `newsletter_login_attempts` table in the same D1 — so re-run
+  `db:migrate` when upgrading. Best-effort: it fails open if D1 is unavailable.
 
 ### Tiptap editor & fidelity
 

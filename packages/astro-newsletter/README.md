@@ -86,24 +86,30 @@ marks the post published — re-run the deploy manually. (A bare
   backed by a `newsletter_login_attempts` table in the same D1 — so re-run
   `db:migrate` when upgrading. Best-effort: it fails open if D1 is unavailable.
 
-### Editor
+### Tiptap editor & fidelity
 
-`components/Editor.tsx` is a [@uiw/react-md-editor](https://github.com/uiwjs/react-md-editor)
-island — a **markdown-source** editor with a toolbar, syntax highlighting and
-live preview, plus an R2 image-upload toolbar button. Because it edits the
-markdown text directly (not a WYSIWYG document model), it can never silently
-rewrite content, and the SSR `preview/[slug]` route renders the real pipeline
-(social embeds, code highlight) for a full-fidelity check.
+The editor (`components/Editor.tsx`) is a Tiptap React island with **two escape
+hatches** so it can never silently rewrite a post:
+
+1. A raw-markdown textarea mode, always available.
+2. A **load-time self-check**: on open it runs `serialize(parse(body))`; if that
+   isn't byte-identical it warns and defaults to raw mode.
+
+`test/tiptap-roundtrip.test.ts` runs the round-trip over every real post. The
+editor never throws (raw mode always loads), but exact round-trips are the hard
+part (marked's AST ≠ mdast) — non-faithful posts fall back to raw mode and are
+never corrupted. Improving fidelity is incremental custom-node work; do **not**
+edit the source markdown files to make the round-trip pass.
 
 ## Gotcha: Tailwind content scanning
 
 This repo uses `@tailwindcss/vite`, whose automatic content detection scans the
 whole project (including `.md`) and — in this git-worktree setup — ignores
 `@source` / `@config` overrides. Any plain identifier that collides with a real
-utility name (a font-style keyword, a text-transform keyword, an `outl` + `ine`
-CSS declaration) inside a scanned file leaks an unused rule into the global
+utility name (the font-style keyword, a text-transform keyword, a CSS `outl` +
+`ine` declaration) inside a scanned file leaks an unused rule into the global
 stylesheet and breaks the site's byte-for-byte output — even from a comment or
 this very doc, which is why the words above are broken up. Keep such tokens out
-of scanned `.ts`/`.tsx`/`.md` (put component CSS in imported `.css`, which is not
-scanned). An isolation build (build with vs. without a suspect file, diff
-`dist/client`) tells you if a file leaks.
+of scanned `.ts`/`.tsx`/`.md`: editor CSS lives in `styles/editor.css` (`.css`
+is not scanned) and the one unavoidable mark-name collision is assembled from
+fragments in `Editor.tsx`.

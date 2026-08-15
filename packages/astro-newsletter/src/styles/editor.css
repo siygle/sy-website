@@ -1,0 +1,10 @@
+/* Tiptap editor chrome. Kept in a plain .css file (not .tsx) so Tailwind's
+   content scanner never reads these declarations as class candidates — a stray
+   `outline:` here would otherwise leak an `.outline` utility into the global
+   build. */
+.nl-editor .tbgroup { display: flex; gap: 0.25rem; flex-wrap: wrap; }
+.nl-editor .tb { border: 1px solid #ddd; background: #fff; border-radius: 5px; padding: 0.25rem 0.5rem; font-size: 0.85rem; cursor: pointer; }
+.nl-editor .tb.on { background: #111; color: #fff; border-color: #111; }
+.nl-editor .ProseMirror { border: 1px solid #e5e5e5; border-radius: 6px; padding: 1rem; background: #fff; margin-top: 0.5rem; }
+.nl-editor .nl-pm { outline: none; }
+.nl-editor img[data-social] { outline: 2px dashed #93c5fd; }

@@ -130,8 +130,15 @@ const post = existing ?? {
         if (!confirm('Publish and trigger a site rebuild?')) return;
         const res = await fetch(`${adminPath}/api/posts/${encodeURIComponent(slug)}/publish`, { method: 'POST' });
         const data = await res.json().catch(() => ({}));
-        if (res.ok) show(data.rebuildTriggered ? 'Published — rebuild triggered.' : 'Published (no deploy hook configured).', true);
-        else show('Publish failed.');
+        if (res.ok) {
+          const r = data.rebuild || {};
+          show(
+            r.triggered
+              ? 'Published — rebuild triggered (site updates in a few minutes).'
+              : 'Published. No rebuild trigger configured — re-run the deploy manually.',
+            true,
+          );
+        } else show('Publish failed.');
       });
     </script>
   </body>

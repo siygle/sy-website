@@ -50,9 +50,19 @@ are **not** injected at all.
    ```
 
 4. Set secrets (`wrangler secret put …` for prod, `.dev.vars` for local):
-   `NEWSLETTER_ADMIN_PASSWORD`, `NEWSLETTER_SESSION_SECRET`,
-   `NEWSLETTER_DEPLOY_HOOK_URL`. Build-time D1 access uses `CF_ACCOUNT_ID`,
+   `NEWSLETTER_ADMIN_PASSWORD`, `NEWSLETTER_SESSION_SECRET`, and
+   `GITHUB_DISPATCH_TOKEN` (see below). Build-time D1 access uses `CF_ACCOUNT_ID`,
    `CF_D1_DATABASE_ID`, `CF_API_TOKEN`.
+
+### Publish → rebuild
+
+The public pages are static, so publishing writes `status='published'` to D1 and
+then triggers a rebuild. With GitHub Actions, set `deploy.githubRepo` in
+`newsletter.config.mjs` and a `GITHUB_DISPATCH_TOKEN` worker secret (a PAT with
+Actions: write); publish fires a `repository_dispatch` (`newsletter-publish`,
+also declared in `deploy.yml`) that re-runs the deploy. Without a token it just
+marks the post published — re-run the deploy manually. (A bare
+`NEWSLETTER_DEPLOY_HOOK_URL` is still honoured as a fallback.)
 
 ## CLI (`bin/newsletter.mjs`)
 
@@ -76,30 +86,24 @@ are **not** injected at all.
   backed by a `newsletter_login_attempts` table in the same D1 — so re-run
   `db:migrate` when upgrading. Best-effort: it fails open if D1 is unavailable.
 
-### Tiptap editor & fidelity
+### Editor
 
-The editor (`components/Editor.tsx`) is a Tiptap React island with **two escape
-hatches** so it can never silently rewrite a post:
-
-1. A raw-markdown textarea mode, always available.
-2. A **load-time self-check**: on open it runs `serialize(parse(body))`; if that
-   isn't byte-identical it warns and defaults to raw mode.
-
-`test/tiptap-roundtrip.test.ts` runs the round-trip over every real post. The
-editor never throws (raw mode always loads), but exact round-trips are the hard
-part (marked's AST ≠ mdast) — non-faithful posts fall back to raw mode and are
-never corrupted. Improving fidelity is incremental custom-node work; do **not**
-edit the source markdown files to make the round-trip pass.
+`components/Editor.tsx` is a [@uiw/react-md-editor](https://github.com/uiwjs/react-md-editor)
+island — a **markdown-source** editor with a toolbar, syntax highlighting and
+live preview, plus an R2 image-upload toolbar button. Because it edits the
+markdown text directly (not a WYSIWYG document model), it can never silently
+rewrite content, and the SSR `preview/[slug]` route renders the real pipeline
+(social embeds, code highlight) for a full-fidelity check.
 
 ## Gotcha: Tailwind content scanning
 
 This repo uses `@tailwindcss/vite`, whose automatic content detection scans the
 whole project (including `.md`) and — in this git-worktree setup — ignores
 `@source` / `@config` overrides. Any plain identifier that collides with a real
-utility name (the font-style keyword, a text-transform keyword, a CSS `outl` +
-`ine` declaration) inside a scanned file leaks an unused rule into the global
+utility name (a font-style keyword, a text-transform keyword, an `outl` + `ine`
+CSS declaration) inside a scanned file leaks an unused rule into the global
 stylesheet and breaks the site's byte-for-byte output — even from a comment or
 this very doc, which is why the words above are broken up. Keep such tokens out
-of scanned `.ts`/`.tsx`/`.md`: editor CSS lives in `styles/editor.css` (`.css`
-is not scanned) and the one unavoidable mark-name collision is assembled from
-fragments in `Editor.tsx`.
+of scanned `.ts`/`.tsx`/`.md` (put component CSS in imported `.css`, which is not
+scanned). An isolation build (build with vs. without a suspect file, diff
+`dist/client`) tells you if a file leaks.

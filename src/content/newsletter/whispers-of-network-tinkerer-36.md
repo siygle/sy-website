@@ -21,8 +21,6 @@ Bun 終於釋出他們一個穩定的大版號了（1.0）🎉。
 
 雖然 JS runtime 已經多到再多一個新的也不意外的境界了，不過 Bun 還是有其特殊之處，首先應該是它經常拿出來展示的 - [**Fast**](https://bun.sh/)。
 
-![src:[https://twitter.com/kalanyei/status/1701086352006385938](https://twitter.com/kalanyei/status/1701086352006385938)](../assets/網路黑手的呢喃 #36 - Untitled.png)
-
 src:[https://twitter.com/kalanyei/status/1701086352006385938](https://twitter.com/kalanyei/status/1701086352006385938)
 
 剛好看到有推友整理到這篇文章，裡面也提到為什麼基於 Zig/JSC 的 Bun 能比起隔壁棚的競品更快，除了一小部分技術桟的差別之外，其實更多的是小地方一點一點的優化累積起來的成效。
@@ -41,13 +39,9 @@ src:[https://twitter.com/kalanyei/status/1701086352006385938](https://twitter.co
 
 但 Bun 決定走最大程度的相容，所以就跟下圖一樣，你可以同時使用兩種不同的格式，Bun 則會幫你處理相容的問題，簡單暴力。（無論是 Node.js 或是 Deno 都可能是為了遵守協定而走了不同的路線，但對開發者而言，簡單方便才是最受大家青睞的方案👍）
 
-![Untitled](../assets/網路黑手的呢喃 #36 - Untitled 1.png)
-
 ## 2. 頗威的 FFI 還有 Plugin API
 
 後面會帶到 FFI 的東西，所以如果不知道這是什麼可以跳到下一段，目前 Node.js 還沒這種呼叫 native lib 的方式，不過 Deno/Bun 跟其他許多語言都有支援這種呼叫方式。不過 Bun 還有另一個 Plugin API 的功能，其中有個就是可以撰寫自定義的 [Loader](https://bun.sh/docs/runtime/plugins#loaders) 的功能，然後你就可以[作到像下圖一樣的效果](https://twitter.com/jarredsumner/status/1681616846938841088)，直接在 JS/TS 檔案裡面呼叫 native code。
-
-![Untitled](../assets/網路黑手的呢喃 #36 - Untitled 2.png)
 
 當然還有不少特點，譬如說內建 package manager & bundler 等功能，讓開發的體驗更好不再需要東抓西找其他的套件才能開始開發。跟 Deno 初期不講求完全相容於 Node.js（不過後來還是回來作相容了😅），Bun 一直強調自己是 drop-in replacement，也就是期待可以無縫直接替換原有的 Node.js 開發環境，應該是它們希望達到的目標。看起來這個走向受到更多開發者接受。雖然才剛發布 1.0 但已經引起許多開發者的注意，可以期待它們後續發展。
 
@@ -76,8 +70,6 @@ src:[https://twitter.com/kalanyei/status/1701086352006385938](https://twitter.co
 ***真的等好久阿***🥹
 
 Deno 終於在近期釋出，Deno Deploy 已經開始支援 `npm specifiers` 的功能啦！所以現在在 Deploy 上面的專案，想引用 npm 生態的模組大部分應該都可以直接透過 `npm:xxxxx` 的方式引入使用了。
-
-![ src: [https://twitter.com/deno_land/status/1699478475240005991](https://twitter.com/deno_land/status/1699478475240005991)](../assets/網路黑手的呢喃 #36 - Untitled 3.png)
 
  src: [https://twitter.com/deno_land/status/1699478475240005991](https://twitter.com/deno_land/status/1699478475240005991)
 
@@ -113,8 +105,6 @@ Deno 終於在近期釋出，Deno Deploy 已經開始支援 `npm specifiers` 的
 
 不能不說 Fermyon 在目前這波 WebAssembly 真的是一個很引人注目的存在，除了自己開發了網路服務的雲端平台 Spin 之外（當然是基於 WebAssembly😄），也是不斷優化它的功能，如果是老讀者的話應該也有印象這個名稱已經出現好幾次了。
 
-![src: [https://twitter.com/fermyontech/status/1698988841149792598](https://twitter.com/fermyontech/status/1698988841149792598)](../assets/網路黑手的呢喃 #36 - Untitled 4.png)
-
 src: [https://twitter.com/fermyontech/status/1698988841149792598](https://twitter.com/fermyontech/status/1698988841149792598)
 
 ***最近它們又有[新動作](https://www.globenewswire.com/news-release/2023/09/05/2737010/0/en/Fermyon-First-to-Make-Enterprise-AI-Apps-100x-Faster-to-Run-With-Game-Changing-WebAssembly-Compute-Innovation.html?utm_content=263108179&utm_medium=social&utm_source=twitter&hss_channel=tw-1444404500437995520)啦！***
@@ -135,13 +125,9 @@ src: [https://twitter.com/fermyontech/status/1698988841149792598](https://twitte
 
 雖然之前酸過 Vercel 🤣，不過不能不承認他們的確是網路服務的領頭羊，除了基本的技術底子之外，他們對科技運用的敏銳嗅覺也是很讓人佩服，常常驚呼於從他們放出的新服務、新產品。
 
-![Untitled](../assets/網路黑手的呢喃 #36 - Untitled 5.png)
-
 這次的 [v0.dev](http://v0.dev) 是他們最近放出的新服務，就是把 AI 跟 UI 作了完美的結合，讓開發者可以透過描述自己需要的 UI，透過 AI 直接產生元件給你（當然包含[程式碼](https://v0.dev/t/0W13RkH)一併提供給你！），真的是太方便了，好想趕快嘗鮮阿🤩
 
 [**火力展示一下](https://v0.dev/t/a0plNNT) ⬇️**
-
-![src: [https://twitter.com/MichelleBakels/status/1703775584025752002](https://twitter.com/MichelleBakels/status/1703775584025752002)](../assets/網路黑手的呢喃 #36 - Untitled 6.png)
 
 src: [https://twitter.com/MichelleBakels/status/1703775584025752002](https://twitter.com/MichelleBakels/status/1703775584025752002)
 
@@ -156,8 +142,6 @@ src: [https://twitter.com/MichelleBakels/status/1703775584025752002](https://twi
 *這個跟開發新聞沒有關係，就當是老人講古吧*😅
 
 無意間看到有網友在 Hacker News 上面問了這個問題：[**What Happened to TJ Holowaychuk?**](https://news.ycombinator.com/item?id=37531423)，一瞬間千頭萬緒就順手發了這篇推文。
-
-![src: [https://twitter.com/siygle/status/1702934627332321744](https://twitter.com/siygle/status/1702934627332321744)](../assets/網路黑手的呢喃 #36 - Untitled 7.png)
 
 src: [https://twitter.com/siygle/status/1702934627332321744](https://twitter.com/siygle/status/1702934627332321744)
 
@@ -175,8 +159,6 @@ src: [https://twitter.com/siygle/status/1702934627332321744](https://twitter.com
 
 ### 太過真實不忍直視🤣
 
-![src: [https://twitter.com/DavidKPiano/status/1700672267863077119](https://twitter.com/DavidKPiano/status/1700672267863077119)](../assets/網路黑手的呢喃 #36 - Untitled 8.png)
-
 src: [https://twitter.com/DavidKPiano/status/1700672267863077119](https://twitter.com/DavidKPiano/status/1700672267863077119)
 
 ### Good Old Days😢
@@ -188,8 +170,6 @@ src: [https://twitter.com/DavidKPiano/status/1700672267863077119](https://twitte
 ### 我也是這麼覺得😅
 
 #有錢就好了🤑
-
-![src: [https://twitter.com/tw111111111111/status/1701240469437452471](https://twitter.com/tw111111111111/status/1701240469437452471)](../assets/網路黑手的呢喃 #36 - Untitled 9.png)
 
 src: [https://twitter.com/tw111111111111/status/1701240469437452471](https://twitter.com/tw111111111111/status/1701240469437452471)
 

@@ -20,8 +20,6 @@ JS 又要出現新的 keyword 了、酷酷的雲端開發語言 Winglang、一�
 
 # New keyword `using`
 
-![ref: [https://twitter.com/mattpocockuk/status/1669630994280849408](https://twitter.com/mattpocockuk/status/1669630994280849408)](../assets/網路黑手的呢喃 #33 - Untitled.png)
-
 ref: [https://twitter.com/mattpocockuk/status/1669630994280849408](https://twitter.com/mattpocockuk/status/1669630994280849408)
 
 最近放出的 [TypeScript 5.2 beta](https://devblogs.microsoft.com/typescript/announcing-typescript-5-2-beta/) 裡面看到一個有趣的東西，新出現一個語言變數 `using`，發現也不少相關網站也介紹過這個了，它源自於其中一個 ECMAScript 提案 - [**ECMAScript Explicit Resource Management](https://github.com/tc39/proposal-explicit-resource-management)，**目前已經進到 stage3 所以距離面世也應該不遠了。
@@ -76,8 +74,6 @@ const getFileHandle = async (path: string) => {
 
 # This’s how the Cloud works!
 
-![ref: [https://twitter.com/rybickic/status/1673453422417268737](https://twitter.com/rybickic/status/1673453422417268737)](../assets/網路黑手的呢喃 #33 - Untitled 1.png)
-
 ref: [https://twitter.com/rybickic/status/1673453422417268737](https://twitter.com/rybickic/status/1673453422417268737)
 
 最近無意間發現這個酷酷的東西 - [**winglang**](https://www.winglang.io/) ⬇️
@@ -92,8 +88,6 @@ ref: [https://twitter.com/rybickic/status/1673453422417268737](https://twitter.c
 
 - 它名稱就叫「lang」，所以是自定義的語法（這點跟 Terraform 的 HCL 應該類似？），然後再根據你要產出的對應目標（目前支援："tf-aws", "tf-azure", "tf-gcp", "sim", "awscdk”）。
 - 跟一般 IaC 只定義系統架構不同，它還包含了實際執行的 codebase。
-
-![Untitled](../assets/網路黑手的呢喃 #33 - Untitled 2.png)
 
 - 非常方便的本地測試模式，會起一個 web console 的介面可以看到你的實際程式架構（而且還可以實際執行）。
 
@@ -113,8 +107,6 @@ Node.js 目前的版本已經默默來到 20.4.0 啦，當然大家都已經很�
 
 最近他也整理了一些近期的變更與消息，非常值得一看。⬇️
 
-![ref: [https://zenn.dev/uki00a/articles/frontend-development-in-deno-2023-summer](https://zenn.dev/uki00a/articles/frontend-development-in-deno-2023-summer)](../assets/網路黑手的呢喃 #33 - Untitled 3.png)
-
 ref: [https://zenn.dev/uki00a/articles/frontend-development-in-deno-2023-summer](https://zenn.dev/uki00a/articles/frontend-development-in-deno-2023-summer)
 
 其中有不少也曾經在這邊提及過，不過有一件之前猜測，目前已經證實的，就是 Deno 自家的前端框架 - Fresh，先前說過感覺很像是邊緣專案，因為都沒有開發團隊的人在回覆，然後 issue 也是累積了一大堆，原本以為要被放生了，幸好[目前終於有正式的維護者了](https://deno.com/blog/fresh-1.2)，就是新加入 Deno 也是 [Preactjs](https://preactjs.com/) 的核心開發者之一的 - [**Marvin Hagemeister](https://github.com/marvinhagemeister)（**應該大家都知道，Fresh 是基於 Preactjs 而不是 React**）。**看來能開始期待 Fresh 後續的發展了！🎉
@@ -130,8 +122,6 @@ ref: [https://zenn.dev/uki00a/articles/frontend-development-in-deno-2023-summer]
 
 目前唯一能偵測並擋下這種潛在危險的，只有先前提過的資安公司 - Socket（就是 Node.js 知名套件 standard 的作者出來創業的），它們也寫了[一篇相關的文章](https://socket.dev/blog/manifest-confusion)。
 
-![ref: [https://twitter.com/darcy/status/1673749748338008083](https://twitter.com/darcy/status/1673749748338008083)](../assets/網路黑手的呢喃 #33 - Untitled 4.png)
-
 ref: [https://twitter.com/darcy/status/1673749748338008083](https://twitter.com/darcy/status/1673749748338008083)
 
 不過有另一個吸引到我注意的，是作者內文中「**What is GitHub doing about this?**」這段提及的，貌似 Github 的沒有作為。
@@ -146,8 +136,6 @@ npm 不會被放生了吧…😢😰
 真的覺得[這兩間公司是生來互槓](https://chat.sylee.dev/2023/02/02/%E7%B6%B2%E8%B7%AF%E9%BB%91%E6%89%8B%E7%9A%84%E5%91%A2%E5%96%83-25)的😆
 
 JS 生態界的兩個歡喜冤家，最近又開戰了。
-
-![ref: [https://twitter.com/localhost_5173/status/1675142562473185281](https://twitter.com/localhost_5173/status/1675142562473185281)](../assets/網路黑手的呢喃 #33 - Untitled 5.png)
 
 ref: [https://twitter.com/localhost_5173/status/1675142562473185281](https://twitter.com/localhost_5173/status/1675142562473185281)
 
@@ -205,8 +193,6 @@ Deno 先發了篇文章，講了模組系統分歧的問題，提到原本跟 No
 
 ### 覺得這根本是Mastodon的最佳應用
 
-![ref: [https://g0v.social/@walkingice/110644585368958809](https://g0v.social/@walkingice/110644585368958809)](../assets/網路黑手的呢喃 #33 - Untitled 6.png)
-
 ref: [https://g0v.social/@walkingice/110644585368958809](https://g0v.social/@walkingice/110644585368958809)
 
 ### 我最近每天都是這個狀態😆
@@ -218,8 +204,6 @@ ref: [https://g0v.social/@walkingice/110644585368958809](https://g0v.social/@wal
 ![](https://twitter.com/haoqunjiang/status/1673691794650054656)
 
 ### Respect!
-
-![ref: [https://twitter.com/weihanglo/status/1675088724953030687](https://twitter.com/weihanglo/status/1675088724953030687)](../assets/網路黑手的呢喃 #33 - Untitled 7.png)
 
 ref: [https://twitter.com/weihanglo/status/1675088724953030687](https://twitter.com/weihanglo/status/1675088724953030687)
 

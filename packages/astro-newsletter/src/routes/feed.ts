@@ -1,14 +1,11 @@
 import rss from '@astrojs/rss';
 import { getCollection } from 'astro:content';
 import type { APIContext } from 'astro';
+import { getIssueNumberValue } from '../lib/issue';
 
 export async function GET(context: APIContext) {
   const newsletters = await getCollection('newsletter');
-  const sorted = newsletters.sort((a, b) => {
-    const numA = parseInt(a.id.match(/(\d+)/)?.[1] || '0');
-    const numB = parseInt(b.id.match(/(\d+)/)?.[1] || '0');
-    return numB - numA;
-  });
+  const sorted = newsletters.sort((a, b) => getIssueNumberValue(b) - getIssueNumberValue(a));
 
   return rss({
     title: '網路黑手的呢喃',

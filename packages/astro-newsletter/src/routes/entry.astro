@@ -1,6 +1,7 @@
 ---
 import { getCollection, render } from 'astro:content';
-import NewsletterLayout from '~/layouts/NewsletterLayout.astro';
+import NewsletterLayout from '../components/NewsletterLayout.astro';
+import { getIssueNumber, getIssueNumberValue } from '../lib/issue';
 
 export async function getStaticPaths() {
   const newsletters = await getCollection('newsletter');
@@ -15,19 +16,11 @@ const { Content } = await render(issue);
 
 // Get all newsletters sorted by issue number for prev/next
 const allNewsletters = await getCollection('newsletter');
-const sorted = allNewsletters.sort((a, b) => {
-  const numA = parseInt(a.id.match(/(\d+)/)?.[1] || '0');
-  const numB = parseInt(b.id.match(/(\d+)/)?.[1] || '0');
-  return numA - numB;
-});
+const sorted = allNewsletters.sort((a, b) => getIssueNumberValue(a) - getIssueNumberValue(b));
 
 const currentIndex = sorted.findIndex((n) => n.id === issue.id);
 const prev = currentIndex > 0 ? sorted[currentIndex - 1] : null;
 const next = currentIndex < sorted.length - 1 ? sorted[currentIndex + 1] : null;
-
-function getIssueNumber(id: string): string {
-  return id.match(/(\d+)/)?.[1] || '';
-}
 
 function formatDate(dateString: string): string {
   const date = new Date(dateString);
@@ -38,7 +31,7 @@ function formatDate(dateString: string): string {
   }).toUpperCase();
 }
 
-const issueNum = getIssueNumber(issue.id);
+const issueNum = getIssueNumber(issue);
 ---
 
 <NewsletterLayout
@@ -77,12 +70,12 @@ const issueNum = getIssueNumber(issue.id);
     {prev ? (
       <a href={`/newsletter/${prev.id}`} class="flex items-center gap-2">
         <svg class="w-3.5 h-3.5" fill="currentColor" viewBox="0 0 448 512"><path d="M9.4 233.4c-12.5 12.5-12.5 32.8 0 45.3l160 160c12.5 12.5 32.8 12.5 45.3 0s12.5-32.8 0-45.3L109.2 288H416c17.7 0 32-14.3 32-32s-14.3-32-32-32H109.2l105.4-105.4c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0l-160 160z" /></svg>
-        <span class="text-xs">#{getIssueNumber(prev.id)}</span>
+        <span class="text-xs">#{getIssueNumber(prev)}</span>
       </a>
     ) : <div />}
     {next ? (
       <a href={`/newsletter/${next.id}`} class="flex items-center gap-2 ml-auto">
-        <span class="text-xs">#{getIssueNumber(next.id)}</span>
+        <span class="text-xs">#{getIssueNumber(next)}</span>
         <svg class="w-3.5 h-3.5" fill="currentColor" viewBox="0 0 448 512"><path d="M438.6 278.6c12.5-12.5 12.5-32.8 0-45.3l-160-160c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3L338.8 224H32c-17.7 0-32 14.3-32 32s14.3 32 32 32h306.7L233.4 393.4c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0l160-160z" /></svg>
       </a>
     ) : <div />}

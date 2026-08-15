@@ -55,8 +55,6 @@ MongoDB 7.0！還有一些有趣的新東西、Cloudflare #BirthdayWeek、The st
 — from ChatGPT
 > 
 
-![Untitled](../assets/網路黑手的呢喃 #37 - Untitled.png)
-
 感覺大家都要進來 AI 領域分一杯羹，看來這個 buzzword 還會燒一陣子😆。可以期待下 MongoDB 接下來還會拿出什麼有趣的東西來。
 
 # Cloudflare #BirthdayWeek
@@ -83,8 +81,6 @@ MongoDB 7.0！還有一些有趣的新東西、Cloudflare #BirthdayWeek、The st
 
 *大家應該還記得 Node.js 的發行慣例吧，v21 將會是開發版本，待穩定之後就會升版至 v22，然後成為下一個 LTS*。
 
-![src: [https://twitter.com/mhdawson1/status/1714323191139639471](https://twitter.com/mhdawson1/status/1714323191139639471)](../assets/網路黑手的呢喃 #37 - Untitled 1.png)
-
 src: [https://twitter.com/mhdawson1/status/1714323191139639471](https://twitter.com/mhdawson1/status/1714323191139639471)
 
 ### Node.js needs a new mascot 😄
@@ -104,8 +100,6 @@ Node.js 終於考慮要設計一個專案代表的吉祥物了（就跟 [Rust](h
 WebAssembly 也是最近一直有在留意的部分，雖然也不是什麼新東西，不過近來越來越多應用都開始涉足 WemAssembly，各語言的支援也都逐步到位，感覺應該是有機會成長起來。
 
 就跟其他語言每年會調查開發者的意見回饋，WebAssembly 這邊也不例外，所以最近就看到 2023 的調查結果已經[公布](https://blog.scottlogic.com/2023/10/18/the-state-of-webassembly-2023.html)了！
-
-![src: [https://blog.scottlogic.com/2023/10/18/the-state-of-webassembly-2023.html](https://blog.scottlogic.com/2023/10/18/the-state-of-webassembly-2023.html)](../assets/網路黑手的呢喃 #37 - Untitled 2.png)
 
 src: [https://blog.scottlogic.com/2023/10/18/the-state-of-webassembly-2023.html](https://blog.scottlogic.com/2023/10/18/the-state-of-webassembly-2023.html)
 

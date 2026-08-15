@@ -30,8 +30,6 @@ tags:
 
 [https://github.com/denoland/deno/pull/14485](https://github.com/denoland/deno/pull/14485)
 
-![Untitled](../assets/網路黑手的呢喃 #35 - Untitled.png)
-
 不過看起來好像是有可能會直接在 v8 那邊調整，看起來可以期待一下。
 
 ### Node.js 又出現 websocket 的提案了
@@ -54,8 +52,6 @@ ESM 之於 JS，大概跟 python2 問題差不多吧 😅
 
 伴隨著不斷進化的 ESMCScript，TypeScript 也是不斷更新加上漸趨成熟的功能跟語法糖，當然也包含了不少的修正與優化，有興趣的開發者可以看這篇整理好的文章 - [**TypeScript 5.3 First Look](https://www.totaltypescript.com/typescript-5-3)。**
 
-![src: [https://twitter.com/mattpocockuk/status/1694680319532609935](https://twitter.com/mattpocockuk/status/1694680319532609935)](../assets/網路黑手的呢喃 #35 - Untitled 1.png)
-
 src: [https://twitter.com/mattpocockuk/status/1694680319532609935](https://twitter.com/mattpocockuk/status/1694680319532609935)
 
 裡面自己覺得比較有趣的是 `throw expressions` 跟 `isolated Declarations` ，[throw expression](https://github.com/tc39/proposal-throw-expressions) 顧名思義就是提供更彈性的 throw 使用方式。
@@ -76,27 +72,19 @@ function save(filename = throw new TypeError("Argument required")) {
 
 **優化後的結果比較如下，頗威！*
 
-![Untitled](../assets/網路黑手的呢喃 #35 - Untitled 2.png)
-
 ### Bun 里程碑 - 1.0!
 
 終於也要達標的 Bun，即將在 9/7 推出 1.0 版本啦！不知道他們會不會也走上跟對手一樣，推出自家開發平台這類更多搭配的服務，或許可以期待下他們的下一步🫣。
 
-![src: [https://bun.sh/1.0](https://bun.sh/1.0)](../assets/網路黑手的呢喃 #35 - Untitled 3.png)
-
 src: [https://bun.sh/1.0](https://bun.sh/1.0)
 
 # 玩火自焚的 G 社
-
-![src: [https://twitter.com/tzangms/status/1697050631033557463](https://twitter.com/tzangms/status/1697050631033557463)](../assets/網路黑手的呢喃 #35 - Untitled 4.png)
 
 src: [https://twitter.com/tzangms/status/1697050631033557463](https://twitter.com/tzangms/status/1697050631033557463)
 
 Google 關掉服務已經是一點都不意外的事了，但是對於他們不斷挑戰消費者的心，還是覺得非常敬佩（反串要註明🔥），自從上次無預警把使用者眾的 Domains 關掉之後，這次出現一個更誇張的作法（如上🔼）
 
 近年來根本推不出一個受大眾市場接受的服務，身為老大哥的 G 社應該顏面盡失，不過除了消費者市場之外，他們的雲端服務（GCP）品質也不怎麼樣🤷。
-
-![src: [https://twitter.com/zuhayeer/status/1696409759627551025](https://twitter.com/zuhayeer/status/1696409759627551025)](../assets/網路黑手的呢喃 #35 - Untitled 5.png)
 
 src: [https://twitter.com/zuhayeer/status/1696409759627551025](https://twitter.com/zuhayeer/status/1696409759627551025)
 
@@ -107,8 +95,6 @@ src: [https://twitter.com/zuhayeer/status/1696409759627551025](https://twitter.c
 雖然前端框架出現新東西一點都不算新奇的事了😅，不過最近 Astro 默默也是爬到 3.0 的版本，也一併丟出了不少東西。
 
 我自己是沒實際玩過，不過看起來更貼近靜態內容產出的框架（跟 Gatsby 類似?），所以如果你目標是大型的網路服務的話，可能不太適合用 Astro 來開發，不過如果是內容呈現的目的，看起來 Astro 提供一個很舒服的開發環境可以讓你快速搭建起來。（這邊有強者大火力展示的幾個範例：[Shopofy playlist](https://github.com/igorm84/spotify-astro-transitions)、[Soundboard](https://github.com/bholmesdev/astro-soundboard)）
-
-![src: [https://twitter.com/astrodotbuild/status/1696900204853698767](https://twitter.com/astrodotbuild/status/1696900204853698767)](../assets/網路黑手的呢喃 #35 - Untitled 6.png)
 
 src: [https://twitter.com/astrodotbuild/status/1696900204853698767](https://twitter.com/astrodotbuild/status/1696900204853698767)
 
@@ -121,8 +107,6 @@ src: [https://twitter.com/astrodotbuild/status/1696900204853698767](https://twit
 
 應該也是提供針對 edge-computing 的資料庫服務，可以無縫接上自己的 Astro 專案來使用（當然你應該還是可以選擇使用自己的資料庫服務，這個不會是強制的）。
 
-![src: [https://twitter.com/astrodotbuild/status/1697649020326617436](https://twitter.com/astrodotbuild/status/1697649020326617436)](../assets/網路黑手的呢喃 #35 - Untitled 7.png)
-
 src: [https://twitter.com/astrodotbuild/status/1697649020326617436](https://twitter.com/astrodotbuild/status/1697649020326617436)
 
 # 1Password 支援 Passkey，還給你整套實作的開源
@@ -132,8 +116,6 @@ src: [https://twitter.com/astrodotbuild/status/1697649020326617436](https://twit
 [https://github.com/1Password/passkey-rs](https://github.com/1Password/passkey-rs)
 
 [Passkey](https://www.ithome.com.tw/news/156706) 是最近幾個大廠積極推動的下一代的密碼解決方案，在 Google 帶頭之下，也開始有許多[其他](https://help.shopify.com/en/manual/your-account/logging-in/passkeys)的[服務](https://docs.github.com/en/authentication/authenticating-with-a-passkey/about-passkeys)也[開始支援](https://newsroom.paypal-corp.com/2023-03-23-Secure-Payments-with-Passkeys-Is-Now-Available-on-PayPal-for-Google-Android-Devices) Passkey 登入。身為密碼管理器的 1Password 當然也在近期[正式支援 Passkey](https://1password.com/zh-tw/product/passkeys) 了。不過除了支援 Passkey 的使用之外，它們在最近也放出了這篇技術文章，說明他們的實作方式以及為什麼不使用現成的一些函式庫，而要改自主開發的原因，值得一看！
-
-![src: [https://twitter.com/1Password/status/1696596584559956004](https://twitter.com/1Password/status/1696596584559956004)](../assets/網路黑手的呢喃 #35 - Untitled 8.png)
 
 src: [https://twitter.com/1Password/status/1696596584559956004](https://twitter.com/1Password/status/1696596584559956004)
 

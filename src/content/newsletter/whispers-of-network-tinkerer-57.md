@@ -111,6 +111,7 @@ Docker 最近[調漲了許多旗下的服務價格](https://www.ithome.com.tw/ne
 這次是因為升級 Node.js（從 v18 → v20）之後，發現了效能下降的問題：
 
 <aside>
+
 💡
 
 這邊發現是從 dashboard 圖表，再次印證 monitor/metrics/logs 是發現問題跟調校的第一步。 😄

@@ -123,11 +123,7 @@ export default function AddToCart({ productId }) {
 
 不過 bluesky 這邊的核心成員 [pfrazee.com](http://pfrazee.com) 倒是很冷靜出來[說明](https://staging.bsky.app/profile/pfrazee.com/post/3jv72j3fp6g2r)（其實我很喜歡 bluesky 有個原因是對他們目前的核心成員都蠻有好感的，對各種質疑跟建議，都看到他們很高EQ的回覆跟仔細的說明👍）。
 
-![Untitled](../assets/網路黑手的呢喃 #30 - Untitled.png)
-
 老實說，我覺得大家的目標應該是蠻一致的，只是各有不同的實作，如果都能對改善現有的社交服務的環境有幫助，又有什麼關係呢？
-
-![*之前還看到那位成員寫了[這段](https://staging.bsky.app/profile/iefan.bsky.social/post/3jupudm6xb62v)，覺得還蠻感動的，怎麼後來變成這樣😅*](../assets/網路黑手的呢喃 #30 - Untitled 1.png)
 
 *之前還看到那位成員寫了[這段](https://staging.bsky.app/profile/iefan.bsky.social/post/3jupudm6xb62v)，覺得還蠻感動的，怎麼後來變成這樣😅*
 

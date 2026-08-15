@@ -25,8 +25,6 @@ Deno 1.44 還是繼續在倒數、平常都沒仔細想過的驗證郵件問題�
 
 上個版本提到 Deno 已經開啟了測試模式，為了即將到來的 2.0 開始作準備了，不過測試的期間，針對新版本的開發也還是不斷進行中，最近看到 Ryan 貼出終於 Deno 也支援私有註冊表的功能，真的是等好久了啊~
 
-![src: [https://x.com/rough__sea/status/1794430918267916342](https://x.com/rough__sea/status/1794430918267916342)](../assets/網路黑手的呢喃 #48 - Untitled.png)
-
 src: [https://x.com/rough__sea/status/1794430918267916342](https://x.com/rough__sea/status/1794430918267916342)
 
 結果看到這個過沒多久，官方就釋出包含這項功能的 1.44 版本啦，雖然我們仍舊不知道 2.0 什麼時候才會出現 😅，看可以看到最近幾個 minor version 更多的都是 Node.js 生態的相容、穩定、效能等的更新，看起來應該是在作最後收尾的動作了。
@@ -44,8 +42,6 @@ src: [https://x.com/rough__sea/status/1794430918267916342](https://x.com/rough__
 無意間掃到這篇大大們討論電子郵件驗證方法的安全性問題， 之前都沒有仔細思考過這個問題，原來還有這個沒想過的面向（不過我猜垃圾帳號專門戶也可能會用類似的手法，來批次處理驗證的行為 🤔）。
 
 只能說網路安全真的是博大精深的議題，每個露出點都可能是個潛在的攻擊目標，各種手法也是不斷推陳出新。
-
-![src: [https://x.com/hulitw/status/1795305413220635068](https://x.com/hulitw/status/1795305413220635068)](../assets/網路黑手的呢喃 #48 - Untitled 1.png)
 
 src: [https://x.com/hulitw/status/1795305413220635068](https://x.com/hulitw/status/1795305413220635068)
 
@@ -78,8 +74,6 @@ src: [https://x.com/hulitw/status/1795305413220635068](https://x.com/hulitw/stat
 ## 新酷音也走上 rust 之路
 
 留意到讀源碼頻道的這篇文章（~~絕對不是因為看到 rust 就會停下來的怪怪習慣~~），沒想到這篇記錄文相當有料阿，從頭到尾敘述了把新酷音原本的 C 改寫成 Rust 的超詳細過程，想感受一下開源人熱情的話，這篇不要錯過！
-
-![src: [https://x.com/daininduyuanma/status/1797117900677157161](https://x.com/daininduyuanma/status/1797117900677157161)](../assets/網路黑手的呢喃 #48 - 4664563e-ca14-4cd2-8eb8-1031063826e6.png)
 
 src: [https://x.com/daininduyuanma/status/1797117900677157161](https://x.com/daininduyuanma/status/1797117900677157161)
 
@@ -220,8 +214,6 @@ MS 宣布的 [**Copilot+ PC](https://www.youtube.com/watch?v=5JmkWJNng2I)** 稍�
 **身為追星大叔粉，就是只有滿滿的 KPOP** 🎉
 
 隨時補充能量是非常重要的事，希望可以帶給同為追星民主台灣人（好長）一點力量，大家加油！！
-
-![izone.gif](../assets/網路黑手的呢喃 #48 - izone.gif)
 
 **友善提醒：這個版本的 Panorama 非常危險，觀賞前需要審慎評估，不然可能會跟世界脫離連結數分鐘至數小時不等* 😂。
 

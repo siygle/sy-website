@@ -6,13 +6,15 @@
   "scripts": {
     "dev": "astro dev",
     "build": "astro build && pagefind --site dist/client && cp -r dist/client/pagefind public/",
-    "preview": "astro preview"
+    "preview": "astro preview",
+    "test": "node --test 'packages/astro-newsletter/test/**/*.test.ts'"
   },
   "dependencies": {
     "@astrojs/cloudflare": "~13.0.1",
     "@astrojs/mdx": "^5.0.0",
     "@astrojs/react": "^5.0.0",
     "@astrojs/rss": "^4.0.17",
+    "@sylee/astro-newsletter": "workspace:*",
     "astro": "^6.0.1",
     "highlight.js": "^11.11.1",
     "react": "^19.2.3",

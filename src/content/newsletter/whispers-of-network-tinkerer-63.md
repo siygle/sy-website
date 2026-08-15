@@ -42,6 +42,7 @@ tags:
 ![](https://x.com/deathlas3r/status/1903883363217535188)
 
 <aside>
+
 💡
 
 不知道會不會延燒下去，不過看到不少開發者跳出來應該也是受了 Vercel 很多苦頭，雖然真的 Next.js + Vercel 是前端開發大利器，但是帶來的問題也是不少。
@@ -83,6 +84,7 @@ Today, Lynx powers an extremely wide spectrum of surfaces—from the lightweight
 ![](https://www.youtube.com/watch?v=zI6ZQls54Ms)
 
 <aside>
+
 💡
 
 不知道 Edge AI 到底要走多久才能真的普及，不過說不定真的會走向家家戶戶之後都會多一個 AI Hub 的存在，自己下載對應的模型然後對應不同的使用場景。 😆
@@ -112,6 +114,7 @@ Today, Lynx powers an extremely wide spectrum of surfaces—from the lightweight
 老實說這種神仙打架輪不到我這種 nobody 來品頭論足什麼，只要工具好用、跑起來更友善、更爽，誰還在乎到底是用什麼寫的，當基本教義派最無聊了（當然身為 rust 粉還是期盼有一條支線是真的打算用 Rust 重寫過，還是期待 [voidzero](https://voidzero.dev/) 有沒有機會 🤣
 
 <aside>
+
 💡
 
 不過老實說，最近一直覺得如果 AI 跟 Wsam 真的能持續發展的話，要嘛是寫什麼大大多是AI 直接幫你處理了，要嘛是之後無論你用什麼語言最後都會編譯成 WASM 來跑，這樣的世界不知道有沒有機會來到。🤔
@@ -127,6 +130,7 @@ Today, Lynx powers an extremely wide spectrum of surfaces—from the lightweight
 ![](https://bsky.app/profile/sylee.dev/post/3lk65kilath2n)
 
 <aside>
+
 💡
 
 而且最近看到下面這些推又更心動了 😅（沒錯我就是一個牆頭草）
@@ -140,6 +144,7 @@ Today, Lynx powers an extremely wide spectrum of surfaces—from the lightweight
 ![](https://x.com/aidenybai/status/1902777155085537481)
 
 <aside>
+
 💡
 
 另外，下面這推想特別拿出來說一下，延續上面提到的 Typescript rePort to Golang 的議題，Bun 的作者也出來寫了一些東西，不過不是在那邊吵要用什麼語言，而是提到 JS 的軟肋，就是沒有 Threads 才會導致這個決定性的差異，然後提到他其實對這個很有興趣。🤣
@@ -165,6 +170,7 @@ Today, Lynx powers an extremely wide spectrum of surfaces—from the lightweight
 ![](https://x.com/_hisriver/status/1898948789249229082)
 
 <aside>
+
 💡
 
 雖然目前專案才剛開跑，能提供的支援也還非常陽春，不過期待後續，我自己式很期待這個專案有機會變成簡化版的 Rust + AI 開發工具這個路線，說不定會長成很有趣的開發工具。 🤩

@@ -1,6 +1,8 @@
 import { defineCollection } from 'astro:content';
 import { glob } from 'astro/loaders';
 import { z } from 'astro/zod';
+import newsletterOptions from '../newsletter.config.mjs';
+import { newsletterCollection } from '@sylee/astro-newsletter/content';
 
 const tagSchema = z.any().transform((val) => {
   if (!val) return [];
@@ -22,16 +24,6 @@ const tagSchema = z.any().transform((val) => {
   return [];
 }).optional().default([]);
 
-const newsletterCollection = defineCollection({
-  loader: glob({ pattern: '**/*.{md,mdx}', base: './src/content/newsletter' }),
-  schema: z.object({
-    title: z.string(),
-    date: z.string(),
-    description: z.string().optional().default(''),
-    tags: tagSchema,
-  }),
-});
-
 const blogCollection = defineCollection({
   loader: glob({ pattern: '**/*.{md,mdx}', base: './src/content/blog' }),
   schema: z.object({
@@ -49,5 +41,5 @@ const blogCollection = defineCollection({
 
 export const collections = {
   blog: blogCollection,
-  newsletter: newsletterCollection,
+  newsletter: newsletterCollection(newsletterOptions),
 };

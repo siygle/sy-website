@@ -1,0 +1,31 @@
+{
+  // Root wrangler config that enables the newsletter CMS.
+  //
+  // @astrojs/cloudflare auto-detects this file at build time and MERGES these
+  // bindings into the generated dist/server/wrangler.json — so the existing
+  // deploy command (`deploy --config dist/server/wrangler.json`) picks them up
+  // and the SESSION KV / main / assets / rules are still added automatically.
+  // Verified: a minimal config with just name + compatibility_date + the two
+  // bindings is enough.
+  //
+  // To enable the CMS: copy this to `wrangler.jsonc` (NOT ignored — it must be
+  // committed so CI's build sees it), fill the two ids, then
+  // `wrangler deploy --dry-run --config dist/server/wrangler.json` to validate.
+  //
+  // `name` and `compatibility_date` must match a fresh `pnpm build`'s
+  // dist/server/wrangler.json (they can drift as the adapter updates).
+  "$schema": "node_modules/wrangler/config-schema.json",
+  "name": "sylee-dev",
+  "compatibility_date": "2026-03-01",
+  "compatibility_flags": [],
+  "d1_databases": [
+    {
+      "binding": "NEWSLETTER_DB",
+      "database_name": "sylee-newsletter",
+      "database_id": "3908a1e6-c8fb-48e1-9529-c500d96d49c2"
+    }
+  ],
+  "r2_buckets": [
+    { "binding": "NEWSLETTER_MEDIA", "bucket_name": "sylee-newsletter-media" }
+  ]
+}

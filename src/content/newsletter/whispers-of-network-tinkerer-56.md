@@ -17,8 +17,6 @@ tags:
 
 可能看到 JS 開發工具相關，覺得這也不是什麼新聞（畢竟這個生態三不五時就在重造輪😆），不過 VoidZero 不同於其他的新創，因為他們並不是從零開始的團隊，而是包含了很多本來就已經是知名的幾個專案集合而成的，看一下這精美的名單 ⬇️
 
-![image.png](../assets/網路黑手的呢喃 #56 - image.png)
-
 **其實如果對這個生態略懂的話，應該不難知道為什麼這些專案會聯合起來* 🤣
 
 雖然開發工具的創業直覺上是一條艱困的路，但不同其他的創業團隊，這些專案都已經是赫赫有名的開源專案，只是聯合起來而已，不需要再經歷開發者的檢驗。另外，它們幾乎清一色都是 JS + Rust 的工具鏈，看起來這個路線很值得期待阿 🤩
@@ -34,6 +32,7 @@ tags:
 不過有趣的是，它不是說支援 Next.js 而是透過名為 [OpenNext](https://opennext.js.org/) 的這個專案，而且還拉上了另一個開源專案 - [SST](https://sst.dev/)。
 
 <aside>
+
 💡
 
 SST is a framework that makes it easy to build modern full-stack applications on your own infrastructure.
@@ -74,8 +73,6 @@ SST is a framework that makes it easy to build modern full-stack applications on
 
 不過不管是上面或是下面這題，我想應該都不會是短時間會出現的東西（雖然 structs 這個提案，一瞬間就 stage 2 有點嚇到我 😆）。
 
-![image.png](../assets/網路黑手的呢喃 #56 - 7d3c7764-f978-4f7a-94af-6c98be4b14d6.png)
-
 # 開源世界真有趣
 
 ### Deno 提供自架 JSR 的設定
@@ -108,8 +105,6 @@ SST is a framework that makes it easy to build modern full-stack applications on
 
 這篇由日本開發者撰寫的文章寫的非常詳細，針對一些 ActivityPub 的運作原理跟遭遇問題，都做了簡單的介紹，歡迎大家可以閱讀（主要就是下列這三項，細節當然就大家自己到文章看吧😆）
 
-![image.png](../assets/網路黑手的呢喃 #56 - 3d7c0da4-44bb-4648-802c-117ae17fa3f7.png)
-
 - 第一個可視的問題，比較像分散式聯邦的文化造成的，但要改變也困難。
 - 第二個可攜性則是 ActivityPub 的轉移並沒有那麼容易，然後造成後續的一些問題。
 - 第三個擴展的技術的問題，之前其實有提過，有位 AWS 的開發者之前就針對這點寫了一篇文章來說明，有興趣也可以跳轉 → https://justingarrison.com/blog/2023-04-24-mastodon-is-doomed/。
@@ -125,6 +120,7 @@ Discord 最近也發佈了一篇優化相關的文章，主要是提到透過替
 其中有段話也是令人印象深刻 ⤵️
 
 <aside>
+
 💡
 
 Data is a big driver of engineering at Discord, and the data speaks for itself: it wasn’t worth investing more effort into.

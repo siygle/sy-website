@@ -92,8 +92,6 @@ tags:
 
 身為窮人黨的一員，無所不用其極的榨乾開發環境的資源一直是很重要的事，畢竟每個雲端服務一個比一個貴，實在是負擔不起 😅。所以近期又注意到這個好用的工具 🔽
 
-![Untitled](../assets/網路黑手的呢喃 #47 - Untitled.png)
-
 [https://github.com/Dokploy/dokploy](https://github.com/Dokploy/dokploy)
 
 其實這種類 heroku 的工具真的不少，最早期我接觸到的是 [dokku](https://github.com/dokku/dokku)，他到現在也仍舊是非常方便的工具，隨便找一台 VPS 就可以跑起來，然後就可以簡單佈署 & 管理自己的一大堆 side-project 啦！要測試一些網路服務的專案也是非常方便。在 docker 生態普及之後，要作這類的工具又更方便了，基本上清一色支援 Docker，再加上個 proxy server 就算是個陽春版本了。
@@ -107,8 +105,6 @@ Dokploy 看起來也是，它是基於 Docker + Traefik，不過不能不大推�
 **身為 AWS CTO 寫文章玩 side-project 來推薦自家不是很正常的事嘛** 😆
 
 最近大大[寫了一篇](https://www.allthingsdistributed.com/2024/05/hacking-our-way-to-better-team-meetings.html?utm_source=twitter&utm_medium=social)因為開會而延伸出來的一個小專案，當然是結合了幾個酷酷的東西來實作才能符合身為雲端大廠的身分（自己說），這個小工具簡單說就是「根據會議的錄音檔，自動解析並做出統整，然後貼回開會人員的群組」，實作上當然是用了 AWS 自家的 Lamdba、S3、Bedrock 等工具（順便火力展示）
-
-![src: [https://twitter.com/Werner/status/1788269263557689430](https://twitter.com/Werner/status/1788269263557689430)](../assets/網路黑手的呢喃 #47 - Untitled 1.png)
 
 src: [https://twitter.com/Werner/status/1788269263557689430](https://twitter.com/Werner/status/1788269263557689430)
 
@@ -125,8 +121,6 @@ src: [https://twitter.com/Werner/status/1788269263557689430](https://twitter.com
 ### 速度為王？
 
 看起來 AI 的回應速度會很大程度影響能不能加速普及化的一項重要因素，所以也越來越多這類的實驗出現，譬如之前提過的 [llamafile](https://github.com/Mozilla-Ocho/llamafile) 這類的嘗試，還有之前 Apple 放出的模型 - [ELM](https://huggingface.co/apple/OpenELM)。然後無意間看到有看到種本地跟 edge 的搭配，或許也是一種路線（是說 Cloudflare 好像也提供了不少好用的 AI 工具，應該要找時間來玩玩看！）
-
-![src: [https://twitter.com/dotey/status/1787325739747995872](https://twitter.com/dotey/status/1787325739747995872)](../assets/網路黑手的呢喃 #47 - Untitled 2.png)
 
 src: [https://twitter.com/dotey/status/1787325739747995872](https://twitter.com/dotey/status/1787325739747995872)
 

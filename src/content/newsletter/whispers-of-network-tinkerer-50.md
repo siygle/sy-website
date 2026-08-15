@@ -26,8 +26,6 @@ Bun 第三季目標（好像有好玩的要來了）、State of JS 2023 跟一�
 
 看到 Bun 那位都不睡覺的專案領導人又公布了下一季的專案目標 🤣 ⬇️
 
-![src: [https://x.com/jarredsumner/status/1807731197046653438](https://x.com/jarredsumner/status/1807731197046653438)](../assets/網路黑手的呢喃 #50 - Untitled.png)
-
 src: [https://x.com/jarredsumner/status/1807731197046653438](https://x.com/jarredsumner/status/1807731197046653438)
 
 Kit 可能是類似 deno compile 的存在，然後 Text lockfile 目前不確定是什麼功能 🤔，然後除了一貫的效能優化之外，Node.js 的相容看起來也是 Bun 現階段注重的工作項目之一。
@@ -36,17 +34,11 @@ Kit 可能是類似 deno compile 的存在，然後 Text lockfile 目前不確�
 
 說到每年的問卷 State of JavaScript 剛發出的 2023 統計結果（都已經年中了才放去年的資料，會不會太多了），其實最近感覺對 JS 生態越來越無感了，今年也的確沒什麼很讓人印象深刻的東西，不過各痛點真的看了之後，應該是眾 JS 開發者都會苦笑的點 😂
 
-![src: [https://2023.stateofjs.com/en-US/libraries/front-end-frameworks/#front_end_frameworks_pain_points](https://2023.stateofjs.com/en-US/libraries/front-end-frameworks/#front_end_frameworks_pain_points)](../assets/網路黑手的呢喃 #50 - Untitled 1.png)
-
 src: [https://2023.stateofjs.com/en-US/libraries/front-end-frameworks/#front_end_frameworks_pain_points](https://2023.stateofjs.com/en-US/libraries/front-end-frameworks/#front_end_frameworks_pain_points)
-
-![src: [https://2023.stateofjs.com/en-US/features/#language_pain_points](https://2023.stateofjs.com/en-US/features/#language_pain_points)](../assets/網路黑手的呢喃 #50 - Untitled 2.png)
 
 src: [https://2023.stateofjs.com/en-US/features/#language_pain_points](https://2023.stateofjs.com/en-US/features/#language_pain_points)
 
 還有永遠都是那幾項的 missing features 😓
-
-![src: [https://2023.stateofjs.com/en-US/usage/#top_currently_missing_from_js](https://2023.stateofjs.com/en-US/usage/#top_currently_missing_from_js)](../assets/網路黑手的呢喃 #50 - Untitled 3.png)
 
 src: [https://2023.stateofjs.com/en-US/usage/#top_currently_missing_from_js](https://2023.stateofjs.com/en-US/usage/#top_currently_missing_from_js)
 
@@ -97,8 +89,6 @@ TS 5.5 問世！
 
 **當然根據生態慣例，還有另一個類似的專案 - [**oxc**](https://github.com/oxc-project/oxc)*  😅。
 
-![src: [https://x.com/jonathan_wilke/status/1805846786164015301](https://x.com/jonathan_wilke/status/1805846786164015301)](../assets/網路黑手的呢喃 #50 - Untitled 4.png)
-
 src: [https://x.com/jonathan_wilke/status/1805846786164015301](https://x.com/jonathan_wilke/status/1805846786164015301)
 
 # 開源世界真有趣
@@ -108,8 +98,6 @@ src: [https://x.com/jonathan_wilke/status/1805846786164015301](https://x.com/jon
 看到 Github 前創辦人就知道有戲 🤣
 
 雖然 Web 不算是目前的顯學，不過還是很多創新跟有趣的東西都是在其上發展的，然後瀏覽器的發展當然在其中佔了很重要的地位。雖然目前檯面上的瀏覽器相當多，不過很多都是基於 Chrome 背後的開源專案 - [Chromium](https://www.chromium.org/Home/)，真的能算上不同陣營的大概只剩 Firefox 以及 iOS 陣營的 Webkit 了吧？
-
-![src: [https://x.com/defunkt/status/1807779408092234134](https://x.com/defunkt/status/1807779408092234134)](../assets/網路黑手的呢喃 #50 - Untitled 5.png)
 
 src: [https://x.com/defunkt/status/1807779408092234134](https://x.com/defunkt/status/1807779408092234134)
 
@@ -134,8 +122,6 @@ src: [https://x.com/defunkt/status/1807779408092234134](https://x.com/defunkt/st
 這邊是我稍微追一下內容之後理解的部分，當然還有很多的討論（也不要只看我的片面之詞），大家可能都有不同的想法。其實我一開始也覺得是不是作者別有用心，才特別提出這個變更的，而且針對已經是數年前的 0.4，還需要支援，似乎也有點小題大做。
 
 不過後來看了其他開發者陸續有發表各自的看法，覺得或許是自己想得太狹隘了點，對於 Node.js 生態有開發者願意作這麼大的努力，就為了達到向下相容，這不是 JS 這個生態一直很缺乏的一點嗎？
-
-![src: [https://x.com/mitsuhiko/status/1805478152539386095](https://x.com/mitsuhiko/status/1805478152539386095)](../assets/網路黑手的呢喃 #50 - Untitled 6.png)
 
 src: [https://x.com/mitsuhiko/status/1805478152539386095](https://x.com/mitsuhiko/status/1805478152539386095)
 
@@ -184,8 +170,6 @@ LangChain 官方的 YouTube 頻道上也有很多相關的教學與範例，如�
 雖然之前的 Rabbit R1 以及 AI Pin 都已經氣數已盡，不過想搭上 AI 這班車的創業家還是不會輕易被嚇跑的，尤其是目前硬體還在摸索的階段，大家都在嘗試什麼是有可能成功的形式。
 
 最近又出現這個名為 Friend 的佩戴裝置：
-
-![Untitled](../assets/網路黑手的呢喃 #50 - Untitled 7.png)
 
 目前看介紹跟展示影片，很像是 Rewind 以及之前 MS 爭議很大的 Recall，但是不同於以上都是針對電腦的桌面記錄，Friend 則是針對我們日常生活的所有「說話」記錄。看起來像項鍊一樣的外型，其實就是一個隨時錄音的裝置，搭配上 app 的 AI，隨時把你的說話記錄，轉換文字之後順便概括提供重點給你。
 

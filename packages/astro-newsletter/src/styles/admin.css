@@ -1,0 +1,48 @@
+/* Minimal admin styling — internal tool, kept deliberately plain. */
+:root {
+  --nl-border: #e5e5e5;
+  --nl-muted: #666;
+  --nl-fg: #111;
+}
+* { box-sizing: border-box; }
+body.nl-admin {
+  margin: 0;
+  font-family: ui-sans-serif, system-ui, -apple-system, "Segoe UI", Roboto, sans-serif;
+  color: var(--nl-fg);
+  background: #fafafa;
+  line-height: 1.5;
+}
+.nl-admin main { max-width: 900px; margin: 0 auto; padding: 2rem 1.5rem; }
+.nl-admin header.bar {
+  display: flex; align-items: center; justify-content: space-between;
+  padding: 0.9rem 1.5rem; border-bottom: 1px solid var(--nl-border); background: #fff;
+}
+.nl-admin header.bar a { color: var(--nl-fg); text-decoration: none; font-weight: 700; }
+.nl-admin h1 { font-size: 1.5rem; margin: 0 0 1.2rem; }
+.nl-admin table { width: 100%; border-collapse: collapse; background: #fff; }
+.nl-admin th, .nl-admin td { text-align: left; padding: 0.6rem 0.75rem; border-bottom: 1px solid var(--nl-border); font-size: 0.92rem; }
+.nl-admin th { color: var(--nl-muted); font-weight: 600; }
+.nl-admin .status { font-size: 0.78rem; padding: 0.1rem 0.5rem; border-radius: 999px; }
+.nl-admin .status.published { background: #e7f6ec; color: #1a7f37; }
+.nl-admin .status.draft { background: #f1f1f1; color: #666; }
+.nl-admin label { display: block; font-size: 0.85rem; color: var(--nl-muted); margin: 0.9rem 0 0.25rem; }
+.nl-admin input[type=text], .nl-admin input[type=date], .nl-admin input[type=password], .nl-admin textarea {
+  width: 100%; padding: 0.55rem 0.65rem; border: 1px solid var(--nl-border); border-radius: 6px;
+  font: inherit; background: #fff;
+}
+.nl-admin textarea { min-height: 60vh; font-family: ui-monospace, SFMono-Regular, Menlo, monospace; font-size: 0.85rem; }
+.nl-admin .btn {
+  display: inline-block; padding: 0.5rem 0.9rem; border: 1px solid var(--nl-fg); background: var(--nl-fg);
+  color: #fff; border-radius: 6px; font: inherit; cursor: pointer; text-decoration: none;
+}
+.nl-admin .btn.secondary { background: #fff; color: var(--nl-fg); }
+.nl-admin .btn.danger { background: #fff; color: #b42318; border-color: #b42318; }
+.nl-admin .row { display: flex; gap: 0.5rem; align-items: center; flex-wrap: wrap; }
+.nl-admin .toolbar { display: flex; gap: 0.5rem; margin: 1rem 0; flex-wrap: wrap; }
+.nl-admin .grid2 { display: grid; grid-template-columns: 1fr 1fr; gap: 1rem; }
+.nl-admin .msg { padding: 0.6rem 0.8rem; border-radius: 6px; margin: 0.8rem 0; font-size: 0.9rem; display: none; }
+.nl-admin .msg.err { background: #fdecec; color: #b42318; display: block; }
+.nl-admin .msg.ok { background: #e7f6ec; color: #1a7f37; display: block; }
+.nl-admin .warn { background: #fff7e6; color: #9a6700; border: 1px solid #f5d98b; padding: 0.6rem 0.8rem; border-radius: 6px; margin: 0.8rem 0; font-size: 0.9rem; }
+.nl-admin .preview { border: 1px solid var(--nl-border); border-radius: 6px; background: #fff; padding: 1rem; min-height: 60vh; overflow: auto; }
+@media (max-width: 720px) { .nl-admin .grid2 { grid-template-columns: 1fr; } }

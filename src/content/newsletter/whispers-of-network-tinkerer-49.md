@@ -33,8 +33,6 @@ AWS 終於準備推出 TPE Region 啦！Deno 推出企業服務、TC39 例行會
 
 雖然知道 Deno 一直都有跟幾個算知名的企業合作，不過現在也終於看到它們正式提供企業用戶的服務，或許沒什麼新奇的功能，不過有穩定的合作就代表有收入，不再一昧燒錢對未來發展總是好的。此外，其中也提及企業客戶有有先提出功能需求的權力（就像緊接著這篇新聞稿之後，也放出了幾項針對企業用戶常用的 [**Subhosting**](https://deno.com/blog/subhosting-flexible-domain-association) 的更新功能），能搭配業界的實際需求也是一件好事。 👍
 
-![src: [https://deno.com/enterprise](https://deno.com/enterprise)](../assets/網路黑手的呢喃 #49 - Untitled.png)
-
 src: [https://deno.com/enterprise](https://deno.com/enterprise)
 
 ## TC39 又開會啦！
@@ -42,8 +40,6 @@ src: [https://deno.com/enterprise](https://deno.com/enterprise)
 熟悉 ECMAScript 流程的應該都知到 TC39 這個組織，也知道它們會週期性的開會來決定各項不同的提案有沒有機會能納入到 ECMAScript 的規範中，雖然這個流程是個漫長又無聊的一段時間 😅，不過也是可以看到不少有趣的東西在裡面。（無論最後有沒有被通過）
 
 每次開會之後，都會有 TC39 的成員說明這次有那些提案晉級，以及它們大概是什麼的改動，所以有興趣的話，最新一期的內容可以參考下圖這個連結跳轉。
-
-![src: [https://x.com/robpalmer2/status/1801239842908438694](https://x.com/robpalmer2/status/1801239842908438694)](../assets/網路黑手的呢喃 #49 - Untitled 1.png)
 
 src: [https://x.com/robpalmer2/status/1801239842908438694](https://x.com/robpalmer2/status/1801239842908438694)
 
@@ -107,11 +103,7 @@ JSON 格式幾乎已經是開發網路服務一定會經手的資料格式，所
 
 然後透過 jnv 就可以想拿什麼欄位資料，就下 pattern 給它即可（如下）
 
-![bsky.gif](../assets/網路黑手的呢喃 #49 - bsky.gif)
-
 ## 雖然知道 JS runtime 非常多，但沒想到這麼多 😅
-
-![Untitled](../assets/網路黑手的呢喃 #49 - Untitled 2.png)
 
 其實這篇一開始是被上圖吸引的，原來現在有這麼多不同實作版本的 JS engine，不能不說 web ~~重造輪子的習慣~~ 活潑的生態圈，真的是永遠都不會改變 😅。這邊還只是算 engine 而已，如果再加上不同實作版本的 runtime 就更精采了。
 
@@ -122,8 +114,6 @@ JSON 格式幾乎已經是開發網路服務一定會經手的資料格式，所
 ### 你知道 Linux 各個目錄代表什麼嗎？
 
 雖然常常在 *nix 的 terminal 切來切去，但還真的沒仔細想過每個命名後面代表的含義，原來 `/usr` 跟我想的差這麼多 😅。
-
-![src: [https://x.com/bytebytego/status/1802216296387690697/photo/1](https://x.com/bytebytego/status/1802216296387690697/photo/1)](../assets/網路黑手的呢喃 #49 - Untitled 3.png)
 
 src: [https://x.com/bytebytego/status/1802216296387690697/photo/1](https://x.com/bytebytego/status/1802216296387690697/photo/1)
 
@@ -146,8 +136,6 @@ src: [https://x.com/bytebytego/status/1802216296387690697/photo/1](https://x.com
 ### 其二，為了「取得內容」不擇手段
 
 另外，這個是最近炎上的一個事件，就是 Adobe 最近變更了他們的使用者條款，然後裡面有一些非常誇張的內容（目前[還在等待 Adobe 的回覆](https://x.com/SamSantala/status/1798292952219091042)，但似乎它們也沒有要改的意思）。
-
-![src: [https://x.com/MC_SHIZU/status/1798862223269560829](https://x.com/MC_SHIZU/status/1798862223269560829)](../assets/網路黑手的呢喃 #49 - Untitled 4.png)
 
 src: [https://x.com/MC_SHIZU/status/1798862223269560829](https://x.com/MC_SHIZU/status/1798862223269560829)
 
@@ -184,8 +172,6 @@ src: [https://x.com/MC_SHIZU/status/1798862223269560829](https://x.com/MC_SHIZU/
 通常每年的 WWDC 之後，會出現的一個現象就是新版的 OS 出來之後，哪些第三方準備要收攤了，然後今年就輪到 1Password 了，因為 Apple 終於推出自家的 Password Manager。不過老實說，我看到類似的言論的時候，只是露出了尷尬而不失禮貌的微笑。😆
 
 就過沒過多久真的出來打臉了，看到 DHH 轉了一個因為 [SIM swapped](https://blog.twnic.tw/2023/11/29/29151/)（這種攻擊方式在國內應該比較少出現）受害者的現身說法（有興趣可以從[這邊開始](https://x.com/blader/status/1800263787746066646)追）
-
-![src: [https://x.com/dhh/status/1800458160039489774](https://x.com/dhh/status/1800458160039489774)](../assets/網路黑手的呢喃 #49 - Untitled 5.png)
 
 src: [https://x.com/dhh/status/1800458160039489774](https://x.com/dhh/status/1800458160039489774)
 

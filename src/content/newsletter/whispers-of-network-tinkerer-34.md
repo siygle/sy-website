@@ -59,8 +59,6 @@ Google 你能不能專心把自己本務做好不要亂搞阿！SQLite 在雲端
 
 其實看到它採用 SQLite 又想起另一個最近注意到，也是把 SQLite 搬到 Edge Computing 上的一家新創公司 - [Turso](https://turso.tech)，結果看到後來發現原來 Fermyon 就是跟 Turso 合作（所以部署上雲端後就是走 Turso 的服務） #沒想到尷尬的竟然是我 🤣。
 
-![Untitled](../assets/網路黑手的呢喃 #34 - Untitled.png)
-
 **Turso** 其實也是一間很酷的新創，正如前面提到的它提供就是適用於 Edge Computing 場景的 SQLite 服務。不過它有兩個很特別的地方，第一個是它並不是直接用 SQLite 而且 folk 自家版本 - [libSQL](https://github.com/libsql/libsql)，更易於改造成適合更多場景，也利於開源生態的回饋。
 
 [https://github.com/libsql/libsql](https://github.com/libsql/libsql)
@@ -73,14 +71,10 @@ Google 你能不能專心把自己本務做好不要亂搞阿！SQLite 在雲端
 
 上一篇才剛提過的一個有趣的服務 - [Winglang](https://www.winglang.io/)（還沒聽過的話可以跳轉[前篇](https://chat.sylee.dev/2023/07/05/%E7%B6%B2%E8%B7%AF%E9%BB%91%E6%89%8B%E7%9A%84%E5%91%A2%E5%96%83-33#c346f4992ff24831994ca4c28061aa8d)😄）。最近看到它們已經[拿到投資的消息](https://techcrunch.com/2023/07/18/wing-cloud-is-building-an-open-source-unified-cloud-programming-language/)，另外一併它們也公布了（應該是）未來的方向與計畫 - Wing Cloud。
 
-![Untitled](../assets/網路黑手的呢喃 #34 - Untitled 1.png)
-
 > **So what is Wing Cloud?** It is a new kind of *abstract cloud*. It doesn’t involve data centers, machines, or provisioning engines. Instead, it’s a layer that enables builders to harness this general-purpose computing platform through a programming and operational model that unifies both infrastructure and application, and works across all cloud providers and services.
 
 [https://www.winglang.io/blog/2023/07/18/wing-cloud-launch](https://www.winglang.io/blog/2023/07/18/wing-cloud-launch)
 > 
-
-![Untitled](../assets/網路黑手的呢喃 #34 - Untitled 2.png)
 
 原本可能會以為它們又是推一個自家的雲端服務，不過並不是這樣（其實只有我這樣想而已🤣），它們的目前非常明確，就是要提供一個抽象層的雲端開發工具，讓開發者可以跨平台、簡單上手，以及方便進行開發與除錯的一系列相關的開發者工具。更詳細的內容不妨可以瀏覽一下[官方說明文章](https://www.winglang.io/blog/2023/07/18/wing-cloud-launch)。
 
@@ -92,23 +86,17 @@ Google 你能不能專心把自己本務做好不要亂搞阿！SQLite 在雲端
 
 細節可以看[這邊](https://github.com/orgs/nodejs/discussions/44975)，這應該是本地開發幾乎一定會用到的功能 - 讀取環境變數的檔案，現在終於要加到 Node.js 原生支援了（之前大家應該都是用 [dotenv](https://github.com/motdotla/dotenv) 來支援這個需求的吧），不知道是不是因為看到隔壁棚 Bun 一開始就[支援這個功能](https://bun.sh/guides/runtime/set-env)。🤣
 
-![src: [https://github.com/nodejs/node/pull/48890](https://github.com/nodejs/node/pull/48890)](../assets/網路黑手的呢喃 #34 - Untitled 3.png)
-
 src: [https://github.com/nodejs/node/pull/48890](https://github.com/nodejs/node/pull/48890)
 
 ### Bun 也默默要走到 1.0 了
 
 另一邊的 Bun 也是維持它非常高效的開發效率，目前也已經宣布即將於九月釋出它的 [1.0](https://bun.sh/1.0) 版本。除了[某些觀點不太一樣](https://chat.sylee.dev/2023/07/05/%E7%B6%B2%E8%B7%AF%E9%BB%91%E6%89%8B%E7%9A%84%E5%91%A2%E5%96%83-33#db6e2a0fcc5a4b1a9b8d32456e787fb1)之外，Bun 跟 Deno 的走向也是非常類似，不知道會不會也會推自家的服務？
 
-![src: [https://bun.sh/1.0](https://bun.sh/1.0)](../assets/網路黑手的呢喃 #34 - Untitled 4.png)
-
 src: [https://bun.sh/1.0](https://bun.sh/1.0)
 
 ### Deno 1.36，2.0 還在等 😅
 
 遲遲等不到 2.0 的 Deno，也還是持續進行它優化以及 Node.js 生態相容的工作。有留意到 ry 會在十月到[日本參加一場研討會](https://yumenosora.connpass.com/event/290309/)，不知道有沒有機會在這之前看到 2.0 面世。😄
-
-![ref: [https://twitter.com/deno_land/status/1687166295723163667](https://twitter.com/deno_land/status/1687166295723163667)](../assets/網路黑手的呢喃 #34 - Untitled 5.png)
 
 ref: [https://twitter.com/deno_land/status/1687166295723163667](https://twitter.com/deno_land/status/1687166295723163667)
 
@@ -118,15 +106,11 @@ ref: [https://twitter.com/deno_land/status/1687166295723163667](https://twitter.
 
 感覺好像又有一塊市場又要被挑戰了😅
 
-![src: [https://twitter.com/ProgramerJohann/status/1686352341279408129](https://twitter.com/ProgramerJohann/status/1686352341279408129)](../assets/網路黑手的呢喃 #34 - Untitled 6.png)
-
 src: [https://twitter.com/ProgramerJohann/status/1686352341279408129](https://twitter.com/ProgramerJohann/status/1686352341279408129)
 
 ### 越來越多針對 AI 的服務出現了
 
 最近剛拿到[投資](https://twitter.com/nikitabase/status/1686770622372941824)的 NEON，也推出跟 [AI](https://neon.tech/ai) 相關的功能了，這主要是基於之前它們釋出的 [pg_embedding](https://neon.tech/blog/pg_embedding-on-disk-hnsw-index) 的 Postgres 擴充。為什麼說越來越多，前篇也提過的 Vercel 也有一個相同名稱的[服務](https://sdk.vercel.ai/docs)😄（不過當然功能是完全不一樣的）。
-
-![src: [https://twitter.com/nikitabase/status/1687168705032245250](https://twitter.com/nikitabase/status/1687168705032245250)](../assets/網路黑手的呢喃 #34 - Untitled 7.png)
 
 src: [https://twitter.com/nikitabase/status/1687168705032245250](https://twitter.com/nikitabase/status/1687168705032245250)
 
@@ -134,13 +118,9 @@ src: [https://twitter.com/nikitabase/status/1687168705032245250](https://twitter
 
 雖然還沒到雪崩式下滑，但是也是蠻慘的😓
 
-![[https://observablehq.com/@ayhanfuat/the-fall-of-stack-overflow](https://observablehq.com/@ayhanfuat/the-fall-of-stack-overflow)](../assets/網路黑手的呢喃 #34 - Untitled 8.png)
-
 [https://observablehq.com/@ayhanfuat/the-fall-of-stack-overflow](https://observablehq.com/@ayhanfuat/the-fall-of-stack-overflow)
 
 ### OpanAI 終於準備推出 Android app 了，次等公民真的不是叫假的 😢
-
-![ref: [https://twitter.com/OpenAI/status/1682480558545461249](https://twitter.com/OpenAI/status/1682480558545461249)](../assets/網路黑手的呢喃 #34 - Untitled 9.png)
 
 ref: [https://twitter.com/OpenAI/status/1682480558545461249](https://twitter.com/OpenAI/status/1682480558545461249)
 
@@ -149,8 +129,6 @@ ref: [https://twitter.com/OpenAI/status/1682480558545461249](https://twitter.com
 ### 真的是好辦法🤣
 
 身為老人的建言，真的不要仗著年輕過度消耗身體，它有一天會狠狠地討回來。學會在有限的時間內把事做好才是真的有效率。
-
-![src: [https://twitter.com/cloudwu/status/1687374069270994944](https://twitter.com/cloudwu/status/1687374069270994944)](../assets/網路黑手的呢喃 #34 - Untitled 10.png)
 
 src: [https://twitter.com/cloudwu/status/1687374069270994944](https://twitter.com/cloudwu/status/1687374069270994944)
 

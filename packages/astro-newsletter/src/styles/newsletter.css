@@ -185,6 +185,27 @@
     font-style: italic;
   }
 
+  /* Callout / note blocks — raw <aside> in the source (e.g. 💡 tips).
+     Framed note card: distinct from blockquote's left bar, same monochrome
+     palette and sharp corners as the rest of the newsletter. */
+  .newsletter-prose aside {
+    margin: 1.75rem 0;
+    padding: 1rem 1.25rem;
+    background: #fafafa;
+    border: 1px solid #e5e5e5;
+    border-radius: 0;
+    color: #333;
+    font-size: 0.95em;
+  }
+
+  .newsletter-prose aside > :first-child {
+    margin-top: 0;
+  }
+
+  .newsletter-prose aside > :last-child {
+    margin-bottom: 0;
+  }
+
   .newsletter-prose a {
     text-decoration: underline;
     text-decoration-color: #d4d4d4;

@@ -44,13 +44,9 @@ tags:
 
 雖然說又多一個 JS runtime 似乎已經不是什麼新聞了，不過大廠丟出來的東西還是會收到比較多目注，這次是 AWS 的版本 - [llrt](https://github.com/awslabs/llrt)，看 repo 的簡介似乎是從 QuickJS 分支出去的，不過雖然號稱比 Node.js 的啟用速度快上不少，但[它的目標並不是追求與 Node.js 相容或是取代，而是特別針對自家的 Lamdba 平台](https://x.com/pinskinator/status/1755668031169245633?s=61&t=-8QfXIkAo_EJ2rtVc89xcg)的產品，不過或許有可能期待它也會加入 WinterCG (?)。
 
-![src: [https://twitter.com/ascorbic/status/1755635251357839574](https://twitter.com/ascorbic/status/1755635251357839574)](../assets/網路黑手的呢喃 #43 - Untitled.png)
-
 src: [https://twitter.com/ascorbic/status/1755635251357839574](https://twitter.com/ascorbic/status/1755635251357839574)
 
 *看看這琳琅滿目的 JS runtime* 😂
-
-![src: [https://twitter.com/wesbos/status/1756029879487791239](https://twitter.com/wesbos/status/1756029879487791239)](../assets/網路黑手的呢喃 #43 - Untitled 1.png)
 
 src: [https://twitter.com/wesbos/status/1756029879487791239](https://twitter.com/wesbos/status/1756029879487791239)
 
@@ -60,15 +56,11 @@ src: [https://twitter.com/wesbos/status/1756029879487791239](https://twitter.com
 
 就在 BlueSky 公開的同一天，看到有天友 😄 轉了這篇新聞，看起來 Meta 又丟出一個[有趣的東西](https://github.com/facebook/dotslash)。有點像 Corepack 之於 Node.js 的功能（自動根據設定下載對應的 package manager 來安裝並執行該專案），而 Meta 這個 DotSlash 則是對各種不同專案寫好設定檔，它就會自動去下載符合執行環境需要的 runtime，所以就不需要把 runtime 放到 repo 裡面，減少 repo 的體積。
 
-![src: [https://bsky.app/profile/steveklabnik.com/post/3kkrdnqw4ek2m](https://bsky.app/profile/steveklabnik.com/post/3kkrdnqw4ek2m)](../assets/網路黑手的呢喃 #43 - Untitled 2.png)
-
 src: [https://bsky.app/profile/steveklabnik.com/post/3kkrdnqw4ek2m](https://bsky.app/profile/steveklabnik.com/post/3kkrdnqw4ek2m)
 
 ### Finch for Windows
 
 什麼是 [Finch](https://runfinch.com/)，應該可是把它視為 AWS 開源版本的 Docker Desktop（但沒有圖形化的介面，主要是透過 command line 的介面來操作、管理的，之前推出時只有 Mac 的版本，目前是正式支援 Windows 上的使用（但 Linux 到現在居然還沒有，果然使用者數量決定一切，不愧是商業公司 😅）
-
-![src: [https://twitter.com/AWSOpen/status/1753192980452614197](https://twitter.com/AWSOpen/status/1753192980452614197)](../assets/網路黑手的呢喃 #43 - Untitled 3.png)
 
 src: [https://twitter.com/AWSOpen/status/1753192980452614197](https://twitter.com/AWSOpen/status/1753192980452614197)
 
@@ -88,8 +80,6 @@ src: [https://twitter.com/AWSOpen/status/1753192980452614197](https://twitter.co
 
 ChatGPT 的熱潮漸漸下降之際，OpenAI 也沒閒著又丟出了一個新東西立刻就吸引眾人的目光，這次是 text-to-video 的模型 - [Sora](https://t.co/YYpOAcrXQ3)。雖然 text-to-video 並不是首創，不過 OpenAI 丟出來的成果相當驚豔 ⬇️
 
-![src: [https://twitter.com/yujimur/status/1758344846048456739](https://twitter.com/yujimur/status/1758344846048456739)](../assets/網路黑手的呢喃 #43 - Untitled 4.png)
-
 src: [https://twitter.com/yujimur/status/1758344846048456739](https://twitter.com/yujimur/status/1758344846048456739)
 
 甚至它們的 CEO 還在 X 上面接受網友點播，即時產生出對應的影片來，真的是太強大的火力展示🙌
@@ -104,8 +94,6 @@ src: [https://twitter.com/yujimur/status/1758344846048456739](https://twitter.co
 
 一個是霸主 NVIDIA 自家推出的 [**Chat with RTX**](https://www.nvidia.com/en-us/ai-on-rtx/chat-with-rtx-generative-ai/)，主打就是可以本地跑起類 ChatGPT 的服務，也支援多個 AI 模型，不過當然前提是你要有 RTX 30 or 40 的顯示卡才行（目前只支援 Windows 版本，不過應該之後有機會可以看到其他平台）。
 
-![src: [https://twitter.com/rowancheung/status/1757429733837418610](https://twitter.com/rowancheung/status/1757429733837418610)](../assets/網路黑手的呢喃 #43 - Untitled 5.png)
-
 src: [https://twitter.com/rowancheung/status/1757429733837418610](https://twitter.com/rowancheung/status/1757429733837418610)
 
 另一個是 OpenAI 的 Whisper 的 Swift 實作版本 - [WhisperKit](https://github.com/argmaxinc/WhisperKit)，不同於 OpenAI 開源的版本，除了它是 Swift 實作所以很方便可以整合到 Apple 裝置之上，此外，它也特別針對優化過，可以從它的範例可以看到（剛放出的 [0.2](https://twitter.com/argmaxinc/status/1757803686124990770) 甚至還可以直接在 Apple Watch 上執行，真的猛！）有特別針對 Apple 平台來優化，所以可以在 iPhone 上達到很流暢的翻譯效果。
@@ -117,8 +105,6 @@ src: [https://twitter.com/rowancheung/status/1757429733837418610](https://twitte
 雖然 Apple 在 ML 領域應該不算是第一列隊，不過身為平台提供者，也有自製晶片的能力，老實說已經是非常有優勢了，最近也看到不少 Apple 丟出來得的東西，譬如像下面這個針對圖片修改的功能的模型 - [MGIE](https://github.com/apple/ml-mgie)。
 
 感覺針對設計、圖形的 ML 應用算是非常常見，說不定在不久的將來，這個領域的產出可以透過 ML 極大幅度降低一般使用者的使用門檻，透過語意就能產生出使用者需要的素材。
-
-![src: [https://twitter.com/xiaohuggg/status/1754351039741104198](https://twitter.com/xiaohuggg/status/1754351039741104198)](../assets/網路黑手的呢喃 #43 - Untitled 6.png)
 
 src: [https://twitter.com/xiaohuggg/status/1754351039741104198](https://twitter.com/xiaohuggg/status/1754351039741104198)
 

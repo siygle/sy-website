@@ -60,8 +60,6 @@ tags:
 
 知名的開源專案 Redis 的作者 - [Salvatore Sanfilippo](https://github.com/antirez)，最近也在年終的時候回顧了最近崛起的人工智慧，並針對 LLMs 對於未來程式撰寫的影響提出了自己的看法，[非常值得一看](http://antirez.com/news/140)。
 
-![src: [https://twitter.com/Piglei/status/1742399105891270747](https://twitter.com/Piglei/status/1742399105891270747)](../assets/網路黑手的呢喃 #40 - Untitled.png)
-
 src: [https://twitter.com/Piglei/status/1742399105891270747](https://twitter.com/Piglei/status/1742399105891270747)
 
 # 本集沒有好東西，只有滿滿政治文

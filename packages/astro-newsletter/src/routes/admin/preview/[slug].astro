@@ -1,0 +1,49 @@
+---
+export const prerender = false;
+import config from 'virtual:astro-newsletter/config';
+import NewsletterLayout from '../../../components/NewsletterLayout.astro';
+import { getRunner, getSecret } from '../../../server/runtime';
+import { requireSession } from '../../../server/auth';
+import { getPost } from '../../../server/repo';
+import { renderMarkdownToHtml } from '../../../markdown/render';
+import { getIssueNumber } from '../../../lib/issue';
+
+const adminPath = config.admin.path;
+const secret = getSecret('NEWSLETTER_SESSION_SECRET');
+if (!secret || !(await requireSession(Astro.request, secret))) {
+  return Astro.redirect(`${adminPath}/login`);
+}
+
+const slug = Astro.params.slug!;
+const post = await getPost(getRunner(config.cms.d1Binding), slug);
+if (!post) return new Response('Not found', { status: 404 });
+
+const html = await renderMarkdownToHtml(post.body);
+const issueNum = getIssueNumber({ id: post.slug, data: { issue: post.issue ?? undefined } });
+
+function formatDate(dateString: string): string {
+  if (!dateString) return '';
+  const date = new Date(dateString);
+  return date.toLocaleDateString('en-US', { year: 'numeric', month: 'short', day: 'numeric' }).toUpperCase();
+}
+---
+
+<NewsletterLayout title={`${post.title} - ${config.branding.title}`} description={post.description}>
+  <div style="background:#fff7e6;color:#9a6700;padding:.5rem 1rem;border-radius:6px;margin-bottom:1.5rem;font-size:.85rem;">
+    Draft preview — status: <strong>{post.status}</strong>. Not indexed; only visible to you.
+  </div>
+  <article>
+    <header class="mb-10">
+      <div class="flex items-center justify-between mb-5">
+        <span class="text-lg font-bold tracking-[0.1em] uppercase text-[#525252]">Issue #{issueNum}</span>
+        <time class="text-lg font-bold tracking-[0.1em] uppercase text-[#525252]">{formatDate(post.date)}</time>
+      </div>
+      <h1 class="newsletter-featured-title text-4xl md:text-5xl mb-4">{post.title}</h1>
+      {post.description && (
+        <p class="text-lg text-[#525252] leading-relaxed max-w-[700px]">{post.description}</p>
+      )}
+      <div class="newsletter-divider mt-8"></div>
+    </header>
+    <div class="newsletter-prose" set:html={html}></div>
+  </article>
+</NewsletterLayout>

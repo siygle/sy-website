@@ -14,8 +14,6 @@ category: 不定期的呢喃
 
 新版 Node.js 已經不是什麼特別的事了，不過因為這次的 22.6.0 加上了 `--experiemental-strip-type` 就不一樣，從這個版本開始，Node.js 可以直接執行 `.ts` 檔案啦！
 
-![src: [https://x.com/_rafaelgss/status/1820874220525465654](https://x.com/_rafaelgss/status/1820874220525465654)](../assets/網路黑手的呢喃 #52 - Untitled.png)
-
 src: [https://x.com/_rafaelgss/status/1820874220525465654](https://x.com/_rafaelgss/status/1820874220525465654)
 
 而且它的腳步還不止於此喔，下一步已經開出 PR 了，接下來像 `enum` 以及 `namespace` 這些專屬於 TypeScript 的語意也即將支援了 🔽
@@ -109,8 +107,6 @@ Deno.serve(route(routes, defaultHandler));
 沒想到又看[另一位大大](https://x.com/ccbikai/status/1819995149016985621)開發了更方便的小工具，基於 telelgram channel，然後透過 Vercel/Cloudflare 這類佈署平台，能快速搭建起一個 micro-blogging 的網站，真的太方便啦！🙌
 
 [https://github.com/ccbikai/BroadcastChannel](https://github.com/ccbikai/BroadcastChannel)
-
-![src: [https://x.com/ccbikai/status/1819995149016985621](https://x.com/ccbikai/status/1819995149016985621)](../assets/網路黑手的呢喃 #52 - Untitled 1.png)
 
 src: [https://x.com/ccbikai/status/1819995149016985621](https://x.com/ccbikai/status/1819995149016985621)
 

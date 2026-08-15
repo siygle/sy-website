@@ -28,8 +28,6 @@ tags:
 
 ## [**Introducing Constellation, bringing AI to the Cloudflare stack**](https://blog.cloudflare.com/introducing-constellation/)
 
-![Untitled](../assets/網路黑手的呢喃 #31 - Untitled.png)
-
 果然也是踏進 AI 的熱潮，推出 Constellation 這個新產品線，針對最近大熱門的 AI 應用，提供開發者透過 Cloudflare 的平台，可以佈署 Machine-learning Models 到平台上並運行，當然如果開發者希望能直接用現成，它們也有 Cloudflare 提供的模型可供使用。
 
 文中有以一個圖片辨識作為範例，看起來真的非常方便（目前 Constellation 需要排隊才能使用），有興趣的開發者可以趕快加入試玩的行列（沒看到價錢的部分，不過我猜應該是所費不貲😅）。
@@ -39,6 +37,7 @@ tags:
 還有另一個相關的是，[LangChainJS](https://github.com/hwchase17/langchainjs) 也[宣佈](https://blog.langchain.dev/js-envs/)支援多個 JS runtime，所以自然而然 Cloudflare workers 也是其一，所以現在也可以在它的平台上，透過 LangChainJS 來搭建大型語言模型（LLM）的應用程式。
 
 <aside>
+
 💡 *PS: 其實我一開始也不知道什麼是 LangChain，所以找了一下，他[主要是提供兩個特點](https://js.langchain.com/docs/)：*
 
 - *Be data-aware: connect a language model to other sources of data*
@@ -50,13 +49,9 @@ tags:
 
 ## [Cursor - Cloudflare AI Assistant](https://blog.cloudflare.com/introducing-cursor-the-ai-assistant-for-docs/)
 
-![Untitled](../assets/網路黑手的呢喃 #31 - Untitled 1.png)
-
 看來 Cloudflare 也知道開發者找文件是一件非常折磨人的體驗，尤其是對方的文件系統又不怎麼樣的時候，更是花了大把的時間，也找不到自己想得到的答案😅。
 
 所以 Cloudflare 非常快速地整合了 AI 自家的開發者資源，就是這次釋出的 AI 助理 - Cursor。顧名思義，就是透過大家都很熟悉的 ChatGPT 使用方式，直接把需要的問題詢問 Cursor，它就會回答你的問題並列出相關的文件連結。
-
-![*是不是超方便滴！*😄](../assets/網路黑手的呢喃 #31 - Untitled 2.png)
 
 *是不是超方便滴！*😄
 
@@ -95,8 +90,6 @@ Cloudflare 除了有不錯用的網頁介面之外，身為開發者友善的平
 
 看起來是透過跟 CMI 的合作，靜態資源直接從中國境內的 data center 讀取，動態則走 Tunnel 到香港的機房。簡而言之就是幫開發者處理好中國牆帶來的網路問題，降低中國境內用戶受影響的程度（我是蠻感興趣它們會怎麼收費，如果免費提供的話就太強了 *#怎麼可能*）。
 
-![Untitled](../assets/網路黑手的呢喃 #31 - Untitled 3.png)
-
 ## 開發平台新功能！
 
 - [**Announcing Cloudflare Secrets Store**](https://blog.cloudflare.com/secrets-store/)
@@ -104,8 +97,6 @@ Cloudflare 除了有不錯用的網頁介面之外，身為開發者友善的平
 又一項補上其他雲端廠商的功能，現在也有 vault 啦😄
 
 跟 AWS 上面熟悉的 Secret Manager 一樣的功能，就可以讓你以加密的形式來儲存一些比較私密的資訊。看起來是放在原本環境變數的功能裡面，直接多一個按鈕就可以轉換。（老實說我覺得 Cloudflare 的操作介面比起 AWS/GCP 都好很多，Azure 不太熟不好評論😆）
-
-![Untitled](../assets/網路黑手的呢喃 #31 - Untitled 4.png)
 
 - [**Workers Browser Rendering API enters open beta**](https://blog.cloudflare.com/browser-rendering-open-beta/)
 
@@ -196,8 +187,6 @@ const browser = await puppeteer.launch(env.MYBROWSER);
 
 其他還有提到不少有趣的東西，像優化 AI 計算的 [SuperCluster](https://twitter.com/MetaAI/status/1659238427601281024)，還有針對多媒體檔案處理的 [MSVP](https://twitter.com/MetaAI/status/1659256339334574080)（Meta Scalable Video Processor），都蠻有意思的，看來 AI 真的帶動全方面都動起來了，不單是軟體層面而已呢😱。
 
-![Untitled](../assets/網路黑手的呢喃 #31 - Untitled 5.png)
-
 ## 雲端情人不遠矣
 
 ![](https://twitter.com/GPTDAOCN/status/1656182426484477953)
@@ -233,8 +222,6 @@ const browser = await puppeteer.launch(env.MYBROWSER);
 ## 出生即厭世
 
 [這位爸爸請不要這樣](https://twitter.com/matsu___ta/status/1658701663627247617)😆
-
-![Untitled](../assets/網路黑手的呢喃 #31 - Untitled 6.png)
 
 ## 他只是個孩子阿～
 

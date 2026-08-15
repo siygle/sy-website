@@ -68,8 +68,6 @@ Bun 常常會引入一些頗驚豔的新功能，也蠻希望 Deno 也能跟上�
 
 我覺得 nushell 的官網做得蠻好的，你一眼看過去就大概知道它是什麼東西了。它自稱 new type of shell 真的沒有過譽，以往我們使用 shell 大多數 DevOps 或管理一些系統、裝置的時候，老手會使用的東西，但畢竟年代久遠，它的語法跟現在比較新型的語言有不小的落差（而且很陽春），導致要上手也不是那麼方便，看起來 nushell 就是針對這些痛點而來的。
 
-![src: Nushell - [https://www.nushell.sh/](https://www.nushell.sh/)](../assets/網路黑手的呢喃 #55 - image.png)
-
 src: Nushell - [https://www.nushell.sh/](https://www.nushell.sh/)
 
 自己稍微拿它處理一些平常的工作數據，真的是非常驚豔，很多原本複雜的行為（甚至可能需要用 script 來處理的），都可以透過內建的一些工具直接完成，而且直覺又簡單的語法，甚至都還沒機會玩到 [plugin](https://www.nushell.sh/book/plugins.html) 這塊。推薦有這類需求的開發者都可以來玩玩看喔～
@@ -111,6 +109,7 @@ src: Nushell - [https://www.nushell.sh/](https://www.nushell.sh/)
 ### 積沙成塔的優化
 
 <aside>
+
 💡
 
 Optimizing operations that are already measured in microseconds may seem a little silly, but these small improvements add up
@@ -166,8 +165,6 @@ Optimizing operations that are already measured in microseconds may seem a littl
 那你可能接下來就會覺得，這東西有什麼存在的價值嘛 😅
 
 其實進去玩一玩就知道了，就是一個網路鼓勵師的概念。除非你是 KOL 或是本來就頗具名聲的人，不然一般人玩 SNS 大概就是自言自語居多（沒錯，就算你去回覆別人的訊息，對方也不見得會理你的啦！），然後 SocialAI 應該就是看準這個角度來切入，透過機器人大軍，無論你貼了什麼訊息，他都會瞬間產生數組回覆訊息給你（當然這邊會根據一開始你設定不同人格的機器人，產生不同屬性的回覆訊息），可以看看下面這個範例應該就知道了 ⬇️
-
-![image.png](../assets/網路黑手的呢喃 #55 - image 1.png)
 
 雖然覺得蠻好笑的，但說不定深陷網路影響的現代人，真的有這類工具存在的空間，其實想想就是現在去參加心理諮商的行為也滿類似的，如果之後機器人有辦法調校出某些更具價值的回覆訊息（你怎麼知道會不會出現付費的「心理諮詢師」這類的機器人呢 😄）
 

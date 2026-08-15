@@ -1,16 +1,13 @@
 ---
 import type { GetStaticPathsOptions } from 'astro';
 import { getCollection } from 'astro:content';
-import NewsletterLayout from '~/layouts/NewsletterLayout.astro';
+import NewsletterLayout from '../components/NewsletterLayout.astro';
+import { getIssueNumber, getIssueNumberValue } from '../lib/issue';
 
 export async function getStaticPaths({ paginate }: GetStaticPathsOptions) {
   const newsletters = await getCollection('newsletter');
 
-  const sorted = newsletters.sort((a, b) => {
-    const numA = parseInt(a.id.match(/(\d+)/)?.[1] || '0');
-    const numB = parseInt(b.id.match(/(\d+)/)?.[1] || '0');
-    return numB - numA;
-  });
+  const sorted = newsletters.sort((a, b) => getIssueNumberValue(b) - getIssueNumberValue(a));
 
   const pageSize = Number(import.meta.env.NEWSLETTER_PAGE_SIZE) || 7;
   return paginate(sorted, { pageSize });
@@ -35,10 +32,6 @@ function formatDateFull(dateString: string): string {
     month: 'short',
     day: 'numeric',
   }).toUpperCase();
-}
-
-function getIssueNumber(id: string): string {
-  return id.match(/(\d+)/)?.[1] || '';
 }
 
 function getTopTags(tags: string[], max = 3): string[] {
@@ -70,7 +63,7 @@ const pageNumbers = getPageNumbers(page.currentPage, page.lastPage);
 
   {/* ── HERO (page 1 only) ── */}
   {featured && (() => {
-    const num = getIssueNumber(featured.id);
+    const num = getIssueNumber(featured);
     const tags = getTopTags(featured.data.tags);
     return (
       <section class="mb-12">
@@ -139,7 +132,7 @@ const pageNumbers = getPageNumbers(page.currentPage, page.lastPage);
   {/* ── ARTICLE LIST ── */}
   <section>
     {listItems.map((issue) => {
-      const num = getIssueNumber(issue.id);
+      const num = getIssueNumber(issue);
       const tags = getTopTags(issue.data.tags, 2);
       return (
         <a

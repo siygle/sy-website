@@ -43,8 +43,6 @@ Node.js 又針對模組問題有新嘗試了、硬派優化工作 JS 篇、又�
 
 雖然不知道是不是這樣也比較方便宣傳自家 deno_land 的服務，不過看到大大回歸真好！
 
-![src: [https://twitter.com/rough__sea](https://twitter.com/rough__sea)](../assets/網路黑手的呢喃 #45 - Untitled.png)
-
 src: [https://twitter.com/rough__sea](https://twitter.com/rough__sea)
 
 其中提到一個回歸原因就是最近 Node.js 放出的紀錄片，真的是內容滿滿，身為一路走來的老人感觸好深，雖然 JS 三不五時就會被拿來調侃，本身也有很多缺陷，但是社群的活力一直是它最令人喜愛的地方（當然 Drama 也是不會少 😁）
@@ -67,8 +65,6 @@ LTS 默默也到了 v20.12.0 這個版本，最近目前新功能應該是在 v2
 
 最近它們也針對官網改版這件事寫了一篇公告跟說明文，稍微講述了改版的過程以及它們採用了哪些第三方服務（看起來部分就是 Node.js 生態的服務商 😁），有興趣的話可以[瀏覽一下](https://nodejs.org/en/blog/announcements/diving-into-the-nodejs-website-redesign?utm_content=287222882&utm_medium=social&utm_source=twitter&hss_channel=tw-91985735)。
 
-![src: [https://nodejs.org/en/blog/announcements/diving-into-the-nodejs-website-redesign](https://nodejs.org/en/blog/announcements/diving-into-the-nodejs-website-redesign)](../assets/網路黑手的呢喃 #45 - Untitled 1.png)
-
 src: [https://nodejs.org/en/blog/announcements/diving-into-the-nodejs-website-redesign](https://nodejs.org/en/blog/announcements/diving-into-the-nodejs-website-redesign)
 
 ### 又一個 JS package manager？
@@ -80,6 +76,7 @@ src: [https://nodejs.org/en/blog/announcements/diving-into-the-nodejs-website-re
 從標語只能猜到這些，但實際要做些什麼目前還看不太出來。
 
 <aside>
+
 💡 We are building the future of JavaScript packages.
 
 [https://www.vlt.sh/](https://www.vlt.sh/)
@@ -91,8 +88,6 @@ src: [https://nodejs.org/en/blog/announcements/diving-into-the-nodejs-website-re
 不知道是不是劍指最近 Deno 推出的 JSR 而來，是圍繞在模組的生態而來的，而不是單純的工具而已。不過話又說回來，如果只是這樣，那現在的 JSR 也足夠驚豔了，好像也不需要再多一個 registry 類的服務？
 
 只能瞎猜，目前還真不知道它們打算做什麼 🤔
-
-![src: [https://blog.vlt.sh/blog/the-team](https://blog.vlt.sh/blog/the-team)](../assets/網路黑手的呢喃 #45 - Untitled 2.png)
 
 src: [https://blog.vlt.sh/blog/the-team](https://blog.vlt.sh/blog/the-team)
 
@@ -113,8 +108,6 @@ src: [https://blog.vlt.sh/blog/the-team](https://blog.vlt.sh/blog/the-team)
 ### 又一個前端框架提供全端方案
 
 為什麼說又，因為之前 Deno 的 Fresh 也有類似的行為，就是自家的 fresh + KV，然後這次是另一個新期頗受注目的前端框架 - Astro，也推出他們自家的儲存方案 - [**Astro DB**](https://astro.build/db/)。
-
-![src: [https://twitter.com/astrodotbuild/status/1767605560671969619](https://twitter.com/astrodotbuild/status/1767605560671969619)](../assets/網路黑手的呢喃 #45 - Untitled 3.png)
 
 src: [https://twitter.com/astrodotbuild/status/1767605560671969619](https://twitter.com/astrodotbuild/status/1767605560671969619)
 
@@ -145,8 +138,6 @@ src: [https://twitter.com/astrodotbuild/status/1767605560671969619](https://twit
 ### 又來了一個 AI 應用，但推薦大家可以試玩看看
 
 雖然各服務套上 AI 之後重出江湖已經不算是什麼特別的事了（而且套殼之後付費直接升級成訂閱制啦！😅），不過這個由推友新推出的 AI + 語言學習的 app，還是很推薦大家可以去試玩看看。
-
-![src: [https://twitter.com/kevinzhow/status/1772810844117819688](https://twitter.com/kevinzhow/status/1772810844117819688)](../assets/網路黑手的呢喃 #45 - Untitled 4.png)
 
 src: [https://twitter.com/kevinzhow/status/1772810844117819688](https://twitter.com/kevinzhow/status/1772810844117819688)
 

@@ -21,8 +21,6 @@ tags:
 
 因為先前已經[拿到投資](https://techcrunch.com/2023/07/05/bluesky-announces-its-8m-seed-round-first-paid-service-custom-domains/?guccounter=1)的關係，現在 BlueSky 這邊也有比較多的資源可以招募成員，逐步朝向它們的規劃往前邁進。最近它們開始把原本 [bsky.social](http://bsky.social) 的用戶開始分散到不同的網路，開始測試分散式的架構⬇️。不知道未來有沒有機會甚至可以跟 ActivityPub 聯動呢🤞😄
 
-![src: [https://bsky.app/profile/sylee.dev/post/3kdsldzmq6k2x](https://bsky.app/profile/sylee.dev/post/3kdsldzmq6k2x)](../assets/網路黑手的呢喃 #38 - Untitled.png)
-
 src: [https://bsky.app/profile/sylee.dev/post/3kdsldzmq6k2x](https://bsky.app/profile/sylee.dev/post/3kdsldzmq6k2x)
 
 如果已經在 BlueSky 的用戶，可以用這個 [`!jazbot whereami`](https://bsky.app/profile/sylee.dev/post/3kdsl5jdtss2a) 來呼叫機器人，它會回覆你的帳號目前處在那個網路中。希望它們可以趕快確定 Protocol 等相關問題後，用力的跑起來阿！🙌
@@ -32,8 +30,6 @@ src: [https://bsky.app/profile/sylee.dev/post/3kdsldzmq6k2x](https://bsky.app/pr
 ### 又來一個被 Rust 改寫的前端工具了😅
 
 最近才留意到這個消息，雖然對前端人來說應該見怪不怪了，只是「又」多了一個用 Rust 改寫的工具而已。不過也不用太期待，看起來目前還要評估期而已，距離真正改寫應該還有一段時間（而且可能還有很多工作要做），看起來是基於 Node.js [核心成員](https://github.com/anonrig)之前的一個 side project → https://github.com/pnpm/pacquet。
-
-![src: [https://github.com/orgs/pnpm/discussions/7296](https://github.com/orgs/pnpm/discussions/7296)](../assets/網路黑手的呢喃 #38 - Untitled 1.png)
 
 src: [https://github.com/orgs/pnpm/discussions/7296](https://github.com/orgs/pnpm/discussions/7296)
 
@@ -45,13 +41,9 @@ src: [https://github.com/orgs/pnpm/discussions/7296](https://github.com/orgs/pnp
 
 此外，還有一個不知道為什麼沒有列到公告裡面的 → [**`Deno.cron`**](https://github.com/denoland/deno/pull/21019) ，看到名稱應該就可以知道這是做什麼的了吧，往後處理排程就更方便啦（不過可能功能還不穩定,當然先暫時別這麼快用到正式環境上比較安全😅）
 
-![src: [https://deno.com/blog/v1.38](https://deno.com/blog/v1.38)](../assets/網路黑手的呢喃 #38 - Untitled 2.png)
-
 src: [https://deno.com/blog/v1.38](https://deno.com/blog/v1.38)
 
 除了 Deno 本身之外，前陣子也留意到它們把之前推出的儲存方案 KV 另外分出一個 [repo](https://github.com/denoland/denokv) 來，果不其然就有了一些新動作，前幾天放出來的消息，現在起開發者也可以跑 self-hosted KV 啦！看來 Deno 目標應該不只是 JS runtime 本身而已，不知道是不是也打算建一個圍繞 Deno 展開的雲端開發平台？（就算是，可能還有很多工作等著，競爭者也很多阿😅）
-
-![src: [https://deno.com/blog/kv-is-open-source-with-continuous-backup](https://deno.com/blog/kv-is-open-source-with-continuous-backup)](../assets/網路黑手的呢喃 #38 - Untitled 3.png)
 
 src: [https://deno.com/blog/kv-is-open-source-with-continuous-backup](https://deno.com/blog/kv-is-open-source-with-continuous-backup)
 
@@ -111,8 +103,6 @@ WasmGC 終於開始在各瀏覽器中[實作](https://webassembly.org/roadmap/)�
 
 不過我覺得這個子標題有點誤導人，原本以為類似 spin 這種針對 wasm 的雲端平台，後來發現它其實是個新語言 😅
 
-![src: [https://twitter.com/robpalmer2/status/1721814644656845177](https://twitter.com/robpalmer2/status/1721814644656845177)](../assets/網路黑手的呢喃 #38 - Untitled 4.png)
-
 src: [https://twitter.com/robpalmer2/status/1721814644656845177](https://twitter.com/robpalmer2/status/1721814644656845177)
 
 目前瞄一眼範例跟文件，看起來跟 Rust 高度類似，不過它更著重[針對 WebAssembly 的優化](https://www.moonbitlang.com/blog/first-announce/#a-taste-of-moonbit)。不過目前還在開發階段，可能要到明年才會推出第一個穩定版，可以期待一下看看。
@@ -127,15 +117,11 @@ src: [https://twitter.com/robpalmer2/status/1721814644656845177](https://twitter
 
 # xAI 重磅(?)出擊
 
-![Untitled](../assets/網路黑手的呢喃 #38 - Untitled 5.png)
-
 雖然有八卦，不過馬老闆對 AI 的愛真的是隱藏不住，為了不讓其他競品專美於前，X（previously Twitter 😅）也推出了圍繞自家產品的 [xAI](https://x.ai/) 準備要加入這個戰場啦！
 
 除了 AI 模型之外，他們也推出了相關的」[開發工具](https://twitter.com/xai/status/1721568361883279850)，算是有了蠻完整的開場。
 
 其實它的命名 - Grok 也是有特別的含義存在的，感謝大大的解惑。😄
-
-![src: [https://twitter.com/fuxiangPro/status/1720984636602605901](https://twitter.com/fuxiangPro/status/1720984636602605901)](../assets/網路黑手的呢喃 #38 - Untitled 6.png)
 
 src: [https://twitter.com/fuxiangPro/status/1720984636602605901](https://twitter.com/fuxiangPro/status/1720984636602605901)
 

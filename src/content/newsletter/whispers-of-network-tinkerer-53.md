@@ -26,8 +26,6 @@ category: 不定期的呢喃
 
 看到這個語法不知道大家的感覺是什麼 #先別Go 😆
 
-![src: [https://x.com/kentcdodds/status/1824188520191365535](https://x.com/kentcdodds/status/1824188520191365535)](../assets/網路黑手的呢喃 #53 - image.png)
-
 src: [https://x.com/kentcdodds/status/1824188520191365535](https://x.com/kentcdodds/status/1824188520191365535)
 
 原來已經有人提了這個類似 Go 常見的錯誤處理語法，好不好不好說，不過之前尚在 Go 一族的時候，少數喜歡的就是這個語法，但是多了用 `?=` 是要學它的 `:=` 嗎 #誤 😓。不過大家先看看就好，畢竟按照 TC39 的審核速度，就算真到有機會可以通過，我看要等到正式支援大概 2~3y 跑不掉。
@@ -140,6 +138,7 @@ src: [https://x.com/kentcdodds/status/1824188520191365535](https://x.com/kentcdo
 在拿到投資之後，它們的腳步也沒有停下來，[持續不斷增加 & 優化自家的服務](https://blog.val.town/)。最近它們也不免俗的整合的 AI 的功能，也就是這篇提到的 [Townie](https://www.val.town/townie)，而這是官方對這個服務的描述：
 
 <aside>
+
 💡
 
 [Townie](https://www.val.town/townie) has been completed redesigned in the past couple weeks. It’s seriously good at writing fullstack apps. 

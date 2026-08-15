@@ -30,6 +30,15 @@ export interface NewsletterOptions {
   files?: { base?: string };
   cms?: NewsletterCmsOptions;
   admin?: { enabled?: boolean; path?: string };
+  /** How publishing triggers a rebuild of the static pages. */
+  deploy?: NewsletterDeployOptions;
+}
+
+export interface NewsletterDeployOptions {
+  /** `owner/repo` to fire a GitHub repository_dispatch at on publish. */
+  githubRepo?: string;
+  /** repository_dispatch event_type (must match deploy.yml). */
+  githubEventType?: string;
 }
 
 export interface ResolvedNewsletterOptions {
@@ -41,6 +50,7 @@ export interface ResolvedNewsletterOptions {
   files: { base: string };
   cms: NewsletterCmsOptions;
   admin: { enabled: boolean; path: string };
+  deploy: { githubRepo: string; githubEventType: string };
 }
 
 const DEFAULT_BRANDING: NewsletterBranding = {
@@ -62,6 +72,10 @@ export function resolveOptions(options: NewsletterOptions = {}): ResolvedNewslet
     admin: {
       enabled: options.admin?.enabled ?? true,
       path: options.admin?.path ?? `${basePath}/admin`,
+    },
+    deploy: {
+      githubRepo: options.deploy?.githubRepo ?? '',
+      githubEventType: options.deploy?.githubEventType ?? 'newsletter-publish',
     },
   };
 }

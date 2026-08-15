@@ -32,6 +32,42 @@ async function authed(request: Request): Promise<boolean> {
   return requireSession(request, secret);
 }
 
+interface RebuildResult {
+  triggered: boolean;
+  via?: 'github' | 'hook';
+  status?: number;
+}
+
+// Rebuild the static newsletter pages after a publish. Prefers a GitHub
+// repository_dispatch (fits the GitHub Actions deploy); falls back to a bare
+// deploy-hook URL (Cloudflare Pages style). Returns without throwing.
+async function triggerRebuild(): Promise<RebuildResult> {
+  const ghToken = getSecret('GITHUB_DISPATCH_TOKEN');
+  const repo = config.deploy.githubRepo;
+  if (ghToken && repo) {
+    const res = await fetch(`https://api.github.com/repos/${repo}/dispatches`, {
+      method: 'POST',
+      headers: {
+        Authorization: `Bearer ${ghToken}`,
+        Accept: 'application/vnd.github+json',
+        'X-GitHub-Api-Version': '2022-11-28',
+        'User-Agent': 'sylee-astro-newsletter',
+        'Content-Type': 'application/json',
+      },
+      body: JSON.stringify({ event_type: config.deploy.githubEventType }),
+    }).catch(() => null);
+    if (res) return { triggered: res.ok, via: 'github', status: res.status };
+  }
+
+  const hook = getSecret('NEWSLETTER_DEPLOY_HOOK_URL');
+  if (hook) {
+    const ok = await fetch(hook, { method: 'POST' }).then((r) => r.ok).catch(() => false);
+    return { triggered: ok, via: 'hook' };
+  }
+
+  return { triggered: false };
+}
+
 // Never let an unexpected throw bubble up as a bare 503 — return a clean 500.
 function guard(fn: APIRoute): APIRoute {
   return async (ctx) => {
@@ -130,13 +166,8 @@ const postHandler: APIRoute = async ({ params, request }) => {
   if (publishMatch) {
     const slug = decodeURIComponent(publishMatch[1]);
     await publishPost(runner, slug, now);
-    // Trigger a rebuild so the static pages pick the post up.
-    const hook = getSecret('NEWSLETTER_DEPLOY_HOOK_URL');
-    let rebuild = false;
-    if (hook) {
-      rebuild = await fetch(hook, { method: 'POST' }).then((r) => r.ok).catch(() => false);
-    }
-    return json({ ok: true, rebuildTriggered: rebuild });
+    const rebuild = await triggerRebuild();
+    return json({ ok: true, rebuild });
   }
 
   return json({ error: 'not found' }, { status: 404 });

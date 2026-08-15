@@ -20,4 +20,10 @@ export default {
     r2PublicBase: process.env.NEWSLETTER_MEDIA_BASE,
   },
   admin: { enabled: true, path: '/newsletter/admin' },
+  deploy: {
+    // Publishing fires a GitHub repository_dispatch to rebuild the static pages.
+    // Needs a GITHUB_DISPATCH_TOKEN worker secret (PAT with Actions write).
+    githubRepo: 'siygle/sy-website',
+    githubEventType: 'newsletter-publish',
+  },
 };

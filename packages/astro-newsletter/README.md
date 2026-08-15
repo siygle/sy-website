@@ -50,9 +50,19 @@ are **not** injected at all.
    ```
 
 4. Set secrets (`wrangler secret put …` for prod, `.dev.vars` for local):
-   `NEWSLETTER_ADMIN_PASSWORD`, `NEWSLETTER_SESSION_SECRET`,
-   `NEWSLETTER_DEPLOY_HOOK_URL`. Build-time D1 access uses `CF_ACCOUNT_ID`,
+   `NEWSLETTER_ADMIN_PASSWORD`, `NEWSLETTER_SESSION_SECRET`, and
+   `GITHUB_DISPATCH_TOKEN` (see below). Build-time D1 access uses `CF_ACCOUNT_ID`,
    `CF_D1_DATABASE_ID`, `CF_API_TOKEN`.
+
+### Publish → rebuild
+
+The public pages are static, so publishing writes `status='published'` to D1 and
+then triggers a rebuild. With GitHub Actions, set `deploy.githubRepo` in
+`newsletter.config.mjs` and a `GITHUB_DISPATCH_TOKEN` worker secret (a PAT with
+Actions: write); publish fires a `repository_dispatch` (`newsletter-publish`,
+also declared in `deploy.yml`) that re-runs the deploy. Without a token it just
+marks the post published — re-run the deploy manually. (A bare
+`NEWSLETTER_DEPLOY_HOOK_URL` is still honoured as a fallback.)
 
 ## CLI (`bin/newsletter.mjs`)
 

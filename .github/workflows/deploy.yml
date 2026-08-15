@@ -4,6 +4,10 @@ on:
   push:
     branches:
       - master
+  # Fired by the newsletter admin on publish (repository_dispatch), to rebuild
+  # the static pages from D1. Runs on the default branch (master).
+  repository_dispatch:
+    types: [newsletter-publish]
 
 jobs:
   deploy:

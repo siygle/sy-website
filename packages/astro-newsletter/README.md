@@ -95,6 +95,13 @@ markdown text directly (not a WYSIWYG document model), it can never silently
 rewrite content, and the SSR `preview/[slug]` route renders the real pipeline
 (social embeds, code highlight) for a full-fidelity check.
 
+The live preview runs the same `rehypeSocialEmbed` plugin as the published page
+(via `previewOptions.rehypePlugins`), so an embed lands in the same block
+position. But it deliberately draws a lightweight card (platform + link) instead
+of the real widget — no `platform.twitter.com` / `embed.bsky.app` / `/api/oembed`
+call and no YouTube iframe fire in the editor. Use `Save & preview` to see the
+actual embed.
+
 Two things will break it, both of which already have:
 
 - **Do not add a bare `textarea` rule to `styles/admin.css`.** The editor's

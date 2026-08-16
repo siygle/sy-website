@@ -53,3 +53,34 @@ body.nl-admin {
 .nl-admin .warn { background: #fff7e6; color: #9a6700; border: 1px solid #f5d98b; padding: 0.6rem 0.8rem; border-radius: 6px; margin: 0.8rem 0; font-size: 0.9rem; }
 .nl-admin .preview { border: 1px solid var(--nl-border); border-radius: 6px; background: #fff; padding: 1rem; min-height: 60vh; overflow: auto; }
 @media (max-width: 720px) { .nl-admin .grid2 { grid-template-columns: 1fr; } }
+
+/* Live-preview social-embed cards (SocialEmbedCard.tsx). Plain CSS — the admin
+   page does not load Tailwind, and component tokens must stay out of scanned
+   .tsx files (see README Tailwind gotcha). */
+.nl-mdeditor .nl-embed-card {
+  display: block;
+  border: 1px solid var(--nl-border);
+  border-radius: 8px;
+  background: #f6f8fa;
+  padding: 0.7rem 0.85rem;
+  margin: 1rem 0;
+}
+.nl-mdeditor .nl-embed-card .nl-embed-platform {
+  display: inline-block;
+  font-size: 0.72rem;
+  font-weight: 700;
+  letter-spacing: 0.03em;
+  color: var(--nl-muted);
+  margin-bottom: 0.35rem;
+}
+.nl-mdeditor .nl-embed-card a {
+  display: block;
+  word-break: break-all;
+  color: #0969da;
+}
+.nl-mdeditor .nl-embed-card .nl-embed-hint {
+  display: block;
+  margin-top: 0.35rem;
+  font-size: 0.8rem;
+  color: var(--nl-muted);
+}

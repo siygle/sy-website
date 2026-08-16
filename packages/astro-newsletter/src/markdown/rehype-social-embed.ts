@@ -230,6 +230,63 @@ export const rehypeSocialEmbed: Plugin<[], Root> = () => {
   }
 }
 
+// --- Preview helper -----------------------------------------------------
+//
+// The admin live preview (@uiw/react-md-editor) runs this same plugin, but then
+// renders the resulting `div.social-embed` wrappers with a lightweight card
+// instead of the real embed script. `readEmbedMeta` is the single reader of that
+// wrapper shape, so "what is an embed / which platform / which post" stays
+// defined here alongside the writer above. It does not alter the plugin's HTML
+// output — the published pages are untouched.
+
+export interface EmbedMeta {
+  type: 'twitter' | 'bluesky' | 'youtube'
+  url: string
+  id?: string
+}
+
+function classList(node: Element): string[] {
+  const cn = node.properties?.className
+  if (Array.isArray(cn)) return cn.map(String)
+  if (typeof cn === 'string') return cn.split(/\s+/)
+  return []
+}
+
+const YOUTUBE_EMBED_SRC = /youtube\.com\/embed\/([a-zA-Z0-9_-]+)/
+
+export function readEmbedMeta(node: Element): EmbedMeta | null {
+  if (node.tagName !== 'div') return null
+  const classes = classList(node)
+  if (!classes.includes('social-embed')) return null
+
+  const props = node.properties ?? {}
+  const tweetUrl = props['data-tweet-url']
+  if (classes.includes('twitter-embed') && typeof tweetUrl === 'string') {
+    const id = props['data-tweet-id']
+    return { type: 'twitter', url: tweetUrl, id: typeof id === 'string' ? id : undefined }
+  }
+
+  const blueskyUrl = props['data-bluesky-url']
+  if (classes.includes('bluesky-embed') && typeof blueskyUrl === 'string') {
+    return { type: 'bluesky', url: blueskyUrl }
+  }
+
+  if (classes.includes('youtube-embed')) {
+    // The youtube wrapper carries no data attribute; recover the id from the
+    // child iframe's src and rebuild the canonical watch URL.
+    const iframe = node.children.find(
+      (c): c is Element => c.type === 'element' && c.tagName === 'iframe',
+    )
+    const src = iframe?.properties?.src
+    const match = typeof src === 'string' ? src.match(YOUTUBE_EMBED_SRC) : null
+    if (match) {
+      return { type: 'youtube', url: `https://www.youtube.com/watch?v=${match[1]}`, id: match[1] }
+    }
+  }
+
+  return null
+}
+
 // Helper to trim whitespace-only text nodes from start and end
 function trimTextNodes(children: (Element | Text)[]): (Element | Text)[] {
   const result = [...children]

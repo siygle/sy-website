@@ -8,7 +8,7 @@ import remarkParse from 'remark-parse';
 import remarkRehype from 'remark-rehype';
 import rehypeRaw from 'rehype-raw';
 import rehypeStringify from 'rehype-stringify';
-import { getRemarkPlugins, getRehypePlugins } from './plugins';
+import { getRemarkPlugins, getRehypePlugins } from './plugins.ts';
 
 export async function renderMarkdownToHtml(markdown: string): Promise<string> {
   let processor = unified().use(remarkParse);

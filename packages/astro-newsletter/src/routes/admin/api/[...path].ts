@@ -11,7 +11,11 @@ import {
   sessionCookie,
   clearCookie,
 } from '../../../server/auth';
-import { renderMarkdownToHtml } from '../../../markdown/render';
+// NOTE: markdown/render is loaded lazily in the `render` branch below. It pulls
+// the whole remark/rehype pipeline, and this is a catch-all route — a static
+// import makes every request here (including `session`, i.e. logging in)
+// evaluate it. Under `astro dev` that fails outright, because remark-parse
+// reaches for node's `tty`/`util` which workerd lacks without `nodejs_compat`.
 
 export const prerender = false;
 
@@ -122,6 +126,7 @@ const postHandler: APIRoute = async ({ params, request }) => {
   // Live markdown render for the editor preview pane.
   if (path === 'render') {
     const body = (await request.json().catch(() => ({}))) as { body?: string };
+    const { renderMarkdownToHtml } = await import('../../../markdown/render');
     const html = await renderMarkdownToHtml(String(body.body ?? ''));
     return json({ html });
   }

@@ -86,30 +86,37 @@ marks the post published — re-run the deploy manually. (A bare
   backed by a `newsletter_login_attempts` table in the same D1 — so re-run
   `db:migrate` when upgrading. Best-effort: it fails open if D1 is unavailable.
 
-### Tiptap editor & fidelity
+### Editor
 
-The editor (`components/Editor.tsx`) is a Tiptap React island with **two escape
-hatches** so it can never silently rewrite a post:
+`components/Editor.tsx` is a [@uiw/react-md-editor](https://github.com/uiwjs/react-md-editor)
+island — a **markdown-source** editor with a toolbar, syntax highlighting and
+live preview, plus an R2 image-upload toolbar button. Because it edits the
+markdown text directly (not a WYSIWYG document model), it can never silently
+rewrite content, and the SSR `preview/[slug]` route renders the real pipeline
+(social embeds, code highlight) for a full-fidelity check.
 
-1. A raw-markdown textarea mode, always available.
-2. A **load-time self-check**: on open it runs `serialize(parse(body))`; if that
-   isn't byte-identical it warns and defaults to raw mode.
+Two things will break it, both of which already have:
 
-`test/tiptap-roundtrip.test.ts` runs the round-trip over every real post. The
-editor never throws (raw mode always loads), but exact round-trips are the hard
-part (marked's AST ≠ mdast) — non-faithful posts fall back to raw mode and are
-never corrupted. Improving fidelity is incremental custom-node work; do **not**
-edit the source markdown files to make the round-trip pass.
+- **Do not add a bare `textarea` rule to `styles/admin.css`.** The editor's
+  textarea is transparent and sits on top of a syntax-highlighted `<pre>` — the
+  `<pre>` is what you read. A generic `.nl-admin textarea { background: #fff }`
+  paints over it, so the body area goes blank while the toolbar still looks
+  fine. That blank-body symptom is why this editor got reverted once before.
+  Style admin textareas by class.
+- **Keep `markdown/render` out of module scope in `admin/api/[...path].ts`.** It
+  is a catch-all route, so a top-level import makes *every* request — including
+  `session`, i.e. logging in — evaluate the whole remark/rehype pipeline. Import
+  it inside the `render` branch instead.
 
 ## Gotcha: Tailwind content scanning
 
 This repo uses `@tailwindcss/vite`, whose automatic content detection scans the
 whole project (including `.md`) and — in this git-worktree setup — ignores
 `@source` / `@config` overrides. Any plain identifier that collides with a real
-utility name (the font-style keyword, a text-transform keyword, a CSS `outl` +
-`ine` declaration) inside a scanned file leaks an unused rule into the global
+utility name (a font-style keyword, a text-transform keyword, an `outl` + `ine`
+CSS declaration) inside a scanned file leaks an unused rule into the global
 stylesheet and breaks the site's byte-for-byte output — even from a comment or
 this very doc, which is why the words above are broken up. Keep such tokens out
-of scanned `.ts`/`.tsx`/`.md`: editor CSS lives in `styles/editor.css` (`.css`
-is not scanned) and the one unavoidable mark-name collision is assembled from
-fragments in `Editor.tsx`.
+of scanned `.ts`/`.tsx`/`.md` (put component CSS in imported `.css`, which is not
+scanned). An isolation build (build with vs. without a suspect file, diff
+`dist/client`) tells you if a file leaks.

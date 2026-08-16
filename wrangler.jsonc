@@ -17,7 +17,12 @@
   "$schema": "node_modules/wrangler/config-schema.json",
   "name": "sylee-dev",
   "compatibility_date": "2026-03-01",
-  "compatibility_flags": [],
+  // markdown/render.ts pulls remark-parse, which reaches for node's `tty`/`util`.
+  // The production bundle happens to resolve those at build time, but `astro dev`
+  // runs the route in workerd on demand and 500s without this flag — the admin
+  // preview (both /admin/preview/[slug] and the api `render` endpoint) is
+  // unusable locally otherwise.
+  "compatibility_flags": ["nodejs_compat"],
   "d1_databases": [
     {
       "binding": "NEWSLETTER_DB",

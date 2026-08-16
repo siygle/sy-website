@@ -26,11 +26,18 @@ body.nl-admin {
 .nl-admin .status.published { background: #e7f6ec; color: #1a7f37; }
 .nl-admin .status.draft { background: #f1f1f1; color: #666; }
 .nl-admin label { display: block; font-size: 0.85rem; color: var(--nl-muted); margin: 0.9rem 0 0.25rem; }
-.nl-admin input[type=text], .nl-admin input[type=date], .nl-admin input[type=password], .nl-admin textarea {
+.nl-admin input[type=text], .nl-admin input[type=date], .nl-admin input[type=password] {
   width: 100%; padding: 0.55rem 0.65rem; border: 1px solid var(--nl-border); border-radius: 6px;
   font: inherit; background: #fff;
 }
-.nl-admin textarea { min-height: 60vh; font-family: ui-monospace, SFMono-Regular, Menlo, monospace; font-size: 0.85rem; }
+/* Deliberately no bare `textarea` rule. The markdown editor's textarea is an
+   internal detail of @uiw/react-md-editor: it sits transparently on top of a
+   syntax-highlighted <pre>, which is what you actually read. A generic
+   `.nl-admin textarea { background: #fff }` paints over that layer, so the body
+   renders blank while the toolbar still looks fine — this is what "renders
+   unstyled with invisible content" in #27 actually was, and it is why the @uiw
+   editor got reverted. The only textarea in the admin markup is the hidden
+   #body mirror, so nothing here needs the rule. Style by class if one is added. */
 .nl-admin .btn {
   display: inline-block; padding: 0.5rem 0.9rem; border: 1px solid var(--nl-fg); background: var(--nl-fg);
   color: #fff; border-radius: 6px; font: inherit; cursor: pointer; text-decoration: none;

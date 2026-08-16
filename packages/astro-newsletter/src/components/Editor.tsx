@@ -1,6 +1,8 @@
 import { useEffect, useRef, useState } from 'react';
 import MDEditor, { commands } from '@uiw/react-md-editor';
 import '@uiw/react-md-editor/markdown-editor.css';
+import { rehypeSocialEmbed } from '../markdown/rehype-social-embed';
+import { EmbedDiv } from './SocialEmbedCard';
 
 interface EditorProps {
   /** Markdown body loaded from D1. */
@@ -64,6 +66,14 @@ export default function Editor({ initialMarkdown, targetId, uploadUrl }: EditorP
         preview="edit"
         commands={[...commands.getCommands(), commands.divider, uploadImage]}
         textareaProps={{ placeholder: 'Write Markdown…' }}
+        previewOptions={{
+          // Reuse the site's one embed definition so the preview splits blocks
+          // exactly like the published page, then swap the wrapper for a
+          // no-request card. rehypePlugins are appended to the preview's own,
+          // so highlight/anchor behaviour is preserved.
+          rehypePlugins: [rehypeSocialEmbed],
+          components: { div: EmbedDiv },
+        }}
       />
       <input
         ref={fileRef}

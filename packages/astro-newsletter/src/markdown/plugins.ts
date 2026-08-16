@@ -6,7 +6,7 @@
 // second pipeline, no drift.
 import remarkGfm from 'remark-gfm';
 import rehypeHighlight from 'rehype-highlight';
-import { rehypeSocialEmbed } from './rehype-social-embed';
+import { rehypeSocialEmbed } from './rehype-social-embed.ts';
 
 export function getRemarkPlugins() {
   return [remarkGfm];
